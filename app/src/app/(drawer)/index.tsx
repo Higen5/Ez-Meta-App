@@ -74,8 +74,8 @@ export default function Feed() {
                 <Text style={{ fontFamily: theme.font.bodyMedium, fontSize: 10, letterSpacing: 1, color: theme.colors.neutral600 }}>{e.category}</Text>
               </View>
               <View style={{ alignItems: 'flex-end', maxWidth: 140 }}>
-                {meta.feedMode === 'topPerCategory' ? (
-                  // Bu modda her satirin skoru zaten esit (tier bandinin tepesi) —
+                {meta.listValue === 'stat' ? (
+                  // topPerCategory'de satirin skoru zaten esit (tier bandinin tepesi) —
                   // sayi bilgi tasimiyor. Yerine ayirt edici olan ilk statLine'i goster.
                   e.statLines?.[0] && (
                     <Text numberOfLines={1} style={{ fontFamily: theme.font.heading, fontSize: 14, color: theme.colors.text }}>

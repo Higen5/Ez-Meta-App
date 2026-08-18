@@ -48,6 +48,11 @@ const GAMES = [
     // id'sine gore degil) META ekranini kategori-basina-bir-oge modunda
     // gosterir.
     feedMode: 'topPerCategory',
+    // Arsiv ekrani skor yerine statLines[0].value gostersin -- feedMode HANGI
+    // ogelerin listelenecegini, listValue NE gosterilecegini kontrol eder, ikisi
+    // ayri kavram. Uygulama bu alanin VARLIGINA gore (oyun id'sine gore degil)
+    // karar verir -- bf6/dt2'de bu alan yok.
+    listValue: 'stat',
     scoreNote:
       'Tiers come straight from a third-party tier list, one per faction (Automaton, '
       + 'Terminid, Illuminate) — they are not calculated. Score is derived from the '
@@ -71,7 +76,7 @@ async function readExistingHash(outPath) {
 // Tek bir oyunun kaynagini ceker, degistiyse (hash farkliysa) dogrular ve
 // dosyayi yazar. Degismediyse ya da dogrulama basarisizsa mevcut dosyaya
 // dokunmaz.
-async function runGameBuild({ id, gameName, scoreNote, fetchRaw, buildEntities, factions, feedMode, now, fetch: fetchImpl = fetch, outPath }) {
+async function runGameBuild({ id, gameName, scoreNote, fetchRaw, buildEntities, factions, feedMode, listValue, now, fetch: fetchImpl = fetch, outPath }) {
   const raw = await fetchRaw(fetchImpl);
 
   if (raw.hash === (await readExistingHash(outPath))) {
@@ -84,6 +89,7 @@ async function runGameBuild({ id, gameName, scoreNote, fetchRaw, buildEntities, 
   const meta = { game: id, gameName, scoreNote, sourceHash: raw.hash, generatedAt: now(), entities };
   if (factions) meta.factions = factions; // sadece birden fazla faction'i olan oyunlar tasir (bkz. hd2)
   if (feedMode) meta.feedMode = feedMode; // sadece kategori-basina-bir-oge modu isteyen oyunlar tasir (bkz. hd2)
+  if (listValue) meta.listValue = listValue; // sadece liste satirinda skor yerine stat gosterecek oyunlar tasir (bkz. hd2)
   await mkdir(dirname(outPath), { recursive: true });
   await writeFile(outPath, JSON.stringify(meta, null, 2), 'utf8');
   console.log(`${outPath} yazildi: ${entities.length} varlik`);
@@ -104,7 +110,7 @@ export async function buildDota2Meta({ now = () => new Date().toISOString(), fet
 
 export async function buildHd2Meta({ now = () => new Date().toISOString(), fetch: fetchImpl = fetch, outPath = join(DATA_DIR, 'hd2.json') } = {}) {
   const hd2 = GAMES.find((g) => g.id === 'hd2');
-  return runGameBuild({ id: hd2.id, gameName: hd2.gameName, scoreNote: hd2.scoreNote, fetchRaw: hd2.fetchRaw, buildEntities: hd2.buildEntities, factions: hd2.factions, feedMode: hd2.feedMode, now, fetch: fetchImpl, outPath });
+  return runGameBuild({ id: hd2.id, gameName: hd2.gameName, scoreNote: hd2.scoreNote, fetchRaw: hd2.fetchRaw, buildEntities: hd2.buildEntities, factions: hd2.factions, feedMode: hd2.feedMode, listValue: hd2.listValue, now, fetch: fetchImpl, outPath });
 }
 
 async function writeGamesIndex() {

@@ -77,6 +77,11 @@ export type Meta = {
   // rastgele bir alt kume gosterir). Bu modda feed skor yerine kategori basina
   // tek oge gosterir.
   feedMode?: 'topPerCategory';
+  // Sadece HD2: tier-ici skor bantlarinda ayirt edici olan sayi degil stat'tir.
+  // 'stat' ise liste satirlarinda (META feed + ARSIV) skor yerine
+  // statLines[0].value gosterilir. Detay ekrani (weapon/[id].tsx) bundan
+  // etkilenmez, skor orada hep gorunur.
+  listValue?: 'stat';
 };
 
 // Tek cozumleyici: ekranlar e.tier/e.score'a dogrudan degil, hep buradan

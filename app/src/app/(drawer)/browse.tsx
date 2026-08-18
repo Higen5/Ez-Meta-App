@@ -120,8 +120,10 @@ export default function Browse() {
                 <Text style={{ fontFamily: theme.font.heading, fontSize: 15, color: theme.colors.text }}>{e.name}</Text>
                 <Text style={{ fontFamily: theme.font.bodyMedium, fontSize: 10, letterSpacing: 0.8, color: theme.colors.neutral600 }}>{e.category}</Text>
               </View>
-              <View style={{ width: 84, alignItems: 'flex-end' }}>
-                <Text style={{ fontFamily: theme.font.heading, fontSize: 14, color: theme.colors.text, fontVariant: ['tabular-nums'] }}>{effectiveScore(e, currentFaction)}</Text>
+              <View style={{ width: meta.listValue === 'stat' ? 110 : 84, alignItems: 'flex-end' }}>
+                <Text numberOfLines={1} style={{ fontFamily: theme.font.heading, fontSize: 14, color: theme.colors.text, fontVariant: ['tabular-nums'] }}>
+                  {meta.listValue === 'stat' ? (e.statLines?.[0]?.value ?? '') : effectiveScore(e, currentFaction)}
+                </Text>
                 <Text style={{ fontFamily: theme.font.bodyMedium, fontSize: 9, letterSpacing: 0.8, color: theme.colors.neutral600 }} numberOfLines={1}>
                   {e.rationale.ttkByRange?.length
                     ? `${t('stat.ttk')} ${Math.round(e.rationale.ttkByRange[0][1] * 1000)}ms`
