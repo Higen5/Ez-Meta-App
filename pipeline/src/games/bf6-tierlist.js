@@ -1,6 +1,7 @@
 import { readFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
+import { codeHash } from '../code-hash.js';
 import { assignTiers } from '../score.js';
 
 const SOURCE_PATH = fileURLToPath(new URL('../../data/bf6-tierlist.json', import.meta.url));
@@ -85,7 +86,7 @@ export async function fetchBf6TierlistSource(_fetchImpl) {
     readFile(SOURCE_PATH, 'utf8'),
     readFile(BUILDS_PATH, 'utf8'),
   ]);
-  const hash = createHash('sha256').update(tierlistText).update(buildsText).digest('hex');
+  const hash = createHash('sha256').update(tierlistText).update(buildsText).update(await codeHash()).digest('hex');
   return { tierlist: JSON.parse(tierlistText), builds: JSON.parse(buildsText).builds, hash };
 }
 

@@ -2,8 +2,8 @@
   "game": "hd2",
   "gameName": "Helldivers 2",
   "scoreNote": "Tiers come straight from a third-party tier list, one per faction (Automaton, Terminid, Illuminate) — they are not calculated. Score is derived from the tier, with position inside a tier broken by DPS, armor penetration or health where the source publishes it. Five categories (Backpack, Eagle, Booster, Armor Passive, Orbital) publish no such stat, so within a tier the source's own order is kept — that order is correct for Illuminate only. Nothing here is a measurement of in-game performance.",
-  "sourceHash": "ac5a084566a934ef6b2d8ea22f4fca31699f4f21e36b1ed5973203d3ff986881",
-  "generatedAt": "2026-08-18T14:42:19.178Z",
+  "sourceHash": "7e5856826a4475ec58a20d52c42623d56fc67aaf212121f38dca3a634fbcf9ba",
+  "generatedAt": "2026-08-18T15:00:34.811Z",
   "entities": [
     {
       "id": "cb-9-explosive-crossbow",

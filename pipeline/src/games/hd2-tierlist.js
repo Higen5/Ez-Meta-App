@@ -1,5 +1,6 @@
 import { readFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
+import { codeHash } from '../code-hash.js';
 import { fileURLToPath } from 'node:url';
 
 const SOURCE_PATH = fileURLToPath(new URL('../../data/hd2-tierlist.json', import.meta.url));
@@ -165,7 +166,7 @@ export function validateHd2Tierlist(tierlist) {
 // icin, bkz. bf6-tierlist.js'deki ayni kalip).
 export async function fetchHd2TierlistSource(_fetchImpl) {
   const text = await readFile(SOURCE_PATH, 'utf8');
-  const hash = createHash('sha256').update(text).digest('hex');
+  const hash = createHash('sha256').update(text).update(await codeHash()).digest('hex');
   return { tierlist: JSON.parse(text), hash };
 }
 

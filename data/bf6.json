@@ -2,8 +2,8 @@
   "game": "bf6",
   "gameName": "Battlefield 6",
   "scoreNote": "Score is derived from a weapon's position in a third-party tier list's overall ranking, not from measured stats. Rank 1 of 62 scores 10000 and the rest scale down by position. Nothing here is calculated from weapon statistics — it reflects that list's editorial ordering.",
-  "sourceHash": "b8ee919340b3ac8adb14a86c83763e72ff1f0140453dc5c106ccc68a71dd9212",
-  "generatedAt": "2026-08-18T10:19:32.153Z",
+  "sourceHash": "dccabae4634935c4a5e18f52269a6ea174e199decdc2a3fd00a95348537f247c",
+  "generatedAt": "2026-08-18T15:00:34.293Z",
   "entities": [
     {
       "id": "m16a4",

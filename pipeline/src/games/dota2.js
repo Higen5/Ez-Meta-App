@@ -1,5 +1,6 @@
 import { createHash } from 'node:crypto';
 import { assignTiers } from '../score.js';
+import { codeHash } from '../code-hash.js';
 import { DOTA2_SOURCE_URL } from '../config.js';
 
 // Derece kovalari 1..8 = Herald, Guardian, Crusader, Archon, Legend, Ancient,
@@ -50,7 +51,7 @@ export async function fetchDota2Source(fetchImpl) {
   const res = await fetchImpl(DOTA2_SOURCE_URL);
   if (!res.ok) throw new Error(`Kaynak cekilemedi ${DOTA2_SOURCE_URL}: HTTP ${res.status}`);
   const text = await res.text();
-  const hash = createHash('sha256').update(text).digest('hex');
+  const hash = createHash('sha256').update(text).update(await codeHash()).digest('hex');
   return { heroes: JSON.parse(text), hash };
 }
 
