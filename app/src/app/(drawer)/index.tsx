@@ -76,11 +76,16 @@ export default function Feed() {
               <View style={{ alignItems: 'flex-end', maxWidth: 140 }}>
                 {meta.listValue === 'stat' ? (
                   // topPerCategory'de satirin skoru zaten esit (tier bandinin tepesi) —
-                  // sayi bilgi tasimiyor. Yerine ayirt edici olan ilk statLine'i goster.
+                  // sayi bilgi tasimiyor. Yerine ayirt edici olan ilk statLine'i (deger ustte, etiket altta) goster.
                   e.statLines?.[0] && (
-                    <Text numberOfLines={1} style={{ fontFamily: theme.font.heading, fontSize: 14, color: theme.colors.text }}>
-                      {e.statLines[0].value}
-                    </Text>
+                    <>
+                      <Text numberOfLines={1} style={{ fontFamily: theme.font.heading, fontSize: 14, color: theme.colors.text }}>
+                        {e.statLines[0].value}
+                      </Text>
+                      <Text numberOfLines={1} style={{ fontFamily: theme.font.bodyMedium, fontSize: 9, letterSpacing: 1, color: theme.colors.neutral600 }}>
+                        {e.statLines[0].label}
+                      </Text>
+                    </>
                   )
                 ) : (
                   <>

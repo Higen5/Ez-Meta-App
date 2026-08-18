@@ -125,9 +125,11 @@ export default function Browse() {
                   {meta.listValue === 'stat' ? (e.statLines?.[0]?.value ?? '') : effectiveScore(e, currentFaction)}
                 </Text>
                 <Text style={{ fontFamily: theme.font.bodyMedium, fontSize: 9, letterSpacing: 0.8, color: theme.colors.neutral600 }} numberOfLines={1}>
-                  {e.rationale.ttkByRange?.length
-                    ? `${t('stat.ttk')} ${Math.round(e.rationale.ttkByRange[0][1] * 1000)}ms`
-                    : e.statLines?.length ? `${e.statLines[0].label} ${e.statLines[0].value}` : ''}
+                  {meta.listValue === 'stat'
+                    ? (e.statLines?.[0]?.label ?? '')
+                    : e.rationale.ttkByRange?.length
+                      ? `${t('stat.ttk')} ${Math.round(e.rationale.ttkByRange[0][1] * 1000)}ms`
+                      : e.statLines?.length ? `${e.statLines[0].label} ${e.statLines[0].value}` : ''}
                 </Text>
               </View>
             </Pressable>
