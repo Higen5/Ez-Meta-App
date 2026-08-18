@@ -57,13 +57,20 @@ listesinin **genel meta sıralamasından** geliyor.
 
 ```
 skor = 10000 x (toplam - sira + 1) / toplam    (1. sira = 10000, 62. sira = 161)
-tier = skorun sinif ici yuzdelik dilimi
+tier = skorun GENEL yuzdelik dilimi (62 silahin tamami icinde)
 ```
 
 Kaynaktan yalnızca **silahın adı, sınıfı ve sıra numarası** alınır. Açılma
 seviyeleri, kaynağın kendi tier rozetleri ve menzil etiketleri alınmaz.
 Sıralama pipeline/data/bf6-tierlist.json dosyasında elle tutulur; yama
 geldiğinde bu dosya güncellenir, kod değişmez.
+
+Tier bilerek **genel** yüzdelikten hesaplanır, sınıf içinden değil. İkisi
+karışınca ekranda çelişki oluşuyordu: KORD 6P67 genel 4. sıradayken assault
+rifle'lar içinde 3/11 olduğu için A, DRS-IAR ise genel 5. sıradayken LMG'lerde
+1/10 olduğu için S görünüyordu. Liste skora göre sıralı olduğundan bu doğrudan
+göze batıyor. Bedeli: zayıf sınıfların en iyisi artık S almıyor — P18 en iyi
+secondary ama 62 silah içinde 57. sırada, dolayısıyla C.
 
 **Bu skor bir ölçüm değildir**, başka birinin sıralama kararının sayıya
 çevrilmiş hâlidir. Aynı kaynağın kategori sayfaları ile genel sayfası bazı

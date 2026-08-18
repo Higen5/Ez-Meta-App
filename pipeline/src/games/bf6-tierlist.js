@@ -111,7 +111,20 @@ export function buildBf6TierlistEntities({ tierlist, builds }) {
           "Score is derived from this weapon's position in a third-party tier list's overall "
           + 'ranking, not from a measured stat. This is not a measured value.',
       },
-      cls: category, // assignTiers bu alani kullanir
+      // assignTiers bu alana gore gruplar. BF6'da TEK grup kullaniyoruz, yani
+      // tier sinif ici degil GENEL yuzdelikten hesaplaniyor.
+      //
+      // Sebep: BF6'nin skoru zaten genel siradan (1-62) geliyor. Sinif ici
+      // tier ile birlestirince ikisi farkli hikaye anlatiyordu: KORD 6P67
+      // genel 4. sirada olmasina ragmen assault rifle'lar icinde 3/11 (%18)
+      // oldugu icin A gorunuyor, DRS-IAR ise genel 5. ama LMG'lerde 1/10 (%0)
+      // oldugu icin S gorunuyordu. Liste skora gore sirali oldugundan bu
+      // ekranda dogrudan celiski olarak okunuyor.
+      //
+      // Bedeli: zayif siniflarin en iyisi artik S olmuyor (orn. P18 en iyi
+      // secondary ama genelde 57. sirada, C aliyor). Bu dogru olan: kaynak
+      // onu 62 silah icinde oraya koymus.
+      cls: 'ALL',
     };
   });
 
