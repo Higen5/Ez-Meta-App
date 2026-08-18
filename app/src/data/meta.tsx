@@ -43,6 +43,9 @@ export type Entity = {
   // varsayilan (illuminate) degerleri tasir; effectiveTier/effectiveScore
   // buradan okur.
   factions?: Record<string, { tier: Entity['tier']; score: number }>;
+  // Sadece BF6: kendi kategorisi (sinifi) icindeki sira. tier ise genel
+  // (tum silahlar icindeki) sira olarak kalir; displayTier ikisi arasinda secer.
+  classTier?: Entity['tier'];
   stats: {
     rpm?: number; mag?: number; bulletVel?: number; adsTime?: number;
     recoilV?: number; fireMode?: string; damageCurve?: [number, number][];
@@ -90,6 +93,13 @@ export type Meta = {
 export function effectiveTier(e: Entity, faction: string | null): Entity['tier'] {
   if (faction && e.factions?.[faction]) return e.factions[faction].tier;
   return e.tier;
+}
+// category doluysa (bir sinif filtresi aktifse) ve entity'nin classTier'i varsa
+// (sadece BF6) sinif-ici tier'i dondurur; aksi halde effectiveTier'a duser.
+// HD2/Dota'da classTier hic olmadigi icin bu fonksiyon onlari etkilemez.
+export function displayTier(e: Entity, faction: string | null, category: string | null): Entity['tier'] {
+  if (category && e.classTier) return e.classTier;
+  return effectiveTier(e, faction);
 }
 export function effectiveScore(e: Entity, faction: string | null): number {
   if (faction && e.factions?.[faction]) return e.factions[faction].score;

@@ -3,6 +3,7 @@ import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { codeHash } from '../code-hash.js';
 import { assignTiers } from '../score.js';
+import { BF6_TIER_CUTS, BF6_CLASS_TIER_CUTS } from '../config.js';
 
 const SOURCE_PATH = fileURLToPath(new URL('../../data/bf6-tierlist.json', import.meta.url));
 const BUILDS_PATH = fileURLToPath(new URL('../../data/bf6-builds.json', import.meta.url));
@@ -111,24 +112,36 @@ export function buildBf6TierlistEntities({ tierlist, builds }) {
           "Score is derived from this weapon's position in a third-party tier list's overall "
           + 'ranking, not from a measured stat. This is not a measured value.',
       },
-      // assignTiers bu alana gore gruplar. BF6'da TEK grup kullaniyoruz, yani
-      // tier sinif ici degil GENEL yuzdelikten hesaplaniyor.
-      //
-      // Sebep: BF6'nin skoru zaten genel siradan (1-62) geliyor. Sinif ici
-      // tier ile birlestirince ikisi farkli hikaye anlatiyordu: KORD 6P67
-      // genel 4. sirada olmasina ragmen assault rifle'lar icinde 3/11 (%18)
-      // oldugu icin A gorunuyor, DRS-IAR ise genel 5. ama LMG'lerde 1/10 (%0)
-      // oldugu icin S gorunuyordu. Liste skora gore sirali oldugundan bu
-      // ekranda dogrudan celiski olarak okunuyor.
-      //
-      // Bedeli: zayif siniflarin en iyisi artik S olmuyor (orn. P18 en iyi
-      // secondary ama genelde 57. sirada, C aliyor). Bu dogru olan: kaynak
-      // onu 62 silah icinde oraya koymus.
+      // assignTiers bu alana gore gruplar. Ilk gecis GENEL tier icin -- tum
+      // 62 silah tek grup (bkz. asagida).
       cls: 'ALL',
     };
   });
 
-  assignTiers(entities);
-  for (const e of entities) delete e.cls;
+  // 1. gecis: GENEL tier -- 62 silah tek grupta, genis kesim (BF6_TIER_CUTS).
+  // Uygulamanin genel listesinde gosterilen tier bu (bugunku eski davranis).
+  assignTiers(entities, BF6_TIER_CUTS);
+
+  // 2. gecis: SINIF ICI tier -- ayni silahlar simdi kendi sinifina gore
+  // (Assault Rifle, Carbine, ...) gruplanip tekrar siralanir. Kesim daha genis
+  // (BF6_CLASS_TIER_CUTS), cunku siniflar kucuk (4-12 silah) ve genel kesimle
+  // S neredeyse hep bos kalirdi. assignTiers ikinci cagirimda w.tier'i tekrar
+  // yazdigi icin once genel degeri classTier'dan ayri bir yere tasiyoruz.
+  //
+  // Sonuc: kullanici genel listede silahin 62 icindeki yerini (tier), sinif
+  // filtresi actiginda kendi sinifi icindeki yerini (classTier) gorur. Ayni
+  // silah "carbine'ler arasinda S ama genelde A" olabilir -- bu tutarli bir
+  // okuma, tier "neye gore" sorusunun cevabi ekrana bagli.
+  for (const e of entities) {
+    e.generalTier = e.tier;
+    e.cls = e.category;
+  }
+  assignTiers(entities, BF6_CLASS_TIER_CUTS);
+  for (const e of entities) {
+    e.classTier = e.tier;
+    e.tier = e.generalTier;
+    delete e.generalTier;
+    delete e.cls;
+  }
   return entities;
 }

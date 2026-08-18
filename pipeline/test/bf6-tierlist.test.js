@@ -4,7 +4,9 @@ import {
   scoreFromRank,
   validateBf6Tierlist,
   buildBf6TierlistEntities,
+  fetchBf6TierlistSource,
 } from '../src/games/bf6-tierlist.js';
+import { assignTiers } from '../src/score.js';
 
 test('scoreFromRank(1, 62) 10000 doner', () => {
   assert.equal(scoreFromRank(1, 62), 10000);
@@ -86,4 +88,50 @@ test('build alani olmayan silahta undefined kalir', () => {
 test('builds icinde siralamada olmayan silah adi varsa firlar', () => {
   const builds = { 'BILINMEYEN SILAH': [{ slot: 'BARREL', item: 'X' }] };
   assert.throws(() => buildBf6TierlistEntities({ tierlist: TIERLIST, builds }));
+});
+
+test('her varlikta hem tier hem classTier var', () => {
+  const entities = buildBf6TierlistEntities({ tierlist: TIERLIST });
+  for (const e of entities) {
+    assert.ok(e.tier, `${e.name}: tier eksik`);
+    assert.ok(e.classTier, `${e.name}: classTier eksik`);
+  }
+});
+
+// Gercek 62 silahlik veriyle: genel tier TUM liste uzerinden, classTier
+// SADECE kendi sinifi icinden hesaplanmali -- ayni silah iki farkli tier
+// tasiyabilir (bkz. SPEC: "carbine'ler arasinda S ama genelde A").
+test('genel tier tum liste uzerinden, classTier kategori icinden hesaplanir', async () => {
+  const { tierlist } = await fetchBf6TierlistSource();
+  const entities = buildBf6TierlistEntities({ tierlist });
+
+  const generalS = entities.filter((e) => e.tier === 'S');
+  assert.equal(generalS.length, 12);
+  assert.ok(generalS.some((e) => e.name === 'SG-553R'));
+  assert.ok(!generalS.some((e) => e.name === 'BROD 3'));
+
+  const carbineS = entities
+    .filter((e) => e.category === 'Carbine' && e.classTier === 'S')
+    .map((e) => e.name)
+    .sort();
+  assert.deepEqual(carbineS, ['BROD 3', 'QBZ-192', 'SG-553R'].sort());
+
+  // Her sinifta 2-3 tane classTier S bekleniyor -- entities'ten gorulen tum
+  // kategoriler uzerinden dogrulanir (bos donen bir kategori de yakalanmis olur).
+  const categories = new Set(entities.map((e) => e.category));
+  for (const cat of categories) {
+    const count = entities.filter((e) => e.category === cat && e.classTier === 'S').length;
+    assert.ok(count >= 2 && count <= 3, `${cat}: classTier S sayisi ${count}`);
+  }
+});
+
+// score.js'teki assignTiers artik opsiyonel bir cuts parametresi aliyor;
+// parametresiz cagiri (Dota 2'nin kullandigi yol) eski TIER_CUTS davranisini
+// aynen korumali.
+test('assignTiers varsayilan cuts ile cagrildiginda eski davranisi korur (Dota 2 regresyon korumasi)', () => {
+  const items = Array.from({ length: 20 }, (_, i) => ({ id: `w${i}`, cls: 'X', score: 20 - i }));
+  const out = assignTiers(items);
+  // TIER_CUTS: S maxPercentile 0.15 -> 20 ogede i/20 <= 0.15 olan indeksler 0..3 (4 oge).
+  const sIds = out.filter((w) => w.tier === 'S').map((w) => w.id).sort();
+  assert.deepEqual(sIds, ['w0', 'w1', 'w2', 'w3']);
 });

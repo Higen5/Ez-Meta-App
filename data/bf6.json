@@ -2,8 +2,8 @@
   "game": "bf6",
   "gameName": "Battlefield 6",
   "scoreNote": "Score is derived from a weapon's position in a third-party tier list's overall ranking, not from measured stats. Rank 1 of 62 scores 10000 and the rest scale down by position. Nothing here is calculated from weapon statistics — it reflects that list's editorial ordering.",
-  "sourceHash": "3daa6ac7e6a56f29e32cd7bd5102df11adbb2e5fad89442d3a8bff044ebd0d0d",
-  "generatedAt": "2026-08-18T19:44:16.661Z",
+  "sourceHash": "f3b577a8e2cede241e9f00511bd2b1ca9170f08516d7d99840e3e191cf3d508d",
+  "generatedAt": "2026-08-18T19:56:41.022Z",
   "entities": [
     {
       "id": "m16a4",
@@ -50,7 +50,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "S"
+      "tier": "S",
+      "classTier": "S"
     },
     {
       "id": "b36a4",
@@ -97,7 +98,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "S"
+      "tier": "S",
+      "classTier": "S"
     },
     {
       "id": "pp-19",
@@ -148,7 +150,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "S"
+      "tier": "S",
+      "classTier": "S"
     },
     {
       "id": "kord-6p67",
@@ -191,7 +194,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "S"
+      "tier": "S",
+      "classTier": "S"
     },
     {
       "id": "drs-iar",
@@ -238,7 +242,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "S"
+      "tier": "S",
+      "classTier": "S"
     },
     {
       "id": "sgx",
@@ -281,7 +286,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "S"
+      "tier": "S",
+      "classTier": "S"
     },
     {
       "id": "qbz-192",
@@ -324,7 +330,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "S"
+      "tier": "S",
+      "classTier": "S"
     },
     {
       "id": "pw5a3",
@@ -371,7 +378,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "S"
+      "tier": "S",
+      "classTier": "S"
     },
     {
       "id": "nvo-228e",
@@ -414,7 +422,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "S"
+      "tier": "S",
+      "classTier": "A"
     },
     {
       "id": "rpk-74m",
@@ -461,7 +470,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "S"
+      "tier": "S",
+      "classTier": "S"
     },
     {
       "id": "m2010-esr",
@@ -512,7 +522,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "A"
+      "tier": "S",
+      "classTier": "S"
     },
     {
       "id": "sg-553r",
@@ -555,7 +566,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "A"
+      "tier": "S",
+      "classTier": "S"
     },
     {
       "id": "m87a1",
@@ -602,7 +614,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "A"
+      "tier": "A",
+      "classTier": "S"
     },
     {
       "id": "brod-3",
@@ -619,7 +632,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "A"
+      "tier": "A",
+      "classTier": "S"
     },
     {
       "id": "ef88",
@@ -636,7 +650,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "A"
+      "tier": "A",
+      "classTier": "A"
     },
     {
       "id": "l110",
@@ -653,7 +668,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "A"
+      "tier": "A",
+      "classTier": "S"
     },
     {
       "id": "l85a3",
@@ -670,7 +686,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "A"
+      "tier": "A",
+      "classTier": "B"
     },
     {
       "id": "m4a1",
@@ -687,7 +704,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "A"
+      "tier": "A",
+      "classTier": "A"
     },
     {
       "id": "scw-10",
@@ -704,7 +722,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "A"
+      "tier": "A",
+      "classTier": "A"
     },
     {
       "id": "sor-300sc",
@@ -721,7 +740,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "A"
+      "tier": "A",
+      "classTier": "B"
     },
     {
       "id": "m121-a2",
@@ -738,7 +758,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "A"
+      "tier": "A",
+      "classTier": "A"
     },
     {
       "id": "vcr-2",
@@ -755,7 +776,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "A"
+      "tier": "A",
+      "classTier": "B"
     },
     {
       "id": "cz3a1",
@@ -772,7 +794,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "A"
+      "tier": "A",
+      "classTier": "A"
     },
     {
       "id": "umg-40",
@@ -789,7 +812,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "A"
+      "tier": "A",
+      "classTier": "B"
     },
     {
       "id": "sl9",
@@ -806,7 +830,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "A"
+      "tier": "A",
+      "classTier": "B"
     },
     {
       "id": "sor-556-mk2",
@@ -823,7 +848,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "B"
+      "tier": "B",
+      "classTier": "B"
     },
     {
       "id": "rpkm",
@@ -840,7 +866,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "B"
+      "tier": "B",
+      "classTier": "A"
     },
     {
       "id": "m433",
@@ -857,7 +884,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "B"
+      "tier": "B",
+      "classTier": "C"
     },
     {
       "id": "ak-205",
@@ -874,7 +902,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "B"
+      "tier": "B",
+      "classTier": "B"
     },
     {
       "id": "mini-scout",
@@ -891,7 +920,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "B"
+      "tier": "B",
+      "classTier": "S"
     },
     {
       "id": "pw7a2",
@@ -908,7 +938,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "B"
+      "tier": "B",
+      "classTier": "B"
     },
     {
       "id": "usg-90",
@@ -925,7 +956,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "B"
+      "tier": "B",
+      "classTier": "C"
     },
     {
       "id": "tr-7",
@@ -942,7 +974,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "B"
+      "tier": "B",
+      "classTier": "C"
     },
     {
       "id": "vssm",
@@ -959,7 +992,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "B"
+      "tier": "B",
+      "classTier": "S"
     },
     {
       "id": "kts100-mk8",
@@ -976,7 +1010,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "B"
+      "tier": "B",
+      "classTier": "B"
     },
     {
       "id": "ak4d",
@@ -993,7 +1028,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "B"
+      "tier": "B",
+      "classTier": "C"
     },
     {
       "id": "m417-a2",
@@ -1010,7 +1046,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "B"
+      "tier": "B",
+      "classTier": "B"
     },
     {
       "id": "psr",
@@ -1027,7 +1064,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "B"
+      "tier": "B",
+      "classTier": "A"
     },
     {
       "id": "l115",
@@ -1044,7 +1082,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "B"
+      "tier": "B",
+      "classTier": "B"
     },
     {
       "id": "kv9",
@@ -1061,7 +1100,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "B"
+      "tier": "B",
+      "classTier": "C"
     },
     {
       "id": "m39-emr",
@@ -1078,7 +1118,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "B"
+      "tier": "B",
+      "classTier": "S"
     },
     {
       "id": "vz-61",
@@ -1095,7 +1136,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "B"
+      "tier": "B",
+      "classTier": "S"
     },
     {
       "id": "m60",
@@ -1112,7 +1154,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "B"
+      "tier": "B",
+      "classTier": "B"
     },
     {
       "id": "m123k",
@@ -1129,7 +1172,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "B"
+      "tier": "B",
+      "classTier": "B"
     },
     {
       "id": "m1014",
@@ -1146,7 +1190,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "C"
+      "tier": "C",
+      "classTier": "S"
     },
     {
       "id": "m277",
@@ -1163,7 +1208,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "C"
+      "tier": "C",
+      "classTier": "C"
     },
     {
       "id": "grt-bc",
@@ -1180,7 +1226,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "C"
+      "tier": "C",
+      "classTier": "C"
     },
     {
       "id": "svdm",
@@ -1197,7 +1244,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "C"
+      "tier": "C",
+      "classTier": "A"
     },
     {
       "id": "sv-98",
@@ -1214,7 +1262,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "C"
+      "tier": "C",
+      "classTier": "C"
     },
     {
       "id": "m250",
@@ -1231,7 +1280,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "C"
+      "tier": "C",
+      "classTier": "C"
     },
     {
       "id": "svk-8-6",
@@ -1248,7 +1298,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "C"
+      "tier": "C",
+      "classTier": "B"
     },
     {
       "id": "18-5ks-k",
@@ -1265,7 +1316,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "C"
+      "tier": "C",
+      "classTier": "B"
     },
     {
       "id": "lmr27",
@@ -1282,7 +1334,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "C"
+      "tier": "C",
+      "classTier": "B"
     },
     {
       "id": "m240l",
@@ -1299,7 +1352,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "C"
+      "tier": "C",
+      "classTier": "C"
     },
     {
       "id": "grt-cps",
@@ -1316,7 +1370,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "C"
+      "tier": "C",
+      "classTier": "C"
     },
     {
       "id": "db-12",
@@ -1333,7 +1388,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "C"
+      "tier": "C",
+      "classTier": "C"
     },
     {
       "id": "p18",
@@ -1350,7 +1406,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "C"
+      "tier": "C",
+      "classTier": "S"
     },
     {
       "id": "m44",
@@ -1367,7 +1424,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "C"
+      "tier": "C",
+      "classTier": "A"
     },
     {
       "id": "ggh-22",
@@ -1384,7 +1442,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "C"
+      "tier": "C",
+      "classTier": "B"
     },
     {
       "id": "m357-trait",
@@ -1401,7 +1460,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "C"
+      "tier": "C",
+      "classTier": "B"
     },
     {
       "id": "es-5-7",
@@ -1418,7 +1478,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "C"
+      "tier": "C",
+      "classTier": "C"
     },
     {
       "id": "m45a1",
@@ -1435,7 +1496,8 @@
       "rationale": {
         "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
       },
-      "tier": "C"
+      "tier": "C",
+      "classTier": "C"
     }
   ]
 }

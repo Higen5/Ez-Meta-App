@@ -1,4 +1,4 @@
-import { parseMeta, loadMeta, cacheKeyForGame, effectiveTier, effectiveScore, type Entity } from '../data/meta';
+import { parseMeta, loadMeta, cacheKeyForGame, effectiveTier, effectiveScore, displayTier, type Entity } from '../data/meta';
 
 const TEST_URL = 'https://example.test/bf6.json';
 
@@ -147,5 +147,29 @@ describe('effectiveTier / effectiveScore', () => {
   test('entity o faction icin veri tasimiyorsa varsayilana duser', () => {
     expect(effectiveTier(withFactions, 'illuminate')).toBe('S+');
     expect(effectiveScore(withFactions, 'illuminate')).toBe(6800);
+  });
+});
+
+describe('displayTier', () => {
+  const bf6Weapon: Entity = {
+    id: 'sg553r', name: 'SG-553R', category: 'Carbine', tier: 'S', classTier: 'S',
+    score: 500, stats: {}, rationale: {},
+  };
+  const noClassTier: Entity = {
+    id: 'w3', name: 'HD2/Dota Weapon', category: 'Assault Rifle', tier: 'A',
+    score: 300, stats: {}, rationale: {},
+  };
+
+  test('kategori null -> effectiveTier sonucu (genel tier)', () => {
+    expect(displayTier(bf6Weapon, null, null)).toBe('S');
+  });
+
+  test('kategori dolu ama classTier yok (HD2/Dota sekli) -> effectiveTier sonucuna duser', () => {
+    expect(displayTier(noClassTier, null, 'Assault Rifle')).toBe('A');
+  });
+
+  test('kategori dolu ve classTier var -> classTier doner', () => {
+    const brod3: Entity = { ...bf6Weapon, id: 'brod3', name: 'BROD 3', tier: 'A', classTier: 'S' };
+    expect(displayTier(brod3, null, 'Carbine')).toBe('S');
   });
 });

@@ -3,7 +3,7 @@ import { View, Text, TextInput, Pressable, FlatList, ScrollView } from 'react-na
 import { router } from 'expo-router';
 import { theme } from '../../theme';
 import { useLanguage } from '../../i18n/LanguageContext';
-import { useMeta, effectiveTier, effectiveScore, type Entity } from '../../data/meta';
+import { useMeta, effectiveScore, displayTier, type Entity } from '../../data/meta';
 import { TopBar } from '../../components/TopBar';
 import { TierBadge, TIER_BG } from '../../components/TierBadge';
 import { FactionBar } from '../../components/FactionBar';
@@ -98,6 +98,13 @@ export default function Browse() {
         )}
       </View>
 
+      {category && meta.entities.some((e) => e.category === category && e.classTier) && (
+        <Text style={{
+          paddingHorizontal: theme.space.lg, paddingTop: theme.space.sm,
+          fontFamily: theme.font.bodyMedium, fontSize: 9, letterSpacing: 1.2, color: theme.colors.neutral600,
+        }}>{t('browse.classTierNote')}</Text>
+      )}
+
       {mode === 'list' ? (
         <FlatList
           data={results}
@@ -115,7 +122,7 @@ export default function Browse() {
               paddingVertical: theme.space.md, minHeight: 64,
               borderTopWidth: 1, borderTopColor: theme.colors.neutral300,
             }}>
-              <TierBadge tier={effectiveTier(e, currentFaction)} />
+              <TierBadge tier={displayTier(e, currentFaction, category)} />
               <View style={{ flex: 1, minWidth: 0 }}>
                 <Text style={{ fontFamily: theme.font.heading, fontSize: 15, color: theme.colors.text }}>{e.name}</Text>
                 <Text style={{ fontFamily: theme.font.bodyMedium, fontSize: 10, letterSpacing: 0.8, color: theme.colors.neutral600 }}>{e.category}</Text>
@@ -137,7 +144,7 @@ export default function Browse() {
         <ScrollView>
           {TIERS.map((tier) => {
             const items = meta.entities
-              .filter((e) => effectiveTier(e, currentFaction) === tier)
+              .filter((e) => displayTier(e, currentFaction, category) === tier)
               .sort((a, b) => effectiveScore(b, currentFaction) - effectiveScore(a, currentFaction));
             return (
               <View key={tier} style={{ flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: theme.colors.neutral300 }}>
