@@ -174,6 +174,41 @@ Her oyunun mantığı pipeline/src/games/ altında ayrı bir dosyadadır; tier a
 (score.js) ortaktır. Her oyun bağımsız çalışır: birinin kaynağı patlarsa
 diğerleri yazılmaya devam eder.
 
+### Neden hash koda da bakıyor
+
+Hat, çıktıyı yeniden üretip üretmeyeceğine bir hash karşılaştırmasıyla karar
+verir. Bu hash **kaynak veriyi VE `pipeline/src` altındaki tüm kodu** kapsar
+(`code-hash.js`).
+
+Kodu dahil etmek şart, çünkü önceden hash yalnızca kaynağı kapsıyordu: skor
+formülü değiştiğinde kaynak aynı kaldığı için build "kaynak degismedi" deyip
+çıkış kodu 0 veriyor ve dosyada **eski formülün ürettiği veri** kalıyordu.
+Sessiz olduğu için tehlikeliydi — build yeşil görünür, günlük cron kod
+değişikliğini hiç almazdı.
+
+Dosya içerikleri hash'lenirken `\r` atılır. Depo Windows'ta CRLF, CI'da LF ile
+checkout edildiği için normalize edilmezse aynı kod iki platformda farklı hash
+üretir ve cron her gün boşuna yazardı.
+
+Takas: hash tüm ağacı kapsadığı için bir oyunun modülü değişince üç oyun da
+yeniden üretilir. Alternatifi "hangi dosyayı hash'e katmayı hatırladım"
+sorusuydu ve o soru er geç yanlış cevaplanır.
+
+### Ekranı veriden sürmek
+
+Uygulama hiçbir yerde oyun kimliğine göre dallanmaz; yalnızca veride hangi
+alanın bulunduğuna bakar. Meta seviyesindeki üç opsiyonel alan bunu sağlar:
+
+| Alan | Anlamı | Kimde var |
+|---|---|---|
+| `factions` | Faction çubuğunu göster, her öğenin faction başına tier'ı var | hd2 |
+| `feedMode` | META ekranında **hangi** öğeler listelensin (`topPerCategory`) | hd2 |
+| `listValue` | Liste satırlarında skor yerine **ne** gösterilsin (`stat`) | hd2 |
+
+`feedMode` ile `listValue` bilerek ayrı: biri hangi öğelerin listeleneceğini,
+diğeri ne gösterileceğini anlatır. Aynı alana iki anlam yüklemek üçüncü bir
+ihtiyaçta çözülmez hâle gelirdi.
+
 | Katman | Yer | Yığın |
 |---|---|---|
 | Veri hattı | pipeline/ | Node 20+, ESM, node:test |
@@ -270,10 +305,13 @@ tutulur, böylece çevrimdışı çalışma iki oyun için de sürer.
 - BF6 verisi otomatik güncellenmez; yama geldiğinde sıralama dosyası elle
   güncellenmelidir. Dota 2 tarafı otomatiktir.
 - Dota 2 için pozisyon bazlı tier listesi yok; o veri ücretsiz yayınlanmıyor.
+- HD2 skoru da bir ölçüm değil; tier'lar kaynaktan gelir, oyun içi performans
+  ölçülmez.
 - Ekranlar gerçek cihazda doğrulandı; otomatik UI testi yoktur.
 - Arka plan görevi ve bildirim teslimi gerçek cihazda tetiklenmedi.
-- Detay ekranında bf6Editable koşuluyla korunan eski eklenti editörü kod
-  tabanında duruyor ama hiçbir veri onu tetiklemiyor, yani ölü kod.
+- Eklenti değiştirip skoru canlı hesaplayan editör **yoktur**. Gerektirdiği
+  hasar eğrisi ve eklenti başına geri tepme değeri hiçbir kaynakta yok; kodu da
+  kaldırıldı. Detay ekranı önerilen build'i okunur liste olarak gösterir.
 
 ## v1 kapsamı dışında
 
