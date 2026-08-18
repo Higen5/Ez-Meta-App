@@ -1,0 +1,963 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/modernist-aa0b4d9d-b348-4b21-9176-97f845ab6d6b/styles.css">
+<script src="_ds/modernist-aa0b4d9d-b348-4b21-9176-97f845ab6d6b/_ds_bundle.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0e0e0d}
+:root{
+--color-bg:#121211;--color-surface:#1b1a19;--color-text:#f1efed;--color-divider:#3a3735;
+--color-neutral-100:#191817;--color-neutral-200:#1f1e1c;--color-neutral-300:#282624;
+--color-neutral-400:#3c3936;--color-neutral-500:#8b8681;--color-neutral-600:#a8a29c;
+--color-neutral-700:#c6c0ba;--color-neutral-800:#e2ddd8;--color-neutral-900:#f4f1ee;
+--color-accent:#b9fe36;--color-accent-100:#1d2a0d;--color-accent-200:#26380f;
+--color-accent-300:#40611a;--color-accent-400:#cbff6e;--color-accent-500:#b9fe36;
+--color-accent-600:#a5e625;--color-accent-700:#dfffa8;--color-accent-800:#ecffd0;
+--color-accent-2:#b9fe36;--color-accent-2-500:#b9fe36;
+}
+a{color:var(--color-accent-400)}
+a:hover{color:var(--color-accent)}
+@keyframes skel{0%,100%{opacity:.35}50%{opacity:.9}}
+@keyframes tick{from{transform:translateY(-100%)}to{transform:translateY(0)}}
+@keyframes bar{0%{width:8%}100%{width:100%}}
+*{-webkit-tap-highlight-color:transparent}
+</style>
+</helmet>
+
+<div style="display:flex;flex-wrap:wrap;gap:36px;align-items:flex-start;padding:36px;font-family:var(--font-body);color:var(--color-text);min-height:100vh;box-sizing:border-box">
+
+  <sc-if value="{{ showRail }}" hint-placeholder-val="{{ true }}">
+  <div style="width:218px;flex:none;display:flex;flex-direction:column;gap:20px;position:sticky;top:36px">
+    <div>
+      <div style="font:900 30px/0.92 var(--font-heading);letter-spacing:-0.03em">EZ<span style="color:var(--color-accent)">//</span>META</div>
+      <div style="font:600 10px/1.4 var(--font-body);letter-spacing:.16em;color:var(--color-neutral-600);margin-top:6px">ANDROID · 412×892 · MODERNIST</div>
+    </div>
+    <div style="height:2px;background:var(--color-divider)"></div>
+    <div style="display:flex;flex-direction:column;gap:0">
+      <sc-for list="{{ rail }}" as="r" hint-placeholder-count="10">
+        <button onClick="{{ r.go }}" style="display:flex;align-items:center;gap:10px;padding:11px 4px;background:transparent;border:0;border-bottom:1px solid var(--color-neutral-300);cursor:pointer;text-align:left;font:700 12px/1.2 var(--font-heading);letter-spacing:.04em;color:var(--color-text)" style-hover="background:var(--color-accent-100)">
+          <span style="width:22px;flex:none;font:700 10px/1.2 var(--font-body);color:var(--color-neutral-500);letter-spacing:.06em">{{ r.no }}</span>
+          <span style="flex:1">{{ r.label }}</span>
+          <span style="width:10px;flex:none;color:var(--color-accent);font-size:11px">{{ r.mark }}</span>
+        </button>
+      </sc-for>
+    </div>
+  </div>
+  </sc-if>
+
+  <x-import component-from-global-scope="AndroidDevice" from="./android-frame.jsx" width="412px" height="892px" dark="{{ true }}" style="flex:none;width:412px;height:892px" hint-size="412px,892px">
+    <div style="height:100%;min-height:0;display:flex;flex-direction:column;background:var(--color-bg);font-family:var(--font-body);color:var(--color-text);font-size:14px">
+
+      <sc-if value="{{ isSplash }}" hint-placeholder-val="{{ false }}">
+      <div data-screen-label="00 Splash" style="flex:1;min-height:0;background:#b9fe36;color:#11170a;display:flex;flex-direction:column;padding:26px;box-sizing:border-box">
+        <div style="font:900 13px/1 var(--font-heading);letter-spacing:.2em">GAMING</div>
+        <div style="margin-top:auto">
+          <div style="font:900 84px/0.82 var(--font-heading);letter-spacing:-0.05em">EZ<br>META</div>
+          <div style="height:3px;background:#11170a;margin:20px 0 14px"></div>
+          <div style="font:600 9px/1.3 var(--font-body);letter-spacing:.2em;opacity:.72;margin-bottom:12px">META ÇEKİLİYOR</div>
+          <div style="height:6px;background:rgba(17,23,10,.22)">
+            <div style="height:100%;background:#11170a;animation:bar 1.4s cubic-bezier(.3,.7,.2,1) infinite"></div>
+          </div>
+        </div>
+      </div>
+      </sc-if>
+
+      <sc-if value="{{ isOnboarding }}" hint-placeholder-val="{{ false }}">
+      <div data-screen-label="01 Onboarding" style="flex:1;min-height:0;overflow:auto;background:#201e1d;color:#f3f2f2;padding:26px 20px 30px;box-sizing:border-box">
+        <div style="font:900 44px/0.9 var(--font-heading);letter-spacing:-0.035em">EZ<span style="color:var(--color-accent)">//</span><br>META</div>
+        <div style="height:2px;background:var(--color-accent);margin:18px 0 14px"></div>
+        <p style="font:400 14px/1.5 var(--font-body);color:var(--color-neutral-800);margin:0 0 26px;max-width:300px">Maç başlamadan build'i kap. Meta değişince ilk sen bil. Oyununu seç, gerisi bizde.</p>
+        <div style="font:700 10px/1.2 var(--font-heading);letter-spacing:.18em;color:var(--color-neutral-500);margin-bottom:10px">OYUN SEÇ · 6 BAŞLIK</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px">
+          <sc-for list="{{ gameCards }}" as="gc" hint-placeholder-count="6">
+            <button onClick="{{ gc.pick }}" style="{{ gc.style }}" style-hover="border-color:var(--color-accent)">
+              <span style="font:900 22px/1 var(--font-heading);letter-spacing:-0.02em">{{ gc.code }}</span>
+              <span style="font:800 12px/1.2 var(--font-heading);letter-spacing:.02em;margin-top:auto">{{ gc.name }}</span>
+              <span style="{{ gc.genreStyle }}">{{ gc.genre }}</span>
+            </button>
+          </sc-for>
+        </div>
+        <div style="display:flex;gap:8px;align-items:center;margin-top:22px;font:500 11px/1.4 var(--font-body);color:var(--color-neutral-500)">
+          <span style="width:8px;height:8px;background:var(--color-accent);flex:none"></span>
+          Sonra Steam / Riot ID bağlayıp kendi statlarını da görebilirsin.
+        </div>
+      </div>
+      </sc-if>
+
+      <sc-if value="{{ inApp }}" hint-placeholder-val="{{ true }}">
+      <div style="flex:1;min-height:0;display:flex;flex-direction:column">
+
+        <div style="flex:none;background:#201e1d;color:#f3f2f2;height:56px;display:flex;align-items:center;gap:10px;padding:0 10px 0 8px">
+          <sc-if value="{{ isPushed }}" hint-placeholder-val="{{ false }}">
+            <button onClick="{{ goBack }}" style="width:44px;height:44px;background:transparent;border:0;color:#f3f2f2;font:700 20px/1 var(--font-heading);cursor:pointer" style-hover="background:#444141">←</button>
+          </sc-if>
+          <sc-if value="{{ isRoot }}" hint-placeholder-val="{{ true }}">
+            <button onClick="{{ goGames }}" style="width:44px;height:40px;background:var(--color-accent);color:#11170a;border:0;font:900 13px/1 var(--font-heading);letter-spacing:.04em;cursor:pointer" style-hover="background:var(--color-accent-600)">{{ code }}</button>
+          </sc-if>
+          <div style="flex:1;min-width:0">
+            <div style="font:800 15px/1.15 var(--font-heading);letter-spacing:.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ screenTitle }}</div>
+            <div style="font:600 9px/1.3 var(--font-body);letter-spacing:.14em;color:var(--color-neutral-500);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ gameName }} · {{ unit }}</div>
+          </div>
+          <button onClick="{{ goPatch }}" style="height:40px;padding:0 10px;background:transparent;border:1px solid var(--color-neutral-700);color:#f3f2f2;font:800 10px/1 var(--font-heading);letter-spacing:.1em;cursor:pointer;display:flex;align-items:center;gap:6px" style-hover="border-color:var(--color-accent);color:var(--color-accent-400)">
+            <span style="width:6px;height:6px;background:var(--color-accent);display:block"></span>P4.2
+          </button>
+        </div>
+
+        <div style="flex:1;min-height:0;overflow:auto;background:var(--color-bg)">
+
+          <sc-if value="{{ loading }}" hint-placeholder-val="{{ false }}">
+          <div data-screen-label="10 Yükleniyor" style="padding:16px">
+            <div style="display:flex;align-items:center;gap:8px;font:700 10px/1.2 var(--font-heading);letter-spacing:.16em;color:var(--color-neutral-600);margin-bottom:14px">
+              <span style="width:10px;height:10px;background:var(--color-accent);display:block;animation:skel 1s ease-in-out infinite"></span>META ÇEKİLİYOR · {{ code }}
+            </div>
+            <div style="height:74px;background:var(--color-neutral-300);animation:skel 1.1s ease-in-out infinite;margin-bottom:2px"></div>
+            <div style="height:54px;background:var(--color-neutral-300);animation:skel 1.1s ease-in-out .1s infinite;margin-bottom:2px"></div>
+            <div style="height:54px;background:var(--color-neutral-300);animation:skel 1.1s ease-in-out .2s infinite;margin-bottom:2px"></div>
+            <div style="height:130px;background:var(--color-neutral-300);animation:skel 1.1s ease-in-out .3s infinite;margin-bottom:2px"></div>
+            <div style="height:54px;background:var(--color-neutral-300);animation:skel 1.1s ease-in-out .4s infinite"></div>
+          </div>
+          </sc-if>
+
+          <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+          <div data-screen-label="02 Meta feed">
+            <sc-if value="{{ banner }}" hint-placeholder-val="{{ true }}">
+            <div style="background:var(--color-accent);color:#11170a;padding:12px 14px;display:flex;align-items:center;gap:10px;overflow:hidden">
+              <div style="flex:1;min-width:0;animation:tick .4s ease-out">
+                <div style="font:900 12px/1.2 var(--font-heading);letter-spacing:.08em">META GÜNCELLENDİ</div>
+                <div style="font:500 11px/1.35 var(--font-body);opacity:.9">Patch 4.2 · 3 birim tier atladı</div>
+              </div>
+              <button onClick="{{ goPatch }}" style="height:36px;padding:0 12px;background:#0e0e0d;color:var(--color-accent-400);border:0;font:800 10px/1 var(--font-heading);letter-spacing:.1em;cursor:pointer">İNCELE</button>
+              <button onClick="{{ hideBanner }}" style="width:36px;height:36px;background:transparent;border:1px solid rgba(255,255,255,.5);color:#11170a;font:700 15px/1 var(--font-body);cursor:pointer">×</button>
+            </div>
+            </sc-if>
+
+            <div style="padding:18px 16px 0">
+              <div style="display:flex;align-items:baseline;justify-content:space-between;border-bottom:2px solid var(--color-divider);padding-bottom:6px">
+                <div style="font:900 11px/1.2 var(--font-heading);letter-spacing:.16em">YÜKSELEN</div>
+                <div style="font:500 9px/1.2 var(--font-body);letter-spacing:.12em;color:var(--color-neutral-600)">SON 7 GÜN · PICK Δ</div>
+              </div>
+              <sc-for list="{{ risers }}" as="e" hint-placeholder-count="3">
+                <button onClick="{{ e.open }}" style="width:100%;display:flex;align-items:center;gap:12px;padding:13px 0;background:transparent;border:0;border-bottom:1px solid var(--color-neutral-300);cursor:pointer;text-align:left" style-hover="background:var(--color-accent-100)">
+                  <span style="{{ e.tierStyle }}">{{ e.tier }}</span>
+                  <span style="flex:1;min-width:0">
+                    <span style="display:block;font:800 16px/1.15 var(--font-heading);letter-spacing:-0.01em">{{ e.name }}</span>
+                    <span style="display:block;font:500 10px/1.3 var(--font-body);letter-spacing:.1em;color:var(--color-neutral-600)">{{ e.role }} · {{ e.buildName }}</span>
+                  </span>
+                  <span style="text-align:right">
+                    <span style="{{ e.dStyle }}">{{ e.dText }}</span>
+                    <span style="display:block;font:500 9px/1.3 var(--font-body);letter-spacing:.1em;color:var(--color-neutral-600)">WIN {{ e.win }}%</span>
+                  </span>
+                </button>
+              </sc-for>
+            </div>
+
+            <div style="margin:18px 16px 0;background:#201e1d;color:#f3f2f2;padding:16px">
+              <div style="display:flex;align-items:center;gap:8px;font:900 10px/1.2 var(--font-heading);letter-spacing:.16em;color:var(--color-accent-400)">
+                <span style="width:8px;height:8px;background:var(--color-accent);display:block"></span>10 SANİYEDE HAZIR
+              </div>
+              <div style="font:900 30px/0.98 var(--font-heading);letter-spacing:-0.03em;margin:12px 0 4px">{{ topName }}</div>
+              <div style="font:600 11px/1.4 var(--font-body);letter-spacing:.06em;color:var(--color-neutral-400)">{{ topBuild }} · {{ unit }}</div>
+              <div style="height:1px;background:#444141;margin:14px 0"></div>
+              <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:14px">
+                <div>
+                  <div style="font:900 20px/1 var(--font-heading)">{{ topPick }}%</div>
+                  <div style="font:500 9px/1.3 var(--font-body);letter-spacing:.1em;color:var(--color-neutral-500)">PICK</div>
+                </div>
+                <div>
+                  <div style="font:900 20px/1 var(--font-heading)">{{ topWin }}%</div>
+                  <div style="font:500 9px/1.3 var(--font-body);letter-spacing:.1em;color:var(--color-neutral-500)">WIN</div>
+                </div>
+                <div>
+                  <div style="font:900 20px/1 var(--font-heading);color:var(--color-accent-400)">{{ topDelta }}</div>
+                  <div style="font:500 9px/1.3 var(--font-body);letter-spacing:.1em;color:var(--color-neutral-500)">Δ 7 GÜN</div>
+                </div>
+              </div>
+              <button onClick="{{ openTop }}" style="width:100%;height:48px;background:var(--color-accent);color:#11170a;border:0;font:900 12px/1 var(--font-heading);letter-spacing:.12em;cursor:pointer;text-align:left;padding:0 14px;display:flex;align-items:center;justify-content:space-between" style-hover="background:var(--color-accent-600)">BUILD'İ AÇ<span>→</span></button>
+            </div>
+
+            <div style="padding:18px 16px 0">
+              <div style="display:flex;align-items:baseline;justify-content:space-between;border-bottom:2px solid var(--color-divider);padding-bottom:6px;margin-bottom:12px">
+                <div style="font:900 11px/1.2 var(--font-heading);letter-spacing:.16em">TIER SNAPSHOT</div>
+                <button onClick="{{ goTier }}" style="background:transparent;border:0;font:800 9px/1 var(--font-heading);letter-spacing:.12em;color:var(--color-accent);cursor:pointer;padding:4px">TAM LİSTE →</button>
+              </div>
+              <div style="display:flex;flex-wrap:wrap;gap:2px">
+                <sc-for list="{{ sTier }}" as="e" hint-placeholder-count="3">
+                  <button onClick="{{ e.open }}" style="background:var(--color-accent);color:#11170a;border:0;padding:9px 11px;font:800 12px/1 var(--font-heading);letter-spacing:.02em;cursor:pointer;min-height:44px" style-hover="background:var(--color-accent-600)">{{ e.name }}</button>
+                </sc-for>
+              </div>
+            </div>
+
+            <div style="padding:18px 16px 26px">
+              <div style="display:flex;align-items:baseline;justify-content:space-between;border-bottom:2px solid var(--color-divider);padding-bottom:6px">
+                <div style="font:900 11px/1.2 var(--font-heading);letter-spacing:.16em">TOPLULUK</div>
+                <button onClick="{{ goCommunity }}" style="background:transparent;border:0;font:800 9px/1 var(--font-heading);letter-spacing:.12em;color:var(--color-accent);cursor:pointer;padding:4px">HEPSİ →</button>
+              </div>
+              <sc-for list="{{ feedPreview }}" as="p" hint-placeholder-count="2">
+                <button onClick="{{ goCommunity }}" style="width:100%;display:flex;gap:12px;align-items:flex-start;padding:13px 0;background:transparent;border:0;border-bottom:1px solid var(--color-neutral-300);cursor:pointer;text-align:left" style-hover="background:var(--color-accent-100)">
+                  <span style="width:34px;height:34px;flex:none;background:#2f2c29;color:#f1efed;font:900 12px/34px var(--font-heading);text-align:center">{{ p.initial }}</span>
+                  <span style="flex:1;min-width:0">
+                    <span style="display:block;font:800 13px/1.25 var(--font-heading)">{{ p.title }}</span>
+                    <span style="display:block;font:500 10px/1.4 var(--font-body);color:var(--color-neutral-600)">@{{ p.author }} · {{ p.voteText }} oy · {{ p.comments }} yorum</span>
+                  </span>
+                </button>
+              </sc-for>
+            </div>
+          </div>
+          </sc-if>
+
+          <sc-if value="{{ isBrowse }}" hint-placeholder-val="{{ false }}">
+          <div data-screen-label="03 Arşiv + filtre">
+            <div style="padding:14px 16px 12px;border-bottom:2px solid var(--color-divider);position:sticky;top:0;background:var(--color-bg);z-index:2">
+              <input value="{{ q }}" onChange="{{ onQuery }}" placeholder="{{ searchHint }}" style="width:100%;box-sizing:border-box;height:48px;padding:0 12px;background:var(--color-surface);border:1px solid var(--color-neutral-400);border-radius:0;font:600 14px/1 var(--font-body);color:var(--color-text)" style-focus="border-color:var(--color-accent);outline:2px solid var(--color-accent);outline-offset:-1px">
+              <div style="display:flex;gap:2px;flex-wrap:wrap;margin-top:10px">
+                <sc-for list="{{ roleChips }}" as="c" hint-placeholder-count="5">
+                  <button onClick="{{ c.pick }}" style="{{ c.style }}">{{ c.label }}</button>
+                </sc-for>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 16px 6px;font:600 9px/1.2 var(--font-body);letter-spacing:.12em;color:var(--color-neutral-600)">
+              <span>{{ resultCount }} SONUÇ · {{ unit }}</span><span>PICK / WIN</span>
+            </div>
+            <div style="padding:0 16px 26px">
+              <sc-for list="{{ entries }}" as="e" hint-placeholder-count="6">
+                <button onClick="{{ e.open }}" style="width:100%;display:flex;align-items:center;gap:12px;padding:12px 0;background:transparent;border:0;border-top:1px solid var(--color-neutral-300);cursor:pointer;text-align:left;min-height:64px" style-hover="background:var(--color-accent-100)">
+                  <span style="{{ e.tierStyle }}">{{ e.tier }}</span>
+                  <span style="flex:1;min-width:0">
+                    <span style="display:block;font:800 15px/1.15 var(--font-heading)">{{ e.name }}</span>
+                    <span style="display:block;font:500 10px/1.3 var(--font-body);letter-spacing:.08em;color:var(--color-neutral-600)">{{ e.role }}</span>
+                  </span>
+                  <span style="width:78px;flex:none;text-align:right">
+                    <span style="display:block;font:800 14px/1.1 var(--font-heading);font-variant-numeric:tabular-nums">{{ e.pick }}% <span style="color:var(--color-neutral-500)">/</span> {{ e.win }}%</span>
+                    <span style="{{ e.dStyleSm }}">{{ e.dText }}</span>
+                  </span>
+                  <span style="{{ e.savedMark }}">★</span>
+                </button>
+              </sc-for>
+              <sc-if value="{{ noResults }}" hint-placeholder-val="{{ false }}">
+                <div style="border:2px solid var(--color-divider);padding:22px 16px;margin-top:16px">
+                  <div style="font:900 14px/1.2 var(--font-heading);margin-bottom:6px">SONUÇ YOK</div>
+                  <div style="font:500 12px/1.5 var(--font-body);color:var(--color-neutral-600)">Aramayı kısalt ya da filtreyi TÜMÜ yap.</div>
+                </div>
+              </sc-if>
+            </div>
+          </div>
+          </sc-if>
+
+          <sc-if value="{{ isDetail }}" hint-placeholder-val="{{ false }}">
+          <div data-screen-label="04 Build detay + editör">
+            <div style="height:150px;background:#201e1d;position:relative;display:flex;align-items:flex-end;padding:14px;box-sizing:border-box">
+              <div style="position:absolute;inset:0;background:repeating-linear-gradient(135deg,#232120 0 10px,#191817 10px 20px);opacity:.9"></div>
+              <div style="position:absolute;top:12px;right:12px;font:600 8px/1.2 var(--font-body);letter-spacing:.14em;color:var(--color-neutral-500);border:1px solid var(--color-neutral-700);padding:5px 7px">GÖRSEL PLACEHOLDER</div>
+              <div style="position:relative">
+                <div style="font:600 9px/1.2 var(--font-body);letter-spacing:.16em;color:var(--color-accent-400)">{{ unit }} · {{ dRole }}</div>
+                <div style="font:900 38px/0.92 var(--font-heading);letter-spacing:-0.035em;color:#f3f2f2;margin-top:6px">{{ dName }}</div>
+              </div>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr 1fr;border-bottom:2px solid var(--color-divider)">
+              <div style="padding:12px 14px;border-right:1px solid var(--color-neutral-300)">
+                <div style="font:900 22px/1 var(--font-heading);font-variant-numeric:tabular-nums">{{ dPick }}%</div>
+                <div style="font:500 9px/1.3 var(--font-body);letter-spacing:.1em;color:var(--color-neutral-600)">PICK</div>
+              </div>
+              <div style="padding:12px 14px;border-right:1px solid var(--color-neutral-300)">
+                <div style="font:900 22px/1 var(--font-heading);font-variant-numeric:tabular-nums">{{ dWin }}%</div>
+                <div style="font:500 9px/1.3 var(--font-body);letter-spacing:.1em;color:var(--color-neutral-600)">WIN</div>
+              </div>
+              <div style="padding:12px 14px">
+                <div style="{{ dDeltaStyle }}">{{ dDelta }}</div>
+                <div style="font:500 9px/1.3 var(--font-body);letter-spacing:.1em;color:var(--color-neutral-600)">Δ 7 GÜN</div>
+              </div>
+            </div>
+
+            <div style="padding:16px 16px 0">
+              <div style="font:900 11px/1.2 var(--font-heading);letter-spacing:.16em;border-bottom:2px solid var(--color-divider);padding-bottom:6px;margin-bottom:12px">İSTATİSTİK</div>
+              <sc-for list="{{ statRows }}" as="s" hint-placeholder-count="5">
+                <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
+                  <span style="width:96px;flex:none;font:600 9px/1.2 var(--font-body);letter-spacing:.1em;color:var(--color-neutral-700)">{{ s.label }}</span>
+                  <span style="flex:1;height:14px;background:var(--color-neutral-300);display:block">
+                    <span style="{{ s.barStyle }}"></span>
+                  </span>
+                  <span style="width:26px;flex:none;text-align:right;font:800 12px/1 var(--font-heading);font-variant-numeric:tabular-nums">{{ s.val }}</span>
+                </div>
+              </sc-for>
+            </div>
+
+            <div style="padding:18px 16px 0">
+              <div style="display:flex;align-items:baseline;justify-content:space-between;border-bottom:2px solid var(--color-divider);padding-bottom:6px;margin-bottom:12px">
+                <div style="font:900 11px/1.2 var(--font-heading);letter-spacing:.16em">EDİTÖR</div>
+                <div style="font:500 9px/1.2 var(--font-body);letter-spacing:.1em;color:var(--color-neutral-600)">DEĞİŞTİR → BARLAR OYNAR</div>
+              </div>
+              <sc-for list="{{ slots }}" as="sl" hint-placeholder-count="4">
+                <div style="margin-bottom:14px">
+                  <div style="font:700 9px/1.2 var(--font-body);letter-spacing:.14em;color:var(--color-neutral-700);margin-bottom:6px">{{ sl.name }}</div>
+                  <div style="display:flex;gap:2px;flex-wrap:wrap">
+                    <sc-for list="{{ sl.options }}" as="o" hint-placeholder-count="3">
+                      <button onClick="{{ o.pick }}" style="{{ o.style }}">{{ o.name }}</button>
+                    </sc-for>
+                  </div>
+                </div>
+              </sc-for>
+            </div>
+
+            <div style="padding:6px 16px 0;display:flex;gap:2px">
+              <button onClick="{{ toggleSave }}" style="{{ saveStyle }}">{{ saveLabel }}</button>
+              <button onClick="{{ goCommunity }}" style="width:62px;height:52px;flex:none;background:transparent;border:1px solid var(--color-neutral-400);color:var(--color-text);font:800 11px/1 var(--font-heading);letter-spacing:.04em;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:5px" style-hover="border-color:var(--color-accent);color:var(--color-accent-400)"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>{{ dComments }}</button>
+            </div>
+
+            <div style="padding:18px 16px 26px">
+              <div style="font:900 11px/1.2 var(--font-heading);letter-spacing:.16em;border-bottom:2px solid var(--color-divider);padding-bottom:6px">TOPLULUK NOTU</div>
+              <sc-for list="{{ detailNotes }}" as="n" hint-placeholder-count="2">
+                <div style="padding:11px 0;border-bottom:1px solid var(--color-neutral-300)">
+                  <div style="font:700 10px/1.3 var(--font-body);letter-spacing:.06em;color:var(--color-neutral-600)">@{{ n.author }} · {{ n.voteText }} oy</div>
+                  <div style="font:400 13px/1.5 var(--font-body);margin-top:3px">{{ n.text }}</div>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+          </sc-if>
+
+          <sc-if value="{{ isTier }}" hint-placeholder-val="{{ false }}">
+          <div data-screen-label="05 Tier list">
+            <div style="padding:14px 16px;border-bottom:2px solid var(--color-divider);display:flex;align-items:center;gap:10px">
+              <span style="width:8px;height:8px;background:var(--color-accent);flex:none;display:block"></span>
+              <span style="font:500 11px/1.4 var(--font-body);color:var(--color-neutral-700)">Sürükleyip bırak ya da dokunarak tier değiştir. Değişiklik senin listene kaydedilir.</span>
+            </div>
+            <sc-for list="{{ tierRows }}" as="t" hint-placeholder-count="4">
+              <div onDragOver="{{ t.over }}" onDrop="{{ t.drop }}" style="{{ t.rowStyle }}">
+                <div style="{{ t.badgeStyle }}">{{ t.t }}</div>
+                <div style="flex:1;display:flex;flex-wrap:wrap;gap:2px;align-content:flex-start;padding:8px;min-height:60px">
+                  <sc-for list="{{ t.items }}" as="e" hint-placeholder-count="2">
+                    <button draggable="true" onDragStart="{{ e.drag }}" onClick="{{ e.cycle }}" style="{{ e.chipStyle }}">{{ e.name }}</button>
+                  </sc-for>
+                  <sc-if value="{{ t.empty }}" hint-placeholder-val="{{ false }}">
+                    <span style="font:500 10px/1.3 var(--font-body);letter-spacing:.1em;color:var(--color-neutral-500);padding:8px">BOŞ — BURAYA BIRAK</span>
+                  </sc-if>
+                </div>
+              </div>
+            </sc-for>
+            <div style="padding:16px;font:500 10px/1.5 var(--font-body);color:var(--color-neutral-600)">Kaynak: son 7 gün, {{ gameName }} · 1.2M maç · elmas+ </div>
+          </div>
+          </sc-if>
+
+          <sc-if value="{{ isVault }}" hint-placeholder-val="{{ false }}">
+          <div data-screen-label="06 Kasa">
+            <div style="display:flex;border-bottom:2px solid var(--color-divider)">
+              <sc-for list="{{ seasons }}" as="s" hint-placeholder-count="2">
+                <button onClick="{{ s.pick }}" style="{{ s.style }}">{{ s.label }}</button>
+              </sc-for>
+            </div>
+            <sc-if value="{{ isArchive }}" hint-placeholder-val="{{ false }}">
+              <div style="background:var(--color-accent-100);border-bottom:1px solid var(--color-accent-300);padding:11px 16px;font:600 10px/1.4 var(--font-body);letter-spacing:.06em;color:var(--color-accent-700)">S11 ARŞİVİ · SALT OKUNUR · O SEZONUN META'SI</div>
+            </sc-if>
+            <div style="padding:16px">
+              <sc-if value="{{ hasSaved }}" hint-placeholder-val="{{ true }}">
+                <div style="font:600 9px/1.2 var(--font-body);letter-spacing:.12em;color:var(--color-neutral-600);margin-bottom:8px">{{ savedCount }} KAYITLI {{ unit }}</div>
+                <sc-for list="{{ savedList }}" as="e" hint-placeholder-count="2">
+                  <div style="border:1px solid var(--color-neutral-400);background:var(--color-surface);padding:13px 14px;margin-bottom:2px;display:flex;align-items:center;gap:12px">
+                    <span style="{{ e.tierStyle }}">{{ e.tier }}</span>
+                    <span style="flex:1;min-width:0">
+                      <span style="display:block;font:800 15px/1.2 var(--font-heading)">{{ e.name }}</span>
+                      <span style="display:block;font:500 10px/1.35 var(--font-body);color:var(--color-neutral-600)">{{ e.buildName }} · {{ e.slotSummary }}</span>
+                    </span>
+                    <button onClick="{{ e.open }}" style="height:44px;padding:0 12px;background:var(--color-accent);color:#11170a;border:0;font:800 9px/1 var(--font-heading);letter-spacing:.1em;cursor:pointer" style-hover="background:var(--color-accent-600)">AÇ</button>
+                  </div>
+                </sc-for>
+              </sc-if>
+              <sc-if value="{{ vaultEmpty }}" hint-placeholder-val="{{ false }}">
+                <div style="border:2px solid var(--color-divider);padding:26px 18px">
+                  <div style="font:900 30px/0.95 var(--font-heading);letter-spacing:-0.03em;margin-bottom:10px">KASA<br>BOŞ</div>
+                  <div style="font:400 13px/1.5 var(--font-body);color:var(--color-neutral-700);margin-bottom:18px">Beğendiğin build'i detay ekranından kasaya at, maç öncesi tek dokunuşla aç.</div>
+                  <button onClick="{{ goBrowse }}" style="height:48px;padding:0 16px;background:var(--color-accent);color:#11170a;border:0;font:900 11px/1 var(--font-heading);letter-spacing:.12em;cursor:pointer" style-hover="background:var(--color-accent-600)">ARŞİVE GİT →</button>
+                </div>
+              </sc-if>
+            </div>
+          </div>
+          </sc-if>
+
+          <sc-if value="{{ isPatch }}" hint-placeholder-val="{{ false }}">
+          <div data-screen-label="07 Patch log">
+            <div style="background:var(--color-accent);color:#11170a;padding:18px 16px">
+              <div style="font:600 9px/1.2 var(--font-body);letter-spacing:.16em;opacity:.85">{{ gameName }} · 12 AĞUSTOS</div>
+              <div style="font:900 36px/0.95 var(--font-heading);letter-spacing:-0.035em;margin-top:6px">PATCH<br>4.2</div>
+              <div style="font:500 12px/1.45 var(--font-body);margin-top:10px;opacity:.92">Meta'yı en çok etkileyen 5 değişiklik. Tam liste geliştirici notunda.</div>
+            </div>
+            <div style="padding:16px 16px 0">
+              <sc-for list="{{ patches }}" as="p" hint-placeholder-count="5">
+                <div style="display:flex;gap:12px;align-items:flex-start;padding:13px 0;border-bottom:1px solid var(--color-neutral-300)">
+                  <span style="{{ p.arrowStyle }}">{{ p.arrow }}</span>
+                  <span style="flex:1;min-width:0">
+                    <span style="display:block;font:800 14px/1.2 var(--font-heading)">{{ p.name }}</span>
+                    <span style="display:block;font:400 12px/1.45 var(--font-body);color:var(--color-neutral-700);margin-top:2px">{{ p.text }}</span>
+                  </span>
+                  <button onClick="{{ p.open }}" style="height:44px;width:44px;flex:none;background:transparent;border:1px solid var(--color-neutral-300);font:700 14px/1 var(--font-body);cursor:pointer" style-hover="border-color:var(--color-accent);color:var(--color-accent)">→</button>
+                </div>
+              </sc-for>
+            </div>
+            <div style="padding:18px 16px 26px">
+              <div style="font:900 11px/1.2 var(--font-heading);letter-spacing:.16em;border-bottom:2px solid var(--color-divider);padding-bottom:6px">SEZON ARŞİVİ</div>
+              <sc-for list="{{ archive }}" as="a" hint-placeholder-count="3">
+                <div style="display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--color-neutral-300)">
+                  <span style="font:800 12px/1 var(--font-heading);letter-spacing:.04em;width:52px;flex:none;color:var(--color-neutral-700)">{{ a.v }}</span>
+                  <span style="flex:1;font:500 11px/1.4 var(--font-body);color:var(--color-neutral-700)">{{ a.note }}</span>
+                  <span style="font:500 9px/1.2 var(--font-body);letter-spacing:.1em;color:var(--color-neutral-500)">{{ a.date }}</span>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+          </sc-if>
+
+          <sc-if value="{{ isProfile }}" hint-placeholder-val="{{ false }}">
+          <div data-screen-label="08 Profil">
+            <div style="background:#201e1d;color:#f3f2f2;padding:18px 16px">
+              <div style="display:flex;gap:14px;align-items:center">
+                <div style="width:56px;height:56px;flex:none;background:var(--color-accent);color:#11170a;font:900 20px/56px var(--font-heading);text-align:center">KY</div>
+                <div style="flex:1;min-width:0">
+                  <div style="font:900 22px/1.05 var(--font-heading);letter-spacing:-0.02em">kaskatı_47</div>
+                  <div style="font:500 10px/1.4 var(--font-body);letter-spacing:.1em;color:var(--color-neutral-500)">ELMAS II · 214 TAKİPÇİ · 38 TAKİP</div>
+                </div>
+              </div>
+              <div style="display:flex;gap:2px;margin-top:16px">
+                <div style="flex:1;border:1px solid #444141;padding:11px 12px">
+                  <div style="font:900 20px/1 var(--font-heading)">1.42</div>
+                  <div style="font:500 8px/1.3 var(--font-body);letter-spacing:.12em;color:var(--color-neutral-500)">K/D</div>
+                </div>
+                <div style="flex:1;border:1px solid #444141;padding:11px 12px">
+                  <div style="font:900 20px/1 var(--font-heading)">54.1%</div>
+                  <div style="font:500 8px/1.3 var(--font-body);letter-spacing:.12em;color:var(--color-neutral-500)">WIN</div>
+                </div>
+                <div style="flex:1;border:1px solid #444141;padding:11px 12px">
+                  <div style="font:900 20px/1 var(--font-heading)">386</div>
+                  <div style="font:500 8px/1.3 var(--font-body);letter-spacing:.12em;color:var(--color-neutral-500)">MAÇ</div>
+                </div>
+              </div>
+            </div>
+            <div style="padding:16px">
+              <div style="border:2px solid var(--color-accent);padding:14px;display:flex;gap:12px;align-items:center;margin-bottom:18px">
+                <span style="width:10px;height:10px;background:var(--color-accent);flex:none;display:block"></span>
+                <span style="flex:1;min-width:0">
+                  <span style="display:block;font:900 11px/1.2 var(--font-heading);letter-spacing:.1em">{{ code }} ID BAĞLI</span>
+                  <span style="display:block;font:500 11px/1.4 var(--font-body);color:var(--color-neutral-700);margin-top:3px">Son senkron 4 dk önce · statların build önerisine giriyor</span>
+                </span>
+                <button onClick="{{ resync }}" style="height:44px;padding:0 12px;background:var(--color-accent);color:#11170a;border:0;font:800 9px/1 var(--font-heading);letter-spacing:.1em;cursor:pointer" style-hover="background:var(--color-accent-600)">{{ syncLabel }}</button>
+              </div>
+              <div style="font:900 11px/1.2 var(--font-heading);letter-spacing:.16em;border-bottom:2px solid var(--color-divider);padding-bottom:6px">TAKİP ETTİKLERİN</div>
+              <sc-for list="{{ people }}" as="u" hint-placeholder-count="3">
+                <div style="display:flex;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid var(--color-neutral-300)">
+                  <span style="width:38px;height:38px;flex:none;background:var(--color-neutral-300);color:var(--color-text);font:900 12px/38px var(--font-heading);text-align:center">{{ u.initial }}</span>
+                  <span style="flex:1;min-width:0">
+                    <span style="display:block;font:800 13px/1.2 var(--font-heading)">@{{ u.name }}</span>
+                    <span style="display:block;font:500 10px/1.35 var(--font-body);color:var(--color-neutral-600)">{{ u.note }}</span>
+                  </span>
+                  <button onClick="{{ u.toggle }}" style="{{ u.style }}">{{ u.label }}</button>
+                </div>
+              </sc-for>
+              <div style="display:flex;justify-content:space-between;align-items:center;padding:16px 0 0">
+                <span style="font:500 11px/1.4 var(--font-body);color:var(--color-neutral-700)">Kasandaki build</span>
+                <button onClick="{{ goVault }}" style="background:transparent;border:0;font:900 12px/1 var(--font-heading);color:var(--color-accent);cursor:pointer;padding:6px">{{ savedCount }} KAYIT →</button>
+              </div>
+              <button onClick="{{ goSettings }}" style="width:100%;height:52px;margin:14px 0 26px;background:transparent;border:1px solid var(--color-neutral-400);color:var(--color-text);font:900 11px/1 var(--font-heading);letter-spacing:.12em;cursor:pointer;display:flex;align-items:center;justify-content:space-between;padding:0 14px" style-hover="border-color:var(--color-accent);color:var(--color-accent-400)">AYARLAR<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path><circle cx="12" cy="12" r="3"></circle></svg></button>
+            </div>
+          </div>
+          </sc-if>
+
+          <sc-if value="{{ isSettings }}" hint-placeholder-val="{{ false }}">
+          <div data-screen-label="11 Ayarlar">
+            <div style="padding:16px 16px 20px;border-bottom:2px solid var(--color-divider);display:flex;gap:14px;align-items:center">
+              <span style="width:48px;height:48px;flex:none;background:var(--color-accent);color:#11170a;font:900 17px/48px var(--font-heading);text-align:center">KY</span>
+              <span style="flex:1;min-width:0">
+                <span style="display:block;font:900 17px/1.1 var(--font-heading);letter-spacing:-0.01em">kaskatı_47</span>
+                <span style="display:block;font:500 10px/1.4 var(--font-body);letter-spacing:.08em;color:var(--color-neutral-600)">FREE PLAN · 3 OYUN SENKRON</span>
+              </span>
+              <button onClick="{{ goProfile }}" style="height:44px;padding:0 12px;background:transparent;border:1px solid var(--color-neutral-400);color:var(--color-text);font:800 9px/1 var(--font-heading);letter-spacing:.1em;cursor:pointer" style-hover="border-color:var(--color-accent);color:var(--color-accent-400)">PROFİL</button>
+            </div>
+
+            <sc-for list="{{ settingGroups }}" as="grp" hint-placeholder-count="4">
+              <div style="padding:16px 16px 0">
+                <div style="font:900 10px/1.2 var(--font-heading);letter-spacing:.18em;color:var(--color-neutral-600);border-bottom:1px solid var(--color-neutral-400);padding-bottom:6px">{{ grp.title }}</div>
+                <sc-for list="{{ grp.rows }}" as="row" hint-placeholder-count="3">
+                  <div style="display:flex;align-items:center;gap:12px;padding:13px 0;border-bottom:1px solid var(--color-neutral-300);min-height:56px">
+                    <span style="flex:1;min-width:0">
+                      <span style="display:block;font:700 13px/1.25 var(--font-heading)">{{ row.label }}</span>
+                      <span style="{{ row.hintStyle }}">{{ row.hint }}</span>
+                    </span>
+                    <sc-if value="{{ row.isToggle }}" hint-placeholder-val="{{ true }}">
+                      <button onClick="{{ row.toggle }}" style="{{ row.trackStyle }}"><span style="{{ row.knobStyle }}"></span></button>
+                    </sc-if>
+                    <sc-if value="{{ row.isValue }}" hint-placeholder-val="{{ false }}">
+                      <button onClick="{{ row.cycle }}" style="{{ row.valueStyle }}">{{ row.value }}</button>
+                    </sc-if>
+                  </div>
+                </sc-for>
+              </div>
+            </sc-for>
+
+            <div style="margin:20px 16px 0;border:2px solid var(--color-accent);padding:16px">
+              <div style="font:900 10px/1.2 var(--font-heading);letter-spacing:.18em;color:var(--color-accent-400)">EZ META PRO</div>
+              <div style="font:900 26px/0.98 var(--font-heading);letter-spacing:-0.03em;margin:10px 0 8px">Sınırsız oyun<br>reklamsız meta</div>
+              <div style="font:400 12px/1.5 var(--font-body);color:var(--color-neutral-700);margin-bottom:14px">Tüm oyunlarda senkron, canlı patch uyarısı, kasa geçmişi ve build dışa aktarımı.</div>
+              <button onClick="{{ goPro }}" style="width:100%;height:48px;background:var(--color-accent);color:#11170a;border:0;font:900 11px/1 var(--font-heading);letter-spacing:.12em;cursor:pointer;text-align:left;padding:0 14px;display:flex;align-items:center;justify-content:space-between" style-hover="background:var(--color-accent-600)">{{ proLabel }}<span>→</span></button>
+            </div>
+
+            <div style="padding:20px 16px 30px">
+              <sc-for list="{{ settingLinks }}" as="l" hint-placeholder-count="4">
+                <button onClick="{{ l.tap }}" style="{{ l.style }}">{{ l.label }}<span style="color:var(--color-neutral-600)">{{ l.right }}</span></button>
+              </sc-for>
+              <div style="font:500 9px/1.5 var(--font-body);letter-spacing:.12em;color:var(--color-neutral-500);margin-top:16px">EZ META v2.4.1 · PATCH 4.2 · {{ gameName }}</div>
+            </div>
+          </div>
+          </sc-if>
+
+          <sc-if value="{{ isCommunity }}" hint-placeholder-val="{{ false }}">
+          <div data-screen-label="09 Topluluk">
+            <div style="padding:14px 16px;border-bottom:2px solid var(--color-divider);display:flex;align-items:baseline;justify-content:space-between">
+              <span style="font:900 11px/1.2 var(--font-heading);letter-spacing:.16em">BU HAFTA EN ÇOK OYLANAN</span>
+              <span style="font:500 9px/1.2 var(--font-body);letter-spacing:.1em;color:var(--color-neutral-600)">{{ code }}</span>
+            </div>
+            <sc-for list="{{ feed }}" as="p" hint-placeholder-count="4">
+              <div style="padding:14px 16px;border-bottom:1px solid var(--color-neutral-300)">
+                <div style="display:flex;gap:12px;align-items:flex-start">
+                  <span style="width:38px;height:38px;flex:none;background:#2f2c29;color:#f1efed;font:900 13px/38px var(--font-heading);text-align:center">{{ p.initial }}</span>
+                  <span style="flex:1;min-width:0">
+                    <span style="display:block;font:800 15px/1.2 var(--font-heading)">{{ p.title }}</span>
+                    <span style="display:block;font:500 10px/1.4 var(--font-body);letter-spacing:.06em;color:var(--color-neutral-600);margin-top:2px">@{{ p.author }} · {{ p.ago }}</span>
+                  </span>
+                  <span style="{{ p.tierStyle }}">{{ p.tier }}</span>
+                </div>
+                <div style="font:400 13px/1.5 var(--font-body);margin:9px 0 10px">{{ p.text }}</div>
+                <div style="display:flex;gap:2px;align-items:center">
+                  <button onClick="{{ p.up }}" style="{{ p.upStyle }}">▲</button>
+                  <span style="min-width:52px;text-align:center;font:800 13px/1 var(--font-heading);font-variant-numeric:tabular-nums">{{ p.voteText }}</span>
+                  <button onClick="{{ p.down }}" style="{{ p.downStyle }}">▼</button>
+                  <button onClick="{{ p.open }}" style="margin-left:auto;height:44px;padding:0 12px;background:transparent;border:1px solid var(--color-neutral-400);font:800 9px/1 var(--font-heading);letter-spacing:.1em;cursor:pointer" style-hover="border-color:var(--color-accent);color:var(--color-accent-400)">{{ p.comments }} YORUM</button>
+                </div>
+              </div>
+            </sc-for>
+            <div style="padding:16px 16px 26px">
+              <button onClick="{{ goBrowse }}" style="width:100%;height:52px;background:var(--color-accent);color:#11170a;border:0;font:900 11px/1 var(--font-heading);letter-spacing:.12em;cursor:pointer;text-align:left;padding:0 14px;display:flex;align-items:center;justify-content:space-between" style-hover="background:var(--color-accent-600)">KENDİ BUILD'İNİ PAYLAŞ<span>+</span></button>
+            </div>
+          </div>
+          </sc-if>
+
+        </div>
+
+        <div style="flex:none;position:relative;background:#201e1d;display:flex;height:66px">
+          <div style="{{ indStyle }}"></div>
+          <button onClick="{{ goHome }}" style="{{ tabHome }}">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><rect x="2" y="3" width="16" height="3"></rect><rect x="2" y="8.5" width="11" height="3"></rect><rect x="2" y="14" width="6" height="3"></rect></svg>
+            <sc-if value="{{ tabLabels }}" hint-placeholder-val="{{ true }}"><span style="font:800 8px/1 var(--font-heading);letter-spacing:.1em">META</span></sc-if>
+          </button>
+          <button onClick="{{ goBrowse }}" style="{{ tabBrowse }}">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><rect x="2" y="2" width="7" height="7"></rect><rect x="11" y="2" width="7" height="7"></rect><rect x="2" y="11" width="7" height="7"></rect><rect x="11" y="11" width="7" height="7"></rect></svg>
+            <sc-if value="{{ tabLabels }}" hint-placeholder-val="{{ true }}"><span style="font:800 8px/1 var(--font-heading);letter-spacing:.1em">ARŞİV</span></sc-if>
+          </button>
+          <button onClick="{{ goTier }}" style="{{ tabTier }}">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M10 2l8 14H2z"></path></svg>
+            <sc-if value="{{ tabLabels }}" hint-placeholder-val="{{ true }}"><span style="font:800 8px/1 var(--font-heading);letter-spacing:.1em">TIER</span></sc-if>
+          </button>
+          <button onClick="{{ goVault }}" style="{{ tabVault }}">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M2 2h16v16H2V2zm3 3v10h10V5H5z"></path><rect x="8" y="8" width="4" height="4"></rect></svg>
+            <sc-if value="{{ tabLabels }}" hint-placeholder-val="{{ true }}"><span style="font:800 8px/1 var(--font-heading);letter-spacing:.1em">KASA</span></sc-if>
+          </button>
+          <button onClick="{{ goProfile }}" onDoubleClick="{{ goSettings }}" style="{{ tabProfile }}">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><circle cx="10" cy="6" r="4"></circle><path d="M2 18c0-4 3.6-6 8-6s8 2 8 6H2z"></path></svg>
+            <sc-if value="{{ tabLabels }}" hint-placeholder-val="{{ true }}"><span style="font:800 8px/1 var(--font-heading);letter-spacing:.1em">PROFİL</span></sc-if>
+          </button>
+        </div>
+      </div>
+      </sc-if>
+    </div>
+  </x-import>
+
+  <sc-if value="{{ showRail }}" hint-placeholder-val="{{ true }}">
+  <div style="width:250px;flex:none;position:sticky;top:36px">
+    <div style="font:900 11px/1.2 var(--font-heading);letter-spacing:.16em;border-bottom:2px solid var(--color-divider);padding-bottom:6px;margin-bottom:12px">TASARIM NOTU</div>
+    <div style="font:400 12px/1.6 var(--font-body);color:var(--color-neutral-800)">
+      <p style="margin:0 0 10px"><strong>Varsayım:</strong> ana iş maç öncesi hız. Bu yüzden META feed'in ilk ekranında “10 saniyede hazır” bloğu var; kasa tek dokunuşla erişilebilir.</p>
+      <p style="margin:0 0 10px"><strong>Sistem:</strong> Modernist — sıfır köşe, 2px kural çizgileri, tek yeşil. Oyuncu enerjisi renk yerine <em>ölçek</em> ve siyah/yeşil poster bantlarıyla geliyor.</p>
+      <p style="margin:0 0 10px"><strong>Veri hiyerarşisi:</strong> her satır tier → isim → pick/win → Δ. Δ tek yeşil vurgu.</p>
+      <p style="margin:0 0 10px"><strong>Canlı:</strong> arama, rol filtresi, editörde stat barları, kasaya ekleme, tier sürükleme (veya dokunma), oy verme, sezon arşivi.</p>
+      <p style="margin:0"><strong>Placeholder:</strong> silah/ajan görselleri tarama desenli bloklar — gerçek art gelince yerine geçer.</p>
+    </div>
+    <div style="height:2px;background:var(--color-divider);margin:14px 0"></div>
+    <div style="font:600 10px/1.5 var(--font-body);letter-spacing:.06em;color:var(--color-neutral-600)">Sıradaki: paylaşım kartı (dışa aktarım), karşılaştırma ekranı, çevrimdışı mod, pro katmanı.</div>
+  </div>
+  </sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1240,&quot;height&quot;:1020},&quot;showDeltas&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Davranış&quot;},&quot;tierColorCoded&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Davranış&quot;},&quot;tabLabels&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Davranış&quot;},&quot;showRail&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Sunum&quot;}}">
+class Component extends DCLogic {
+  games = [
+    { c:'NLP', name:'NULLPOINT', genre:'TAKTİKSEL FPS', unit:'AJAN LOADOUT', search:'Ajan ara — VYRA, KOSHI…',
+      stats:['HASAR','İSABET','MOBİLİTE','KONTROL','MENZİL'],
+      entries:[
+        {n:'VYRA', r:'DUELIST', t:'S', p:'24.1', w:'53.8', d:2.4, base:[78,62,88,54,60]},
+        {n:'KOSHI', r:'SENTINEL', t:'S', p:'19.6', w:'52.9', d:1.1, base:[64,74,52,80,72]},
+        {n:'NADIR', r:'INITIATOR', t:'A', p:'16.2', w:'51.2', d:-0.6, base:[70,66,72,62,58]},
+        {n:'ORLA', r:'CONTROLLER', t:'A', p:'12.8', w:'50.4', d:0.3, base:[58,60,64,76,66]},
+        {n:'TESS', r:'DUELIST', t:'B', p:'8.4', w:'48.1', d:-1.9, base:[82,54,90,42,48]},
+        {n:'BRAM', r:'SENTINEL', t:'C', p:'4.2', w:'46.7', d:-0.8, base:[56,70,44,72,80]}
+      ],
+      slots:[
+        {n:'OPTİK', o:[{n:'RS-1 HOLO', d:[0,8,-4,4,2]},{n:'2.5× ACOG', d:[0,12,-10,2,14]},{n:'IRON SIGHT', d:[0,0,0,0,0]}]},
+        {n:'NAMLU', o:[{n:'SUSTURUCU', d:[-2,4,-4,6,8]},{n:'AĞIR NAMLU', d:[6,-2,-8,-4,12]},{n:'KOMPANSATÖR', d:[0,2,0,10,0]}]},
+        {n:'KABZA', o:[{n:'TAKTİK KABZA', d:[0,6,2,8,0]},{n:'AÇILI KABZA', d:[0,10,-2,4,0]},{n:'YOK', d:[0,0,0,0,0]}]},
+        {n:'ŞARJÖR', o:[{n:'GENİŞ ŞARJÖR', d:[0,0,-8,-4,0]},{n:'HIZLI ŞARJÖR', d:[0,0,6,0,0]},{n:'STANDART', d:[0,0,0,0,0]}]}
+      ] },
+    { c:'RBK', name:'RUNEBREAK', genre:'MOBA', unit:'ITEM BUILD', search:'Şampiyon ara — THORNE, MIRA…',
+      stats:['DPS','TANKLIK','MOBİLİTE','WAVE','SCALING'],
+      entries:[
+        {n:'THORNE', r:'JUNGLE', t:'S', p:'18.9', w:'53.1', d:3.2, base:[84,52,70,48,66]},
+        {n:'MIRA', r:'MID', t:'S', p:'16.4', w:'52.2', d:0.9, base:[76,38,58,82,88]},
+        {n:'KADO', r:'TOP', t:'A', p:'11.2', w:'50.8', d:-0.4, base:[62,80,44,70,60]},
+        {n:'SELVA', r:'SUPPORT', t:'A', p:'14.7', w:'51.6', d:1.4, base:[40,64,52,36,58]},
+        {n:'RIX', r:'BOT', t:'B', p:'9.3', w:'48.9', d:-2.1, base:[88,30,48,74,92]}
+      ],
+      slots:[
+        {n:'MYTHIC', o:[{n:'KANLI BALTA', d:[14,10,0,4,-6]},{n:'GÖLGE ASASI', d:[18,-6,6,10,8]},{n:'AEGIS', d:[-4,20,-4,0,4]}]},
+        {n:'RÜN', o:[{n:'ZAFER', d:[6,8,0,0,4]},{n:'ELEKTRİK', d:[12,-4,4,6,0]},{n:'KAVRAMA', d:[2,12,0,-2,10]}]},
+        {n:'ÇİZME', o:[{n:'MOBİLİTE', d:[0,0,16,0,0]},{n:'TANK', d:[0,10,6,0,0]},{n:'BÜYÜ', d:[8,0,6,4,0]}]}
+      ] },
+    { c:'CDF', name:'COLDFRONT', genre:'EXTRACTION', unit:'SİLAH LOADOUT', search:'Silah ara — KS-9, M70…',
+      stats:['HASAR','PENETRASYON','ATIŞ HIZI','GERİ TEPME','GİZLİLİK'],
+      entries:[
+        {n:'KS-9 VULTURE', r:'SMG', t:'S', p:'21.3', w:'57.4', d:4.1, base:[58,44,90,62,78]},
+        {n:'M70 GRIZZLY', r:'AR', t:'S', p:'18.1', w:'55.0', d:1.7, base:[74,72,66,58,52]},
+        {n:'LR-300', r:'DMR', t:'A', p:'12.4', w:'52.3', d:-0.9, base:[86,88,34,44,60]},
+        {n:'SPK-12', r:'LMG', t:'B', p:'6.8', w:'47.2', d:-2.6, base:[70,66,78,30,28]}
+      ],
+      slots:[
+        {n:'ZIRH', o:[{n:'AĞIR PLAKA', d:[0,0,-6,8,-18]},{n:'HAFİF YELEK', d:[0,0,2,0,6]},{n:'YOK', d:[0,0,6,-4,14]}]},
+        {n:'MÜHİMMAT', o:[{n:'AP', d:[-4,22,0,-6,0]},{n:'HOLLOW POINT', d:[12,-16,0,-4,0]},{n:'STANDART', d:[0,0,0,0,0]}]},
+        {n:'ÇANTA', o:[{n:'BÜYÜK', d:[0,0,0,0,-12]},{n:'ORTA', d:[0,0,0,0,-4]},{n:'KÜÇÜK', d:[0,0,4,0,8]}]}
+      ] },
+    { c:'ORB', name:'ORBITFALL', genre:'LOOTER SHOOTER', unit:'GOD ROLL', search:'Silah ara — HALFLIGHT…',
+      stats:['HASAR','ATIŞ HIZI','ŞARJÖR','KARARLILIK','YÖNETİM'],
+      entries:[
+        {n:'HALFLIGHT', r:'PULSE', t:'S', p:'20.4', w:'54.2', d:2.8, base:[72,68,60,74,58]},
+        {n:'DEEPCUT', r:'AUTO', t:'A', p:'15.1', w:'51.9', d:0.6, base:[64,84,72,56,50]},
+        {n:'LONGWAKE', r:'SNIPER', t:'A', p:'11.8', w:'50.1', d:-1.2, base:[94,26,30,80,44]},
+        {n:'SUNDROP', r:'HAND CANNON', t:'B', p:'7.9', w:'47.8', d:-2.0, base:[88,40,36,62,52]}
+      ],
+      slots:[
+        {n:'PERK 1', o:[{n:'OUTLAW', d:[0,0,0,0,20]},{n:'RAPID HIT', d:[0,6,0,14,4]},{n:'ZEN MOMENT', d:[0,0,0,18,0]}]},
+        {n:'PERK 2', o:[{n:'KILL CLIP', d:[22,0,0,-4,0]},{n:'FRENZY', d:[12,10,0,6,0]},{n:'VORPAL', d:[18,0,0,0,-4]}]},
+        {n:'MASTERWORK', o:[{n:'KARARLILIK', d:[0,0,0,12,0]},{n:'ŞARJÖR', d:[0,0,14,0,0]},{n:'YÖNETİM', d:[0,0,0,0,12]}]}
+      ] },
+    { c:'AWK', name:'AETHERWAKE', genre:'MMO / RPG', unit:'SPEC + ROTASYON', search:'Spec ara — STORMBIND…',
+      stats:['SINGLE DPS','AOE','BURST','SÜRDÜRME','MOBİLİTE'],
+      entries:[
+        {n:'STORMBIND', r:'CASTER', t:'S', p:'17.6', w:'56.1', d:2.2, base:[82,74,88,50,44]},
+        {n:'GRAVEROOT', r:'TANK', t:'A', p:'13.2', w:'53.4', d:0.8, base:[48,60,40,90,52]},
+        {n:'TIDECALLER', r:'HEALER', t:'A', p:'12.0', w:'52.7', d:-0.3, base:[36,58,44,86,60]},
+        {n:'EMBERSONG', r:'DPS', t:'B', p:'8.6', w:'49.2', d:-1.6, base:[76,88,62,42,56]}
+      ],
+      slots:[
+        {n:'TALENT', o:[{n:'YIKIM', d:[16,-6,14,-6,0]},{n:'AKIŞ', d:[6,12,0,10,4]},{n:'ODAK', d:[12,0,8,4,-4]}]},
+        {n:'SET', o:[{n:'4-SET', d:[14,6,10,0,0]},{n:'2+2', d:[6,10,4,6,0]},{n:'TAM TIER', d:[10,10,10,4,0]}]},
+        {n:'TRINKET', o:[{n:'ANLIK', d:[4,0,20,0,0]},{n:'SÜREKLİ', d:[12,4,0,8,0]},{n:'SAVUNMA', d:[-4,0,0,18,6]}]}
+      ] },
+    { c:'IFT', name:'IRONFIST', genre:'DÖVÜŞ OYUNU', unit:'COMBO', search:'Karakter ara — RAIJU…',
+      stats:['HASAR','HIZ','MENZİL','GÜVENLİK','KOMPLEKS'],
+      entries:[
+        {n:'RAIJU', r:'RUSHDOWN', t:'S', p:'19.8', w:'54.9', d:3.4, base:[72,92,44,54,78]},
+        {n:'KOMOR', r:'GRAPPLER', t:'A', p:'14.3', w:'52.1', d:1.0, base:[90,48,36,62,70]},
+        {n:'SEVIL', r:'ZONER', t:'A', p:'12.9', w:'51.4', d:-0.5, base:[58,60,92,74,52]},
+        {n:'BRUTE', r:'ALL-ROUND', t:'B', p:'9.1', w:'48.6', d:-1.4, base:[80,54,58,50,40]}
+      ],
+      slots:[
+        {n:'STARTER', o:[{n:'CR.MK', d:[0,8,6,10,-6]},{n:'JAB', d:[-4,14,-4,14,-12]},{n:'DASH-IN', d:[8,4,10,-10,10]}]},
+        {n:'LINK', o:[{n:'TARGET COMBO', d:[10,0,0,-4,10]},{n:'MICRO-DASH', d:[14,4,4,-8,22]},{n:'DELAY', d:[6,-4,0,8,6]}]},
+        {n:'ENDER', o:[{n:'SÜPER', d:[22,0,0,-6,8]},{n:'SWEEP', d:[8,0,6,6,-4]},{n:'GRAB', d:[16,0,-6,-4,4]}]}
+      ] }
+  ];
+
+  authors = [
+    {a:'kaskatı_47', i:'KY', ago:'3 s önce', v:1284, cm:96, tx:'Şarjörü hızlıya çevirdim, close-range trade’lerde fark ediyor. Uzun menzilde ACOG şart değil.'},
+    {a:'vodkajelly', i:'VJ', ago:'7 s önce', v:842, cm:51, tx:'Bu patch sonrası kontrol statı kritik. Kompansatör olmadan spray dağılıyor, denedim onaylıyorum.'},
+    {a:'fragmaster.tr', i:'FT', ago:'11 s önce', v:617, cm:38, tx:'Solo queue’da S tier ama koordineli takımda B. Ranked’ta dikkat.'},
+    {a:'anaakım', i:'AA', ago:'1 g önce', v:409, cm:22, tx:'Ağır namlu + susturucu kombosu troll değil, mobiliteyi feda ediyorsun ama hasar tavanı ciddi.'}
+  ];
+
+  state = { screen:'splash', gi:0, back:'home', q:'', role:'TÜMÜ', saved:{}, sel:{}, tiers:{},
+            banner:true, loading:false, detail:null, season:'S12', votes:{}, follow:{0:true,1:true}, drag:null, synced:false,
+            set:{ metaAlert:true, patchAlert:true, followAlert:false, autoSync:true, offline:false, haptics:true, spoiler:false },
+            rank:'ELMAS+', region:'EU', pro:false };
+
+  go(s, push) {
+    const root = ['home','browse','tier','vault','profile'];
+    this.setState(st => ({ screen:s, back: root.indexOf(st.screen) >= 0 ? st.screen : st.back }));
+  }
+
+  pickGame(i) {
+    this.setState({ gi:i, screen:'home', loading:true, q:'', role:'TÜMÜ', detail:null, banner:true });
+    clearTimeout(this._t);
+    this._t = setTimeout(() => this.setState({ loading:false }), 1000);
+  }
+
+  componentDidMount() {
+    this._b = setTimeout(() => { if (this.state.screen === 'splash') this.setState({ screen:'onboarding' }); }, 1600);
+  }
+  componentWillUnmount() { clearTimeout(this._t); clearTimeout(this._s); clearTimeout(this._b); }
+
+  renderVals() {
+    const st = this.state, P = this.props;
+    const showDeltas = P.showDeltas !== false;
+    const tierColorCoded = P.tierColorCoded === true;
+    const g = this.games[st.gi];
+    const k = n => g.c + ':' + n;
+    const tierOf = e => st.tiers[k(e.n)] || e.t;
+    const TC = { S:'var(--color-accent)', A:'#3a3633', B:'#2a2725', C:'#201e1d' };
+    const CC = { S:'#b9fe36', A:'#9fe22b', B:'#7fbb22', C:'#5d8c1a' };
+    const badge = t => ({ width:'34px', height:'34px', flex:'none', display:'block', textAlign:'center',
+      lineHeight:'34px', font:'900 15px/34px var(--font-heading)',
+      background: (tierColorCoded ? CC : TC)[t], color: (tierColorCoded || t === 'S') ? '#11170a' : (t === 'A' ? '#fff' : 'var(--color-neutral-700)') });
+    const dStyle = d => ({ display:'block', font:'900 15px/1 var(--font-heading)', fontVariantNumeric:'tabular-nums',
+      color: d > 0 ? 'var(--color-accent)' : 'var(--color-neutral-600)' });
+    const buildName = e => e.r.slice(0,1) + '-META ' + (g.slots[0].o[0].n.split(' ')[0]);
+
+    const view = e => ({
+      name:e.n, role:e.r, tier:tierOf(e), pick:e.p, win:e.w,
+      dText: showDeltas ? (e.d > 0 ? '+' : '') + e.d.toFixed(1) : '',
+      dStyle: dStyle(e.d),
+      dStyleSm: Object.assign(dStyle(e.d), { fontSize:'10px', letterSpacing:'.06em' }),
+      tierStyle: badge(tierOf(e)),
+      buildName: buildName(e),
+      slotSummary: g.slots.map((s,i) => s.o[st.sel[k(e.n)+':'+i] || 0].n).slice(0,2).join(' + '),
+      savedMark: { width:'14px', flex:'none', textAlign:'center', fontSize:'13px',
+        color: st.saved[k(e.n)] ? 'var(--color-accent)' : 'transparent' },
+      open: () => { this.setState({ detail:e.n, screen:'detail', back: st.screen === 'detail' ? st.back : st.screen }); }
+    });
+
+    const q = st.q.trim().toLowerCase();
+    const entries = g.entries.filter(e =>
+      (st.role === 'TÜMÜ' || e.r === st.role) && (!q || e.n.toLowerCase().indexOf(q) >= 0)).map(view);
+
+    const det = g.entries.find(e => e.n === (st.detail || g.entries[0].n)) || g.entries[0];
+    const sel = i => st.sel[k(det.n) + ':' + i] || 0;
+    const statRows = g.stats.map((label, i) => {
+      let v = det.base[i];
+      g.slots.forEach((s, si) => { v += s.o[sel(si)].d[i]; });
+      v = Math.max(4, Math.min(100, Math.round(v)));
+      return { label, val:v, barStyle:{ display:'block', width:v + '%', height:'100%',
+        background: v >= 78 ? 'var(--color-accent)' : 'var(--color-neutral-500)',
+        transition:'width .38s cubic-bezier(.2,.7,.2,1)' } };
+    });
+    const slots = g.slots.map((s, i) => ({ name:s.n, options: s.o.map((o, j) => ({
+      name:o.n, pick: () => this.setState(p => ({ sel: Object.assign({}, p.sel, { [k(det.n)+':'+i]: j }) })),
+      style: { minHeight:'44px', padding:'0 11px', cursor:'pointer', border:'1px solid',
+        font:'800 11px/1 var(--font-heading)', letterSpacing:'.04em', borderRadius:'0',
+        background: sel(i) === j ? 'var(--color-accent)' : 'transparent',
+        color: sel(i) === j ? '#11170a' : 'var(--color-neutral-700)',
+        borderColor: sel(i) === j ? 'var(--color-accent)' : 'var(--color-neutral-400)' } })) }));
+
+    const isSaved = !!st.saved[k(det.n)];
+    const savedKeys = Object.keys(st.saved).filter(key => st.saved[key] && key.indexOf(g.c + ':') === 0);
+    const savedList = savedKeys.map(key => g.entries.find(e => e.n === key.split(':')[1])).filter(Boolean).map(view);
+    const archive = st.season === 'S11';
+
+    const roles = ['TÜMÜ'].concat(g.entries.map(e => e.r).filter((r, i, a) => a.indexOf(r) === i));
+    const tab = active => ({ flex:'1', display:'flex', flexDirection:'column', alignItems:'center',
+      justifyContent:'center', gap:'5px', background:'transparent', border:'0', cursor:'pointer',
+      color: active ? '#f3f2f2' : 'var(--color-neutral-600)' });
+    const tabs = ['home','browse','tier','vault','profile'];
+    const cur = tabs.indexOf(st.screen) >= 0 ? tabs.indexOf(st.screen) : tabs.indexOf(st.back);
+    const titles = { home:'META FEED', browse:'ARŞİV', tier:'TIER LIST', vault:'KASA', profile:'PROFİL',
+      detail:'BUILD DETAY', patch:'PATCH LOG', community:'TOPLULUK', settings:'AYARLAR' };
+
+    const feed = this.authors.map((a, i) => {
+      const e = g.entries[i % g.entries.length];
+      const v = st.votes[g.c + i] || 0;
+      return { author:a.a, initial:a.i, ago:a.ago, comments:a.cm, text:a.tx,
+        title: e.n + ' · ' + buildName(e), tier: tierOf(e), tierStyle: badge(tierOf(e)),
+        voteText: (a.v + v).toLocaleString('tr-TR'),
+        up: () => this.setState(p => ({ votes: Object.assign({}, p.votes, { [g.c+i]: v === 1 ? 0 : 1 }) })),
+        down: () => this.setState(p => ({ votes: Object.assign({}, p.votes, { [g.c+i]: v === -1 ? 0 : -1 }) })),
+        upStyle: { width:'44px', height:'44px', flex:'none', cursor:'pointer', border:'1px solid',
+          font:'700 12px/1 var(--font-body)', borderColor: v === 1 ? 'var(--color-accent)' : 'var(--color-neutral-400)',
+          background: v === 1 ? 'var(--color-accent)' : 'transparent', color: v === 1 ? '#11170a' : 'var(--color-text)' },
+        downStyle: { width:'44px', height:'44px', flex:'none', cursor:'pointer', border:'1px solid',
+          font:'700 12px/1 var(--font-body)', borderColor: v === -1 ? 'var(--color-neutral-600)' : 'var(--color-neutral-400)',
+          background: v === -1 ? 'var(--color-neutral-400)' : 'transparent', color: 'var(--color-text)' },
+        open: () => this.setState({ detail:e.n, screen:'detail', back:'home' }) };
+    });
+
+    const patchTexts = ['Temel hasar 32 → 34, ilk atış yayılması %12 azaldı',
+      'Yetenek bekleme süresi 18s → 21s', 'Ekonomi maliyeti 800 → 900',
+      'Hitbox küçültüldü, mobilite eğrisi yumuşatıldı', 'Yeniden şarj 2.1s → 2.4s'];
+
+    return {
+      showRail: P.showRail !== false, tabLabels: P.tabLabels !== false,
+      isSplash: st.screen === 'splash',
+      isOnboarding: st.screen === 'onboarding',
+      inApp: st.screen !== 'onboarding' && st.screen !== 'splash',
+      isPushed: ['detail','patch','community','settings'].indexOf(st.screen) >= 0,
+      isRoot: ['detail','patch','community','settings'].indexOf(st.screen) < 0,
+      loading: st.loading,
+      isHome: st.screen === 'home' && !st.loading, isBrowse: st.screen === 'browse',
+      isDetail: st.screen === 'detail', isTier: st.screen === 'tier', isVault: st.screen === 'vault',
+      isPatch: st.screen === 'patch', isProfile: st.screen === 'profile', isCommunity: st.screen === 'community',
+      isSettings: st.screen === 'settings',
+      settingGroups: (() => {
+        const hintStyle = { display:'block', font:'400 10px/1.4 var(--font-body)', color:'var(--color-neutral-600)', marginTop:'2px' };
+        const tgl = (key, label, hint) => {
+          const on = !!st.set[key];
+          return { label, hint, hintStyle, isToggle:true, isValue:false,
+            toggle: () => this.setState(p => ({ set: Object.assign({}, p.set, { [key]: !p.set[key] }) })),
+            trackStyle: { width:'52px', height:'30px', flex:'none', padding:'2px', cursor:'pointer', borderRadius:'0',
+              display:'flex', alignItems:'center', justifyContent: on ? 'flex-end' : 'flex-start',
+              border:'1px solid ' + (on ? 'var(--color-accent)' : 'var(--color-neutral-500)'),
+              background: on ? 'var(--color-accent)' : 'transparent', transition:'background .16s' },
+            knobStyle: { display:'block', width:'22px', height:'24px',
+              background: on ? '#11170a' : 'var(--color-neutral-600)', transition:'background .16s' } };
+        };
+        const val = (key, label, hint, opts) => ({ label, hint, hintStyle, isToggle:false, isValue:true,
+          value: st[key],
+          cycle: () => this.setState({ [key]: opts[(opts.indexOf(st[key]) + 1) % opts.length] }),
+          valueStyle: { minHeight:'44px', padding:'0 12px', flex:'none', cursor:'pointer', borderRadius:'0',
+            border:'1px solid var(--color-accent)', background:'transparent', color:'var(--color-accent-400)',
+            font:'800 11px/1 var(--font-heading)', letterSpacing:'.08em' } });
+        return [
+          { title:'BİLDİRİM', rows:[
+            tgl('metaAlert','Meta değişimi','Takip ettiğin birim tier atlayınca haber ver'),
+            tgl('patchAlert','Patch yayını','Yeni yama çıktığında anında bildirim'),
+            tgl('followAlert','Takip ettiklerin','Yeni build paylaştıklarında bildir') ] },
+          { title:'VERİ', rows:[
+            val('rank','İstatistik kaynağı','Hangi rank aralığından meta hesaplansın',['ELMAS+','TÜMÜ','RADIANT','PRO MAÇ']),
+            val('region','Bölge','Pick/win oranları bu bölgeden',['EU','TR','NA','GLOBAL']),
+            tgl('autoSync','Otomatik senkron','Uygulama açılınca ID statlarını çek'),
+            tgl('offline','Çevrimdışı mod','Kasadaki build’leri indir, veri kullanma') ] },
+          { title:'GÖRÜNÜM', rows:[
+            tgl('spoiler','Sezon spoiler’ı','Yeni sezon içeriğini erken göster'),
+            tgl('haptics','Titreşim','Kaydet ve tier değişiminde dokunsal geri bildirim') ] }
+        ];
+      })(),
+      proLabel: st.pro ? '✓ PRO AKTİF' : 'PRO’YA GEÇ · ₺79/AY',
+      goPro: () => this.setState(p => ({ pro: !p.pro })),
+      settingLinks: [['Bağlı hesaplar','3'],['Gizlilik','→'],['Yardım ve destek','→'],['Çıkış yap','']].map((l, i) => ({
+        label:l[0], right:l[1], tap: () => {},
+        style: { width:'100%', minHeight:'52px', padding:'0 14px', cursor:'pointer', borderRadius:'0',
+          border:'1px solid var(--color-neutral-400)', borderTop: i === 0 ? '1px solid var(--color-neutral-400)' : '0',
+          background:'transparent', display:'flex', alignItems:'center', justifyContent:'space-between',
+          font:'700 12px/1 var(--font-heading)', letterSpacing:'.04em',
+          color: i === 3 ? 'var(--color-neutral-600)' : 'var(--color-text)' } })),
+      goSettings: () => this.go('settings'),
+      code:g.c, gameName:g.name, unit:g.unit, searchHint:g.search, screenTitle: titles[st.screen] || '',
+      banner: st.banner, hideBanner: () => this.setState({ banner:false }),
+      gameCards: this.games.map((x, i) => ({ code:x.c, name:x.name, genre:x.genre, pick: () => this.pickGame(i),
+        genreStyle: { font:'600 9px/1.3 var(--font-body)', letterSpacing:'.1em',
+          color: i === st.gi ? '#2c3a12' : 'var(--color-neutral-600)' },
+        style: { display:'flex', flexDirection:'column', alignItems:'flex-start', gap:'4px', minHeight:'104px',
+          padding:'12px', cursor:'pointer', textAlign:'left', borderRadius:'0',
+          background: i === st.gi ? 'var(--color-accent)' : '#1e1c1b',
+          color: i === st.gi ? '#11170a' : '#f3f2f2',
+          border: '1px solid ' + (i === st.gi ? 'var(--color-accent)' : '#37332f') } })),
+      risers: g.entries.slice().sort((a, b) => b.d - a.d).slice(0, 3).map(view),
+      sTier: g.entries.filter(e => tierOf(e) === 'S').map(view),
+      feedPreview: feed.slice(0, 2),
+      feed,
+      topName: g.entries[0].n, topBuild: buildName(g.entries[0]), topPick: g.entries[0].p,
+      topWin: g.entries[0].w, topDelta: (g.entries[0].d > 0 ? '+' : '') + g.entries[0].d.toFixed(1),
+      openTop: () => this.setState({ detail:g.entries[0].n, screen:'detail', back:'home' }),
+      q: st.q, onQuery: e => this.setState({ q:e.target.value }),
+      roleChips: roles.map(r => ({ label:r, pick: () => this.setState({ role:r }),
+        style: { minHeight:'40px', padding:'0 12px', cursor:'pointer', borderRadius:'0', border:'1px solid',
+          font:'800 10px/1 var(--font-heading)', letterSpacing:'.08em',
+          background: st.role === r ? 'var(--color-accent)' : 'transparent',
+          color: st.role === r ? '#11170a' : 'var(--color-neutral-700)',
+          borderColor: st.role === r ? 'var(--color-accent)' : 'var(--color-neutral-400)' } })),
+      entries, resultCount: entries.length, noResults: entries.length === 0,
+      dName:det.n, dRole:det.r, dPick:det.p, dWin:det.w,
+      dDelta: (det.d > 0 ? '+' : '') + det.d.toFixed(1),
+      dDeltaStyle: { font:'900 22px/1 var(--font-heading)', fontVariantNumeric:'tabular-nums',
+        color: det.d > 0 ? 'var(--color-accent)' : 'var(--color-neutral-700)' },
+      statRows, slots,
+      saveLabel: isSaved ? '✓ KASADA' : 'KASAYA EKLE',
+      saveStyle: { flex:'1', height:'52px', cursor:'pointer', border:'1px solid', borderRadius:'0',
+        font:'900 12px/1 var(--font-heading)', letterSpacing:'.12em', textAlign:'left', padding:'0 14px',
+        display:'flex', alignItems:'center',
+        background: isSaved ? 'transparent' : 'var(--color-accent)', color: isSaved ? 'var(--color-accent-400)' : '#11170a',
+        borderColor: 'var(--color-accent)' },
+      toggleSave: () => this.setState(p => ({ saved: Object.assign({}, p.saved, { [k(det.n)]: !p.saved[k(det.n)] }) })),
+      dComments: this.authors[0].cm,
+      detailNotes: feed.slice(0, 2).map(f => ({ author:f.author, voteText:f.voteText, text:f.text })),
+      tierRows: ['S','A','B','C'].map((t, i) => {
+        const items = g.entries.filter(e => tierOf(e) === t);
+        return { t, empty: items.length === 0,
+          rowStyle: { display:'flex', alignItems:'stretch', borderBottom:'2px solid var(--color-divider)',
+            background: st.drag ? 'var(--color-accent-100)' : 'transparent', transition:'background .15s' },
+          badgeStyle: { width:'56px', flex:'none', display:'flex', alignItems:'center', justifyContent:'center',
+            font:'900 24px/1 var(--font-heading)', background:(tierColorCoded ? CC : TC)[t], color: (tierColorCoded || t === 'S') ? '#11170a' : '#fff' },
+          over: e => e.preventDefault(),
+          drop: e => { e.preventDefault(); if (st.drag) this.setState(p => ({ tiers: Object.assign({}, p.tiers, { [g.c+':'+st.drag]: t }), drag:null })); },
+          items: items.map(e => ({ name:e.n,
+            drag: ev => { this.setState({ drag:e.n }); if (ev.dataTransfer) ev.dataTransfer.setData('text/plain', e.n); },
+            cycle: () => { const order = ['S','A','B','C']; const nx = order[(order.indexOf(tierOf(e)) + 1) % 4];
+              this.setState(p => ({ tiers: Object.assign({}, p.tiers, { [g.c+':'+e.n]: nx }) })); },
+            chipStyle: { minHeight:'44px', padding:'0 12px', cursor:'grab', borderRadius:'0',
+              border:'1px solid var(--color-neutral-500)', background:'var(--color-surface)', color:'var(--color-text)',
+              font:'800 12px/1 var(--font-heading)', letterSpacing:'.02em' } })) };
+      }),
+      seasons: [{ v:'S12', l:'S12 · AKTİF' }, { v:'S11', l:'S11 ARŞİV' }].map(s => ({ label:s.l,
+        pick: () => this.setState({ season:s.v }),
+        style: { flex:'1', minHeight:'48px', cursor:'pointer', border:'0', borderRadius:'0',
+          borderBottom: st.season === s.v ? '3px solid var(--color-accent)' : '3px solid transparent',
+          font:'900 10px/1 var(--font-heading)', letterSpacing:'.12em',
+          background:'transparent', color: st.season === s.v ? 'var(--color-text)' : 'var(--color-neutral-600)' } })),
+      isArchive: archive,
+      hasSaved: !archive && savedList.length > 0,
+      vaultEmpty: archive || savedList.length === 0,
+      savedList, savedCount: savedKeys.length,
+      patches: g.entries.slice(0, 5).map((e, i) => ({ name:e.n, text:patchTexts[i],
+        arrow: e.d > 0 ? '↑' : '↓',
+        arrowStyle: { width:'30px', height:'30px', flex:'none', textAlign:'center', font:'800 15px/30px var(--font-heading)',
+          background: e.d > 0 ? 'var(--color-accent)' : '#3a3633', color: e.d > 0 ? '#11170a' : '#fff' },
+        open: () => this.setState({ detail:e.n, screen:'detail', back:'home' }) })),
+      archive: [{ v:'4.1', note:'Ekonomi düzeltmesi, 2 birim nerf', date:'29 TEM' },
+        { v:'4.0', note:'Sezon 12 başlangıcı, harita rotasyonu', date:'15 TEM' },
+        { v:'3.9', note:'S11 kapanış dengelemesi', date:'01 TEM' }],
+      syncLabel: st.synced ? '✓ TAMAM' : 'SENKRON',
+      resync: () => { this.setState({ synced:true }); clearTimeout(this._s); this._s = setTimeout(() => this.setState({ synced:false }), 1600); },
+      people: [{ n:'vodkajelly', i:'VJ', note:'42 build · radiant' }, { n:'fragmaster.tr', i:'FT', note:'18 build · elmas I' },
+        { n:'anaakım', i:'AA', note:'7 build · platin III' }].map((u, i) => {
+        const on = !!st.follow[i];
+        return { name:u.n, initial:u.i, note:u.note, label: on ? 'TAKİPTE' : 'TAKİP ET',
+          toggle: () => this.setState(p => ({ follow: Object.assign({}, p.follow, { [i]: !p.follow[i] }) })),
+          style: { minHeight:'44px', padding:'0 12px', cursor:'pointer', borderRadius:'0', border:'1px solid',
+            font:'800 9px/1 var(--font-heading)', letterSpacing:'.1em',
+            background: on ? 'var(--color-accent)' : 'transparent', color: on ? '#11170a' : 'var(--color-text)',
+            borderColor: on ? 'var(--color-accent)' : 'var(--color-neutral-400)' } };
+      }),
+      indStyle: { position:'absolute', top:'0', left:'0', width:'20%', height:'3px',
+        background:'var(--color-accent)', transform:'translateX(' + (cur * 100) + '%)',
+        transition:'transform .22s cubic-bezier(.2,.7,.2,1)' },
+      tabHome: tab(st.screen === 'home'), tabBrowse: tab(st.screen === 'browse'),
+      tabTier: tab(st.screen === 'tier'), tabVault: tab(st.screen === 'vault'),
+      tabProfile: tab(st.screen === 'profile'),
+      goHome: () => this.go('home'), goBrowse: () => this.go('browse'), goTier: () => this.go('tier'),
+      goVault: () => this.go('vault'), goProfile: () => this.go('profile'),
+      goPatch: () => this.go('patch'), goCommunity: () => this.go('community'),
+      goGames: () => this.setState({ screen:'onboarding' }),
+      goBack: () => this.setState(p => ({ screen:p.back })),
+      rail: [['00','SPLASH','splash'],['01','OYUN SEÇİMİ','onboarding'],['02','META FEED','home'],['03','ARŞİV + FİLTRE','browse'],
+        ['04','BUILD DETAY','detail'],['05','TIER LIST','tier'],['06','KASA','vault'],['07','PATCH LOG','patch'],
+        ['08','PROFİL','profile'],['09','TOPLULUK','community'],['10','AYARLAR','settings']].map(r => ({ no:r[0], label:r[1],
+        mark: st.screen === r[2] ? '●' : '', go: () => this.setState({ screen:r[2], loading:false }) }))
+        .concat([{ no:'11', label:'YÜKLENİYOR', mark: st.loading ? '●' : '',
+          go: () => { this.setState({ screen:'home', loading:true }); clearTimeout(this._t);
+            this._t = setTimeout(() => this.setState({ loading:false }), 1400); } }])
+    };
+  }
+}
+</script>
+</body>
+</html>
+

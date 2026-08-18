@@ -1,0 +1,1441 @@
+{
+  "game": "bf6",
+  "gameName": "Battlefield 6",
+  "scoreNote": "Score is derived from a weapon's position in a third-party tier list's overall ranking, not from measured stats. Rank 1 of 62 scores 10000 and the rest scale down by position. Nothing here is calculated from weapon statistics — it reflects that list's editorial ordering.",
+  "sourceHash": "b8ee919340b3ac8adb14a86c83763e72ff1f0140453dc5c106ccc68a71dd9212",
+  "generatedAt": "2026-08-18T10:19:32.153Z",
+  "entities": [
+    {
+      "id": "m16a4",
+      "name": "M16A4",
+      "category": "Assault Rifle",
+      "score": 10000,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "1 / 62"
+        }
+      ],
+      "build": [
+        {
+          "slot": "BARREL",
+          "item": "20\" HBAR"
+        },
+        {
+          "slot": "UNDERBARREL",
+          "item": "SLIM HANDSTOP"
+        },
+        {
+          "slot": "AMMUNITION",
+          "item": "FMJ"
+        },
+        {
+          "slot": "MUZZLE",
+          "item": "LIGHTENED SUPPRESSOR"
+        },
+        {
+          "slot": "ERGONOMICS",
+          "item": "A3 RECIEVER"
+        },
+        {
+          "slot": "MAGAZINE",
+          "item": "30RND MAGAZINE"
+        },
+        {
+          "slot": "SCOPE",
+          "item": "RO-M 1.75X"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "S"
+    },
+    {
+      "id": "b36a4",
+      "name": "B36A4",
+      "category": "Assault Rifle",
+      "score": 9839,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "2 / 62"
+        }
+      ],
+      "build": [
+        {
+          "slot": "BARREL",
+          "item": "510MM DMR"
+        },
+        {
+          "slot": "UNDERBARREL",
+          "item": "CLASSIC VERTICAL"
+        },
+        {
+          "slot": "AMMUNITION",
+          "item": "FMJ"
+        },
+        {
+          "slot": "MUZZLE",
+          "item": "LIGHTENED SUPPRESSOR"
+        },
+        {
+          "slot": "ERGONOMICS",
+          "item": "AFTERMARKET BUFFER"
+        },
+        {
+          "slot": "MAGAZINE",
+          "item": "30 RND"
+        },
+        {
+          "slot": "SCOPE",
+          "item": "MINI FLEX 1.00X"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "S"
+    },
+    {
+      "id": "pp-19",
+      "name": "PP-19",
+      "category": "SMG",
+      "score": 9677,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "3 / 62"
+        }
+      ],
+      "build": [
+        {
+          "slot": "BARREL",
+          "item": "367MM CIV"
+        },
+        {
+          "slot": "UNDERBARREL",
+          "item": "SLIM ANGLED"
+        },
+        {
+          "slot": "AMMUNITION",
+          "item": "FMJ"
+        },
+        {
+          "slot": "MUZZLE",
+          "item": "CQB SUPPRESSOR"
+        },
+        {
+          "slot": "ERGONOMICS",
+          "item": "AFTERMARKET BUFFER"
+        },
+        {
+          "slot": "RIGHT ACCESSORY",
+          "item": "50 MW VIOLET"
+        },
+        {
+          "slot": "MAGAZINE",
+          "item": "30RND FAST MAG"
+        },
+        {
+          "slot": "SCOPE",
+          "item": "MINI FLEX 1.00X"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "S"
+    },
+    {
+      "id": "kord-6p67",
+      "name": "KORD 6P67",
+      "category": "Assault Rifle",
+      "score": 9516,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "4 / 62"
+        }
+      ],
+      "build": [
+        {
+          "slot": "BARREL",
+          "item": "CRYOGENIC"
+        },
+        {
+          "slot": "UNDERBARREL",
+          "item": "SLIM HANDSTOP"
+        },
+        {
+          "slot": "AMMUNITION",
+          "item": "POLYMER CASE"
+        },
+        {
+          "slot": "MUZZLE",
+          "item": "LIGHTENED SUPPRESSOR"
+        },
+        {
+          "slot": "MAGAZINE",
+          "item": "36 RND"
+        },
+        {
+          "slot": "SCOPE",
+          "item": "RO-M 1.75X"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "A"
+    },
+    {
+      "id": "drs-iar",
+      "name": "DRS-IAR",
+      "category": "LMG",
+      "score": 9355,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "5 / 62"
+        }
+      ],
+      "build": [
+        {
+          "slot": "BARREL",
+          "item": "20\" SDM-R"
+        },
+        {
+          "slot": "UNDERBARREL",
+          "item": "STIPPLED STUBBY"
+        },
+        {
+          "slot": "AMMUNITION",
+          "item": "FMJ"
+        },
+        {
+          "slot": "MUZZLE",
+          "item": "STANDARD SUPPRESSOR"
+        },
+        {
+          "slot": "MAGAZINE",
+          "item": "36 RND"
+        },
+        {
+          "slot": "ERGONOMICS",
+          "item": "RAIL COVER"
+        },
+        {
+          "slot": "SCOPE",
+          "item": "RO-M 1.75X"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "S"
+    },
+    {
+      "id": "sgx",
+      "name": "SGX",
+      "category": "SMG",
+      "score": 9194,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "6 / 62"
+        }
+      ],
+      "build": [
+        {
+          "slot": "BARREL",
+          "item": "8\" EXTENDED"
+        },
+        {
+          "slot": "UNDERBARREL",
+          "item": "CLASSIC VERTICAL"
+        },
+        {
+          "slot": "AMMUNITION",
+          "item": "FMJ"
+        },
+        {
+          "slot": "MUZZLE",
+          "item": "LIGHTENED SUPPRESSOR"
+        },
+        {
+          "slot": "MAGAZINE",
+          "item": "36RND MAGAZINE"
+        },
+        {
+          "slot": "SCOPE",
+          "item": "MINI FLEX 1.00X"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "S"
+    },
+    {
+      "id": "qbz-192",
+      "name": "QBZ-192",
+      "category": "Carbine",
+      "score": 9032,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "7 / 62"
+        }
+      ],
+      "build": [
+        {
+          "slot": "BARREL",
+          "item": "14.5\" COMMON"
+        },
+        {
+          "slot": "UNDERBARREL",
+          "item": "LOW-PROFILE STUBBY"
+        },
+        {
+          "slot": "AMMUNITION",
+          "item": "FMJ"
+        },
+        {
+          "slot": "MUZZLE",
+          "item": "STANDARD SUPPRESSOR"
+        },
+        {
+          "slot": "MAGAZINE",
+          "item": "36RND MAGAZINE"
+        },
+        {
+          "slot": "SCOPE",
+          "item": "RO-M 1.75X"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "S"
+    },
+    {
+      "id": "pw5a3",
+      "name": "PW5A3",
+      "category": "SMG",
+      "score": 8871,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "8 / 62"
+        }
+      ],
+      "build": [
+        {
+          "slot": "BARREL",
+          "item": "245MM CUSTOM"
+        },
+        {
+          "slot": "UNDERBARREL",
+          "item": "CLASSIC VERTICAL"
+        },
+        {
+          "slot": "AMMUNITION",
+          "item": "FMJ"
+        },
+        {
+          "slot": "MUZZLE",
+          "item": "STANDARD SUPPRESSOR"
+        },
+        {
+          "slot": "MAGAZINE",
+          "item": "40RND MAGAZINE"
+        },
+        {
+          "slot": "ERGONOMICS",
+          "item": "IMPROVED MAG CATCH"
+        },
+        {
+          "slot": "SCOPE",
+          "item": "IRON SIGHTS"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "A"
+    },
+    {
+      "id": "nvo-228e",
+      "name": "NVO-228E",
+      "category": "Assault Rifle",
+      "score": 8710,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "9 / 62"
+        }
+      ],
+      "build": [
+        {
+          "slot": "BARREL",
+          "item": "CRYOGENIC"
+        },
+        {
+          "slot": "UNDERBARREL",
+          "item": "CLASSIC VERTICAL"
+        },
+        {
+          "slot": "AMMUNITION",
+          "item": "POLYMER CASE"
+        },
+        {
+          "slot": "MUZZLE",
+          "item": "FLASH COMP"
+        },
+        {
+          "slot": "MAGAZINE",
+          "item": "30RND MAGAZINE"
+        },
+        {
+          "slot": "SCOPE",
+          "item": "RO-M 1.75X"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "A"
+    },
+    {
+      "id": "rpk-74m",
+      "name": "RPK-74M",
+      "category": "LMG",
+      "score": 8548,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "10 / 62"
+        }
+      ],
+      "build": [
+        {
+          "slot": "BARREL",
+          "item": "590MM FACTORY"
+        },
+        {
+          "slot": "UNDERBARREL",
+          "item": "SLIM ANGLED"
+        },
+        {
+          "slot": "AMMUNITION",
+          "item": "POLYMER CASE"
+        },
+        {
+          "slot": "MUZZLE",
+          "item": "LIGHTENED SUPPRESSOR"
+        },
+        {
+          "slot": "ERGONOMICS",
+          "item": "AFTERMARKET BUFFER"
+        },
+        {
+          "slot": "MAGAZINE",
+          "item": "45RND FAST MAG"
+        },
+        {
+          "slot": "SCOPE",
+          "item": "RO-M 1.75X"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "S"
+    },
+    {
+      "id": "m2010-esr",
+      "name": "M2010 ESR",
+      "category": "Sniper Rifle",
+      "score": 8387,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "11 / 62"
+        }
+      ],
+      "build": [
+        {
+          "slot": "BARREL",
+          "item": "26\" CARBON"
+        },
+        {
+          "slot": "UNDERBARREL",
+          "item": "FULL ANGLED"
+        },
+        {
+          "slot": "AMMUNITION",
+          "item": "MATCH GRADE"
+        },
+        {
+          "slot": "ERGONOMICS",
+          "item": "DLC BOLT"
+        },
+        {
+          "slot": "LEFT ACCESSORY",
+          "item": "RANGE FINDER"
+        },
+        {
+          "slot": "OPTIC ACCESSORY",
+          "item": "ANTI-GLARE COATING"
+        },
+        {
+          "slot": "MAGAZINE",
+          "item": "5RND FAST MAG"
+        },
+        {
+          "slot": "SCOPE",
+          "item": "SSDS 6.00X"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "S"
+    },
+    {
+      "id": "sg-553r",
+      "name": "SG-553R",
+      "category": "Carbine",
+      "score": 8226,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "12 / 62"
+        }
+      ],
+      "build": [
+        {
+          "slot": "BARREL",
+          "item": "303MM LB"
+        },
+        {
+          "slot": "UNDERBARREL",
+          "item": "LOW-PROFILE STUBBY"
+        },
+        {
+          "slot": "AMMUNITION",
+          "item": "FMJ"
+        },
+        {
+          "slot": "MUZZLE",
+          "item": "LIGHTENED SUPPRESSOR"
+        },
+        {
+          "slot": "MAGAZINE",
+          "item": "30RND MAGAZINE"
+        },
+        {
+          "slot": "SCOPE",
+          "item": "BF-2M 2.50X"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "S"
+    },
+    {
+      "id": "m87a1",
+      "name": "M87A1",
+      "category": "Shotgun",
+      "score": 8065,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "13 / 62"
+        }
+      ],
+      "build": [
+        {
+          "slot": "BARREL",
+          "item": "20\" FACTORY"
+        },
+        {
+          "slot": "UNDERBARREL",
+          "item": "SLIM HANDSTOP"
+        },
+        {
+          "slot": "AMMUNITION",
+          "item": "BUCKSHOT"
+        },
+        {
+          "slot": "MUZZLE",
+          "item": "CQB SUPPRESSOR"
+        },
+        {
+          "slot": "MAGAZINE",
+          "item": "7 SHELL TUBE"
+        },
+        {
+          "slot": "RIGHT ACCESSORY",
+          "item": "50 MW GREEN"
+        },
+        {
+          "slot": "SCOPE",
+          "item": "IRON SIGHTS"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "S"
+    },
+    {
+      "id": "brod-3",
+      "name": "BROD 3",
+      "category": "Carbine",
+      "score": 7903,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "14 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "A"
+    },
+    {
+      "id": "ef88",
+      "name": "EF88",
+      "category": "Assault Rifle",
+      "score": 7742,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "15 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "A"
+    },
+    {
+      "id": "l110",
+      "name": "L110",
+      "category": "LMG",
+      "score": 7581,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "16 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "A"
+    },
+    {
+      "id": "l85a3",
+      "name": "L85A3",
+      "category": "Assault Rifle",
+      "score": 7419,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "17 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "B"
+    },
+    {
+      "id": "m4a1",
+      "name": "M4A1",
+      "category": "Carbine",
+      "score": 7258,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "18 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "A"
+    },
+    {
+      "id": "scw-10",
+      "name": "SCW-10",
+      "category": "SMG",
+      "score": 7097,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "19 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "A"
+    },
+    {
+      "id": "sor-300sc",
+      "name": "SOR-300SC",
+      "category": "Carbine",
+      "score": 6935,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "20 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "B"
+    },
+    {
+      "id": "m121-a2",
+      "name": "M121 A2",
+      "category": "LMG",
+      "score": 6774,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "21 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "A"
+    },
+    {
+      "id": "vcr-2",
+      "name": "VCR-2",
+      "category": "Assault Rifle",
+      "score": 6613,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "22 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "B"
+    },
+    {
+      "id": "cz3a1",
+      "name": "CZ3A1",
+      "category": "SMG",
+      "score": 6452,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "23 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "A"
+    },
+    {
+      "id": "umg-40",
+      "name": "UMG-40",
+      "category": "SMG",
+      "score": 6290,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "24 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "B"
+    },
+    {
+      "id": "sl9",
+      "name": "SL9",
+      "category": "SMG",
+      "score": 6129,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "25 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "B"
+    },
+    {
+      "id": "sor-556-mk2",
+      "name": "SOR-556 MK2",
+      "category": "Assault Rifle",
+      "score": 5968,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "26 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "B"
+    },
+    {
+      "id": "rpkm",
+      "name": "RPKM",
+      "category": "LMG",
+      "score": 5806,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "27 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "A"
+    },
+    {
+      "id": "m433",
+      "name": "M433",
+      "category": "Assault Rifle",
+      "score": 5645,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "28 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "C"
+    },
+    {
+      "id": "ak-205",
+      "name": "AK-205",
+      "category": "Carbine",
+      "score": 5484,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "29 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "B"
+    },
+    {
+      "id": "mini-scout",
+      "name": "MINI SCOUT",
+      "category": "Sniper Rifle",
+      "score": 5323,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "30 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "A"
+    },
+    {
+      "id": "pw7a2",
+      "name": "PW7A2",
+      "category": "SMG",
+      "score": 5161,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "31 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "B"
+    },
+    {
+      "id": "usg-90",
+      "name": "USG-90",
+      "category": "SMG",
+      "score": 5000,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "32 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "C"
+    },
+    {
+      "id": "tr-7",
+      "name": "TR-7",
+      "category": "Assault Rifle",
+      "score": 4839,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "33 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "C"
+    },
+    {
+      "id": "vssm",
+      "name": "VSSM",
+      "category": "DMR",
+      "score": 4677,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "34 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "S"
+    },
+    {
+      "id": "kts100-mk8",
+      "name": "KTS100 MK8",
+      "category": "LMG",
+      "score": 4516,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "35 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "B"
+    },
+    {
+      "id": "ak4d",
+      "name": "AK4D",
+      "category": "Assault Rifle",
+      "score": 4355,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "36 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "C"
+    },
+    {
+      "id": "m417-a2",
+      "name": "M417 A2",
+      "category": "Carbine",
+      "score": 4194,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "37 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "B"
+    },
+    {
+      "id": "psr",
+      "name": "PSR",
+      "category": "Sniper Rifle",
+      "score": 4032,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "38 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "A"
+    },
+    {
+      "id": "l115",
+      "name": "L115",
+      "category": "Sniper Rifle",
+      "score": 3871,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "39 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "B"
+    },
+    {
+      "id": "kv9",
+      "name": "KV9",
+      "category": "SMG",
+      "score": 3710,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "40 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "C"
+    },
+    {
+      "id": "m39-emr",
+      "name": "M39 EMR",
+      "category": "DMR",
+      "score": 3548,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "41 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "A"
+    },
+    {
+      "id": "vz-61",
+      "name": "vz. 61",
+      "category": "Secondary",
+      "score": 3387,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "42 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "S"
+    },
+    {
+      "id": "m60",
+      "name": "M60",
+      "category": "LMG",
+      "score": 3226,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "43 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "B"
+    },
+    {
+      "id": "m123k",
+      "name": "M123K",
+      "category": "LMG",
+      "score": 3065,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "44 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "B"
+    },
+    {
+      "id": "m1014",
+      "name": "M1014",
+      "category": "Shotgun",
+      "score": 2903,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "45 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "A"
+    },
+    {
+      "id": "m277",
+      "name": "M277",
+      "category": "Carbine",
+      "score": 2742,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "46 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "C"
+    },
+    {
+      "id": "grt-bc",
+      "name": "GRT-BC",
+      "category": "Carbine",
+      "score": 2581,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "47 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "C"
+    },
+    {
+      "id": "svdm",
+      "name": "SVDM",
+      "category": "DMR",
+      "score": 2419,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "48 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "A"
+    },
+    {
+      "id": "sv-98",
+      "name": "SV-98",
+      "category": "Sniper Rifle",
+      "score": 2258,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "49 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "C"
+    },
+    {
+      "id": "m250",
+      "name": "M250",
+      "category": "LMG",
+      "score": 2097,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "50 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "C"
+    },
+    {
+      "id": "svk-8-6",
+      "name": "SVK-8.6",
+      "category": "DMR",
+      "score": 1935,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "51 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "B"
+    },
+    {
+      "id": "18-5ks-k",
+      "name": "18.5KS-K",
+      "category": "Shotgun",
+      "score": 1774,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "52 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "B"
+    },
+    {
+      "id": "lmr27",
+      "name": "LMR27",
+      "category": "DMR",
+      "score": 1613,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "53 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "B"
+    },
+    {
+      "id": "m240l",
+      "name": "M240L",
+      "category": "LMG",
+      "score": 1452,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "54 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "C"
+    },
+    {
+      "id": "grt-cps",
+      "name": "GRT-CPS",
+      "category": "DMR",
+      "score": 1290,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "55 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "C"
+    },
+    {
+      "id": "db-12",
+      "name": "DB-12",
+      "category": "Shotgun",
+      "score": 1129,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "56 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "C"
+    },
+    {
+      "id": "p18",
+      "name": "P18",
+      "category": "Secondary",
+      "score": 968,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "57 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "S"
+    },
+    {
+      "id": "m44",
+      "name": "M44",
+      "category": "Secondary",
+      "score": 806,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "58 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "A"
+    },
+    {
+      "id": "ggh-22",
+      "name": "GGH-22",
+      "category": "Secondary",
+      "score": 645,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "59 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "B"
+    },
+    {
+      "id": "m357-trait",
+      "name": "M357 TRAIT",
+      "category": "Secondary",
+      "score": 484,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "60 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "B"
+    },
+    {
+      "id": "es-5-7",
+      "name": "ES 5.7",
+      "category": "Secondary",
+      "score": 323,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "61 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "C"
+    },
+    {
+      "id": "m45a1",
+      "name": "M45A1",
+      "category": "Secondary",
+      "score": 161,
+      "stats": {},
+      "statLines": [
+        {
+          "label": "RANK",
+          "value": "62 / 62"
+        }
+      ],
+      "rationale": {
+        "note": "Score is derived from this weapon's position in a third-party tier list's overall ranking, not from a measured stat. This is not a measured value."
+      },
+      "tier": "C"
+    }
+  ]
+}

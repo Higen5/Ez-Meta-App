@@ -1,0 +1,40 @@
+name: Update meta
+on:
+  schedule:
+    - cron: '0 5 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - run: node src/build-meta.js
+        working-directory: pipeline
+
+      # data/ altinda birden fazla dosya var: her oyun icin bir tane (bf6.json,
+      # hd2.json, dt2.json), oyun indeksi (games.json) ve eski surumler icin
+      # korunan meta.json. Onceden yalnizca meta.json kontrol edilip
+      # commit'leniyordu, bu yuzden Helldivers 2 verisi kaynak degisse bile hic
+      # guncellenmiyordu.
+      #
+      # dt2.json ~7 gunluk kayan bir pencereden geldigi icin pratikte her gun
+      # degisir; bf6/hd2 yalnizca yama geldiginde degisir.
+      - name: Commit if changed
+        run: |
+          if [[ -n "$(git status --porcelain data/)" ]]; then
+            git config user.name "meta-bot"
+            git config user.email "meta-bot@users.noreply.github.com"
+            git add data/
+            git commit -m "chore: meta guncellendi"
+            git push
+          else
+            echo "Degisiklik yok."
+          fi

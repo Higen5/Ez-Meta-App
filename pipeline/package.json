@@ -1,0 +1,9 @@
+{
+  "name": "meta-pipeline",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "node src/build-meta.js",
+    "test": "node --test"
+  }
+}

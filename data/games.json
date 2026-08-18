@@ -1,0 +1,12 @@
+[
+  {
+    "id": "bf6",
+    "name": "Battlefield 6",
+    "file": "bf6.json"
+  },
+  {
+    "id": "dt2",
+    "name": "Dota 2",
+    "file": "dt2.json"
+  }
+]

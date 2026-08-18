@@ -1,0 +1,79 @@
+{
+  "_kaynak": "Ucuncu taraf tier listesinin silah basina 'RECOMMENDED' eklenti listesi (kullanicinin gonderdigi ekran goruntuleri). Sitede 'Up to date for Season 4' ibaresi var.",
+  "_not": "Yalnizca META silahlar (genel siralamanin ilk 13'u) icin build var. Fotograftan sadece eklenti ADI ve YUVASI alinmistir; acilma seviyesi ve sitenin build puani alinmamistir. Build'i olmayan silah statLines/rationale ile normal calisir.",
+  "builds": {
+    "M16A4": [
+      { "slot": "BARREL", "item": "20\" HBAR" }, { "slot": "UNDERBARREL", "item": "SLIM HANDSTOP" },
+      { "slot": "AMMUNITION", "item": "FMJ" }, { "slot": "MUZZLE", "item": "LIGHTENED SUPPRESSOR" },
+      { "slot": "ERGONOMICS", "item": "A3 RECIEVER" }, { "slot": "MAGAZINE", "item": "30RND MAGAZINE" },
+      { "slot": "SCOPE", "item": "RO-M 1.75X" }
+    ],
+    "B36A4": [
+      { "slot": "BARREL", "item": "510MM DMR" }, { "slot": "UNDERBARREL", "item": "CLASSIC VERTICAL" },
+      { "slot": "AMMUNITION", "item": "FMJ" }, { "slot": "MUZZLE", "item": "LIGHTENED SUPPRESSOR" },
+      { "slot": "ERGONOMICS", "item": "AFTERMARKET BUFFER" }, { "slot": "MAGAZINE", "item": "30 RND" },
+      { "slot": "SCOPE", "item": "MINI FLEX 1.00X" }
+    ],
+    "PP-19": [
+      { "slot": "BARREL", "item": "367MM CIV" }, { "slot": "UNDERBARREL", "item": "SLIM ANGLED" },
+      { "slot": "AMMUNITION", "item": "FMJ" }, { "slot": "MUZZLE", "item": "CQB SUPPRESSOR" },
+      { "slot": "ERGONOMICS", "item": "AFTERMARKET BUFFER" }, { "slot": "RIGHT ACCESSORY", "item": "50 MW VIOLET" },
+      { "slot": "MAGAZINE", "item": "30RND FAST MAG" }, { "slot": "SCOPE", "item": "MINI FLEX 1.00X" }
+    ],
+    "KORD 6P67": [
+      { "slot": "BARREL", "item": "CRYOGENIC" }, { "slot": "UNDERBARREL", "item": "SLIM HANDSTOP" },
+      { "slot": "AMMUNITION", "item": "POLYMER CASE" }, { "slot": "MUZZLE", "item": "LIGHTENED SUPPRESSOR" },
+      { "slot": "MAGAZINE", "item": "36 RND" }, { "slot": "SCOPE", "item": "RO-M 1.75X" }
+    ],
+    "DRS-IAR": [
+      { "slot": "BARREL", "item": "20\" SDM-R" }, { "slot": "UNDERBARREL", "item": "STIPPLED STUBBY" },
+      { "slot": "AMMUNITION", "item": "FMJ" }, { "slot": "MUZZLE", "item": "STANDARD SUPPRESSOR" },
+      { "slot": "MAGAZINE", "item": "36 RND" }, { "slot": "ERGONOMICS", "item": "RAIL COVER" },
+      { "slot": "SCOPE", "item": "RO-M 1.75X" }
+    ],
+    "SGX": [
+      { "slot": "BARREL", "item": "8\" EXTENDED" }, { "slot": "UNDERBARREL", "item": "CLASSIC VERTICAL" },
+      { "slot": "AMMUNITION", "item": "FMJ" }, { "slot": "MUZZLE", "item": "LIGHTENED SUPPRESSOR" },
+      { "slot": "MAGAZINE", "item": "36RND MAGAZINE" }, { "slot": "SCOPE", "item": "MINI FLEX 1.00X" }
+    ],
+    "QBZ-192": [
+      { "slot": "BARREL", "item": "14.5\" COMMON" }, { "slot": "UNDERBARREL", "item": "LOW-PROFILE STUBBY" },
+      { "slot": "AMMUNITION", "item": "FMJ" }, { "slot": "MUZZLE", "item": "STANDARD SUPPRESSOR" },
+      { "slot": "MAGAZINE", "item": "36RND MAGAZINE" }, { "slot": "SCOPE", "item": "RO-M 1.75X" }
+    ],
+    "PW5A3": [
+      { "slot": "BARREL", "item": "245MM CUSTOM" }, { "slot": "UNDERBARREL", "item": "CLASSIC VERTICAL" },
+      { "slot": "AMMUNITION", "item": "FMJ" }, { "slot": "MUZZLE", "item": "STANDARD SUPPRESSOR" },
+      { "slot": "MAGAZINE", "item": "40RND MAGAZINE" }, { "slot": "ERGONOMICS", "item": "IMPROVED MAG CATCH" },
+      { "slot": "SCOPE", "item": "IRON SIGHTS" }
+    ],
+    "NVO-228E": [
+      { "slot": "BARREL", "item": "CRYOGENIC" }, { "slot": "UNDERBARREL", "item": "CLASSIC VERTICAL" },
+      { "slot": "AMMUNITION", "item": "POLYMER CASE" }, { "slot": "MUZZLE", "item": "FLASH COMP" },
+      { "slot": "MAGAZINE", "item": "30RND MAGAZINE" }, { "slot": "SCOPE", "item": "RO-M 1.75X" }
+    ],
+    "RPK-74M": [
+      { "slot": "BARREL", "item": "590MM FACTORY" }, { "slot": "UNDERBARREL", "item": "SLIM ANGLED" },
+      { "slot": "AMMUNITION", "item": "POLYMER CASE" }, { "slot": "MUZZLE", "item": "LIGHTENED SUPPRESSOR" },
+      { "slot": "ERGONOMICS", "item": "AFTERMARKET BUFFER" }, { "slot": "MAGAZINE", "item": "45RND FAST MAG" },
+      { "slot": "SCOPE", "item": "RO-M 1.75X" }
+    ],
+    "M2010 ESR": [
+      { "slot": "BARREL", "item": "26\" CARBON" }, { "slot": "UNDERBARREL", "item": "FULL ANGLED" },
+      { "slot": "AMMUNITION", "item": "MATCH GRADE" }, { "slot": "ERGONOMICS", "item": "DLC BOLT" },
+      { "slot": "LEFT ACCESSORY", "item": "RANGE FINDER" }, { "slot": "OPTIC ACCESSORY", "item": "ANTI-GLARE COATING" },
+      { "slot": "MAGAZINE", "item": "5RND FAST MAG" }, { "slot": "SCOPE", "item": "SSDS 6.00X" }
+    ],
+    "SG-553R": [
+      { "slot": "BARREL", "item": "303MM LB" }, { "slot": "UNDERBARREL", "item": "LOW-PROFILE STUBBY" },
+      { "slot": "AMMUNITION", "item": "FMJ" }, { "slot": "MUZZLE", "item": "LIGHTENED SUPPRESSOR" },
+      { "slot": "MAGAZINE", "item": "30RND MAGAZINE" }, { "slot": "SCOPE", "item": "BF-2M 2.50X" }
+    ],
+    "M87A1": [
+      { "slot": "BARREL", "item": "20\" FACTORY" }, { "slot": "UNDERBARREL", "item": "SLIM HANDSTOP" },
+      { "slot": "AMMUNITION", "item": "BUCKSHOT" }, { "slot": "MUZZLE", "item": "CQB SUPPRESSOR" },
+      { "slot": "MAGAZINE", "item": "7 SHELL TUBE" }, { "slot": "RIGHT ACCESSORY", "item": "50 MW GREEN" },
+      { "slot": "SCOPE", "item": "IRON SIGHTS" }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+node_modules/
+.expo/
+dist/
+*.log
+
+# Superpowers arac ciktilari: review diff'leri terk edilen kaynaklardan
+# gelen gercek veriyi iceriyor, yayinlanmamali.
+.superpowers/
+
+# Terk edilen tasarimi (TTK modeli, HD2 zirh modeli) ve o kaynaklarin
+# URL'lerini anlatan eski plan/spec dokumanlari. Yerelde duruyor.
+docs/superpowers/
