@@ -5,6 +5,7 @@ import {
   sortCategory,
   validateHd2Tierlist,
   buildHd2TierlistEntities,
+  apLabel,
 } from '../src/games/hd2-tierlist.js';
 
 function fixture() {
@@ -17,7 +18,7 @@ function fixture() {
           { ad: 'Weapon A', auto: 'S+', term: 'S+', illum: 'S+', dps: 500, ap: 3 },
           { ad: 'Weapon B', auto: 'S+', term: 'S', illum: 'S+', dps: 700, ap: 3 },
           { ad: 'Weapon C', auto: 'A', term: 'A', illum: 'S+', dps: null, ap: 2 },
-          { ad: 'Weapon D', auto: 'D', term: 'D', illum: 'A', dps: 200, ap: 1 },
+          { ad: 'Weapon D', auto: 'D', term: 'D', illum: 'A', dps: 200, ap: 0 },
         ],
       },
       'Armor Passive': {
@@ -90,7 +91,7 @@ test('validateHd2Tierlist gecersiz tieBreak degerinde firlar', () => {
 
 test('validateHd2Tierlist tekrarlanan adda firlar', () => {
   const bad = fixture();
-  bad.kategoriler.Primary.items.push({ ad: 'Weapon A', auto: 'D', term: 'D', illum: 'D', dps: 1, ap: 1 });
+  bad.kategoriler.Primary.items.push({ ad: 'Weapon A', auto: 'D', term: 'D', illum: 'D', dps: 1, ap: 0 });
   assert.throws(() => validateHd2Tierlist(bad));
 });
 
@@ -127,4 +128,48 @@ test('buildHd2TierlistEntities kategori sayisi ve toplam oge sayisi dogru', () =
   const entities = buildHd2TierlistEntities({ tierlist: fixture() });
   assert.equal(entities.length, 6);
   assert.equal(new Set(entities.map((e) => e.category)).size, 2);
+});
+
+test('apLabel kaynagin kelime karsiligini doner', () => {
+  assert.equal(apLabel(0), 'None');
+  assert.equal(apLabel(2), 'Light');
+  assert.equal(apLabel(3), 'Medium');
+  assert.equal(apLabel(4), 'Heavy');
+  assert.equal(apLabel(5), 'Anti-Tank');
+  assert.equal(apLabel(6), 'Anti-Tank');
+  assert.equal(apLabel(7), 'Anti-Tank');
+  assert.equal(apLabel(9), 'Anti-Tank');
+});
+
+test('apLabel bilinmeyen degeri Anti-Tank varsaymadan sayiya cevirir', () => {
+  assert.equal(apLabel(1), '1'); // veride hic gecmiyor ama uydurma yok
+  assert.equal(apLabel(8), '8');
+});
+
+test("buildHd2TierlistEntities AP'si olan kategoride statLines[0] AP olur, deger kelime karsiligi", () => {
+  const entities = buildHd2TierlistEntities({ tierlist: fixture() });
+  const a = entities.find((e) => e.name === 'Weapon A'); // Primary, ap: 3
+  assert.equal(a.statLines[0].label, 'AP');
+  assert.equal(a.statLines[0].value, 'Medium');
+});
+
+test('buildHd2TierlistEntities Armor Passive gibi AP olmayan kategoride ilk satir kendi anlamli stati kalir', () => {
+  const entities = buildHd2TierlistEntities({ tierlist: fixture() });
+  const armorA = entities.find((e) => e.name === 'Armor A');
+  assert.equal(armorA.statLines[0].label, 'EFFECT');
+});
+
+test('sortCategory AP etiketi degil sayisal ap degerine gore azalan siralar', () => {
+  // Ayni tier'da ap: 9 (Anti-Tank), 3 (Medium), 2 (Light) -- alfabetik etikete
+  // gore degil sayiya gore siralanmali (Anti-Tank > Medium > Light beklenir,
+  // ama bu tesadufen alfabetik de dogru gorunebilir; asagidaki 0 vs 9 vakasi
+  // bunu net ayirt eder: '0' < '9' string olarak da, sayi olarak da kucuk,
+  // 9 = Anti-Tank en yuksek sayi -- azalanda ilk gelmeli).
+  const items = [
+    { ad: 'X', auto: 'S+', term: 'S+', illum: 'S+', ap: 0 },
+    { ad: 'Y', auto: 'S+', term: 'S+', illum: 'S+', ap: 9 },
+    { ad: 'Z', auto: 'S+', term: 'S+', illum: 'S+', ap: 3 },
+  ];
+  const sorted = sortCategory(items, 'illum', 'ap');
+  assert.deepEqual(sorted.map((i) => i.ad), ['Y', 'Z', 'X']); // 9 > 3 > 0
 });

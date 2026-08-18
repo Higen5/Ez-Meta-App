@@ -1,7 +1,7 @@
 # EZ//META
 
-Meta build uygulaması. Kapsanan oyunlar: **Dota 2** (127 kahraman) ve
-**Battlefield 6** (62 silah). Helldivers 2 hazırlanıyor.
+Meta build uygulaması. Kapsanan oyunlar: **Dota 2** (127 kahraman),
+**Battlefield 6** (62 silah) ve **Helldivers 2** (234 öğe, 11 kategori).
 
 ## Skor her oyunda aynı şey demek değil
 
@@ -13,6 +13,7 @@ idi. Bugün bu **yalnızca Dota 2 için doğru**. İki oyunun skoru temelden far
 |---|---|---|
 | Dota 2 | Derecelendirilmiş maçlardaki kazanma oranı | **Evet** |
 | Battlefield 6 | Üçüncü taraf bir tier listesinin genel sıralaması | **Hayır** |
+| Helldivers 2 | Üçüncü taraf bir tier listesinin faction bazlı tier'ları | **Hayır** |
 
 Skorlar oyunlar arasında karşılaştırılamaz. Her oyunun skor notu uygulamanın
 Ayarlar ekranında görünür, yani sınır veriyle birlikte taşınır.
@@ -73,6 +74,42 @@ Meta silahlar için ayrıca **önerilen build** listesi vardır
 (pipeline/data/bf6-builds.json, ilk 13 silah). Bu okunur bir listedir; eklenti
 değiştirip skoru canlı hesaplayan eski editör **yoktur**, çünkü onun
 gerektirdiği hasar eğrisi ve eklenti başına geri tepme değerleri elimizde yok.
+
+### Helldivers 2 — üç faction, tier listesinden
+
+Bu oyunun eski veri kaynağı ticari kullanıma kapalı olduğu için kaldırıldı.
+Yerine, Battlefield 6'daki gibi üçüncü taraf bir tier listesi geldi — ama bu
+kaynak daha zengin: **her öğeye üç ayrı tier veriyor**, oyundaki üç düşman
+fraksiyonu için (Automaton, Terminid, Illuminate).
+
+Uygulamada META ve ARŞİV ekranlarının üstünde bir faction çubuğu var;
+dokununca liste o fraksiyona göre yeniden diziliyor. Ayrışma gerçek: öğelerin
+%44 ile %58'inde iki fraksiyon farklı tier alıyor.
+
+```
+skor = tier tabani + tier ici sira payi
+S+ 6000   S 5000   A 4000   B 3000   C 2000   D 1000
+```
+
+Tier doğrudan kaynaktan gelir, **yüzdelikle hesaplanmaz** — diğer iki oyundan
+farkı bu. Tier içindeki sıra, kaynağın o kategori için yayınladığı stattan
+gelir: Primary'de DPS, Secondary / Support Weapon / Throwable / Sentry'de zırh
+delme (AP), Vehicle'da can.
+
+**Beş kategoride böyle bir stat yok** (Backpack, Eagle, Booster, Armor Passive,
+Orbital). Orada kaynağın kendi satır sırası korunur ve o sıra yalnızca
+Illuminate için doğrudur — kaynak tablolarını o sütuna göre sıralıyor. Diğer
+iki fraksiyonda tier içi sıra keyfidir; uydurmak yerine böyle bırakıldı.
+
+META ekranı bu oyunda **kategori başına bir öğe** gösterir, ilk 5 değil. Sebep
+veriden geliyor: tier içi sıra kategori içinde hesaplandığı için her
+kategorinin en iyi S+ öğesi aynı skoru alıyor, dolayısıyla "ilk 5" o
+beraberlerden rastgele beşini gösterirdi. Bu davranış `feedMode` alanıyla
+veriden sürülür, oyun kimliğine bakılarak değil.
+
+Zırh delme (AP) sayıları bu kaynakta 0-9 arası bir ölçek olarak yayınlanıyor.
+Oyun bu değerleri kendi arayüzünde hiç göstermez; ekran görüntüsünden
+çıkarılamayacak tek şey buydu ve bu kaynak sayesinde elimizde.
 
 ## Lisans ve ticari kullanım
 
@@ -185,8 +222,8 @@ EXPO_PUBLIC_META_URL=http://localhost:8090 npx expo run:android
 | # | Ekran | İçerik |
 |---|---|---|
 | 00 | Splash | İlk açılış, veri henüz yokken |
-| 01 | Oyun seçimi | Ayarlar ekranından açılır; Dota 2 ve Battlefield 6 aktif |
-| 02 | Meta | Skora göre ilk 5 |
+| 01 | Oyun seçimi | Ayarlar ekranından açılır; üç oyun da aktif |
+| 02 | Meta | Skora göre ilk 5; HD2'de kategori başına bir öğe |
 | 03 | Arşiv | LİSTE ve TIER LIST modu, arama, kategori filtresi |
 | 04 | Detay | Stat satırları, önerilen build, neden bu tier |
 | 06 | Kasa | Kaydedilen buildler (cihazda yerel) |
@@ -226,17 +263,6 @@ https://raw.githubusercontent.com/Higen5/Ez-Meta-App/main/data/dt2.json
 
 Seçili oyun cihazda saklanır ve her oyunun verisi ayrı önbellek anahtarıyla
 tutulur, böylece çevrimdışı çalışma iki oyun için de sürer.
-
-## Helldivers 2 hakkında
-
-Oyun listede duruyor ama **YAKINDA** olarak işaretli. Eski veri kaynağı lisans
-nedeniyle kaldırıldı; yerine oyunun ekran görüntülerinden hazırlanan bir liste
-gelecek.
-
-Dikkat: HD2 için eski skor, zırh delme (AP) ve düşman zırhı (AV) üzerine
-kuruluydu. Arrowhead bu sayıları hiç yayınlamıyor, **oyun içinde bile
-göstermiyor**. Dolayısıyla o model ekran görüntülerinden yeniden kurulamaz; bu
-oyun için skorun neyi ölçtüğü baştan tanımlanmalıdır.
 
 ## Bilinen eksikler
 

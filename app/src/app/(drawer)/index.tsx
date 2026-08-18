@@ -73,12 +73,24 @@ export default function Feed() {
                 <Text style={{ fontFamily: theme.font.heading, fontSize: 16, color: theme.colors.text }}>{e.name}</Text>
                 <Text style={{ fontFamily: theme.font.bodyMedium, fontSize: 10, letterSpacing: 1, color: theme.colors.neutral600 }}>{e.category}</Text>
               </View>
-              <View style={{ alignItems: 'flex-end' }}>
-                <Text style={{ fontFamily: theme.font.heading, fontSize: 14, color: theme.colors.text }}>{effectiveScore(e, currentFaction)}</Text>
-                {secondaryStat(e, t) && (
-                  <Text style={{ fontFamily: theme.font.bodyMedium, fontSize: 9, letterSpacing: 1, color: theme.colors.neutral600 }}>
-                    {secondaryStat(e, t)}
-                  </Text>
+              <View style={{ alignItems: 'flex-end', maxWidth: 140 }}>
+                {meta.feedMode === 'topPerCategory' ? (
+                  // Bu modda her satirin skoru zaten esit (tier bandinin tepesi) —
+                  // sayi bilgi tasimiyor. Yerine ayirt edici olan ilk statLine'i goster.
+                  e.statLines?.[0] && (
+                    <Text numberOfLines={1} style={{ fontFamily: theme.font.heading, fontSize: 14, color: theme.colors.text }}>
+                      {e.statLines[0].value}
+                    </Text>
+                  )
+                ) : (
+                  <>
+                    <Text style={{ fontFamily: theme.font.heading, fontSize: 14, color: theme.colors.text }}>{effectiveScore(e, currentFaction)}</Text>
+                    {secondaryStat(e, t) && (
+                      <Text style={{ fontFamily: theme.font.bodyMedium, fontSize: 9, letterSpacing: 1, color: theme.colors.neutral600 }}>
+                        {secondaryStat(e, t)}
+                      </Text>
+                    )}
+                  </>
                 )}
               </View>
             </Pressable>

@@ -11,6 +11,19 @@ const TIER_BASE = { 'S+': 6000, S: 5000, A: 4000, B: 3000, C: 2000, D: 1000 };
 const FACTIONS = ['auto', 'term', 'illum'];
 const VALID_TIEBREAKS = new Set(['dps', 'ap', 'health', 'none']);
 
+// Kaynak tablolarinda AP sutunu zaten "2. Light", "3. Medium" vs. bicimde
+// yazili -- sayiyi biz veriye alirken sadece rakami sakladik. 1 ve 8 veride
+// hic gecmiyor. Siralama mantigi (sortCategory/computeFactionScores) sayisal
+// item.ap degerini KULLANMAYA DEVAM EDER; bu harita yalnizca statLine
+// GORUNUMU icindir.
+const AP_LABELS = { 0: 'None', 2: 'Light', 3: 'Medium', 4: 'Heavy', 5: 'Anti-Tank', 6: 'Anti-Tank', 7: 'Anti-Tank', 9: 'Anti-Tank' };
+
+// Bilinmeyen bir ap degeri gelirse sessizce "Anti-Tank" varsaymadan sayiyi
+// oldugu gibi metne cevirir (bkz. validateHd2Tierlist'teki gorunurluk kontrolu).
+export function apLabel(ap) {
+  return AP_LABELS[ap] ?? String(ap);
+}
+
 // tierOlcegi'nin kendisi sabit ve dogrulanmis (bkz. TIER_BASE) -- sortCategory
 // tier bandi sirasini bulmak icin bunu kullanir.
 const TIER_ORDER = ['S+', 'S', 'A', 'B', 'C', 'D'];
@@ -79,10 +92,18 @@ function computeFactionScores(items, faction, tieBreak) {
 // (undefined/null olmayan) alanlar eklenir. Armor Passive'in stats[] ve
 // Vehicle'in weapons[] dizileri her biri ayri bir satir olur -- ayni label
 // (EFFECT / WEAPON) birden fazla kez gecebilir.
+//
+// Sira onemli: uygulama satirin sagında statLines[0]'i gosterir. AP'si olan
+// kategorilerde (Primary, Secondary, Support Weapon, Throwable, Sentry &
+// Emplacement) AP en basta olmali; bu yuzden ilk kontrol o. AP'si olmayan
+// kategorilerde ilk sirayi, o kategoride gercekten dolu olan bir sonraki alan
+// dogal olarak alir (Eagle->USES, Booster->MEDALS, Orbital->COOLDOWN,
+// Vehicle->HEALTH, Armor Passive->ilk EFFECT) -- health, cooldown'dan once
+// kontrol edildigi icin Vehicle'da HEALTH kazanir.
 function statLinesForItem(item) {
   const lines = [];
+  if (item.ap != null) lines.push({ label: 'AP', value: apLabel(item.ap) });
   if (item.dps !== undefined) lines.push({ label: 'DPS', value: String(item.dps) });
-  if (item.ap != null) lines.push({ label: 'AP', value: String(item.ap) });
   if (item.max !== undefined) lines.push({ label: 'MAX', value: String(item.max) });
   if (item.demo !== undefined) lines.push({ label: 'DEMO', value: String(item.demo) });
   if (item.backpack !== undefined) lines.push({ label: 'BACKPACK', value: item.backpack ? 'Yes' : 'No' });
@@ -91,9 +112,9 @@ function statLinesForItem(item) {
   }
   if (item.damageType !== undefined) lines.push({ label: 'DAMAGE', value: item.damageType });
   if (item.medals !== undefined) lines.push({ label: 'MEDALS', value: String(item.medals) });
-  if (item.cooldown !== undefined) lines.push({ label: 'COOLDOWN', value: `${item.cooldown}s` });
   if (item.health !== undefined) lines.push({ label: 'HEALTH', value: String(item.health) });
   if (item.crew !== undefined) lines.push({ label: 'CREW', value: item.crew });
+  if (item.cooldown !== undefined) lines.push({ label: 'COOLDOWN', value: `${item.cooldown}s` });
   if (Array.isArray(item.stats)) for (const s of item.stats) lines.push({ label: 'EFFECT', value: s });
   if (Array.isArray(item.weapons)) for (const w of item.weapons) lines.push({ label: 'WEAPON', value: w });
   return lines;
@@ -129,6 +150,11 @@ export function validateHd2Tierlist(tierlist) {
         if (!tierSet.has(item[faction])) {
           throw new Error(`hd2 tierlist: "${item.ad}" icin gecersiz ${faction} tier "${item[faction]}"`);
         }
+      }
+      // Bilinmeyen ap degeri FIRLATMAZ -- statLine yine de sayiyi metne
+      // cevirip devam eder (bkz. apLabel). Sadece gorulebilir olsun diye uyar.
+      if (item.ap != null && !(item.ap in AP_LABELS)) {
+        console.warn(`hd2 tierlist: "${item.ad}" icin bilinmeyen ap degeri "${item.ap}"`);
       }
     }
   }

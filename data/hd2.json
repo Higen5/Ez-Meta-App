@@ -3,7 +3,7 @@
   "gameName": "Helldivers 2",
   "scoreNote": "Tiers come straight from a third-party tier list, one per faction (Automaton, Terminid, Illuminate) — they are not calculated. Score is derived from the tier, with position inside a tier broken by DPS, armor penetration or health where the source publishes it. Five categories (Backpack, Eagle, Booster, Armor Passive, Orbital) publish no such stat, so within a tier the source's own order is kept — that order is correct for Illuminate only. Nothing here is a measurement of in-game performance.",
   "sourceHash": "ac5a084566a934ef6b2d8ea22f4fca31699f4f21e36b1ed5973203d3ff986881",
-  "generatedAt": "2026-08-18T14:28:06.717Z",
+  "generatedAt": "2026-08-18T14:42:19.178Z",
   "entities": [
     {
       "id": "cb-9-explosive-crossbow",
@@ -27,12 +27,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "516"
+          "label": "AP",
+          "value": "Medium"
         },
         {
-          "label": "AP",
-          "value": "3"
+          "label": "DPS",
+          "value": "516"
         }
       ],
       "rationale": {
@@ -61,12 +61,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "853.12"
+          "label": "AP",
+          "value": "Heavy"
         },
         {
-          "label": "AP",
-          "value": "4"
+          "label": "DPS",
+          "value": "853.12"
         }
       ],
       "rationale": {
@@ -95,12 +95,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "299.99"
+          "label": "AP",
+          "value": "Medium"
         },
         {
-          "label": "AP",
-          "value": "3"
+          "label": "DPS",
+          "value": "299.99"
         }
       ],
       "rationale": {
@@ -129,12 +129,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "2916"
+          "label": "AP",
+          "value": "Medium"
         },
         {
-          "label": "AP",
-          "value": "3"
+          "label": "DPS",
+          "value": "2916"
         }
       ],
       "rationale": {
@@ -163,12 +163,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "750"
+          "label": "AP",
+          "value": "Medium"
         },
         {
-          "label": "AP",
-          "value": "3"
+          "label": "DPS",
+          "value": "750"
         }
       ],
       "rationale": {
@@ -197,12 +197,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "1166"
+          "label": "AP",
+          "value": "Medium"
         },
         {
-          "label": "AP",
-          "value": "3"
+          "label": "DPS",
+          "value": "1166"
         }
       ],
       "rationale": {
@@ -231,12 +231,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "1062"
+          "label": "AP",
+          "value": "Light"
         },
         {
-          "label": "AP",
-          "value": "2"
+          "label": "DPS",
+          "value": "1062"
         }
       ],
       "rationale": {
@@ -265,12 +265,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "250"
+          "label": "AP",
+          "value": "Heavy"
         },
         {
-          "label": "AP",
-          "value": "4"
+          "label": "DPS",
+          "value": "250"
         }
       ],
       "rationale": {
@@ -299,12 +299,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "910"
+          "label": "AP",
+          "value": "Light"
         },
         {
-          "label": "AP",
-          "value": "2"
+          "label": "DPS",
+          "value": "910"
         }
       ],
       "rationale": {
@@ -333,12 +333,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "1260"
+          "label": "AP",
+          "value": "Medium"
         },
         {
-          "label": "AP",
-          "value": "3"
+          "label": "DPS",
+          "value": "1260"
         }
       ],
       "rationale": {
@@ -367,12 +367,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "1495"
+          "label": "AP",
+          "value": "Medium"
         },
         {
-          "label": "AP",
-          "value": "3"
+          "label": "DPS",
+          "value": "1495"
         }
       ],
       "rationale": {
@@ -401,12 +401,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "1100"
+          "label": "AP",
+          "value": "Light"
         },
         {
-          "label": "AP",
-          "value": "2"
+          "label": "DPS",
+          "value": "1100"
         }
       ],
       "rationale": {
@@ -435,12 +435,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "962"
+          "label": "AP",
+          "value": "Light"
         },
         {
-          "label": "AP",
-          "value": "2"
+          "label": "DPS",
+          "value": "962"
         }
       ],
       "rationale": {
@@ -469,12 +469,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "1600"
+          "label": "AP",
+          "value": "Light"
         },
         {
-          "label": "AP",
-          "value": "2"
+          "label": "DPS",
+          "value": "1600"
         }
       ],
       "rationale": {
@@ -503,12 +503,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "1800"
+          "label": "AP",
+          "value": "Light"
         },
         {
-          "label": "AP",
-          "value": "2"
+          "label": "DPS",
+          "value": "1800"
         }
       ],
       "rationale": {
@@ -537,12 +537,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "1680"
+          "label": "AP",
+          "value": "Medium"
         },
         {
-          "label": "AP",
-          "value": "3"
+          "label": "DPS",
+          "value": "1680"
         }
       ],
       "rationale": {
@@ -571,12 +571,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "816"
+          "label": "AP",
+          "value": "Heavy"
         },
         {
-          "label": "AP",
-          "value": "4"
+          "label": "DPS",
+          "value": "816"
         }
       ],
       "rationale": {
@@ -605,12 +605,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "3208"
+          "label": "AP",
+          "value": "Medium"
         },
         {
-          "label": "AP",
-          "value": "3"
+          "label": "DPS",
+          "value": "3208"
         }
       ],
       "rationale": {
@@ -639,12 +639,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "1145"
+          "label": "AP",
+          "value": "Medium"
         },
         {
-          "label": "AP",
-          "value": "3"
+          "label": "DPS",
+          "value": "1145"
         }
       ],
       "rationale": {
@@ -673,12 +673,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "1143"
+          "label": "AP",
+          "value": "Medium"
         },
         {
-          "label": "AP",
-          "value": "3"
+          "label": "DPS",
+          "value": "1143"
         }
       ],
       "rationale": {
@@ -707,12 +707,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "1487"
+          "label": "AP",
+          "value": "Light"
         },
         {
-          "label": "AP",
-          "value": "2"
+          "label": "DPS",
+          "value": "1487"
         }
       ],
       "rationale": {
@@ -741,12 +741,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "960"
+          "label": "AP",
+          "value": "Light"
         },
         {
-          "label": "AP",
-          "value": "2"
+          "label": "DPS",
+          "value": "960"
         }
       ],
       "rationale": {
@@ -775,12 +775,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "1380"
+          "label": "AP",
+          "value": "Light"
         },
         {
-          "label": "AP",
-          "value": "2"
+          "label": "DPS",
+          "value": "1380"
         }
       ],
       "rationale": {
@@ -809,12 +809,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "2070"
+          "label": "AP",
+          "value": "Light"
         },
         {
-          "label": "AP",
-          "value": "2"
+          "label": "DPS",
+          "value": "2070"
         }
       ],
       "rationale": {
@@ -843,12 +843,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "1200"
+          "label": "AP",
+          "value": "Light"
         },
         {
-          "label": "AP",
-          "value": "2"
+          "label": "DPS",
+          "value": "1200"
         }
       ],
       "rationale": {
@@ -877,12 +877,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "1650"
+          "label": "AP",
+          "value": "Light"
         },
         {
-          "label": "AP",
-          "value": "2"
+          "label": "DPS",
+          "value": "1650"
         }
       ],
       "rationale": {
@@ -911,12 +911,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "960"
+          "label": "AP",
+          "value": "Medium"
         },
         {
-          "label": "AP",
-          "value": "3"
+          "label": "DPS",
+          "value": "960"
         }
       ],
       "rationale": {
@@ -945,12 +945,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "350"
+          "label": "AP",
+          "value": "Light"
         },
         {
-          "label": "AP",
-          "value": "2"
+          "label": "DPS",
+          "value": "350"
         }
       ],
       "rationale": {
@@ -979,12 +979,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "1185"
+          "label": "AP",
+          "value": "Light"
         },
         {
-          "label": "AP",
-          "value": "2"
+          "label": "DPS",
+          "value": "1185"
         }
       ],
       "rationale": {
@@ -1013,12 +1013,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "1575"
+          "label": "AP",
+          "value": "Light"
         },
         {
-          "label": "AP",
-          "value": "2"
+          "label": "DPS",
+          "value": "1575"
         }
       ],
       "rationale": {
@@ -1047,12 +1047,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "333"
+          "label": "AP",
+          "value": "Medium"
         },
         {
-          "label": "AP",
-          "value": "3"
+          "label": "DPS",
+          "value": "333"
         }
       ],
       "rationale": {
@@ -1081,12 +1081,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "1166"
+          "label": "AP",
+          "value": "Medium"
         },
         {
-          "label": "AP",
-          "value": "3"
+          "label": "DPS",
+          "value": "1166"
         }
       ],
       "rationale": {
@@ -1115,12 +1115,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "1133"
+          "label": "AP",
+          "value": "Light"
         },
         {
-          "label": "AP",
-          "value": "2"
+          "label": "DPS",
+          "value": "1133"
         }
       ],
       "rationale": {
@@ -1149,12 +1149,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "870"
+          "label": "AP",
+          "value": "Medium"
         },
         {
-          "label": "AP",
-          "value": "3"
+          "label": "DPS",
+          "value": "870"
         }
       ],
       "rationale": {
@@ -1183,12 +1183,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "693"
+          "label": "AP",
+          "value": "Medium"
         },
         {
-          "label": "AP",
-          "value": "3"
+          "label": "DPS",
+          "value": "693"
         }
       ],
       "rationale": {
@@ -1217,12 +1217,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "1029"
+          "label": "AP",
+          "value": "Light"
         },
         {
-          "label": "AP",
-          "value": "2"
+          "label": "DPS",
+          "value": "1029"
         }
       ],
       "rationale": {
@@ -1251,12 +1251,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "750"
+          "label": "AP",
+          "value": "Light"
         },
         {
-          "label": "AP",
-          "value": "2"
+          "label": "DPS",
+          "value": "750"
         }
       ],
       "rationale": {
@@ -1285,12 +1285,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "513"
+          "label": "AP",
+          "value": "Medium"
         },
         {
-          "label": "AP",
-          "value": "3"
+          "label": "DPS",
+          "value": "513"
         }
       ],
       "rationale": {
@@ -1319,12 +1319,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "953"
+          "label": "AP",
+          "value": "Light"
         },
         {
-          "label": "AP",
-          "value": "2"
+          "label": "DPS",
+          "value": "953"
         }
       ],
       "rationale": {
@@ -1353,12 +1353,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "426"
+          "label": "AP",
+          "value": "Light"
         },
         {
-          "label": "AP",
-          "value": "2"
+          "label": "DPS",
+          "value": "426"
         }
       ],
       "rationale": {
@@ -1387,12 +1387,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "1320"
+          "label": "AP",
+          "value": "Light"
         },
         {
-          "label": "AP",
-          "value": "2"
+          "label": "DPS",
+          "value": "1320"
         }
       ],
       "rationale": {
@@ -1421,12 +1421,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "500"
+          "label": "AP",
+          "value": "Medium"
         },
         {
-          "label": "AP",
-          "value": "3"
+          "label": "DPS",
+          "value": "500"
         }
       ],
       "rationale": {
@@ -1455,12 +1455,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "1308"
+          "label": "AP",
+          "value": "Light"
         },
         {
-          "label": "AP",
-          "value": "2"
+          "label": "DPS",
+          "value": "1308"
         }
       ],
       "rationale": {
@@ -1489,12 +1489,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "640"
+          "label": "AP",
+          "value": "Medium"
         },
         {
-          "label": "AP",
-          "value": "3"
+          "label": "DPS",
+          "value": "640"
         }
       ],
       "rationale": {
@@ -1523,12 +1523,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "540"
+          "label": "AP",
+          "value": "Light"
         },
         {
-          "label": "AP",
-          "value": "2"
+          "label": "DPS",
+          "value": "540"
         }
       ],
       "rationale": {
@@ -1557,12 +1557,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "806"
+          "label": "AP",
+          "value": "Light"
         },
         {
-          "label": "AP",
-          "value": "2"
+          "label": "DPS",
+          "value": "806"
         }
       ],
       "rationale": {
@@ -1591,12 +1591,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "672"
+          "label": "AP",
+          "value": "Light"
         },
         {
-          "label": "AP",
-          "value": "2"
+          "label": "DPS",
+          "value": "672"
         }
       ],
       "rationale": {
@@ -1625,12 +1625,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "962"
+          "label": "AP",
+          "value": "Medium"
         },
         {
-          "label": "AP",
-          "value": "3"
+          "label": "DPS",
+          "value": "962"
         }
       ],
       "rationale": {
@@ -1659,12 +1659,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "500"
+          "label": "AP",
+          "value": "Light"
         },
         {
-          "label": "AP",
-          "value": "2"
+          "label": "DPS",
+          "value": "500"
         }
       ],
       "rationale": {
@@ -1693,12 +1693,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "440"
+          "label": "AP",
+          "value": "Medium"
         },
         {
-          "label": "AP",
-          "value": "3"
+          "label": "DPS",
+          "value": "440"
         }
       ],
       "rationale": {
@@ -1727,12 +1727,12 @@
       },
       "statLines": [
         {
-          "label": "DPS",
-          "value": "180"
+          "label": "AP",
+          "value": "Medium"
         },
         {
-          "label": "AP",
-          "value": "3"
+          "label": "DPS",
+          "value": "180"
         }
       ],
       "rationale": {
@@ -1762,7 +1762,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "3"
+          "value": "Medium"
         }
       ],
       "rationale": {
@@ -1792,7 +1792,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "3"
+          "value": "Medium"
         }
       ],
       "rationale": {
@@ -1822,7 +1822,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "3"
+          "value": "Medium"
         }
       ],
       "rationale": {
@@ -1852,7 +1852,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "4"
+          "value": "Heavy"
         }
       ],
       "rationale": {
@@ -1882,7 +1882,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "4"
+          "value": "Heavy"
         }
       ],
       "rationale": {
@@ -1912,7 +1912,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "3"
+          "value": "Medium"
         }
       ],
       "rationale": {
@@ -1942,7 +1942,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "4"
+          "value": "Heavy"
         }
       ],
       "rationale": {
@@ -1972,7 +1972,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "3"
+          "value": "Medium"
         }
       ],
       "rationale": {
@@ -2002,7 +2002,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "3"
+          "value": "Medium"
         }
       ],
       "rationale": {
@@ -2032,7 +2032,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "4"
+          "value": "Heavy"
         }
       ],
       "rationale": {
@@ -2062,7 +2062,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "6"
+          "value": "Anti-Tank"
         }
       ],
       "rationale": {
@@ -2092,7 +2092,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "2"
+          "value": "Light"
         }
       ],
       "rationale": {
@@ -2122,7 +2122,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "0"
+          "value": "None"
         }
       ],
       "rationale": {
@@ -2152,7 +2152,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "2"
+          "value": "Light"
         }
       ],
       "rationale": {
@@ -2182,7 +2182,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "3"
+          "value": "Medium"
         }
       ],
       "rationale": {
@@ -2212,7 +2212,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "3"
+          "value": "Medium"
         }
       ],
       "rationale": {
@@ -2242,7 +2242,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "3"
+          "value": "Medium"
         }
       ],
       "rationale": {
@@ -2272,7 +2272,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "2"
+          "value": "Light"
         }
       ],
       "rationale": {
@@ -2302,7 +2302,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "5"
+          "value": "Anti-Tank"
         }
       ],
       "rationale": {
@@ -2332,7 +2332,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "2"
+          "value": "Light"
         }
       ],
       "rationale": {
@@ -2362,7 +2362,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "2"
+          "value": "Light"
         }
       ],
       "rationale": {
@@ -2392,7 +2392,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "3"
+          "value": "Medium"
         }
       ],
       "rationale": {
@@ -2422,7 +2422,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "3"
+          "value": "Medium"
         }
       ],
       "rationale": {
@@ -2452,7 +2452,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "3"
+          "value": "Medium"
         }
       ],
       "rationale": {
@@ -2482,7 +2482,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "3"
+          "value": "Medium"
         },
         {
           "label": "BACKPACK",
@@ -2516,7 +2516,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "2"
+          "value": "Light"
         },
         {
           "label": "BACKPACK",
@@ -2550,7 +2550,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "4"
+          "value": "Heavy"
         },
         {
           "label": "BACKPACK",
@@ -2584,7 +2584,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "4"
+          "value": "Heavy"
         },
         {
           "label": "BACKPACK",
@@ -2618,7 +2618,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "3"
+          "value": "Medium"
         },
         {
           "label": "BACKPACK",
@@ -2652,7 +2652,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "4"
+          "value": "Heavy"
         },
         {
           "label": "BACKPACK",
@@ -2686,7 +2686,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "2"
+          "value": "Light"
         },
         {
           "label": "BACKPACK",
@@ -2720,7 +2720,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "5"
+          "value": "Anti-Tank"
         },
         {
           "label": "BACKPACK",
@@ -2754,7 +2754,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "3"
+          "value": "Medium"
         },
         {
           "label": "BACKPACK",
@@ -2788,7 +2788,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "3"
+          "value": "Medium"
         },
         {
           "label": "BACKPACK",
@@ -2822,7 +2822,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "6"
+          "value": "Anti-Tank"
         },
         {
           "label": "BACKPACK",
@@ -2856,7 +2856,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "7"
+          "value": "Anti-Tank"
         },
         {
           "label": "BACKPACK",
@@ -2890,7 +2890,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "7"
+          "value": "Anti-Tank"
         },
         {
           "label": "BACKPACK",
@@ -2924,7 +2924,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "6"
+          "value": "Anti-Tank"
         },
         {
           "label": "BACKPACK",
@@ -2958,7 +2958,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "9"
+          "value": "Anti-Tank"
         },
         {
           "label": "BACKPACK",
@@ -2992,7 +2992,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "5"
+          "value": "Anti-Tank"
         },
         {
           "label": "BACKPACK",
@@ -3026,7 +3026,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "7"
+          "value": "Anti-Tank"
         },
         {
           "label": "BACKPACK",
@@ -3060,7 +3060,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "4"
+          "value": "Heavy"
         },
         {
           "label": "BACKPACK",
@@ -3094,7 +3094,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "3"
+          "value": "Medium"
         },
         {
           "label": "BACKPACK",
@@ -3128,7 +3128,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "4"
+          "value": "Heavy"
         },
         {
           "label": "BACKPACK",
@@ -3162,7 +3162,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "6"
+          "value": "Anti-Tank"
         },
         {
           "label": "BACKPACK",
@@ -3196,7 +3196,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "5"
+          "value": "Anti-Tank"
         },
         {
           "label": "BACKPACK",
@@ -3230,7 +3230,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "4"
+          "value": "Heavy"
         },
         {
           "label": "BACKPACK",
@@ -3264,7 +3264,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "4"
+          "value": "Heavy"
         },
         {
           "label": "BACKPACK",
@@ -3298,7 +3298,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "6"
+          "value": "Anti-Tank"
         },
         {
           "label": "BACKPACK",
@@ -3332,7 +3332,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "4"
+          "value": "Heavy"
         },
         {
           "label": "BACKPACK",
@@ -3366,7 +3366,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "7"
+          "value": "Anti-Tank"
         },
         {
           "label": "BACKPACK",
@@ -3400,7 +3400,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "5"
+          "value": "Anti-Tank"
         },
         {
           "label": "BACKPACK",
@@ -3434,7 +3434,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "6"
+          "value": "Anti-Tank"
         },
         {
           "label": "BACKPACK",
@@ -3468,7 +3468,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "6"
+          "value": "Anti-Tank"
         },
         {
           "label": "BACKPACK",
@@ -3502,7 +3502,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "5"
+          "value": "Anti-Tank"
         },
         {
           "label": "BACKPACK",
@@ -3536,7 +3536,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "5"
+          "value": "Anti-Tank"
         },
         {
           "label": "BACKPACK",
@@ -3570,7 +3570,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "3"
+          "value": "Medium"
         },
         {
           "label": "BACKPACK",
@@ -3604,7 +3604,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "7"
+          "value": "Anti-Tank"
         },
         {
           "label": "MAX",
@@ -3642,7 +3642,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "6"
+          "value": "Anti-Tank"
         },
         {
           "label": "MAX",
@@ -3680,7 +3680,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "4"
+          "value": "Heavy"
         },
         {
           "label": "MAX",
@@ -3718,7 +3718,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "4"
+          "value": "Heavy"
         },
         {
           "label": "MAX",
@@ -3756,7 +3756,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "4"
+          "value": "Heavy"
         },
         {
           "label": "MAX",
@@ -3794,7 +3794,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "7"
+          "value": "Anti-Tank"
         },
         {
           "label": "MAX",
@@ -3832,7 +3832,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "5"
+          "value": "Anti-Tank"
         },
         {
           "label": "MAX",
@@ -3870,7 +3870,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "7"
+          "value": "Anti-Tank"
         },
         {
           "label": "MAX",
@@ -3908,7 +3908,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "3"
+          "value": "Medium"
         },
         {
           "label": "MAX",
@@ -3946,7 +3946,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "4"
+          "value": "Heavy"
         },
         {
           "label": "MAX",
@@ -3984,7 +3984,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "3"
+          "value": "Medium"
         },
         {
           "label": "MAX",
@@ -4022,7 +4022,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "4"
+          "value": "Heavy"
         },
         {
           "label": "MAX",
@@ -4060,7 +4060,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "4"
+          "value": "Heavy"
         },
         {
           "label": "MAX",
@@ -4098,7 +4098,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "0"
+          "value": "None"
         },
         {
           "label": "MAX",
@@ -4136,7 +4136,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "5"
+          "value": "Anti-Tank"
         },
         {
           "label": "MAX",
@@ -4174,7 +4174,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "6"
+          "value": "Anti-Tank"
         },
         {
           "label": "MAX",
@@ -4212,7 +4212,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "6"
+          "value": "Anti-Tank"
         },
         {
           "label": "MAX",
@@ -4250,7 +4250,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "4"
+          "value": "Heavy"
         },
         {
           "label": "MAX",
@@ -4288,7 +4288,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "3"
+          "value": "Medium"
         },
         {
           "label": "MAX",
@@ -4326,7 +4326,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "0"
+          "value": "None"
         },
         {
           "label": "MAX",
@@ -4364,7 +4364,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "0"
+          "value": "None"
         },
         {
           "label": "MAX",
@@ -4937,7 +4937,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "6"
+          "value": "Anti-Tank"
         },
         {
           "label": "DAMAGE",
@@ -4971,7 +4971,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "3"
+          "value": "Medium"
         },
         {
           "label": "DAMAGE",
@@ -5005,7 +5005,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "4"
+          "value": "Heavy"
         },
         {
           "label": "DAMAGE",
@@ -5039,7 +5039,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "3"
+          "value": "Medium"
         },
         {
           "label": "DAMAGE",
@@ -5073,7 +5073,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "5"
+          "value": "Anti-Tank"
         },
         {
           "label": "DAMAGE",
@@ -5107,7 +5107,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "4"
+          "value": "Heavy"
         },
         {
           "label": "DAMAGE",
@@ -5141,7 +5141,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "4"
+          "value": "Heavy"
         },
         {
           "label": "DAMAGE",
@@ -5175,7 +5175,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "5"
+          "value": "Anti-Tank"
         },
         {
           "label": "DAMAGE",
@@ -5209,7 +5209,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "3"
+          "value": "Medium"
         },
         {
           "label": "DAMAGE",
@@ -5243,7 +5243,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "6"
+          "value": "Anti-Tank"
         },
         {
           "label": "DAMAGE",
@@ -5277,7 +5277,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "4"
+          "value": "Heavy"
         },
         {
           "label": "DAMAGE",
@@ -5311,7 +5311,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "6"
+          "value": "Anti-Tank"
         },
         {
           "label": "DAMAGE",
@@ -5345,7 +5345,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "3"
+          "value": "Medium"
         },
         {
           "label": "DAMAGE",
@@ -5379,7 +5379,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "3"
+          "value": "Medium"
         },
         {
           "label": "DAMAGE",
@@ -5413,7 +5413,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "6"
+          "value": "Anti-Tank"
         },
         {
           "label": "DAMAGE",
@@ -5477,7 +5477,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "3"
+          "value": "Medium"
         },
         {
           "label": "DAMAGE",
@@ -5511,7 +5511,7 @@
       "statLines": [
         {
           "label": "AP",
-          "value": "5"
+          "value": "Anti-Tank"
         },
         {
           "label": "DAMAGE",
@@ -7442,16 +7442,16 @@
       },
       "statLines": [
         {
-          "label": "COOLDOWN",
-          "value": "600s"
-        },
-        {
           "label": "HEALTH",
           "value": "1800"
         },
         {
           "label": "CREW",
           "value": "1 (Pilot)"
+        },
+        {
+          "label": "COOLDOWN",
+          "value": "600s"
         },
         {
           "label": "WEAPON",
@@ -7484,16 +7484,16 @@
       },
       "statLines": [
         {
-          "label": "COOLDOWN",
-          "value": "480s"
-        },
-        {
           "label": "HEALTH",
           "value": "2400"
         },
         {
           "label": "CREW",
           "value": "4"
+        },
+        {
+          "label": "COOLDOWN",
+          "value": "480s"
         },
         {
           "label": "WEAPON",
@@ -7526,16 +7526,16 @@
       },
       "statLines": [
         {
-          "label": "COOLDOWN",
-          "value": "600s"
-        },
-        {
           "label": "HEALTH",
           "value": "1800"
         },
         {
           "label": "CREW",
           "value": "1 (Pilot)"
+        },
+        {
+          "label": "COOLDOWN",
+          "value": "600s"
         },
         {
           "label": "WEAPON",
@@ -7572,16 +7572,16 @@
       },
       "statLines": [
         {
-          "label": "COOLDOWN",
-          "value": "480s"
-        },
-        {
           "label": "HEALTH",
           "value": "2900"
         },
         {
           "label": "CREW",
           "value": "4"
+        },
+        {
+          "label": "COOLDOWN",
+          "value": "480s"
         },
         {
           "label": "WEAPON",
@@ -7614,16 +7614,16 @@
       },
       "statLines": [
         {
-          "label": "COOLDOWN",
-          "value": "480s"
-        },
-        {
           "label": "HEALTH",
           "value": "2400"
         },
         {
           "label": "CREW",
           "value": "4"
+        },
+        {
+          "label": "COOLDOWN",
+          "value": "480s"
         },
         {
           "label": "WEAPON",
@@ -7656,16 +7656,16 @@
       },
       "statLines": [
         {
-          "label": "COOLDOWN",
-          "value": "600s"
-        },
-        {
           "label": "HEALTH",
           "value": "1600"
         },
         {
           "label": "CREW",
           "value": "1 (Pilot)"
+        },
+        {
+          "label": "COOLDOWN",
+          "value": "600s"
         },
         {
           "label": "WEAPON",
@@ -7702,16 +7702,16 @@
       },
       "statLines": [
         {
-          "label": "COOLDOWN",
-          "value": "780s"
-        },
-        {
           "label": "HEALTH",
           "value": "8000"
         },
         {
           "label": "CREW",
           "value": "4"
+        },
+        {
+          "label": "COOLDOWN",
+          "value": "780s"
         },
         {
           "label": "WEAPON",
@@ -7752,16 +7752,16 @@
       },
       "statLines": [
         {
-          "label": "COOLDOWN",
-          "value": "600s"
-        },
-        {
           "label": "HEALTH",
           "value": "1800"
         },
         {
           "label": "CREW",
           "value": "1 (Pilot)"
+        },
+        {
+          "label": "COOLDOWN",
+          "value": "600s"
         },
         {
           "label": "WEAPON",
