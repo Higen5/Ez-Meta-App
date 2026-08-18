@@ -1,0 +1,7795 @@
+{
+  "game": "hd2",
+  "gameName": "Helldivers 2",
+  "scoreNote": "Tiers come straight from a third-party tier list, one per faction (Automaton, Terminid, Illuminate) — they are not calculated. Score is derived from the tier, with position inside a tier broken by DPS, armor penetration or health where the source publishes it. Five categories (Backpack, Eagle, Booster, Armor Passive, Orbital) publish no such stat, so within a tier the source's own order is kept — that order is correct for Illuminate only. Nothing here is a measurement of in-game performance.",
+  "sourceHash": "ac5a084566a934ef6b2d8ea22f4fca31699f4f21e36b1ed5973203d3ff986881",
+  "generatedAt": "2026-08-18T14:28:06.717Z",
+  "entities": [
+    {
+      "id": "cb-9-explosive-crossbow",
+      "name": "CB-9 Explosive Crossbow",
+      "category": "Primary",
+      "tier": "S+",
+      "score": 6250,
+      "factions": {
+        "automaton": {
+          "tier": "S+",
+          "score": 6333
+        },
+        "terminid": {
+          "tier": "S+",
+          "score": 6000
+        },
+        "illuminate": {
+          "tier": "S+",
+          "score": 6250
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "516"
+        },
+        {
+          "label": "AP",
+          "value": "3"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "r-36-eruptor",
+      "name": "R-36 Eruptor",
+      "category": "Primary",
+      "tier": "S+",
+      "score": 6749,
+      "factions": {
+        "automaton": {
+          "tier": "S+",
+          "score": 6666
+        },
+        "terminid": {
+          "tier": "S+",
+          "score": 6666
+        },
+        "illuminate": {
+          "tier": "S+",
+          "score": 6749
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "853.12"
+        },
+        {
+          "label": "AP",
+          "value": "4"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "sg-8-punisher-plasma",
+      "name": "SG-8 Punisher Plasma",
+      "category": "Primary",
+      "tier": "S+",
+      "score": 6000,
+      "factions": {
+        "automaton": {
+          "tier": "S+",
+          "score": 6000
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5000
+        },
+        "illuminate": {
+          "tier": "S+",
+          "score": 6000
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "299.99"
+        },
+        {
+          "label": "AP",
+          "value": "3"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "plas-101-purifier",
+      "name": "PLAS-101 Purifier",
+      "category": "Primary",
+      "tier": "S+",
+      "score": 6999,
+      "factions": {
+        "automaton": {
+          "tier": "S+",
+          "score": 6999
+        },
+        "terminid": {
+          "tier": "S+",
+          "score": 6999
+        },
+        "illuminate": {
+          "tier": "S+",
+          "score": 6999
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "2916"
+        },
+        {
+          "label": "AP",
+          "value": "3"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "ar-2-coyote",
+      "name": "AR-2 Coyote",
+      "category": "Primary",
+      "tier": "S+",
+      "score": 6500,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4100
+        },
+        "terminid": {
+          "tier": "S+",
+          "score": 6333
+        },
+        "illuminate": {
+          "tier": "S+",
+          "score": 6500
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "750"
+        },
+        {
+          "label": "AP",
+          "value": "3"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "plas-1-scorcher",
+      "name": "PLAS-1 Scorcher",
+      "category": "Primary",
+      "tier": "S",
+      "score": 5599,
+      "factions": {
+        "automaton": {
+          "tier": "S",
+          "score": 5999
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5400
+        },
+        "illuminate": {
+          "tier": "S",
+          "score": 5599
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "1166"
+        },
+        {
+          "label": "AP",
+          "value": "3"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "vg-70-variable",
+      "name": "VG-70 Variable",
+      "category": "Primary",
+      "tier": "S",
+      "score": 5400,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4300
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4599
+        },
+        "illuminate": {
+          "tier": "S",
+          "score": 5400
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "1062"
+        },
+        {
+          "label": "AP",
+          "value": "2"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "flam-66-torcher",
+      "name": "FLAM-66 Torcher",
+      "category": "Primary",
+      "tier": "S",
+      "score": 5000,
+      "factions": {
+        "automaton": {
+          "tier": "C",
+          "score": 2000
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3000
+        },
+        "illuminate": {
+          "tier": "S",
+          "score": 5000
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "250"
+        },
+        {
+          "label": "AP",
+          "value": "4"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "smg-flam-34-stoker",
+      "name": "SMG/FLAM-34 Stoker",
+      "category": "Primary",
+      "tier": "S",
+      "score": 5200,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3357
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4400
+        },
+        "illuminate": {
+          "tier": "S",
+          "score": 5200
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "910"
+        },
+        {
+          "label": "AP",
+          "value": "2"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "sg-97-sweeper",
+      "name": "SG-97 Sweeper",
+      "category": "Primary",
+      "tier": "S",
+      "score": 5799,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4599
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5599
+        },
+        "illuminate": {
+          "tier": "S",
+          "score": 5799
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "1260"
+        },
+        {
+          "label": "AP",
+          "value": "3"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "smg-203-gallant",
+      "name": "SMG-203 Gallant",
+      "category": "Primary",
+      "tier": "S",
+      "score": 5999,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3928
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5799
+        },
+        "illuminate": {
+          "tier": "S",
+          "score": 5999
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "1495"
+        },
+        {
+          "label": "AP",
+          "value": "3"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "r-72-censor",
+      "name": "R-72 Censor",
+      "category": "Primary",
+      "tier": "A",
+      "score": 4315,
+      "factions": {
+        "automaton": {
+          "tier": "S",
+          "score": 5500
+        },
+        "terminid": {
+          "tier": "C",
+          "score": 2571
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4315
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "1100"
+        },
+        {
+          "label": "AP",
+          "value": "2"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "r-63-diligence",
+      "name": "R-63 Diligence",
+      "category": "Primary",
+      "tier": "A",
+      "score": 4263,
+      "factions": {
+        "automaton": {
+          "tier": "S",
+          "score": 5000
+        },
+        "terminid": {
+          "tier": "C",
+          "score": 2428
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4263
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "962"
+        },
+        {
+          "label": "AP",
+          "value": "2"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "r-2-amendment",
+      "name": "R-2 Amendment",
+      "category": "Primary",
+      "tier": "A",
+      "score": 4736,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4699
+        },
+        "terminid": {
+          "tier": "C",
+          "score": 2999
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4736
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "1600"
+        },
+        {
+          "label": "AP",
+          "value": "2"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "las-13-trident",
+      "name": "LAS-13 Trident",
+      "category": "Primary",
+      "tier": "A",
+      "score": 4894,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4899
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4949
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4894
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "1800"
+        },
+        {
+          "label": "AP",
+          "value": "2"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "dbs-2-double-freedom",
+      "name": "DBS-2 Double Freedom",
+      "category": "Primary",
+      "tier": "A",
+      "score": 4841,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4799
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5999
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4841
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "1680"
+        },
+        {
+          "label": "AP",
+          "value": "3"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "las-17-double-edge-sickle",
+      "name": "LAS-17 Double-Edge Sickle",
+      "category": "Primary",
+      "tier": "A",
+      "score": 4105,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4200
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4300
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4105
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "816"
+        },
+        {
+          "label": "AP",
+          "value": "4"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "plas-39-accelerator-rifle",
+      "name": "PLAS-39 Accelerator Rifle",
+      "category": "Primary",
+      "tier": "A",
+      "score": 4999,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4999
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3999
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4999
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "3208"
+        },
+        {
+          "label": "AP",
+          "value": "3"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "jar-5-dominator",
+      "name": "JAR-5 Dominator",
+      "category": "Primary",
+      "tier": "A",
+      "score": 4421,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4400
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4699
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4421
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "1145"
+        },
+        {
+          "label": "AP",
+          "value": "3"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "smg-32-reprimand",
+      "name": "SMG-32 Reprimand",
+      "category": "Primary",
+      "tier": "A",
+      "score": 4368,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3714
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4649
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4368
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "1143"
+        },
+        {
+          "label": "AP",
+          "value": "3"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "ar-61-tenderizer",
+      "name": "AR-61 Tenderizer",
+      "category": "Primary",
+      "tier": "A",
+      "score": 4631,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3856
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4849
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4631
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "1487"
+        },
+        {
+          "label": "AP",
+          "value": "2"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "ar-23-liberator",
+      "name": "AR-23 Liberator",
+      "category": "Primary",
+      "tier": "A",
+      "score": 4210,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3428
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4500
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4210
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "960"
+        },
+        {
+          "label": "AP",
+          "value": "2"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "ar-23a-liberator-carbine",
+      "name": "AR-23A Liberator Carbine",
+      "category": "Primary",
+      "tier": "A",
+      "score": 4578,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3785
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4799
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4578
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "1380"
+        },
+        {
+          "label": "AP",
+          "value": "2"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "mp-98-knight",
+      "name": "MP-98 Knight",
+      "category": "Primary",
+      "tier": "A",
+      "score": 4946,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3999
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4999
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4946
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "2070"
+        },
+        {
+          "label": "AP",
+          "value": "2"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "sg-225ie-breaker-incendiary",
+      "name": "SG-225IE Breaker Incendiary",
+      "category": "Primary",
+      "tier": "A",
+      "score": 4526,
+      "factions": {
+        "automaton": {
+          "tier": "C",
+          "score": 2636
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4749
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4526
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "1200"
+        },
+        {
+          "label": "AP",
+          "value": "2"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "sg-225-breaker",
+      "name": "SG-225 Breaker",
+      "category": "Primary",
+      "tier": "A",
+      "score": 4789,
+      "factions": {
+        "automaton": {
+          "tier": "C",
+          "score": 2999
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4899
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4789
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "1650"
+        },
+        {
+          "label": "AP",
+          "value": "2"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "ma5c-assault-rifle",
+      "name": "MA5C Assault Rifle",
+      "category": "Primary",
+      "tier": "A",
+      "score": 4158,
+      "factions": {
+        "automaton": {
+          "tier": "C",
+          "score": 2454
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4450
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4158
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "960"
+        },
+        {
+          "label": "AP",
+          "value": "3"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "las-5-scythe",
+      "name": "LAS-5 Scythe",
+      "category": "Primary",
+      "tier": "A",
+      "score": 4053,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4000
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4000
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4053
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "350"
+        },
+        {
+          "label": "AP",
+          "value": "2"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "sta-52-assault-rifle",
+      "name": "StA-52 Assault Rifle",
+      "category": "Primary",
+      "tier": "A",
+      "score": 4473,
+      "factions": {
+        "automaton": {
+          "tier": "C",
+          "score": 2545
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3624
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4473
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "1185"
+        },
+        {
+          "label": "AP",
+          "value": "2"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "sta-11-smg",
+      "name": "StA-11 SMG",
+      "category": "Primary",
+      "tier": "A",
+      "score": 4684,
+      "factions": {
+        "automaton": {
+          "tier": "C",
+          "score": 2908
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3874
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4684
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "1575"
+        },
+        {
+          "label": "AP",
+          "value": "2"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "arc-12-blitzer",
+      "name": "ARC-12 Blitzer",
+      "category": "Primary",
+      "tier": "A",
+      "score": 4000,
+      "factions": {
+        "automaton": {
+          "tier": "D",
+          "score": 1200
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5200
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4000
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "333"
+        },
+        {
+          "label": "AP",
+          "value": "3"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "r-63cs-diligence-counter-sniper",
+      "name": "R-63CS Diligence Counter Sniper",
+      "category": "Primary",
+      "tier": "B",
+      "score": 3817,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4500
+        },
+        "terminid": {
+          "tier": "C",
+          "score": 2714
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3817
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "1166"
+        },
+        {
+          "label": "AP",
+          "value": "3"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "ar-59-suppressor",
+      "name": "AR-59 Suppressor",
+      "category": "Primary",
+      "tier": "B",
+      "score": 3727,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3642
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3500
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3727
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "1133"
+        },
+        {
+          "label": "AP",
+          "value": "2"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "br-14-adjudicator",
+      "name": "BR-14 Adjudicator",
+      "category": "Primary",
+      "tier": "B",
+      "score": 3454,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3285
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4350
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3454
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "870"
+        },
+        {
+          "label": "AP",
+          "value": "3"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "ar-23p-liberator-penetrator",
+      "name": "AR-23P Liberator Penetrator",
+      "category": "Primary",
+      "tier": "B",
+      "score": 3272,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3143
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4250
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3272
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "693"
+        },
+        {
+          "label": "AP",
+          "value": "3"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "ar-gl-21-one-two",
+      "name": "AR/GL-21 One-Two",
+      "category": "Primary",
+      "tier": "B",
+      "score": 3636,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3571
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4549
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3636
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "1029"
+        },
+        {
+          "label": "AP",
+          "value": "2"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "las-16-sickle",
+      "name": "LAS-16 Sickle",
+      "category": "Primary",
+      "tier": "B",
+      "score": 3363,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3214
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3250
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3363
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "750"
+        },
+        {
+          "label": "AP",
+          "value": "2"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "sg-20-halt",
+      "name": "SG-20 Halt",
+      "category": "Primary",
+      "tier": "B",
+      "score": 3182,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3000
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4100
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3182
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "513"
+        },
+        {
+          "label": "AP",
+          "value": "3"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "smg-37-defender",
+      "name": "SMG-37 Defender",
+      "category": "Primary",
+      "tier": "B",
+      "score": 3545,
+      "factions": {
+        "automaton": {
+          "tier": "C",
+          "score": 2363
+        },
+        "terminid": {
+          "tier": "C",
+          "score": 2285
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3545
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "953"
+        },
+        {
+          "label": "AP",
+          "value": "2"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "sg-451-cookout",
+      "name": "SG-451 Cookout",
+      "category": "Primary",
+      "tier": "B",
+      "score": 3000,
+      "factions": {
+        "automaton": {
+          "tier": "C",
+          "score": 2091
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4050
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3000
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "426"
+        },
+        {
+          "label": "AP",
+          "value": "2"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "sg-225sp-breaker-spray-pray",
+      "name": "SG-225SP Breaker SPRAY & PRAY",
+      "category": "Primary",
+      "tier": "B",
+      "score": 3999,
+      "factions": {
+        "automaton": {
+          "tier": "C",
+          "score": 2817
+        },
+        "terminid": {
+          "tier": "C",
+          "score": 2856
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3999
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "1320"
+        },
+        {
+          "label": "AP",
+          "value": "2"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "r-6-deadeye",
+      "name": "R-6 Deadeye",
+      "category": "Primary",
+      "tier": "B",
+      "score": 3091,
+      "factions": {
+        "automaton": {
+          "tier": "C",
+          "score": 2182
+        },
+        "terminid": {
+          "tier": "C",
+          "score": 2000
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3091
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "500"
+        },
+        {
+          "label": "AP",
+          "value": "3"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "m7s-smg",
+      "name": "M7S SMG",
+      "category": "Primary",
+      "tier": "B",
+      "score": 3908,
+      "factions": {
+        "automaton": {
+          "tier": "C",
+          "score": 2727
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3749
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3908
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "1308"
+        },
+        {
+          "label": "AP",
+          "value": "2"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "ar-32-pacifier",
+      "name": "AR-32 Pacifier",
+      "category": "Primary",
+      "tier": "C",
+      "score": 2250,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3071
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4200
+        },
+        "illuminate": {
+          "tier": "C",
+          "score": 2250
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "640"
+        },
+        {
+          "label": "AP",
+          "value": "3"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "sg-8-punisher",
+      "name": "SG-8 Punisher",
+      "category": "Primary",
+      "tier": "C",
+      "score": 2000,
+      "factions": {
+        "automaton": {
+          "tier": "C",
+          "score": 2272
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4150
+        },
+        "illuminate": {
+          "tier": "C",
+          "score": 2000
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "540"
+        },
+        {
+          "label": "AP",
+          "value": "2"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "m90a-shotgun",
+      "name": "M90A Shotgun",
+      "category": "Primary",
+      "tier": "C",
+      "score": 2749,
+      "factions": {
+        "automaton": {
+          "tier": "D",
+          "score": 1999
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3375
+        },
+        "illuminate": {
+          "tier": "C",
+          "score": 2749
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "806"
+        },
+        {
+          "label": "AP",
+          "value": "2"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "smg-72-pummeler",
+      "name": "SMG-72 Pummeler",
+      "category": "Primary",
+      "tier": "C",
+      "score": 2500,
+      "factions": {
+        "automaton": {
+          "tier": "D",
+          "score": 1799
+        },
+        "terminid": {
+          "tier": "C",
+          "score": 2143
+        },
+        "illuminate": {
+          "tier": "C",
+          "score": 2500
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "672"
+        },
+        {
+          "label": "AP",
+          "value": "2"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "r-40-k-hot-shot-marksman-rifle",
+      "name": "R/40-K Hot-Shot Marksman Rifle",
+      "category": "Primary",
+      "tier": "C",
+      "score": 2999,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3500
+        },
+        "terminid": {
+          "tier": "D",
+          "score": 1999
+        },
+        "illuminate": {
+          "tier": "C",
+          "score": 2999
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "962"
+        },
+        {
+          "label": "AP",
+          "value": "3"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "ar-23c-liberator-concussive",
+      "name": "AR-23C Liberator Concussive",
+      "category": "Primary",
+      "tier": "D",
+      "score": 1999,
+      "factions": {
+        "automaton": {
+          "tier": "D",
+          "score": 1599
+        },
+        "terminid": {
+          "tier": "D",
+          "score": 1500
+        },
+        "illuminate": {
+          "tier": "D",
+          "score": 1999
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "500"
+        },
+        {
+          "label": "AP",
+          "value": "2"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "sg-8s-slugger",
+      "name": "SG-8S Slugger",
+      "category": "Primary",
+      "tier": "D",
+      "score": 1500,
+      "factions": {
+        "automaton": {
+          "tier": "D",
+          "score": 1400
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3125
+        },
+        "illuminate": {
+          "tier": "D",
+          "score": 1500
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "440"
+        },
+        {
+          "label": "AP",
+          "value": "3"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "r-2124-constitution",
+      "name": "R-2124 Constitution",
+      "category": "Primary",
+      "tier": "D",
+      "score": 1000,
+      "factions": {
+        "automaton": {
+          "tier": "D",
+          "score": 1000
+        },
+        "terminid": {
+          "tier": "D",
+          "score": 1000
+        },
+        "illuminate": {
+          "tier": "D",
+          "score": 1000
+        }
+      },
+      "statLines": [
+        {
+          "label": "DPS",
+          "value": "180"
+        },
+        {
+          "label": "AP",
+          "value": "3"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "las-58-talon",
+      "name": "LAS-58 Talon",
+      "category": "Secondary",
+      "tier": "S+",
+      "score": 6666,
+      "factions": {
+        "automaton": {
+          "tier": "S",
+          "score": 5999
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5250
+        },
+        "illuminate": {
+          "tier": "S+",
+          "score": 6666
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "3"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "plas-15-loyalist",
+      "name": "PLAS-15 Loyalist",
+      "category": "Secondary",
+      "tier": "S+",
+      "score": 6333,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4599
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5000
+        },
+        "illuminate": {
+          "tier": "S+",
+          "score": 6333
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "3"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "gp-31-grenade-pistol",
+      "name": "GP-31 Grenade Pistol",
+      "category": "Secondary",
+      "tier": "S+",
+      "score": 6000,
+      "factions": {
+        "automaton": {
+          "tier": "S",
+          "score": 5000
+        },
+        "terminid": {
+          "tier": "S+",
+          "score": 6000
+        },
+        "illuminate": {
+          "tier": "S+",
+          "score": 6000
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "3"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "p-72-crisper",
+      "name": "P-72 Crisper",
+      "category": "Secondary",
+      "tier": "S+",
+      "score": 6999,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3999
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4833
+        },
+        "illuminate": {
+          "tier": "S+",
+          "score": 6999
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "4"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "p-35-re-educator",
+      "name": "P-35 Re-Educator",
+      "category": "Secondary",
+      "tier": "S",
+      "score": 5999,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4799
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5999
+        },
+        "illuminate": {
+          "tier": "S",
+          "score": 5999
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "4"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "p-92-warrant",
+      "name": "P-92 Warrant",
+      "category": "Secondary",
+      "tier": "S",
+      "score": 5000,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3749
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4666
+        },
+        "illuminate": {
+          "tier": "S",
+          "score": 5000
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "3"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "p-40-k-bolt-pistol",
+      "name": "P/40-K Bolt Pistol",
+      "category": "Secondary",
+      "tier": "S",
+      "score": 5500,
+      "factions": {
+        "automaton": {
+          "tier": "S+",
+          "score": 6500
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5749
+        },
+        "illuminate": {
+          "tier": "S",
+          "score": 5500
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "4"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "p-113-verdict",
+      "name": "P-113 Verdict",
+      "category": "Secondary",
+      "tier": "A",
+      "score": 4599,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4400
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4500
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4599
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "3"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "p-69-veto",
+      "name": "P-69 Veto",
+      "category": "Secondary",
+      "tier": "A",
+      "score": 4400,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4200
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4333
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4400
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "3"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "p-4-senator",
+      "name": "P-4 Senator",
+      "category": "Secondary",
+      "tier": "A",
+      "score": 4799,
+      "factions": {
+        "automaton": {
+          "tier": "S+",
+          "score": 6000
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5500
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4799
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "4"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "gp-20-ultimatum",
+      "name": "GP-20 Ultimatum",
+      "category": "Secondary",
+      "tier": "A",
+      "score": 4999,
+      "factions": {
+        "automaton": {
+          "tier": "S+",
+          "score": 6999
+        },
+        "terminid": {
+          "tier": "S+",
+          "score": 6999
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4999
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "6"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "p-19-redeemer",
+      "name": "P-19 Redeemer",
+      "category": "Secondary",
+      "tier": "A",
+      "score": 4200,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3250
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4167
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4200
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "2"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "p-11-stim-pistol",
+      "name": "P-11 Stim Pistol",
+      "category": "Secondary",
+      "tier": "A",
+      "score": 4000,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4000
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4000
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4000
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "0"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "m6c-socom",
+      "name": "M6C-SOCOM",
+      "category": "Secondary",
+      "tier": "B",
+      "score": 3200,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3000
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3250
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3200
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "2"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "cqc-2-saber",
+      "name": "CQC-2 Saber",
+      "category": "Secondary",
+      "tier": "B",
+      "score": 3799,
+      "factions": {
+        "automaton": {
+          "tier": "C",
+          "score": 2999
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3999
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3799
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "3"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "cqc-5-combat-hatchet",
+      "name": "CQC-5 Combat Hatchet",
+      "category": "Secondary",
+      "tier": "B",
+      "score": 3599,
+      "factions": {
+        "automaton": {
+          "tier": "C",
+          "score": 2666
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3749
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3599
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "3"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "cqc-42-machete",
+      "name": "CQC-42 Machete",
+      "category": "Secondary",
+      "tier": "B",
+      "score": 3400,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3500
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3500
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3400
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "3"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "las-7-dagger",
+      "name": "LAS-7 Dagger",
+      "category": "Secondary",
+      "tier": "B",
+      "score": 3000,
+      "factions": {
+        "automaton": {
+          "tier": "C",
+          "score": 2333
+        },
+        "terminid": {
+          "tier": "C",
+          "score": 2250
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3000
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "2"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "p-33-missile-pistol",
+      "name": "P-33 Missile Pistol",
+      "category": "Secondary",
+      "tier": "B",
+      "score": 3999,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4999
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4999
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3999
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "5"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "sg-22-bushwhacker",
+      "name": "SG-22 Bushwhacker",
+      "category": "Secondary",
+      "tier": "C",
+      "score": 2250,
+      "factions": {
+        "automaton": {
+          "tier": "C",
+          "score": 2000
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3000
+        },
+        "illuminate": {
+          "tier": "C",
+          "score": 2250
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "2"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "p-2-peacemaker",
+      "name": "P-2 Peacemaker",
+      "category": "Secondary",
+      "tier": "C",
+      "score": 2000,
+      "factions": {
+        "automaton": {
+          "tier": "D",
+          "score": 1000
+        },
+        "terminid": {
+          "tier": "C",
+          "score": 2000
+        },
+        "illuminate": {
+          "tier": "C",
+          "score": 2000
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "2"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "cqc-19-stun-lance",
+      "name": "CQC-19 Stun Lance",
+      "category": "Secondary",
+      "tier": "C",
+      "score": 2999,
+      "factions": {
+        "automaton": {
+          "tier": "D",
+          "score": 1999
+        },
+        "terminid": {
+          "tier": "C",
+          "score": 2999
+        },
+        "illuminate": {
+          "tier": "C",
+          "score": 2999
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "3"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "cqc-30-stun-baton",
+      "name": "CQC-30 Stun Baton",
+      "category": "Secondary",
+      "tier": "C",
+      "score": 2749,
+      "factions": {
+        "automaton": {
+          "tier": "D",
+          "score": 1666
+        },
+        "terminid": {
+          "tier": "C",
+          "score": 2749
+        },
+        "illuminate": {
+          "tier": "C",
+          "score": 2749
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "3"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "cqc-73-entrenchment-tool",
+      "name": "CQC-73 Entrenchment Tool",
+      "category": "Secondary",
+      "tier": "C",
+      "score": 2500,
+      "factions": {
+        "automaton": {
+          "tier": "D",
+          "score": 1333
+        },
+        "terminid": {
+          "tier": "C",
+          "score": 2500
+        },
+        "illuminate": {
+          "tier": "C",
+          "score": 2500
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "3"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "rl-77-airburst-rocket-launcher",
+      "name": "RL-77 Airburst Rocket Launcher",
+      "category": "Support Weapon",
+      "tier": "S+",
+      "score": 6500,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4000
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3333
+        },
+        "illuminate": {
+          "tier": "S+",
+          "score": 6500
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "3"
+        },
+        {
+          "label": "BACKPACK",
+          "value": "Yes"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "m-105-stalwart",
+      "name": "M-105 Stalwart",
+      "category": "Support Weapon",
+      "tier": "S+",
+      "score": 6167,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3111
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4167
+        },
+        "illuminate": {
+          "tier": "S+",
+          "score": 6167
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "2"
+        },
+        {
+          "label": "BACKPACK",
+          "value": "No"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "flam-40-flamethrower",
+      "name": "FLAM-40 Flamethrower",
+      "category": "Support Weapon",
+      "tier": "S+",
+      "score": 6999,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3888
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5143
+        },
+        "illuminate": {
+          "tier": "S+",
+          "score": 6999
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "4"
+        },
+        {
+          "label": "BACKPACK",
+          "value": "No"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "ac-8-autocannon",
+      "name": "AC-8 Autocannon",
+      "category": "Support Weapon",
+      "tier": "S+",
+      "score": 6833,
+      "factions": {
+        "automaton": {
+          "tier": "S+",
+          "score": 6000
+        },
+        "terminid": {
+          "tier": "S+",
+          "score": 6250
+        },
+        "illuminate": {
+          "tier": "S+",
+          "score": 6833
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "4"
+        },
+        {
+          "label": "BACKPACK",
+          "value": "Yes"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "sta-x3-w-a-s-p-launcher",
+      "name": "StA-X3 W.A.S.P. Launcher",
+      "category": "Support Weapon",
+      "tier": "S+",
+      "score": 6333,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3444
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3222
+        },
+        "illuminate": {
+          "tier": "S+",
+          "score": 6333
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "3"
+        },
+        {
+          "label": "BACKPACK",
+          "value": "Yes"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "b-flam-80-cremator",
+      "name": "B/FLAM-80 Cremator",
+      "category": "Support Weapon",
+      "tier": "S+",
+      "score": 6666,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4999
+        },
+        "terminid": {
+          "tier": "S+",
+          "score": 6000
+        },
+        "illuminate": {
+          "tier": "S+",
+          "score": 6666
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "4"
+        },
+        {
+          "label": "BACKPACK",
+          "value": "Yes"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "mgx-42-bullet-storm",
+      "name": "MGX-42 Bullet Storm",
+      "category": "Support Weapon",
+      "tier": "S+",
+      "score": 6000,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3000
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4000
+        },
+        "illuminate": {
+          "tier": "S+",
+          "score": 6000
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "2"
+        },
+        {
+          "label": "BACKPACK",
+          "value": "No"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "s-11-speargun",
+      "name": "S-11 Speargun",
+      "category": "Support Weapon",
+      "tier": "S",
+      "score": 5500,
+      "factions": {
+        "automaton": {
+          "tier": "S",
+          "score": 5444
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5428
+        },
+        "illuminate": {
+          "tier": "S",
+          "score": 5500
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "5"
+        },
+        {
+          "label": "BACKPACK",
+          "value": "No"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "gl-21-grenade-launcher",
+      "name": "GL-21 Grenade Launcher",
+      "category": "Support Weapon",
+      "tier": "S",
+      "score": 5250,
+      "factions": {
+        "automaton": {
+          "tier": "S",
+          "score": 5000
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5000
+        },
+        "illuminate": {
+          "tier": "S",
+          "score": 5250
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "3"
+        },
+        {
+          "label": "BACKPACK",
+          "value": "No"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "mg-43-machine-gun",
+      "name": "MG-43 Machine Gun",
+      "category": "Support Weapon",
+      "tier": "S",
+      "score": 5000,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3333
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3111
+        },
+        "illuminate": {
+          "tier": "S",
+          "score": 5000
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "3"
+        },
+        {
+          "label": "BACKPACK",
+          "value": "No"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "eat-700-expendable-napalm",
+      "name": "EAT-700 Expendable Napalm",
+      "category": "Support Weapon",
+      "tier": "S",
+      "score": 5749,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3999
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5714
+        },
+        "illuminate": {
+          "tier": "S",
+          "score": 5749
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "6"
+        },
+        {
+          "label": "BACKPACK",
+          "value": "No"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "40-k-meltagun",
+      "name": "40-K Meltagun",
+      "category": "Support Weapon",
+      "tier": "S",
+      "score": 5999,
+      "factions": {
+        "automaton": {
+          "tier": "S+",
+          "score": 6999
+        },
+        "terminid": {
+          "tier": "S+",
+          "score": 6999
+        },
+        "illuminate": {
+          "tier": "S",
+          "score": 5999
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "7"
+        },
+        {
+          "label": "BACKPACK",
+          "value": "No"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "b-md-c4-pack",
+      "name": "B/MD C4 Pack",
+      "category": "Support Weapon",
+      "tier": "A",
+      "score": 4856,
+      "factions": {
+        "automaton": {
+          "tier": "S+",
+          "score": 6749
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5856
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4856
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "7"
+        },
+        {
+          "label": "BACKPACK",
+          "value": "Yes"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "eat-411-leveller",
+      "name": "EAT-411 Leveller",
+      "category": "Support Weapon",
+      "tier": "A",
+      "score": 4571,
+      "factions": {
+        "automaton": {
+          "tier": "S+",
+          "score": 6500
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3999
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4571
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "6"
+        },
+        {
+          "label": "BACKPACK",
+          "value": "No"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "ms-11-solo-silo",
+      "name": "MS-11 Solo Silo",
+      "category": "Support Weapon",
+      "tier": "A",
+      "score": 4999,
+      "factions": {
+        "automaton": {
+          "tier": "S",
+          "score": 5999
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5999
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4999
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "9"
+        },
+        {
+          "label": "BACKPACK",
+          "value": "No"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "cqc-20-breaching-hammer",
+      "name": "CQC-20 Breaching Hammer",
+      "category": "Support Weapon",
+      "tier": "A",
+      "score": 4428,
+      "factions": {
+        "automaton": {
+          "tier": "S",
+          "score": 5333
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5285
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4428
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "5"
+        },
+        {
+          "label": "BACKPACK",
+          "value": "No"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "arc-3-arc-thrower",
+      "name": "ARC-3 Arc Thrower",
+      "category": "Support Weapon",
+      "tier": "A",
+      "score": 4714,
+      "factions": {
+        "automaton": {
+          "tier": "C",
+          "score": 2999
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4999
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4714
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "7"
+        },
+        {
+          "label": "BACKPACK",
+          "value": "No"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "gl-52-de-escalator",
+      "name": "GL-52 De-Escalator",
+      "category": "Support Weapon",
+      "tier": "A",
+      "score": 4285,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3777
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4500
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4285
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "4"
+        },
+        {
+          "label": "BACKPACK",
+          "value": "No"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "m-1000-maxigun",
+      "name": "M-1000 Maxigun",
+      "category": "Support Weapon",
+      "tier": "A",
+      "score": 4000,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3222
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3000
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4000
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "3"
+        },
+        {
+          "label": "BACKPACK",
+          "value": "Yes"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "gl-28-belt-fed-grenade-launcher",
+      "name": "GL-28 Belt-Fed Grenade Launcher",
+      "category": "Support Weapon",
+      "tier": "A",
+      "score": 4143,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4666
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4333
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4143
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "4"
+        },
+        {
+          "label": "BACKPACK",
+          "value": "Yes"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "mls-4x-commando",
+      "name": "MLS-4X Commando",
+      "category": "Support Weapon",
+      "tier": "B",
+      "score": 3999,
+      "factions": {
+        "automaton": {
+          "tier": "S",
+          "score": 5777
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3888
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3999
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "6"
+        },
+        {
+          "label": "BACKPACK",
+          "value": "No"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "plas-45-epoch",
+      "name": "PLAS-45 Epoch",
+      "category": "Support Weapon",
+      "tier": "B",
+      "score": 3666,
+      "factions": {
+        "automaton": {
+          "tier": "S",
+          "score": 5222
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4666
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3666
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "5"
+        },
+        {
+          "label": "BACKPACK",
+          "value": "No"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "mg-206-heavy-machine-gun",
+      "name": "MG-206 Heavy Machine Gun",
+      "category": "Support Weapon",
+      "tier": "B",
+      "score": 3333,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3666
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3666
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3333
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "4"
+        },
+        {
+          "label": "BACKPACK",
+          "value": "No"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "las-98-laser-cannon",
+      "name": "LAS-98 Laser Cannon",
+      "category": "Support Weapon",
+      "tier": "B",
+      "score": 3000,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3555
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3555
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3000
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "4"
+        },
+        {
+          "label": "BACKPACK",
+          "value": "No"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "gr-8-recoilless-rifle",
+      "name": "GR-8 Recoilless Rifle",
+      "category": "Support Weapon",
+      "tier": "C",
+      "score": 2856,
+      "factions": {
+        "automaton": {
+          "tier": "S+",
+          "score": 6250
+        },
+        "terminid": {
+          "tier": "S+",
+          "score": 6749
+        },
+        "illuminate": {
+          "tier": "C",
+          "score": 2856
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "6"
+        },
+        {
+          "label": "BACKPACK",
+          "value": "Yes"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "apw-1-anti-materiel-rifle",
+      "name": "APW-1 Anti-Materiel Rifle",
+      "category": "Support Weapon",
+      "tier": "C",
+      "score": 2000,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4333
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3444
+        },
+        "illuminate": {
+          "tier": "C",
+          "score": 2000
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "4"
+        },
+        {
+          "label": "BACKPACK",
+          "value": "No"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "faf-14-spear",
+      "name": "FAF-14 Spear",
+      "category": "Support Weapon",
+      "tier": "C",
+      "score": 2999,
+      "factions": {
+        "automaton": {
+          "tier": "S",
+          "score": 5888
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4833
+        },
+        "illuminate": {
+          "tier": "C",
+          "score": 2999
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "7"
+        },
+        {
+          "label": "BACKPACK",
+          "value": "Yes"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "rs-422-railgun",
+      "name": "RS-422 Railgun",
+      "category": "Support Weapon",
+      "tier": "C",
+      "score": 2428,
+      "factions": {
+        "automaton": {
+          "tier": "S",
+          "score": 5111
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3777
+        },
+        "illuminate": {
+          "tier": "C",
+          "score": 2428
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "5"
+        },
+        {
+          "label": "BACKPACK",
+          "value": "No"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "eat-17-expendable-anti-tank",
+      "name": "EAT-17 Expendable Anti-Tank",
+      "category": "Support Weapon",
+      "tier": "C",
+      "score": 2714,
+      "factions": {
+        "automaton": {
+          "tier": "S",
+          "score": 5666
+        },
+        "terminid": {
+          "tier": "S+",
+          "score": 6500
+        },
+        "illuminate": {
+          "tier": "C",
+          "score": 2714
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "6"
+        },
+        {
+          "label": "BACKPACK",
+          "value": "No"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "las-99-quasar-cannon",
+      "name": "LAS-99 Quasar Cannon",
+      "category": "Support Weapon",
+      "tier": "C",
+      "score": 2571,
+      "factions": {
+        "automaton": {
+          "tier": "S",
+          "score": 5555
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5571
+        },
+        "illuminate": {
+          "tier": "C",
+          "score": 2571
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "6"
+        },
+        {
+          "label": "BACKPACK",
+          "value": "No"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "tx-41-sterilizer",
+      "name": "TX-41 Sterilizer",
+      "category": "Support Weapon",
+      "tier": "C",
+      "score": 2285,
+      "factions": {
+        "automaton": {
+          "tier": "D",
+          "score": 1999
+        },
+        "terminid": {
+          "tier": "D",
+          "score": 1999
+        },
+        "illuminate": {
+          "tier": "C",
+          "score": 2285
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "5"
+        },
+        {
+          "label": "BACKPACK",
+          "value": "No"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "cqc-9-defoliation-tool",
+      "name": "CQC-9 Defoliation Tool",
+      "category": "Support Weapon",
+      "tier": "C",
+      "score": 2143,
+      "factions": {
+        "automaton": {
+          "tier": "D",
+          "score": 1500
+        },
+        "terminid": {
+          "tier": "C",
+          "score": 2999
+        },
+        "illuminate": {
+          "tier": "C",
+          "score": 2143
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "5"
+        },
+        {
+          "label": "BACKPACK",
+          "value": "No"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "cqc-1-one-true-flag",
+      "name": "CQC-1 One True Flag",
+      "category": "Support Weapon",
+      "tier": "D",
+      "score": 1999,
+      "factions": {
+        "automaton": {
+          "tier": "D",
+          "score": 1000
+        },
+        "terminid": {
+          "tier": "D",
+          "score": 1000
+        },
+        "illuminate": {
+          "tier": "D",
+          "score": 1999
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "3"
+        },
+        {
+          "label": "BACKPACK",
+          "value": "No"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "g-123-thermite",
+      "name": "G-123 Thermite",
+      "category": "Throwable",
+      "tier": "S+",
+      "score": 6999,
+      "factions": {
+        "automaton": {
+          "tier": "S+",
+          "score": 6999
+        },
+        "terminid": {
+          "tier": "S+",
+          "score": 6999
+        },
+        "illuminate": {
+          "tier": "S+",
+          "score": 6999
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "7"
+        },
+        {
+          "label": "MAX",
+          "value": "3"
+        },
+        {
+          "label": "DEMO",
+          "value": "30"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "g-4-gas",
+      "name": "G-4 Gas",
+      "category": "Throwable",
+      "tier": "S+",
+      "score": 6666,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4999
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5833
+        },
+        "illuminate": {
+          "tier": "S+",
+          "score": 6666
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "6"
+        },
+        {
+          "label": "MAX",
+          "value": "4"
+        },
+        {
+          "label": "DEMO",
+          "value": "30"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "g-13-incendiary-impact",
+      "name": "G-13 Incendiary Impact",
+      "category": "Throwable",
+      "tier": "S+",
+      "score": 6333,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3999
+        },
+        "terminid": {
+          "tier": "S+",
+          "score": 6500
+        },
+        "illuminate": {
+          "tier": "S+",
+          "score": 6333
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "4"
+        },
+        {
+          "label": "MAX",
+          "value": "5"
+        },
+        {
+          "label": "DEMO",
+          "value": "30"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "g-10-incendiary",
+      "name": "G-10 Incendiary",
+      "category": "Throwable",
+      "tier": "S+",
+      "score": 6000,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3749
+        },
+        "terminid": {
+          "tier": "S+",
+          "score": 6000
+        },
+        "illuminate": {
+          "tier": "S+",
+          "score": 6000
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "4"
+        },
+        {
+          "label": "MAX",
+          "value": "5"
+        },
+        {
+          "label": "DEMO",
+          "value": "30"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "g-16-impact",
+      "name": "G-16 Impact",
+      "category": "Throwable",
+      "tier": "S",
+      "score": 5000,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4500
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5333
+        },
+        "illuminate": {
+          "tier": "S",
+          "score": 5000
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "4"
+        },
+        {
+          "label": "MAX",
+          "value": "5"
+        },
+        {
+          "label": "DEMO",
+          "value": "30"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "g-40-k-melta-mine",
+      "name": "G/40-K Melta Mine",
+      "category": "Throwable",
+      "tier": "S",
+      "score": 5999,
+      "factions": {
+        "automaton": {
+          "tier": "S",
+          "score": 5999
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5999
+        },
+        "illuminate": {
+          "tier": "S",
+          "score": 5999
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "7"
+        },
+        {
+          "label": "MAX",
+          "value": "4"
+        },
+        {
+          "label": "DEMO",
+          "value": "40"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "tm-1-lure-mine",
+      "name": "TM-1 Lure Mine",
+      "category": "Throwable",
+      "tier": "A",
+      "score": 4874,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4833
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5500
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4874
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "5"
+        },
+        {
+          "label": "MAX",
+          "value": "4"
+        },
+        {
+          "label": "DEMO",
+          "value": "30"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "g-142-pyrotech",
+      "name": "G-142 Pyrotech",
+      "category": "Throwable",
+      "tier": "A",
+      "score": 4999,
+      "factions": {
+        "automaton": {
+          "tier": "S",
+          "score": 5749
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4999
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4999
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "7"
+        },
+        {
+          "label": "MAX",
+          "value": "6"
+        },
+        {
+          "label": "DEMO",
+          "value": "30"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "g-6-frag",
+      "name": "G-6 Frag",
+      "category": "Throwable",
+      "tier": "A",
+      "score": 4250,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3500
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4250
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4250
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "3"
+        },
+        {
+          "label": "MAX",
+          "value": "6"
+        },
+        {
+          "label": "DEMO",
+          "value": "20"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "g-12-high-explosive",
+      "name": "G-12 High Explosive",
+      "category": "Throwable",
+      "tier": "A",
+      "score": 4624,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4333
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4500
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4624
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "4"
+        },
+        {
+          "label": "MAX",
+          "value": "5"
+        },
+        {
+          "label": "DEMO",
+          "value": "30"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "g-7-pineapple",
+      "name": "G-7 Pineapple",
+      "category": "Throwable",
+      "tier": "A",
+      "score": 4125,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4000
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4000
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4125
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "3"
+        },
+        {
+          "label": "MAX",
+          "value": "5"
+        },
+        {
+          "label": "DEMO",
+          "value": "30"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "g-50-seeker",
+      "name": "G-50 Seeker",
+      "category": "Throwable",
+      "tier": "A",
+      "score": 4500,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4167
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3999
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4500
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "4"
+        },
+        {
+          "label": "MAX",
+          "value": "5"
+        },
+        {
+          "label": "DEMO",
+          "value": "30"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "ted-63-dynamite",
+      "name": "TED-63 Dynamite",
+      "category": "Throwable",
+      "tier": "A",
+      "score": 4375,
+      "factions": {
+        "automaton": {
+          "tier": "S",
+          "score": 5250
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5167
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4375
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "4"
+        },
+        {
+          "label": "MAX",
+          "value": "4"
+        },
+        {
+          "label": "DEMO",
+          "value": "40"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "g-sh-39-shield",
+      "name": "G/SH-39 Shield",
+      "category": "Throwable",
+      "tier": "A",
+      "score": 4000,
+      "factions": {
+        "automaton": {
+          "tier": "S",
+          "score": 5000
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5000
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4000
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "0"
+        },
+        {
+          "label": "MAX",
+          "value": "4"
+        },
+        {
+          "label": "DEMO",
+          "value": "20"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "g-48-giga-grenade",
+      "name": "G-48 Giga Grenade",
+      "category": "Throwable",
+      "tier": "A",
+      "score": 4749,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4666
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4749
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4749
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "5"
+        },
+        {
+          "label": "MAX",
+          "value": "2"
+        },
+        {
+          "label": "DEMO",
+          "value": "40"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "g-109-urchin",
+      "name": "G-109 Urchin",
+      "category": "Throwable",
+      "tier": "C",
+      "score": 2999,
+      "factions": {
+        "automaton": {
+          "tier": "D",
+          "score": 1999
+        },
+        "terminid": {
+          "tier": "D",
+          "score": 1999
+        },
+        "illuminate": {
+          "tier": "C",
+          "score": 2999
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "6"
+        },
+        {
+          "label": "MAX",
+          "value": "5"
+        },
+        {
+          "label": "DEMO",
+          "value": "0"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "g-23-stun",
+      "name": "G-23 Stun",
+      "category": "Throwable",
+      "tier": "C",
+      "score": 2500,
+      "factions": {
+        "automaton": {
+          "tier": "S",
+          "score": 5500
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5666
+        },
+        "illuminate": {
+          "tier": "C",
+          "score": 2500
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "6"
+        },
+        {
+          "label": "MAX",
+          "value": "5"
+        },
+        {
+          "label": "DEMO",
+          "value": "0"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "g-31-arc",
+      "name": "G-31 Arc",
+      "category": "Throwable",
+      "tier": "C",
+      "score": 2000,
+      "factions": {
+        "automaton": {
+          "tier": "C",
+          "score": 2999
+        },
+        "terminid": {
+          "tier": "C",
+          "score": 2999
+        },
+        "illuminate": {
+          "tier": "C",
+          "score": 2000
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "4"
+        },
+        {
+          "label": "MAX",
+          "value": "5"
+        },
+        {
+          "label": "DEMO",
+          "value": "0"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "k-2-throwing-knife",
+      "name": "K-2 Throwing Knife",
+      "category": "Throwable",
+      "tier": "D",
+      "score": 1999,
+      "factions": {
+        "automaton": {
+          "tier": "D",
+          "score": 1000
+        },
+        "terminid": {
+          "tier": "D",
+          "score": 1666
+        },
+        "illuminate": {
+          "tier": "D",
+          "score": 1999
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "3"
+        },
+        {
+          "label": "MAX",
+          "value": "20"
+        },
+        {
+          "label": "DEMO",
+          "value": "10"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "g-89-smokecreen",
+      "name": "G-89 Smokecreen",
+      "category": "Throwable",
+      "tier": "D",
+      "score": 1500,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3250
+        },
+        "terminid": {
+          "tier": "D",
+          "score": 1333
+        },
+        "illuminate": {
+          "tier": "D",
+          "score": 1500
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "0"
+        },
+        {
+          "label": "MAX",
+          "value": "5"
+        },
+        {
+          "label": "DEMO",
+          "value": "0"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "g-3-smoke",
+      "name": "G-3 Smoke",
+      "category": "Throwable",
+      "tier": "D",
+      "score": 1000,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3000
+        },
+        "terminid": {
+          "tier": "D",
+          "score": 1000
+        },
+        "illuminate": {
+          "tier": "D",
+          "score": 1000
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "0"
+        },
+        {
+          "label": "MAX",
+          "value": "5"
+        },
+        {
+          "label": "DEMO",
+          "value": "0"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "ax-flam-75-hot-dog",
+      "name": "AX/FLAM-75 Hot Dog",
+      "category": "Backpack",
+      "tier": "S+",
+      "score": 6999,
+      "factions": {
+        "automaton": {
+          "tier": "S+",
+          "score": 6999
+        },
+        "terminid": {
+          "tier": "S+",
+          "score": 6999
+        },
+        "illuminate": {
+          "tier": "S+",
+          "score": 6999
+        }
+      },
+      "statLines": [],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "lift-182-warp-pack",
+      "name": "LIFT-182 Warp Pack",
+      "category": "Backpack",
+      "tier": "S+",
+      "score": 6500,
+      "factions": {
+        "automaton": {
+          "tier": "S+",
+          "score": 6666
+        },
+        "terminid": {
+          "tier": "S+",
+          "score": 6500
+        },
+        "illuminate": {
+          "tier": "S+",
+          "score": 6500
+        }
+      },
+      "statLines": [],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "b-1-supply-pack",
+      "name": "B-1 Supply Pack",
+      "category": "Backpack",
+      "tier": "S+",
+      "score": 6000,
+      "factions": {
+        "automaton": {
+          "tier": "S+",
+          "score": 6333
+        },
+        "terminid": {
+          "tier": "S+",
+          "score": 6000
+        },
+        "illuminate": {
+          "tier": "S+",
+          "score": 6000
+        }
+      },
+      "statLines": [],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "b-100-portable-hellbomb",
+      "name": "B-100 Portable Hellbomb",
+      "category": "Backpack",
+      "tier": "S",
+      "score": 5999,
+      "factions": {
+        "automaton": {
+          "tier": "S+",
+          "score": 6000
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5999
+        },
+        "illuminate": {
+          "tier": "S",
+          "score": 5999
+        }
+      },
+      "statLines": [],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "ax-ar-23-guard-dog",
+      "name": "AX/AR-23 Guard Dog",
+      "category": "Backpack",
+      "tier": "S",
+      "score": 5666,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4999
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4999
+        },
+        "illuminate": {
+          "tier": "S",
+          "score": 5666
+        }
+      },
+      "statLines": [],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "lift-850-jump-pack",
+      "name": "LIFT-850 Jump Pack",
+      "category": "Backpack",
+      "tier": "S",
+      "score": 5333,
+      "factions": {
+        "automaton": {
+          "tier": "S",
+          "score": 5999
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5749
+        },
+        "illuminate": {
+          "tier": "S",
+          "score": 5333
+        }
+      },
+      "statLines": [],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "sh-32-shield-generator-pack",
+      "name": "SH-32 Shield Generator Pack",
+      "category": "Backpack",
+      "tier": "S",
+      "score": 5000,
+      "factions": {
+        "automaton": {
+          "tier": "S",
+          "score": 5000
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5500
+        },
+        "illuminate": {
+          "tier": "S",
+          "score": 5000
+        }
+      },
+      "statLines": [],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "ax-las-5-rover",
+      "name": "AX/LAS-5 Rover",
+      "category": "Backpack",
+      "tier": "A",
+      "score": 4999,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3999
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5250
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4999
+        }
+      },
+      "statLines": [],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "lift-860-hover-pack",
+      "name": "LIFT-860 Hover Pack",
+      "category": "Backpack",
+      "tier": "A",
+      "score": 4000,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4000
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5000
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4000
+        }
+      },
+      "statLines": [],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "ax-arc-3-k-9",
+      "name": "AX/ARC-3 K-9",
+      "category": "Backpack",
+      "tier": "B",
+      "score": 3999,
+      "factions": {
+        "automaton": {
+          "tier": "C",
+          "score": 2999
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3999
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3999
+        }
+      },
+      "statLines": [],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "ax-tx-13-dog-breath",
+      "name": "AX/TX-13 Dog Breath",
+      "category": "Backpack",
+      "tier": "B",
+      "score": 3000,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3500
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4000
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3000
+        }
+      },
+      "statLines": [],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "sh-20-ballistic-shield-backpack",
+      "name": "SH-20 Ballistic Shield Backpack",
+      "category": "Backpack",
+      "tier": "C",
+      "score": 2999,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3000
+        },
+        "terminid": {
+          "tier": "C",
+          "score": 2999
+        },
+        "illuminate": {
+          "tier": "C",
+          "score": 2999
+        }
+      },
+      "statLines": [],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "sh-51-directional-shield",
+      "name": "SH-51 Directional Shield",
+      "category": "Backpack",
+      "tier": "D",
+      "score": 1999,
+      "factions": {
+        "automaton": {
+          "tier": "D",
+          "score": 1999
+        },
+        "terminid": {
+          "tier": "D",
+          "score": 1999
+        },
+        "illuminate": {
+          "tier": "D",
+          "score": 1999
+        }
+      },
+      "statLines": [],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "eagle-strafing-run",
+      "name": "Eagle Strafing Run",
+      "category": "Eagle",
+      "tier": "S+",
+      "score": 6999,
+      "factions": {
+        "automaton": {
+          "tier": "S+",
+          "score": 6999
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5999
+        },
+        "illuminate": {
+          "tier": "S+",
+          "score": 6999
+        }
+      },
+      "statLines": [
+        {
+          "label": "USES",
+          "value": "4 / 5"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "eagle-napalm-airstrike",
+      "name": "Eagle Napalm Airstrike",
+      "category": "Eagle",
+      "tier": "S",
+      "score": 5999,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3999
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4999
+        },
+        "illuminate": {
+          "tier": "S",
+          "score": 5999
+        }
+      },
+      "statLines": [
+        {
+          "label": "USES",
+          "value": "2 / 3"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "eagle-airstrike",
+      "name": "Eagle Airstrike",
+      "category": "Eagle",
+      "tier": "A",
+      "score": 4999,
+      "factions": {
+        "automaton": {
+          "tier": "S+",
+          "score": 6500
+        },
+        "terminid": {
+          "tier": "S+",
+          "score": 6999
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4999
+        }
+      },
+      "statLines": [
+        {
+          "label": "USES",
+          "value": "2 / 3"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "eagle-cluster-bomb",
+      "name": "Eagle Cluster Bomb",
+      "category": "Eagle",
+      "tier": "A",
+      "score": 4000,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4999
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5000
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4000
+        }
+      },
+      "statLines": [
+        {
+          "label": "USES",
+          "value": "4 / 5"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "eagle-500kg-bomb",
+      "name": "Eagle 500kg Bomb",
+      "category": "Eagle",
+      "tier": "B",
+      "score": 3999,
+      "factions": {
+        "automaton": {
+          "tier": "S+",
+          "score": 6000
+        },
+        "terminid": {
+          "tier": "S+",
+          "score": 6000
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3999
+        }
+      },
+      "statLines": [
+        {
+          "label": "USES",
+          "value": "1 / 2"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "eagle-smoke-strike",
+      "name": "Eagle Smoke Strike",
+      "category": "Eagle",
+      "tier": "D",
+      "score": 1999,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3000
+        },
+        "terminid": {
+          "tier": "D",
+          "score": 1999
+        },
+        "illuminate": {
+          "tier": "D",
+          "score": 1999
+        }
+      },
+      "statLines": [
+        {
+          "label": "USES",
+          "value": "2 / 3"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "eagle-110mm-rocket-pods",
+      "name": "Eagle 110mm Rocket Pods",
+      "category": "Eagle",
+      "tier": "D",
+      "score": 1000,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4000
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4000
+        },
+        "illuminate": {
+          "tier": "D",
+          "score": 1000
+        }
+      },
+      "statLines": [
+        {
+          "label": "USES",
+          "value": "3 / 4"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "e-at-12-anti-tank-emplacement",
+      "name": "E/AT-12 Anti-Tank Emplacement",
+      "category": "Sentry & Emplacement",
+      "tier": "S+",
+      "score": 6999,
+      "factions": {
+        "automaton": {
+          "tier": "S+",
+          "score": 6999
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5999
+        },
+        "illuminate": {
+          "tier": "S+",
+          "score": 6999
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "6"
+        },
+        {
+          "label": "DAMAGE",
+          "value": "Ballistic"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "a-mg-43-machine-gun-sentry",
+      "name": "A/MG-43 Machine Gun Sentry",
+      "category": "Sentry & Emplacement",
+      "tier": "S+",
+      "score": 6200,
+      "factions": {
+        "automaton": {
+          "tier": "S",
+          "score": 5333
+        },
+        "terminid": {
+          "tier": "S+",
+          "score": 6000
+        },
+        "illuminate": {
+          "tier": "S+",
+          "score": 6200
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "3"
+        },
+        {
+          "label": "DAMAGE",
+          "value": "Ballistic"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "a-arc-3-tesla-tower",
+      "name": "A/ARC-3 Tesla Tower",
+      "category": "Sentry & Emplacement",
+      "tier": "S+",
+      "score": 6599,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3999
+        },
+        "terminid": {
+          "tier": "S+",
+          "score": 6666
+        },
+        "illuminate": {
+          "tier": "S+",
+          "score": 6599
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "4"
+        },
+        {
+          "label": "DAMAGE",
+          "value": "Arc"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "a-g-16-gatling-sentry",
+      "name": "A/G-16 Gatling Sentry",
+      "category": "Sentry & Emplacement",
+      "tier": "S+",
+      "score": 6000,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4333
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5200
+        },
+        "illuminate": {
+          "tier": "S+",
+          "score": 6000
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "3"
+        },
+        {
+          "label": "DAMAGE",
+          "value": "Ballistic"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "a-ac-8-autocannon-sentry",
+      "name": "A/AC-8 Autocannon Sentry",
+      "category": "Sentry & Emplacement",
+      "tier": "S+",
+      "score": 6799,
+      "factions": {
+        "automaton": {
+          "tier": "S+",
+          "score": 6666
+        },
+        "terminid": {
+          "tier": "S+",
+          "score": 6999
+        },
+        "illuminate": {
+          "tier": "S+",
+          "score": 6799
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "5"
+        },
+        {
+          "label": "DAMAGE",
+          "value": "Ballistic"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "e-mg-101-hmg-emplacement",
+      "name": "E/MG-101 HMG Emplacement",
+      "category": "Sentry & Emplacement",
+      "tier": "S+",
+      "score": 6400,
+      "factions": {
+        "automaton": {
+          "tier": "S+",
+          "score": 6000
+        },
+        "terminid": {
+          "tier": "S+",
+          "score": 6333
+        },
+        "illuminate": {
+          "tier": "S+",
+          "score": 6400
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "4"
+        },
+        {
+          "label": "DAMAGE",
+          "value": "Ballistic"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "a-flam-40-flame-sentry",
+      "name": "A/FLAM-40 Flame Sentry",
+      "category": "Sentry & Emplacement",
+      "tier": "S",
+      "score": 5333,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3749
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5400
+        },
+        "illuminate": {
+          "tier": "S",
+          "score": 5333
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "4"
+        },
+        {
+          "label": "DAMAGE",
+          "value": "Fire"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "a-mls-4x-rocket-sentry",
+      "name": "A/MLS-4X Rocket Sentry",
+      "category": "Sentry & Emplacement",
+      "tier": "S",
+      "score": 5666,
+      "factions": {
+        "automaton": {
+          "tier": "S+",
+          "score": 6333
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5599
+        },
+        "illuminate": {
+          "tier": "S",
+          "score": 5666
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "5"
+        },
+        {
+          "label": "DAMAGE",
+          "value": "Ballistic"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "md-i4-incendiary-mines",
+      "name": "MD-I4 Incendiary Mines",
+      "category": "Sentry & Emplacement",
+      "tier": "S",
+      "score": 5000,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3500
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5000
+        },
+        "illuminate": {
+          "tier": "S",
+          "score": 5000
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "3"
+        },
+        {
+          "label": "DAMAGE",
+          "value": "Explosion"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "md-8-gas-mines",
+      "name": "MD-8 Gas Mines",
+      "category": "Sentry & Emplacement",
+      "tier": "S",
+      "score": 5999,
+      "factions": {
+        "automaton": {
+          "tier": "S",
+          "score": 5999
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5799
+        },
+        "illuminate": {
+          "tier": "S",
+          "score": 5999
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "6"
+        },
+        {
+          "label": "DAMAGE",
+          "value": "Gas"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "a-las-98-laser-sentry",
+      "name": "A/LAS-98 Laser Sentry",
+      "category": "Sentry & Emplacement",
+      "tier": "A",
+      "score": 4666,
+      "factions": {
+        "automaton": {
+          "tier": "C",
+          "score": 2999
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3000
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4666
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "4"
+        },
+        {
+          "label": "DAMAGE",
+          "value": "Laser"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "a-m-23-ems-mortar-sentry",
+      "name": "A/M-23 EMS Mortar Sentry",
+      "category": "Sentry & Emplacement",
+      "tier": "A",
+      "score": 4999,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4999
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4999
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4999
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "6"
+        },
+        {
+          "label": "DAMAGE",
+          "value": "None"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "md-6-anti-personnel-minefield",
+      "name": "MD-6 Anti-Personnel Minefield",
+      "category": "Sentry & Emplacement",
+      "tier": "A",
+      "score": 4333,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3250
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4333
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4333
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "3"
+        },
+        {
+          "label": "DAMAGE",
+          "value": "Explosion"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "e-gl-21-grenadier-battlement",
+      "name": "E/GL-21 Grenadier Battlement",
+      "category": "Sentry & Emplacement",
+      "tier": "A",
+      "score": 4000,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4000
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4000
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4000
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "3"
+        },
+        {
+          "label": "DAMAGE",
+          "value": "Explosion"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "a-gm-17-gas-mortar-sentry",
+      "name": "A/GM-17 Gas Mortar Sentry",
+      "category": "Sentry & Emplacement",
+      "tier": "B",
+      "score": 3999,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4666
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3999
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3999
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "6"
+        },
+        {
+          "label": "DAMAGE",
+          "value": "Gas"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "fx-12-shield-generator-relay",
+      "name": "FX-12 Shield Generator Relay",
+      "category": "Sentry & Emplacement",
+      "tier": "B",
+      "score": 3000,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3000
+        },
+        "terminid": {
+          "tier": "D",
+          "score": 1000
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3000
+        }
+      },
+      "statLines": [
+        {
+          "label": "DAMAGE",
+          "value": "N/A"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "a-m-12-mortar-sentry",
+      "name": "A/M-12 Mortar Sentry",
+      "category": "Sentry & Emplacement",
+      "tier": "D",
+      "score": 1000,
+      "factions": {
+        "automaton": {
+          "tier": "S",
+          "score": 5000
+        },
+        "terminid": {
+          "tier": "D",
+          "score": 1999
+        },
+        "illuminate": {
+          "tier": "D",
+          "score": 1000
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "3"
+        },
+        {
+          "label": "DAMAGE",
+          "value": "Explosive"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "md-17-anti-tank-mines",
+      "name": "MD-17 Anti-Tank Mines",
+      "category": "Sentry & Emplacement",
+      "tier": "D",
+      "score": 1999,
+      "factions": {
+        "automaton": {
+          "tier": "S",
+          "score": 5666
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4666
+        },
+        "illuminate": {
+          "tier": "D",
+          "score": 1999
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "5"
+        },
+        {
+          "label": "DAMAGE",
+          "value": "Explosion"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "hellpod-space-optimization",
+      "name": "Hellpod Space Optimization",
+      "category": "Booster",
+      "tier": "S+",
+      "score": 6999,
+      "factions": {
+        "automaton": {
+          "tier": "S+",
+          "score": 6999
+        },
+        "terminid": {
+          "tier": "S+",
+          "score": 6999
+        },
+        "illuminate": {
+          "tier": "S+",
+          "score": 6999
+        }
+      },
+      "statLines": [
+        {
+          "label": "MEDALS",
+          "value": "20"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "experimental-infusion",
+      "name": "Experimental Infusion",
+      "category": "Booster",
+      "tier": "S+",
+      "score": 6500,
+      "factions": {
+        "automaton": {
+          "tier": "S+",
+          "score": 6500
+        },
+        "terminid": {
+          "tier": "S+",
+          "score": 6500
+        },
+        "illuminate": {
+          "tier": "S+",
+          "score": 6500
+        }
+      },
+      "statLines": [
+        {
+          "label": "MEDALS",
+          "value": "80"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "stamina-enhancement",
+      "name": "Stamina Enhancement",
+      "category": "Booster",
+      "tier": "S+",
+      "score": 6000,
+      "factions": {
+        "automaton": {
+          "tier": "S+",
+          "score": 6000
+        },
+        "terminid": {
+          "tier": "S+",
+          "score": 6000
+        },
+        "illuminate": {
+          "tier": "S+",
+          "score": 6000
+        }
+      },
+      "statLines": [
+        {
+          "label": "MEDALS",
+          "value": "75"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "vitality-enhancement",
+      "name": "Vitality Enhancement",
+      "category": "Booster",
+      "tier": "S",
+      "score": 5999,
+      "factions": {
+        "automaton": {
+          "tier": "S",
+          "score": 5999
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5999
+        },
+        "illuminate": {
+          "tier": "S",
+          "score": 5999
+        }
+      },
+      "statLines": [
+        {
+          "label": "MEDALS",
+          "value": "20"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "increased-reinforcement-budget",
+      "name": "Increased Reinforcement Budget",
+      "category": "Booster",
+      "tier": "S",
+      "score": 5000,
+      "factions": {
+        "automaton": {
+          "tier": "S",
+          "score": 5000
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5500
+        },
+        "illuminate": {
+          "tier": "S",
+          "score": 5000
+        }
+      },
+      "statLines": [
+        {
+          "label": "MEDALS",
+          "value": "150"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "armed-resupply-pods",
+      "name": "Armed Resupply Pods",
+      "category": "Booster",
+      "tier": "A",
+      "score": 4999,
+      "factions": {
+        "automaton": {
+          "tier": "C",
+          "score": 2999
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4999
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4999
+        }
+      },
+      "statLines": [
+        {
+          "label": "MEDALS",
+          "value": "55"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "sample-extricator",
+      "name": "Sample Extricator",
+      "category": "Booster",
+      "tier": "A",
+      "score": 4500,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4999
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4500
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4500
+        }
+      },
+      "statLines": [
+        {
+          "label": "MEDALS",
+          "value": "65"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "sample-scanner",
+      "name": "Sample Scanner",
+      "category": "Booster",
+      "tier": "A",
+      "score": 4000,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4500
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4000
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4000
+        }
+      },
+      "statLines": [
+        {
+          "label": "MEDALS",
+          "value": "65"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "muscle-enhancement",
+      "name": "Muscle Enhancement",
+      "category": "Booster",
+      "tier": "B",
+      "score": 3999,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3999
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5000
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3999
+        }
+      },
+      "statLines": [
+        {
+          "label": "MEDALS",
+          "value": "75"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "flexible-reinforcement-budget",
+      "name": "Flexible Reinforcement Budget",
+      "category": "Booster",
+      "tier": "B",
+      "score": 3666,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3500
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3999
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3666
+        }
+      },
+      "statLines": [
+        {
+          "label": "MEDALS",
+          "value": "75"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "localization-confusion",
+      "name": "Localization Confusion",
+      "category": "Booster",
+      "tier": "B",
+      "score": 3333,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3000
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3500
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3333
+        }
+      },
+      "statLines": [
+        {
+          "label": "MEDALS",
+          "value": "18"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "dead-sprint",
+      "name": "Dead Sprint",
+      "category": "Booster",
+      "tier": "B",
+      "score": 3000,
+      "factions": {
+        "automaton": {
+          "tier": "C",
+          "score": 2500
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3000
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3000
+        }
+      },
+      "statLines": [
+        {
+          "label": "MEDALS",
+          "value": "35"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "expert-extraction-pilot",
+      "name": "Expert Extraction Pilot",
+      "category": "Booster",
+      "tier": "C",
+      "score": 2999,
+      "factions": {
+        "automaton": {
+          "tier": "C",
+          "score": 2000
+        },
+        "terminid": {
+          "tier": "C",
+          "score": 2999
+        },
+        "illuminate": {
+          "tier": "C",
+          "score": 2999
+        }
+      },
+      "statLines": [
+        {
+          "label": "MEDALS",
+          "value": "55"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "firebomb-hellpods",
+      "name": "Firebomb Hellpods",
+      "category": "Booster",
+      "tier": "C",
+      "score": 2000,
+      "factions": {
+        "automaton": {
+          "tier": "D",
+          "score": 1999
+        },
+        "terminid": {
+          "tier": "C",
+          "score": 2500
+        },
+        "illuminate": {
+          "tier": "C",
+          "score": 2000
+        }
+      },
+      "statLines": [
+        {
+          "label": "MEDALS",
+          "value": "60"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "uav-recon-booster",
+      "name": "UAV Recon Booster",
+      "category": "Booster",
+      "tier": "D",
+      "score": 1999,
+      "factions": {
+        "automaton": {
+          "tier": "D",
+          "score": 1666
+        },
+        "terminid": {
+          "tier": "D",
+          "score": 1999
+        },
+        "illuminate": {
+          "tier": "D",
+          "score": 1999
+        }
+      },
+      "statLines": [
+        {
+          "label": "MEDALS",
+          "value": "40"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "motivational-shocks",
+      "name": "Motivational Shocks",
+      "category": "Booster",
+      "tier": "D",
+      "score": 1666,
+      "factions": {
+        "automaton": {
+          "tier": "D",
+          "score": 1333
+        },
+        "terminid": {
+          "tier": "C",
+          "score": 2000
+        },
+        "illuminate": {
+          "tier": "D",
+          "score": 1666
+        }
+      },
+      "statLines": [
+        {
+          "label": "MEDALS",
+          "value": "15"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "stun-pods",
+      "name": "Stun Pods",
+      "category": "Booster",
+      "tier": "D",
+      "score": 1333,
+      "factions": {
+        "automaton": {
+          "tier": "D",
+          "score": 1000
+        },
+        "terminid": {
+          "tier": "D",
+          "score": 1500
+        },
+        "illuminate": {
+          "tier": "D",
+          "score": 1333
+        }
+      },
+      "statLines": [
+        {
+          "label": "MEDALS",
+          "value": "55"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "concealed-insertion",
+      "name": "Concealed Insertion",
+      "category": "Booster",
+      "tier": "D",
+      "score": 1000,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4000
+        },
+        "terminid": {
+          "tier": "D",
+          "score": 1000
+        },
+        "illuminate": {
+          "tier": "D",
+          "score": 1000
+        }
+      },
+      "statLines": [
+        {
+          "label": "MEDALS",
+          "value": "40"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "orbital-laser",
+      "name": "Orbital Laser",
+      "category": "Orbital",
+      "tier": "S+",
+      "score": 6999,
+      "factions": {
+        "automaton": {
+          "tier": "S+",
+          "score": 6999
+        },
+        "terminid": {
+          "tier": "S+",
+          "score": 6999
+        },
+        "illuminate": {
+          "tier": "S+",
+          "score": 6999
+        }
+      },
+      "statLines": [
+        {
+          "label": "COOLDOWN",
+          "value": "300s"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "orbital-precision-strike",
+      "name": "Orbital Precision Strike",
+      "category": "Orbital",
+      "tier": "S",
+      "score": 5999,
+      "factions": {
+        "automaton": {
+          "tier": "S",
+          "score": 5999
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5999
+        },
+        "illuminate": {
+          "tier": "S",
+          "score": 5999
+        }
+      },
+      "statLines": [
+        {
+          "label": "COOLDOWN",
+          "value": "90s"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "orbital-gas-strike",
+      "name": "Orbital Gas Strike",
+      "category": "Orbital",
+      "tier": "S",
+      "score": 5500,
+      "factions": {
+        "automaton": {
+          "tier": "S+",
+          "score": 6500
+        },
+        "terminid": {
+          "tier": "S+",
+          "score": 6666
+        },
+        "illuminate": {
+          "tier": "S",
+          "score": 5500
+        }
+      },
+      "statLines": [
+        {
+          "label": "COOLDOWN",
+          "value": "75s"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "orbital-napalm-barrage",
+      "name": "Orbital Napalm Barrage",
+      "category": "Orbital",
+      "tier": "S",
+      "score": 5000,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4999
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5000
+        },
+        "illuminate": {
+          "tier": "S",
+          "score": 5000
+        }
+      },
+      "statLines": [
+        {
+          "label": "COOLDOWN",
+          "value": "240s"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "orbital-gatling-barrage",
+      "name": "Orbital Gatling Barrage",
+      "category": "Orbital",
+      "tier": "A",
+      "score": 4999,
+      "factions": {
+        "automaton": {
+          "tier": "S+",
+          "score": 6000
+        },
+        "terminid": {
+          "tier": "S+",
+          "score": 6333
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4999
+        }
+      },
+      "statLines": [
+        {
+          "label": "COOLDOWN",
+          "value": "70s"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "orbital-120mm-he-barrage",
+      "name": "Orbital 120mm HE Barrage",
+      "category": "Orbital",
+      "tier": "A",
+      "score": 4666,
+      "factions": {
+        "automaton": {
+          "tier": "S",
+          "score": 5500
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3999
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4666
+        }
+      },
+      "statLines": [
+        {
+          "label": "COOLDOWN",
+          "value": "180s"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "orbital-airburst-strike",
+      "name": "Orbital Airburst Strike",
+      "category": "Orbital",
+      "tier": "A",
+      "score": 4333,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4500
+        },
+        "terminid": {
+          "tier": "S+",
+          "score": 6000
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4333
+        }
+      },
+      "statLines": [
+        {
+          "label": "COOLDOWN",
+          "value": "100s"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "orbital-walking-barrage",
+      "name": "Orbital Walking Barrage",
+      "category": "Orbital",
+      "tier": "A",
+      "score": 4000,
+      "factions": {
+        "automaton": {
+          "tier": "S",
+          "score": 5000
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3666
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4000
+        }
+      },
+      "statLines": [
+        {
+          "label": "COOLDOWN",
+          "value": "240s"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "orbital-ems-strike",
+      "name": "Orbital EMS Strike",
+      "category": "Orbital",
+      "tier": "B",
+      "score": 3999,
+      "factions": {
+        "automaton": {
+          "tier": "D",
+          "score": 1999
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3333
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3999
+        }
+      },
+      "statLines": [
+        {
+          "label": "COOLDOWN",
+          "value": "75s"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "orbital-380mm-he-barrage",
+      "name": "Orbital 380mm HE Barrage",
+      "category": "Orbital",
+      "tier": "C",
+      "score": 2999,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3999
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3000
+        },
+        "illuminate": {
+          "tier": "C",
+          "score": 2999
+        }
+      },
+      "statLines": [
+        {
+          "label": "COOLDOWN",
+          "value": "240s"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "orbital-smoke-strike",
+      "name": "Orbital Smoke Strike",
+      "category": "Orbital",
+      "tier": "D",
+      "score": 1999,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3000
+        },
+        "terminid": {
+          "tier": "D",
+          "score": 1999
+        },
+        "illuminate": {
+          "tier": "D",
+          "score": 1999
+        }
+      },
+      "statLines": [
+        {
+          "label": "COOLDOWN",
+          "value": "75s"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "orbital-railcannon-strike",
+      "name": "Orbital Railcannon Strike",
+      "category": "Orbital",
+      "tier": "D",
+      "score": 1000,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4000
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4999
+        },
+        "illuminate": {
+          "tier": "D",
+          "score": 1000
+        }
+      },
+      "statLines": [
+        {
+          "label": "COOLDOWN",
+          "value": "180s"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "med-kit",
+      "name": "Med-Kit",
+      "category": "Armor Passive",
+      "tier": "S+",
+      "score": 6999,
+      "factions": {
+        "automaton": {
+          "tier": "S+",
+          "score": 6999
+        },
+        "terminid": {
+          "tier": "S+",
+          "score": 6999
+        },
+        "illuminate": {
+          "tier": "S+",
+          "score": 6999
+        }
+      },
+      "statLines": [
+        {
+          "label": "EFFECT",
+          "value": "+2 stim capacity."
+        },
+        {
+          "label": "EFFECT",
+          "value": "+2.0s stim effect duration."
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "true-grit",
+      "name": "True Grit",
+      "category": "Armor Passive",
+      "tier": "S+",
+      "score": 6000,
+      "factions": {
+        "automaton": {
+          "tier": "S+",
+          "score": 6799
+        },
+        "terminid": {
+          "tier": "S+",
+          "score": 6749
+        },
+        "illuminate": {
+          "tier": "S+",
+          "score": 6000
+        }
+      },
+      "statLines": [
+        {
+          "label": "EFFECT",
+          "value": "+20 Weapon Handling."
+        },
+        {
+          "label": "EFFECT",
+          "value": "+30% Reload Speed for Support Weapons."
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "reduced-signature",
+      "name": "Reduced Signature",
+      "category": "Armor Passive",
+      "tier": "S",
+      "score": 5999,
+      "factions": {
+        "automaton": {
+          "tier": "S+",
+          "score": 6599
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3999
+        },
+        "illuminate": {
+          "tier": "S",
+          "score": 5999
+        }
+      },
+      "statLines": [
+        {
+          "label": "EFFECT",
+          "value": "-50% noise when moving."
+        },
+        {
+          "label": "EFFECT",
+          "value": "-40% enemy detection range."
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "siege-ready",
+      "name": "Siege-Ready",
+      "category": "Armor Passive",
+      "tier": "S",
+      "score": 5666,
+      "factions": {
+        "automaton": {
+          "tier": "S",
+          "score": 5999
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5999
+        },
+        "illuminate": {
+          "tier": "S",
+          "score": 5666
+        }
+      },
+      "statLines": [
+        {
+          "label": "EFFECT",
+          "value": "+30% primary reload speed"
+        },
+        {
+          "label": "EFFECT",
+          "value": "+20% ammo capacity (all weapons, excluding backpacks)"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "engineering-kit",
+      "name": "Engineering Kit",
+      "category": "Armor Passive",
+      "tier": "S",
+      "score": 5333,
+      "factions": {
+        "automaton": {
+          "tier": "S",
+          "score": 5666
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5500
+        },
+        "illuminate": {
+          "tier": "S",
+          "score": 5333
+        }
+      },
+      "statLines": [
+        {
+          "label": "EFFECT",
+          "value": "-30% recoil when crouching/prone."
+        },
+        {
+          "label": "EFFECT",
+          "value": "+2 throwables capacity"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "oxygenator",
+      "name": "Oxygenator",
+      "category": "Armor Passive",
+      "tier": "S",
+      "score": 5000,
+      "factions": {
+        "automaton": {
+          "tier": "S",
+          "score": 5333
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5000
+        },
+        "illuminate": {
+          "tier": "S",
+          "score": 5000
+        }
+      },
+      "statLines": [
+        {
+          "label": "EFFECT",
+          "value": "+10% walking & running speed."
+        },
+        {
+          "label": "EFFECT",
+          "value": "+160ms slide duration (roughly +50%)."
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "concussive-padding-reinforced",
+      "name": "Concussive Padding, Reinforced",
+      "category": "Armor Passive",
+      "tier": "A",
+      "score": 4999,
+      "factions": {
+        "automaton": {
+          "tier": "S+",
+          "score": 6400
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3888
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4999
+        }
+      },
+      "statLines": [
+        {
+          "label": "EFFECT",
+          "value": "+50% explosive dmg resist."
+        },
+        {
+          "label": "EFFECT",
+          "value": "+30 armor rating."
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "desert-stormer",
+      "name": "Desert Stormer",
+      "category": "Armor Passive",
+      "tier": "A",
+      "score": 4874,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4999
+        },
+        "terminid": {
+          "tier": "S+",
+          "score": 6500
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4874
+        }
+      },
+      "statLines": [
+        {
+          "label": "EFFECT",
+          "value": "+40% resistance to fire/gas/acid/electrical dmg."
+        },
+        {
+          "label": "EFFECT",
+          "value": "+20% throwing range"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "adreno-defibrillator",
+      "name": "Adreno-Defibrillator",
+      "category": "Armor Passive",
+      "tier": "A",
+      "score": 4749,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3999
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3777
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4749
+        }
+      },
+      "statLines": [
+        {
+          "label": "EFFECT",
+          "value": "Revive upon death if body is still intact. Timed death shortly after revive."
+        },
+        {
+          "label": "EFFECT",
+          "value": "+2.0s stim effect duration."
+        },
+        {
+          "label": "EFFECT",
+          "value": "+50% electrical dmg resist."
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "ballistic-padding",
+      "name": "Ballistic Padding",
+      "category": "Armor Passive",
+      "tier": "A",
+      "score": 4624,
+      "factions": {
+        "automaton": {
+          "tier": "S",
+          "score": 5000
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4999
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4624
+        }
+      },
+      "statLines": [
+        {
+          "label": "EFFECT",
+          "value": "+25% chest dmg resist."
+        },
+        {
+          "label": "EFFECT",
+          "value": "+25% explosive dmg resist."
+        },
+        {
+          "label": "EFFECT",
+          "value": "Prevents all bleeding dmg."
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "acclimated",
+      "name": "Acclimated",
+      "category": "Armor Passive",
+      "tier": "A",
+      "score": 4500,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4833
+        },
+        "terminid": {
+          "tier": "S+",
+          "score": 6250
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4500
+        }
+      },
+      "statLines": [
+        {
+          "label": "EFFECT",
+          "value": "+50% resistance to fire/gas/acid/electrical dmg."
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "unflinching",
+      "name": "Unflinching",
+      "category": "Armor Passive",
+      "tier": "A",
+      "score": 4375,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4666
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4749
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4375
+        }
+      },
+      "statLines": [
+        {
+          "label": "EFFECT",
+          "value": "Reduces flinching when hit."
+        },
+        {
+          "label": "EFFECT",
+          "value": "+25 armor rating."
+        },
+        {
+          "label": "EFFECT",
+          "value": "Map marker radar."
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "peak-physique",
+      "name": "Peak Physique",
+      "category": "Armor Passive",
+      "tier": "A",
+      "score": 4250,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4500
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4500
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4250
+        }
+      },
+      "statLines": [
+        {
+          "label": "EFFECT",
+          "value": "+40% melee damage."
+        },
+        {
+          "label": "EFFECT",
+          "value": "+30 ergonomics (weapon handling)"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "electrical-conduit",
+      "name": "Electrical Conduit",
+      "category": "Armor Passive",
+      "tier": "A",
+      "score": 4125,
+      "factions": {
+        "automaton": {
+          "tier": "D",
+          "score": 1999
+        },
+        "terminid": {
+          "tier": "D",
+          "score": 1999
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4125
+        }
+      },
+      "statLines": [
+        {
+          "label": "EFFECT",
+          "value": "+95% electrical dmg resist."
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "democracy-protects",
+      "name": "Democracy Protects",
+      "category": "Armor Passive",
+      "tier": "A",
+      "score": 4000,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4333
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4250
+        },
+        "illuminate": {
+          "tier": "A",
+          "score": 4000
+        }
+      },
+      "statLines": [
+        {
+          "label": "EFFECT",
+          "value": "+50% chance to not die when taking lethal damage."
+        },
+        {
+          "label": "EFFECT",
+          "value": "Prevents all bleeding dmg."
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "concussive-padding-hazmat",
+      "name": "Concussive Padding, Hazmat",
+      "category": "Armor Passive",
+      "tier": "B",
+      "score": 3999,
+      "factions": {
+        "automaton": {
+          "tier": "S+",
+          "score": 6200
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3666
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3999
+        }
+      },
+      "statLines": [
+        {
+          "label": "EFFECT",
+          "value": "+50% explosive dmg resist."
+        },
+        {
+          "label": "EFFECT",
+          "value": "+25% gas dmg resist."
+        },
+        {
+          "label": "EFFECT",
+          "value": "-30% sidearm recoil"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "rock-solid",
+      "name": "Rock Solid",
+      "category": "Armor Passive",
+      "tier": "B",
+      "score": 3874,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3856
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3555
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3874
+        }
+      },
+      "statLines": [
+        {
+          "label": "EFFECT",
+          "value": "Reduces ragdolling"
+        },
+        {
+          "label": "EFFECT",
+          "value": "+40% melee damage"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "reinforced-epaulettes",
+      "name": "Reinforced Epaulettes",
+      "category": "Armor Passive",
+      "tier": "B",
+      "score": 3749,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3714
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3444
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3749
+        }
+      },
+      "statLines": [
+        {
+          "label": "EFFECT",
+          "value": "+30% primary reload speed."
+        },
+        {
+          "label": "EFFECT",
+          "value": "50% chance to avoid limb injury."
+        },
+        {
+          "label": "EFFECT",
+          "value": "+20% melee damage."
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "gunslinger",
+      "name": "Gunslinger",
+      "category": "Armor Passive",
+      "tier": "B",
+      "score": 3624,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3571
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3333
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3624
+        }
+      },
+      "statLines": [
+        {
+          "label": "EFFECT",
+          "value": "+40% sidearm reload speed."
+        },
+        {
+          "label": "EFFECT",
+          "value": "+50% draw/holster speed."
+        },
+        {
+          "label": "EFFECT",
+          "value": "-70% sidearm recoil."
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "fortified",
+      "name": "Fortified",
+      "category": "Armor Passive",
+      "tier": "B",
+      "score": 3500,
+      "factions": {
+        "automaton": {
+          "tier": "S+",
+          "score": 6000
+        },
+        "terminid": {
+          "tier": "C",
+          "score": 2999
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3500
+        }
+      },
+      "statLines": [
+        {
+          "label": "EFFECT",
+          "value": "+50% explosive dmg resist."
+        },
+        {
+          "label": "EFFECT",
+          "value": "-30% recoil when crouching/prone."
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "scout",
+      "name": "Scout",
+      "category": "Armor Passive",
+      "tier": "B",
+      "score": 3375,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4167
+        },
+        "terminid": {
+          "tier": "C",
+          "score": 2666
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3375
+        }
+      },
+      "statLines": [
+        {
+          "label": "EFFECT",
+          "value": "Map marker radar."
+        },
+        {
+          "label": "EFFECT",
+          "value": "-40% enemy detection range."
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "extra-padding",
+      "name": "Extra Padding",
+      "category": "Armor Passive",
+      "tier": "B",
+      "score": 3250,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3428
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3222
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3250
+        }
+      },
+      "statLines": [
+        {
+          "label": "EFFECT",
+          "value": "+50 armor rating."
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "supplementary-adrenaline",
+      "name": "Supplementary Adrenaline",
+      "category": "Armor Passive",
+      "tier": "B",
+      "score": 3125,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3285
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3111
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3125
+        }
+      },
+      "statLines": [
+        {
+          "label": "EFFECT",
+          "value": "Gain stamina upon taking dmg."
+        },
+        {
+          "label": "EFFECT",
+          "value": "+25 armor rating."
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "kinetic-displacement-mitigation",
+      "name": "Kinetic Displacement Mitigation",
+      "category": "Armor Passive",
+      "tier": "B",
+      "score": 3000,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4000
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4000
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3000
+        }
+      },
+      "statLines": [
+        {
+          "label": "EFFECT",
+          "value": "+50% resistance to fire"
+        },
+        {
+          "label": "EFFECT",
+          "value": "50% chance to avoid limb injury."
+        },
+        {
+          "label": "EFFECT",
+          "value": "Damage from impact and collisions -30%"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "feet-first",
+      "name": "Feet First",
+      "category": "Armor Passive",
+      "tier": "C",
+      "score": 2999,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3143
+        },
+        "terminid": {
+          "tier": "D",
+          "score": 1000
+        },
+        "illuminate": {
+          "tier": "C",
+          "score": 2999
+        }
+      },
+      "statLines": [
+        {
+          "label": "EFFECT",
+          "value": "-50% noise when moving."
+        },
+        {
+          "label": "EFFECT",
+          "value": "+30% POI detection range"
+        },
+        {
+          "label": "EFFECT",
+          "value": "Immunity to leg injuries"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "integrated-explosives",
+      "name": "Integrated Explosives",
+      "category": "Armor Passive",
+      "tier": "C",
+      "score": 2749,
+      "factions": {
+        "automaton": {
+          "tier": "C",
+          "score": 2999
+        },
+        "terminid": {
+          "tier": "C",
+          "score": 2333
+        },
+        "illuminate": {
+          "tier": "C",
+          "score": 2749
+        }
+      },
+      "statLines": [
+        {
+          "label": "EFFECT",
+          "value": "Armor explodes 1.5s after death."
+        },
+        {
+          "label": "EFFECT",
+          "value": "+2 throwables capacity."
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "advanced-filtration",
+      "name": "Advanced Filtration",
+      "category": "Armor Passive",
+      "tier": "C",
+      "score": 2500,
+      "factions": {
+        "automaton": {
+          "tier": "C",
+          "score": 2500
+        },
+        "terminid": {
+          "tier": "C",
+          "score": 2000
+        },
+        "illuminate": {
+          "tier": "C",
+          "score": 2500
+        }
+      },
+      "statLines": [
+        {
+          "label": "EFFECT",
+          "value": "+80% gas dmg resist."
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "inflammable",
+      "name": "Inflammable",
+      "category": "Armor Passive",
+      "tier": "C",
+      "score": 2250,
+      "factions": {
+        "automaton": {
+          "tier": "B",
+          "score": 3000
+        },
+        "terminid": {
+          "tier": "S+",
+          "score": 6000
+        },
+        "illuminate": {
+          "tier": "C",
+          "score": 2250
+        }
+      },
+      "statLines": [
+        {
+          "label": "EFFECT",
+          "value": "+75% fire dmg resist."
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "servo-assisted",
+      "name": "Servo-Assisted",
+      "category": "Armor Passive",
+      "tier": "C",
+      "score": 2000,
+      "factions": {
+        "automaton": {
+          "tier": "C",
+          "score": 2000
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3000
+        },
+        "illuminate": {
+          "tier": "C",
+          "score": 2000
+        }
+      },
+      "statLines": [
+        {
+          "label": "EFFECT",
+          "value": "+30% throwing range"
+        },
+        {
+          "label": "EFFECT",
+          "value": "+50% limb health."
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "exo-49-emancipator-exosuit",
+      "name": "EXO-49 Emancipator Exosuit",
+      "category": "Vehicle",
+      "tier": "S+",
+      "score": 6250,
+      "factions": {
+        "automaton": {
+          "tier": "S",
+          "score": 5999
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5999
+        },
+        "illuminate": {
+          "tier": "S+",
+          "score": 6250
+        }
+      },
+      "statLines": [
+        {
+          "label": "COOLDOWN",
+          "value": "600s"
+        },
+        {
+          "label": "HEALTH",
+          "value": "1800"
+        },
+        {
+          "label": "CREW",
+          "value": "1 (Pilot)"
+        },
+        {
+          "label": "WEAPON",
+          "value": "Dual Autocannon Arms"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "m-102-gunner-frv",
+      "name": "M-102 Gunner FRV",
+      "category": "Vehicle",
+      "tier": "S+",
+      "score": 6749,
+      "factions": {
+        "automaton": {
+          "tier": "S+",
+          "score": 6333
+        },
+        "terminid": {
+          "tier": "S+",
+          "score": 6500
+        },
+        "illuminate": {
+          "tier": "S+",
+          "score": 6749
+        }
+      },
+      "statLines": [
+        {
+          "label": "COOLDOWN",
+          "value": "480s"
+        },
+        {
+          "label": "HEALTH",
+          "value": "2400"
+        },
+        {
+          "label": "CREW",
+          "value": "4"
+        },
+        {
+          "label": "WEAPON",
+          "value": "Rear Mounted 360-Degree HMG Turret (Passenger Operated)"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "exo-55-breakthrough-exosuit",
+      "name": "EXO-55 Breakthrough Exosuit",
+      "category": "Vehicle",
+      "tier": "S+",
+      "score": 6000,
+      "factions": {
+        "automaton": {
+          "tier": "S",
+          "score": 5500
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5500
+        },
+        "illuminate": {
+          "tier": "S+",
+          "score": 6000
+        }
+      },
+      "statLines": [
+        {
+          "label": "COOLDOWN",
+          "value": "600s"
+        },
+        {
+          "label": "HEALTH",
+          "value": "1800"
+        },
+        {
+          "label": "CREW",
+          "value": "1 (Pilot)"
+        },
+        {
+          "label": "WEAPON",
+          "value": "Heavy-Pen Scattergun (Right Arm)"
+        },
+        {
+          "label": "WEAPON",
+          "value": "Heavy-Pen Shield Bash (Left Arm)"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "m-104-incinerator-frv",
+      "name": "M-104 Incinerator FRV",
+      "category": "Vehicle",
+      "tier": "S+",
+      "score": 6999,
+      "factions": {
+        "automaton": {
+          "tier": "S+",
+          "score": 6666
+        },
+        "terminid": {
+          "tier": "S+",
+          "score": 6999
+        },
+        "illuminate": {
+          "tier": "S+",
+          "score": 6999
+        }
+      },
+      "statLines": [
+        {
+          "label": "COOLDOWN",
+          "value": "480s"
+        },
+        {
+          "label": "HEALTH",
+          "value": "2900"
+        },
+        {
+          "label": "CREW",
+          "value": "4"
+        },
+        {
+          "label": "WEAPON",
+          "value": "Heavy-Pen Flamethrower (Passenger Operated)"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "m-103-supply-frv",
+      "name": "M-103 Supply FRV",
+      "category": "Vehicle",
+      "tier": "S+",
+      "score": 6500,
+      "factions": {
+        "automaton": {
+          "tier": "S+",
+          "score": 6000
+        },
+        "terminid": {
+          "tier": "S+",
+          "score": 6000
+        },
+        "illuminate": {
+          "tier": "S+",
+          "score": 6500
+        }
+      },
+      "statLines": [
+        {
+          "label": "COOLDOWN",
+          "value": "480s"
+        },
+        {
+          "label": "HEALTH",
+          "value": "2400"
+        },
+        {
+          "label": "CREW",
+          "value": "4"
+        },
+        {
+          "label": "WEAPON",
+          "value": "AR-23P Liberator Penetrator (Auto Turret)"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "exo-45-patriot-exosuit",
+      "name": "EXO-45 Patriot Exosuit",
+      "category": "Vehicle",
+      "tier": "B",
+      "score": 3000,
+      "factions": {
+        "automaton": {
+          "tier": "A",
+          "score": 4999
+        },
+        "terminid": {
+          "tier": "A",
+          "score": 4999
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3000
+        }
+      },
+      "statLines": [
+        {
+          "label": "COOLDOWN",
+          "value": "600s"
+        },
+        {
+          "label": "HEALTH",
+          "value": "1600"
+        },
+        {
+          "label": "CREW",
+          "value": "1 (Pilot)"
+        },
+        {
+          "label": "WEAPON",
+          "value": "Medium-Pen Minigun (Right Arm)"
+        },
+        {
+          "label": "WEAPON",
+          "value": "AP2 Missile Launcher (Left Arm)"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "td-220-bastion-mk-xvi",
+      "name": "TD-220 Bastion MK XVI",
+      "category": "Vehicle",
+      "tier": "B",
+      "score": 3999,
+      "factions": {
+        "automaton": {
+          "tier": "S+",
+          "score": 6999
+        },
+        "terminid": {
+          "tier": "B",
+          "score": 3999
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3999
+        }
+      },
+      "statLines": [
+        {
+          "label": "COOLDOWN",
+          "value": "780s"
+        },
+        {
+          "label": "HEALTH",
+          "value": "8000"
+        },
+        {
+          "label": "CREW",
+          "value": "4"
+        },
+        {
+          "label": "WEAPON",
+          "value": "Anti-Tank Main Cannon (Gunner Operated)"
+        },
+        {
+          "label": "WEAPON",
+          "value": "Front-Facing HMG Turret (Gunner Operated)"
+        },
+        {
+          "label": "WEAPON",
+          "value": "Limited Firing Angle"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    },
+    {
+      "id": "exo-51-lumberer-exosuit",
+      "name": "EXO-51 Lumberer Exosuit",
+      "category": "Vehicle",
+      "tier": "B",
+      "score": 3500,
+      "factions": {
+        "automaton": {
+          "tier": "S",
+          "score": 5000
+        },
+        "terminid": {
+          "tier": "S",
+          "score": 5000
+        },
+        "illuminate": {
+          "tier": "B",
+          "score": 3500
+        }
+      },
+      "statLines": [
+        {
+          "label": "COOLDOWN",
+          "value": "600s"
+        },
+        {
+          "label": "HEALTH",
+          "value": "1800"
+        },
+        {
+          "label": "CREW",
+          "value": "1 (Pilot)"
+        },
+        {
+          "label": "WEAPON",
+          "value": "Anti-Tank Cannon (Right Arm)"
+        },
+        {
+          "label": "WEAPON",
+          "value": "Heavy-Pen Flamethrower (Left Arm)"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list, one per faction. Score is derived from the tier, not measured in-game."
+      }
+    }
+  ],
+  "factions": [
+    {
+      "id": "automaton",
+      "name": "Automaton"
+    },
+    {
+      "id": "terminid",
+      "name": "Terminid"
+    },
+    {
+      "id": "illuminate",
+      "name": "Illuminate"
+    }
+  ],
+  "feedMode": "topPerCategory"
+}

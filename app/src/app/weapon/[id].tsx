@@ -4,7 +4,7 @@ import { useLocalSearchParams, router } from 'expo-router';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { theme } from '../../theme';
 import { useLanguage } from '../../i18n/LanguageContext';
-import { useMeta } from '../../data/meta';
+import { useMeta, effectiveTier, effectiveScore } from '../../data/meta';
 import { useVault } from '../../data/vault';
 import { ttkAtRange, scoreWithBuild } from '../../lib/ttk';
 
@@ -14,7 +14,7 @@ export default function WeaponDetail() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const { t } = useLanguage();
   const insets = useSafeAreaInsets();
-  const { meta, currentGame } = useMeta();
+  const { meta, currentGame, currentFaction } = useMeta();
   const { toggle, has } = useVault();
   const [picked, setPicked] = useState<Record<string, string>>({});
 
@@ -38,7 +38,7 @@ export default function WeaponDetail() {
     : 0;
   const liveScore = bf6Editable
     ? scoreWithBuild(e.stats.rpm!, e.stats.damageCurve!, e.stats.recoilV!, totalRecoilMod)
-    : e.score;
+    : effectiveScore(e, currentFaction);
   const liveTtk = bf6Editable
     ? RANGES.map((r) => [r, ttkAtRange(e.stats.rpm!, e.stats.damageCurve!, r)] as const)
     : [];
@@ -65,7 +65,7 @@ export default function WeaponDetail() {
         {[
           ...(bf6Editable ? [{ v: `${Math.round(liveTtk[0][1] * 1000)}ms`, l: t('stat.ttk') }] : []),
           { v: String(liveScore), l: t('stat.score') },
-          { v: e.tier, l: t('tab.tier') },
+          { v: effectiveTier(e, currentFaction), l: t('tab.tier') },
         ].map((s, i, arr) => (
           <View key={s.l} style={{
             flex: 1, padding: theme.space.md,
@@ -83,8 +83,8 @@ export default function WeaponDetail() {
           borderBottomWidth: 2, borderBottomColor: theme.colors.divider, paddingBottom: 6, marginBottom: theme.space.md,
         }}>{t('detail.stats')}</Text>
         {e.statLines ? (
-          e.statLines.map((s) => (
-            <View key={s.label} style={{ flexDirection: 'row', justifyContent: 'space-between', paddingVertical: 6, borderBottomWidth: 1, borderBottomColor: theme.colors.neutral300 }}>
+          e.statLines.map((s, i) => (
+            <View key={`${s.label}-${i}`} style={{ flexDirection: 'row', justifyContent: 'space-between', paddingVertical: 6, borderBottomWidth: 1, borderBottomColor: theme.colors.neutral300 }}>
               <Text style={{ fontFamily: theme.font.bodyMedium, fontSize: 9, letterSpacing: 1, color: theme.colors.neutral700 }}>{s.label}</Text>
               <Text style={{ fontFamily: theme.font.heading, fontSize: 13, color: theme.colors.text, fontVariant: ['tabular-nums'] }}>{s.value}</Text>
             </View>
@@ -108,8 +108,8 @@ export default function WeaponDetail() {
             fontFamily: theme.font.headingBlack, fontSize: 11, letterSpacing: 1.8, color: theme.colors.text,
             borderBottomWidth: 2, borderBottomColor: theme.colors.divider, paddingBottom: 6, marginBottom: theme.space.md,
           }}>{t('detail.build')}</Text>
-          {e.build.map((b) => (
-            <View key={b.slot} style={{ flexDirection: 'row', justifyContent: 'space-between', paddingVertical: 6, borderBottomWidth: 1, borderBottomColor: theme.colors.neutral300 }}>
+          {e.build.map((b, i) => (
+            <View key={`${b.slot}-${i}`} style={{ flexDirection: 'row', justifyContent: 'space-between', paddingVertical: 6, borderBottomWidth: 1, borderBottomColor: theme.colors.neutral300 }}>
               <Text style={{ fontFamily: theme.font.bodyMedium, fontSize: 9, letterSpacing: 1, color: theme.colors.neutral700 }}>{b.slot}</Text>
               <Text style={{ fontFamily: theme.font.heading, fontSize: 13, color: theme.colors.text, fontVariant: ['tabular-nums'] }}>{b.item}</Text>
             </View>
@@ -199,14 +199,14 @@ export default function WeaponDetail() {
                 <Text style={{ fontFamily: theme.font.heading, fontSize: 13, color: theme.colors.text, fontVariant: ['tabular-nums'] }}>{e.rationale.effectiveDps}</Text>
               </View>
             )}
-            {e.rationale.bandBreakdown?.map((b) => (
-              <View key={b.band} style={{ flexDirection: 'row', justifyContent: 'space-between', paddingVertical: 6, borderBottomWidth: 1, borderBottomColor: theme.colors.neutral300 }}>
+            {e.rationale.bandBreakdown?.map((b, i) => (
+              <View key={`${b.band}-${i}`} style={{ flexDirection: 'row', justifyContent: 'space-between', paddingVertical: 6, borderBottomWidth: 1, borderBottomColor: theme.colors.neutral300 }}>
                 <Text style={{ fontFamily: theme.font.bodyMedium, fontSize: 12, color: theme.colors.neutral700 }}>{b.band.toUpperCase()}</Text>
                 <Text style={{ fontFamily: theme.font.heading, fontSize: 13, color: theme.colors.text, fontVariant: ['tabular-nums'] }}>{b.damage}</Text>
               </View>
             ))}
-            {e.rationale.bracketBreakdown?.map((b) => (
-              <View key={b.bracket} style={{ flexDirection: 'row', justifyContent: 'space-between', paddingVertical: 6, borderBottomWidth: 1, borderBottomColor: theme.colors.neutral300 }}>
+            {e.rationale.bracketBreakdown?.map((b, i) => (
+              <View key={`${b.bracket}-${i}`} style={{ flexDirection: 'row', justifyContent: 'space-between', paddingVertical: 6, borderBottomWidth: 1, borderBottomColor: theme.colors.neutral300 }}>
                 <Text style={{ fontFamily: theme.font.bodyMedium, fontSize: 12, color: theme.colors.neutral700 }}>{b.bracket.toUpperCase()}</Text>
                 <Text style={{ fontFamily: theme.font.heading, fontSize: 13, color: theme.colors.text, fontVariant: ['tabular-nums'] }}>{`${b.winRate}%`}</Text>
               </View>

@@ -27,13 +27,22 @@ export const GAME_STORAGE_KEY = 'meta.selectedGame';
 const LEGACY_CACHE_GAME = 'bf6';
 export const cacheKeyForGame = (gameId: string) => (gameId === LEGACY_CACHE_GAME ? 'meta.json' : `meta.json.${gameId}`);
 
+// Oyun secimiyle ayni kalipta, ama tek anahtar: faction oyuna degil kullaniciya
+// baglidir, oyun basina ayri saklamaya gerek yok (bkz. MetaProvider).
+export const FACTION_STORAGE_KEY = 'meta.selectedFaction';
+
 export type GameInfo = { id: string; name: string; file: string };
+export type FactionInfo = { id: string; name: string };
 
 // Ortak alanlar zorunlu; BF6'ya ozgu (build/slots/damageCurve) ve HD2'ye ozgu
 // (statLines, stats.code/rows) alanlar opsiyonel — iki semadan biri hep eksik olur.
 export type Entity = {
   id: string; name: string; category: string;
-  tier: 'S' | 'A' | 'B' | 'C'; score: number;
+  tier: 'S+' | 'S' | 'A' | 'B' | 'C' | 'D'; score: number;
+  // Sadece faction'li oyunlarda (HD2) dolu. tier/score alanlari her zaman
+  // varsayilan (illuminate) degerleri tasir; effectiveTier/effectiveScore
+  // buradan okur.
+  factions?: Record<string, { tier: Entity['tier']; score: number }>;
   stats: {
     rpm?: number; mag?: number; bulletVel?: number; adsTime?: number;
     recoilV?: number; fireMode?: string; damageCurve?: [number, number][];
@@ -62,7 +71,25 @@ export type Entity = {
 export type Meta = {
   game: string; gameName: string; scoreNote: string;
   sourceHash: string; generatedAt: string; entities: Entity[];
+  factions?: FactionInfo[];
+  // Sadece HD2: tier-ici sira kategori icinde hesaplandigi icin ayni tier'in
+  // en iyisi birden fazla kategoride ayni skoru alabilir ("ilk 5" o zaman
+  // rastgele bir alt kume gosterir). Bu modda feed skor yerine kategori basina
+  // tek oge gosterir.
+  feedMode?: 'topPerCategory';
 };
+
+// Tek cozumleyici: ekranlar e.tier/e.score'a dogrudan degil, hep buradan
+// erisir. faction null'sa ya da entity o faction icin veri tasimiyorsa
+// (BF6/Dota gibi faction'siz oyunlarda hep boyle) varsayilana duser.
+export function effectiveTier(e: Entity, faction: string | null): Entity['tier'] {
+  if (faction && e.factions?.[faction]) return e.factions[faction].tier;
+  return e.tier;
+}
+export function effectiveScore(e: Entity, faction: string | null): number {
+  if (faction && e.factions?.[faction]) return e.factions[faction].score;
+  return e.score;
+}
 
 // Onbellekteki veri ESKI semadan gelmis olabilir: cihazda duran kopya, uygulama
 // guncellenmeden once yazilmistir ve `gameName` gibi sonradan eklenen alanlari
@@ -127,9 +154,12 @@ const MetaContext = createContext<{
   games: GameInfo[];
   currentGame: string;
   setGame: (id: string) => void;
+  currentFaction: string | null;
+  setFaction: (id: string) => void;
 }>({
   meta: null, loading: true, offline: false, reload: () => {},
   games: [], currentGame: DEFAULT_GAME, setGame: () => {},
+  currentFaction: null, setFaction: () => {},
 });
 
 export function MetaProvider({ children }: { children: ReactNode }) {
@@ -138,6 +168,7 @@ export function MetaProvider({ children }: { children: ReactNode }) {
   const [offline, setOffline] = useState(false);
   const [games, setGames] = useState<GameInfo[]>([]);
   const [currentGame, setCurrentGame] = useState(DEFAULT_GAME);
+  const [currentFaction, setCurrentFaction] = useState<string | null>(null);
 
   const load = (gameId: string) => {
     setLoading(true);
@@ -166,11 +197,28 @@ export function MetaProvider({ children }: { children: ReactNode }) {
     load(id);
   };
 
+  const setFaction = (id: string) => {
+    setCurrentFaction(id);
+    AsyncStorage.setItem(FACTION_STORAGE_KEY, id);
+  };
+
+  // Meta her degistiginde (ilk yukleme, oyun degisimi, onbellek->ag gecisi)
+  // faction'i yeniden coz: liste yoksa null, varsa mevcut secim listede degilse
+  // (baska bir oyundan kalmis olabilir) listenin ilkine dus.
+  useEffect(() => {
+    if (!meta) return;
+    const factions = meta.factions;
+    if (!factions?.length) { setCurrentFaction(null); return; }
+    setCurrentFaction((prev) => (prev && factions.some((f) => f.id === prev) ? prev : factions[0].id));
+  }, [meta]);
+
   useEffect(() => {
     (async () => {
       const saved = await AsyncStorage.getItem(GAME_STORAGE_KEY);
       const initial = saved ?? DEFAULT_GAME;
       setCurrentGame(initial);
+      const savedFaction = await AsyncStorage.getItem(FACTION_STORAGE_KEY);
+      if (savedFaction) setCurrentFaction(savedFaction);
       load(initial);
     })();
     // games.json listesi ayri ve sessiz yuklenir; basarisiz olursa games bos
@@ -182,7 +230,7 @@ export function MetaProvider({ children }: { children: ReactNode }) {
   }, []);
 
   return (
-    <MetaContext.Provider value={{ meta, loading, offline, reload, games, currentGame, setGame }}>
+    <MetaContext.Provider value={{ meta, loading, offline, reload, games, currentGame, setGame, currentFaction, setFaction }}>
       {children}
     </MetaContext.Provider>
   );

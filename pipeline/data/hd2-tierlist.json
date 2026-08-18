@@ -1,0 +1,1980 @@
+{
+  "_kaynak": "Ucuncu taraf tier listesi ekran goruntuleri (kullanicinin gonderdigi). Her ogenin uc faction icin ayri tier degeri var: auto = Automaton, term = Terminid, illum = Illuminate.",
+  "_not": "Tier dogrudan kaynaktan gelir, yuzdelikle HESAPLANMAZ. Skor mutlak tierdan turetilir. tieBreak alani tier icindeki sirayi belirler; none ise kaynagin satir sirasi korunur ve bu yalnizca Illuminate icin dogrudur. Warbond (Source) alani bilincli olarak alinmamistir.",
+  "tierOlcegi": [
+    "S+",
+    "S",
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "kategoriler": {
+    "Primary": {
+      "tieBreak": "dps",
+      "items": [
+        {
+          "ad": "CB-9 Explosive Crossbow",
+          "auto": "S+",
+          "term": "S+",
+          "illum": "S+",
+          "dps": 516,
+          "ap": 3
+        },
+        {
+          "ad": "R-36 Eruptor",
+          "auto": "S+",
+          "term": "S+",
+          "illum": "S+",
+          "dps": 853.12,
+          "ap": 4
+        },
+        {
+          "ad": "SG-8 Punisher Plasma",
+          "auto": "S+",
+          "term": "S",
+          "illum": "S+",
+          "dps": 299.99,
+          "ap": 3
+        },
+        {
+          "ad": "PLAS-101 Purifier",
+          "auto": "S+",
+          "term": "S+",
+          "illum": "S+",
+          "dps": 2916,
+          "ap": 3
+        },
+        {
+          "ad": "AR-2 Coyote",
+          "auto": "A",
+          "term": "S+",
+          "illum": "S+",
+          "dps": 750,
+          "ap": 3
+        },
+        {
+          "ad": "PLAS-1 Scorcher",
+          "auto": "S",
+          "term": "S",
+          "illum": "S",
+          "dps": 1166,
+          "ap": 3
+        },
+        {
+          "ad": "VG-70 Variable",
+          "auto": "A",
+          "term": "A",
+          "illum": "S",
+          "dps": 1062,
+          "ap": 2
+        },
+        {
+          "ad": "FLAM-66 Torcher",
+          "auto": "C",
+          "term": "B",
+          "illum": "S",
+          "dps": 250,
+          "ap": 4
+        },
+        {
+          "ad": "SMG/FLAM-34 Stoker",
+          "auto": "B",
+          "term": "A",
+          "illum": "S",
+          "dps": 910,
+          "ap": 2
+        },
+        {
+          "ad": "SG-97 Sweeper",
+          "auto": "A",
+          "term": "S",
+          "illum": "S",
+          "dps": 1260,
+          "ap": 3
+        },
+        {
+          "ad": "SMG-203 Gallant",
+          "auto": "B",
+          "term": "S",
+          "illum": "S",
+          "dps": 1495,
+          "ap": 3
+        },
+        {
+          "ad": "R-72 Censor",
+          "auto": "S",
+          "term": "C",
+          "illum": "A",
+          "dps": 1100,
+          "ap": 2
+        },
+        {
+          "ad": "R-63 Diligence",
+          "auto": "S",
+          "term": "C",
+          "illum": "A",
+          "dps": 962,
+          "ap": 2
+        },
+        {
+          "ad": "R-2 Amendment",
+          "auto": "A",
+          "term": "C",
+          "illum": "A",
+          "dps": 1600,
+          "ap": 2
+        },
+        {
+          "ad": "LAS-13 Trident",
+          "auto": "A",
+          "term": "A",
+          "illum": "A",
+          "dps": 1800,
+          "ap": 2
+        },
+        {
+          "ad": "DBS-2 Double Freedom",
+          "auto": "A",
+          "term": "S",
+          "illum": "A",
+          "dps": 1680,
+          "ap": 3
+        },
+        {
+          "ad": "LAS-17 Double-Edge Sickle",
+          "auto": "A",
+          "term": "A",
+          "illum": "A",
+          "dps": 816,
+          "ap": 4
+        },
+        {
+          "ad": "PLAS-39 Accelerator Rifle",
+          "auto": "A",
+          "term": "B",
+          "illum": "A",
+          "dps": 3208,
+          "ap": 3
+        },
+        {
+          "ad": "JAR-5 Dominator",
+          "auto": "A",
+          "term": "A",
+          "illum": "A",
+          "dps": 1145,
+          "ap": 3
+        },
+        {
+          "ad": "SMG-32 Reprimand",
+          "auto": "B",
+          "term": "A",
+          "illum": "A",
+          "dps": 1143,
+          "ap": 3
+        },
+        {
+          "ad": "AR-61 Tenderizer",
+          "auto": "B",
+          "term": "A",
+          "illum": "A",
+          "dps": 1487,
+          "ap": 2
+        },
+        {
+          "ad": "AR-23 Liberator",
+          "auto": "B",
+          "term": "A",
+          "illum": "A",
+          "dps": 960,
+          "ap": 2
+        },
+        {
+          "ad": "AR-23A Liberator Carbine",
+          "auto": "B",
+          "term": "A",
+          "illum": "A",
+          "dps": 1380,
+          "ap": 2
+        },
+        {
+          "ad": "MP-98 Knight",
+          "auto": "B",
+          "term": "A",
+          "illum": "A",
+          "dps": 2070,
+          "ap": 2
+        },
+        {
+          "ad": "SG-225IE Breaker Incendiary",
+          "auto": "C",
+          "term": "A",
+          "illum": "A",
+          "dps": 1200,
+          "ap": 2
+        },
+        {
+          "ad": "SG-225 Breaker",
+          "auto": "C",
+          "term": "A",
+          "illum": "A",
+          "dps": 1650,
+          "ap": 2
+        },
+        {
+          "ad": "MA5C Assault Rifle",
+          "auto": "C",
+          "term": "A",
+          "illum": "A",
+          "dps": 960,
+          "ap": 3
+        },
+        {
+          "ad": "LAS-5 Scythe",
+          "auto": "A",
+          "term": "A",
+          "illum": "A",
+          "dps": 350,
+          "ap": 2
+        },
+        {
+          "ad": "StA-52 Assault Rifle",
+          "auto": "C",
+          "term": "B",
+          "illum": "A",
+          "dps": 1185,
+          "ap": 2
+        },
+        {
+          "ad": "StA-11 SMG",
+          "auto": "C",
+          "term": "B",
+          "illum": "A",
+          "dps": 1575,
+          "ap": 2
+        },
+        {
+          "ad": "ARC-12 Blitzer",
+          "auto": "D",
+          "term": "S",
+          "illum": "A",
+          "dps": 333,
+          "ap": 3
+        },
+        {
+          "ad": "R-63CS Diligence Counter Sniper",
+          "auto": "A",
+          "term": "C",
+          "illum": "B",
+          "dps": 1166,
+          "ap": 3
+        },
+        {
+          "ad": "AR-59 Suppressor",
+          "auto": "B",
+          "term": "B",
+          "illum": "B",
+          "dps": 1133,
+          "ap": 2
+        },
+        {
+          "ad": "BR-14 Adjudicator",
+          "auto": "B",
+          "term": "A",
+          "illum": "B",
+          "dps": 870,
+          "ap": 3
+        },
+        {
+          "ad": "AR-23P Liberator Penetrator",
+          "auto": "B",
+          "term": "A",
+          "illum": "B",
+          "dps": 693,
+          "ap": 3
+        },
+        {
+          "ad": "AR/GL-21 One-Two",
+          "auto": "B",
+          "term": "A",
+          "illum": "B",
+          "dps": 1029,
+          "ap": 2
+        },
+        {
+          "ad": "LAS-16 Sickle",
+          "auto": "B",
+          "term": "B",
+          "illum": "B",
+          "dps": 750,
+          "ap": 2
+        },
+        {
+          "ad": "SG-20 Halt",
+          "auto": "B",
+          "term": "A",
+          "illum": "B",
+          "dps": 513,
+          "ap": 3
+        },
+        {
+          "ad": "SMG-37 Defender",
+          "auto": "C",
+          "term": "C",
+          "illum": "B",
+          "dps": 953,
+          "ap": 2
+        },
+        {
+          "ad": "SG-451 Cookout",
+          "auto": "C",
+          "term": "A",
+          "illum": "B",
+          "dps": 426,
+          "ap": 2
+        },
+        {
+          "ad": "SG-225SP Breaker SPRAY & PRAY",
+          "auto": "C",
+          "term": "C",
+          "illum": "B",
+          "dps": 1320,
+          "ap": 2
+        },
+        {
+          "ad": "R-6 Deadeye",
+          "auto": "C",
+          "term": "C",
+          "illum": "B",
+          "dps": 500,
+          "ap": 3
+        },
+        {
+          "ad": "M7S SMG",
+          "auto": "C",
+          "term": "B",
+          "illum": "B",
+          "dps": 1308,
+          "ap": 2
+        },
+        {
+          "ad": "AR-32 Pacifier",
+          "auto": "B",
+          "term": "A",
+          "illum": "C",
+          "dps": 640,
+          "ap": 3
+        },
+        {
+          "ad": "SG-8 Punisher",
+          "auto": "C",
+          "term": "A",
+          "illum": "C",
+          "dps": 540,
+          "ap": 2
+        },
+        {
+          "ad": "M90A Shotgun",
+          "auto": "D",
+          "term": "B",
+          "illum": "C",
+          "dps": 806,
+          "ap": 2
+        },
+        {
+          "ad": "SMG-72 Pummeler",
+          "auto": "D",
+          "term": "C",
+          "illum": "C",
+          "dps": 672,
+          "ap": 2
+        },
+        {
+          "ad": "R/40-K Hot-Shot Marksman Rifle",
+          "auto": "B",
+          "term": "D",
+          "illum": "C",
+          "dps": 962,
+          "ap": 3
+        },
+        {
+          "ad": "AR-23C Liberator Concussive",
+          "auto": "D",
+          "term": "D",
+          "illum": "D",
+          "dps": 500,
+          "ap": 2
+        },
+        {
+          "ad": "SG-8S Slugger",
+          "auto": "D",
+          "term": "B",
+          "illum": "D",
+          "dps": 440,
+          "ap": 3
+        },
+        {
+          "ad": "R-2124 Constitution",
+          "auto": "D",
+          "term": "D",
+          "illum": "D",
+          "dps": 180,
+          "ap": 3
+        }
+      ]
+    },
+    "Secondary": {
+      "tieBreak": "ap",
+      "items": [
+        {
+          "ad": "LAS-58 Talon",
+          "auto": "S",
+          "term": "S",
+          "illum": "S+",
+          "ap": 3
+        },
+        {
+          "ad": "PLAS-15 Loyalist",
+          "auto": "A",
+          "term": "S",
+          "illum": "S+",
+          "ap": 3
+        },
+        {
+          "ad": "GP-31 Grenade Pistol",
+          "auto": "S",
+          "term": "S+",
+          "illum": "S+",
+          "ap": 3
+        },
+        {
+          "ad": "P-72 Crisper",
+          "auto": "B",
+          "term": "A",
+          "illum": "S+",
+          "ap": 4
+        },
+        {
+          "ad": "P-35 Re-Educator",
+          "auto": "A",
+          "term": "S",
+          "illum": "S",
+          "ap": 4
+        },
+        {
+          "ad": "P-92 Warrant",
+          "auto": "B",
+          "term": "A",
+          "illum": "S",
+          "ap": 3
+        },
+        {
+          "ad": "P/40-K Bolt Pistol",
+          "auto": "S+",
+          "term": "S",
+          "illum": "S",
+          "ap": 4
+        },
+        {
+          "ad": "P-113 Verdict",
+          "auto": "A",
+          "term": "A",
+          "illum": "A",
+          "ap": 3
+        },
+        {
+          "ad": "P-69 Veto",
+          "auto": "A",
+          "term": "A",
+          "illum": "A",
+          "ap": 3
+        },
+        {
+          "ad": "P-4 Senator",
+          "auto": "S+",
+          "term": "S",
+          "illum": "A",
+          "ap": 4
+        },
+        {
+          "ad": "GP-20 Ultimatum",
+          "auto": "S+",
+          "term": "S+",
+          "illum": "A",
+          "ap": 6
+        },
+        {
+          "ad": "P-19 Redeemer",
+          "auto": "B",
+          "term": "A",
+          "illum": "A",
+          "ap": 2
+        },
+        {
+          "ad": "P-11 Stim Pistol",
+          "auto": "A",
+          "term": "A",
+          "illum": "A",
+          "ap": 0
+        },
+        {
+          "ad": "M6C-SOCOM",
+          "auto": "B",
+          "term": "B",
+          "illum": "B",
+          "ap": 2
+        },
+        {
+          "ad": "CQC-2 Saber",
+          "auto": "C",
+          "term": "B",
+          "illum": "B",
+          "ap": 3
+        },
+        {
+          "ad": "CQC-5 Combat Hatchet",
+          "auto": "C",
+          "term": "B",
+          "illum": "B",
+          "ap": 3
+        },
+        {
+          "ad": "CQC-42 Machete",
+          "auto": "B",
+          "term": "B",
+          "illum": "B",
+          "ap": 3
+        },
+        {
+          "ad": "LAS-7 Dagger",
+          "auto": "C",
+          "term": "C",
+          "illum": "B",
+          "ap": 2
+        },
+        {
+          "ad": "P-33 Missile Pistol",
+          "auto": "A",
+          "term": "A",
+          "illum": "B",
+          "ap": 5
+        },
+        {
+          "ad": "SG-22 Bushwhacker",
+          "auto": "C",
+          "term": "B",
+          "illum": "C",
+          "ap": 2
+        },
+        {
+          "ad": "P-2 Peacemaker",
+          "auto": "D",
+          "term": "C",
+          "illum": "C",
+          "ap": 2
+        },
+        {
+          "ad": "CQC-19 Stun Lance",
+          "auto": "D",
+          "term": "C",
+          "illum": "C",
+          "ap": 3
+        },
+        {
+          "ad": "CQC-30 Stun Baton",
+          "auto": "D",
+          "term": "C",
+          "illum": "C",
+          "ap": 3
+        },
+        {
+          "ad": "CQC-73 Entrenchment Tool",
+          "auto": "D",
+          "term": "C",
+          "illum": "C",
+          "ap": 3
+        }
+      ]
+    },
+    "Support Weapon": {
+      "tieBreak": "ap",
+      "items": [
+        {
+          "ad": "RL-77 Airburst Rocket Launcher",
+          "auto": "A",
+          "term": "B",
+          "illum": "S+",
+          "backpack": true,
+          "ap": 3
+        },
+        {
+          "ad": "M-105 Stalwart",
+          "auto": "B",
+          "term": "A",
+          "illum": "S+",
+          "backpack": false,
+          "ap": 2
+        },
+        {
+          "ad": "FLAM-40 Flamethrower",
+          "auto": "B",
+          "term": "S",
+          "illum": "S+",
+          "backpack": false,
+          "ap": 4
+        },
+        {
+          "ad": "AC-8 Autocannon",
+          "auto": "S+",
+          "term": "S+",
+          "illum": "S+",
+          "backpack": true,
+          "ap": 4
+        },
+        {
+          "ad": "StA-X3 W.A.S.P. Launcher",
+          "auto": "B",
+          "term": "B",
+          "illum": "S+",
+          "backpack": true,
+          "ap": 3
+        },
+        {
+          "ad": "B/FLAM-80 Cremator",
+          "auto": "A",
+          "term": "S+",
+          "illum": "S+",
+          "backpack": true,
+          "ap": 4
+        },
+        {
+          "ad": "MGX-42 Bullet Storm",
+          "auto": "B",
+          "term": "A",
+          "illum": "S+",
+          "backpack": false,
+          "ap": 2
+        },
+        {
+          "ad": "S-11 Speargun",
+          "auto": "S",
+          "term": "S",
+          "illum": "S",
+          "backpack": false,
+          "ap": 5
+        },
+        {
+          "ad": "GL-21 Grenade Launcher",
+          "auto": "S",
+          "term": "S",
+          "illum": "S",
+          "backpack": false,
+          "ap": 3
+        },
+        {
+          "ad": "MG-43 Machine Gun",
+          "auto": "B",
+          "term": "B",
+          "illum": "S",
+          "backpack": false,
+          "ap": 3
+        },
+        {
+          "ad": "EAT-700 Expendable Napalm",
+          "auto": "B",
+          "term": "S",
+          "illum": "S",
+          "backpack": false,
+          "ap": 6
+        },
+        {
+          "ad": "40-K Meltagun",
+          "auto": "S+",
+          "term": "S+",
+          "illum": "S",
+          "backpack": false,
+          "ap": 7
+        },
+        {
+          "ad": "B/MD C4 Pack",
+          "auto": "S+",
+          "term": "S",
+          "illum": "A",
+          "backpack": true,
+          "ap": 7
+        },
+        {
+          "ad": "EAT-411 Leveller",
+          "auto": "S+",
+          "term": "B",
+          "illum": "A",
+          "backpack": false,
+          "ap": 6
+        },
+        {
+          "ad": "MS-11 Solo Silo",
+          "auto": "S",
+          "term": "S",
+          "illum": "A",
+          "backpack": false,
+          "ap": 9
+        },
+        {
+          "ad": "CQC-20 Breaching Hammer",
+          "auto": "S",
+          "term": "S",
+          "illum": "A",
+          "backpack": false,
+          "ap": 5
+        },
+        {
+          "ad": "ARC-3 Arc Thrower",
+          "auto": "C",
+          "term": "A",
+          "illum": "A",
+          "backpack": false,
+          "ap": 7
+        },
+        {
+          "ad": "GL-52 De-Escalator",
+          "auto": "B",
+          "term": "A",
+          "illum": "A",
+          "backpack": false,
+          "ap": 4
+        },
+        {
+          "ad": "M-1000 Maxigun",
+          "auto": "B",
+          "term": "B",
+          "illum": "A",
+          "backpack": true,
+          "ap": 3
+        },
+        {
+          "ad": "GL-28 Belt-Fed Grenade Launcher",
+          "auto": "A",
+          "term": "A",
+          "illum": "A",
+          "backpack": true,
+          "ap": 4
+        },
+        {
+          "ad": "MLS-4X Commando",
+          "auto": "S",
+          "term": "B",
+          "illum": "B",
+          "backpack": false,
+          "ap": 6
+        },
+        {
+          "ad": "PLAS-45 Epoch",
+          "auto": "S",
+          "term": "A",
+          "illum": "B",
+          "backpack": false,
+          "ap": 5
+        },
+        {
+          "ad": "MG-206 Heavy Machine Gun",
+          "auto": "B",
+          "term": "B",
+          "illum": "B",
+          "backpack": false,
+          "ap": 4
+        },
+        {
+          "ad": "LAS-98 Laser Cannon",
+          "auto": "B",
+          "term": "B",
+          "illum": "B",
+          "backpack": false,
+          "ap": 4
+        },
+        {
+          "ad": "GR-8 Recoilless Rifle",
+          "auto": "S+",
+          "term": "S+",
+          "illum": "C",
+          "backpack": true,
+          "ap": 6
+        },
+        {
+          "ad": "APW-1 Anti-Materiel Rifle",
+          "auto": "A",
+          "term": "B",
+          "illum": "C",
+          "backpack": false,
+          "ap": 4
+        },
+        {
+          "ad": "FAF-14 Spear",
+          "auto": "S",
+          "term": "A",
+          "illum": "C",
+          "backpack": true,
+          "ap": 7
+        },
+        {
+          "ad": "RS-422 Railgun",
+          "auto": "S",
+          "term": "B",
+          "illum": "C",
+          "backpack": false,
+          "ap": 5
+        },
+        {
+          "ad": "EAT-17 Expendable Anti-Tank",
+          "auto": "S",
+          "term": "S+",
+          "illum": "C",
+          "backpack": false,
+          "ap": 6
+        },
+        {
+          "ad": "LAS-99 Quasar Cannon",
+          "auto": "S",
+          "term": "S",
+          "illum": "C",
+          "backpack": false,
+          "ap": 6
+        },
+        {
+          "ad": "TX-41 Sterilizer",
+          "auto": "D",
+          "term": "D",
+          "illum": "C",
+          "backpack": false,
+          "ap": 5
+        },
+        {
+          "ad": "CQC-9 Defoliation Tool",
+          "auto": "D",
+          "term": "C",
+          "illum": "C",
+          "backpack": false,
+          "ap": 5
+        },
+        {
+          "ad": "CQC-1 One True Flag",
+          "auto": "D",
+          "term": "D",
+          "illum": "D",
+          "backpack": false,
+          "ap": 3
+        }
+      ]
+    },
+    "Throwable": {
+      "tieBreak": "ap",
+      "items": [
+        {
+          "ad": "G-123 Thermite",
+          "auto": "S+",
+          "term": "S+",
+          "illum": "S+",
+          "max": 3,
+          "demo": 30,
+          "ap": 7
+        },
+        {
+          "ad": "G-4 Gas",
+          "auto": "A",
+          "term": "S",
+          "illum": "S+",
+          "max": 4,
+          "demo": 30,
+          "ap": 6
+        },
+        {
+          "ad": "G-13 Incendiary Impact",
+          "auto": "B",
+          "term": "S+",
+          "illum": "S+",
+          "max": 5,
+          "demo": 30,
+          "ap": 4
+        },
+        {
+          "ad": "G-10 Incendiary",
+          "auto": "B",
+          "term": "S+",
+          "illum": "S+",
+          "max": 5,
+          "demo": 30,
+          "ap": 4
+        },
+        {
+          "ad": "G-16 Impact",
+          "auto": "A",
+          "term": "S",
+          "illum": "S",
+          "max": 5,
+          "demo": 30,
+          "ap": 4
+        },
+        {
+          "ad": "G/40-K Melta Mine",
+          "auto": "S",
+          "term": "S",
+          "illum": "S",
+          "max": 4,
+          "demo": 40,
+          "ap": 7
+        },
+        {
+          "ad": "TM-1 Lure Mine",
+          "auto": "A",
+          "term": "S",
+          "illum": "A",
+          "max": 4,
+          "demo": 30,
+          "ap": 5
+        },
+        {
+          "ad": "G-142 Pyrotech",
+          "auto": "S",
+          "term": "A",
+          "illum": "A",
+          "max": 6,
+          "demo": 30,
+          "ap": 7
+        },
+        {
+          "ad": "G-6 Frag",
+          "auto": "B",
+          "term": "A",
+          "illum": "A",
+          "max": 6,
+          "demo": 20,
+          "ap": 3
+        },
+        {
+          "ad": "G-12 High Explosive",
+          "auto": "A",
+          "term": "A",
+          "illum": "A",
+          "max": 5,
+          "demo": 30,
+          "ap": 4
+        },
+        {
+          "ad": "G-7 Pineapple",
+          "auto": "A",
+          "term": "A",
+          "illum": "A",
+          "max": 5,
+          "demo": 30,
+          "ap": 3
+        },
+        {
+          "ad": "G-50 Seeker",
+          "auto": "A",
+          "term": "B",
+          "illum": "A",
+          "max": 5,
+          "demo": 30,
+          "ap": 4
+        },
+        {
+          "ad": "TED-63 Dynamite",
+          "auto": "S",
+          "term": "S",
+          "illum": "A",
+          "max": 4,
+          "demo": 40,
+          "ap": 4
+        },
+        {
+          "ad": "G/SH-39 Shield",
+          "auto": "S",
+          "term": "S",
+          "illum": "A",
+          "max": 4,
+          "demo": 20,
+          "ap": 0
+        },
+        {
+          "ad": "G-48 Giga Grenade",
+          "auto": "A",
+          "term": "A",
+          "illum": "A",
+          "max": 2,
+          "demo": 40,
+          "ap": 5
+        },
+        {
+          "ad": "G-109 Urchin",
+          "auto": "D",
+          "term": "D",
+          "illum": "C",
+          "max": 5,
+          "demo": 0,
+          "ap": 6
+        },
+        {
+          "ad": "G-23 Stun",
+          "auto": "S",
+          "term": "S",
+          "illum": "C",
+          "max": 5,
+          "demo": 0,
+          "ap": 6
+        },
+        {
+          "ad": "G-31 Arc",
+          "auto": "C",
+          "term": "C",
+          "illum": "C",
+          "max": 5,
+          "demo": 0,
+          "ap": 4
+        },
+        {
+          "ad": "K-2 Throwing Knife",
+          "auto": "D",
+          "term": "D",
+          "illum": "D",
+          "max": 20,
+          "demo": 10,
+          "ap": 3
+        },
+        {
+          "ad": "G-89 Smokecreen",
+          "auto": "B",
+          "term": "D",
+          "illum": "D",
+          "max": 5,
+          "demo": 0,
+          "ap": 0
+        },
+        {
+          "ad": "G-3 Smoke",
+          "auto": "B",
+          "term": "D",
+          "illum": "D",
+          "max": 5,
+          "demo": 0,
+          "ap": 0
+        }
+      ]
+    },
+    "Backpack": {
+      "tieBreak": "none",
+      "items": [
+        {
+          "ad": "AX/FLAM-75 Hot Dog",
+          "auto": "S+",
+          "term": "S+",
+          "illum": "S+"
+        },
+        {
+          "ad": "LIFT-182 Warp Pack",
+          "auto": "S+",
+          "term": "S+",
+          "illum": "S+"
+        },
+        {
+          "ad": "B-1 Supply Pack",
+          "auto": "S+",
+          "term": "S+",
+          "illum": "S+"
+        },
+        {
+          "ad": "B-100 Portable Hellbomb",
+          "auto": "S+",
+          "term": "S",
+          "illum": "S"
+        },
+        {
+          "ad": "AX/AR-23 Guard Dog",
+          "auto": "A",
+          "term": "A",
+          "illum": "S"
+        },
+        {
+          "ad": "LIFT-850 Jump Pack",
+          "auto": "S",
+          "term": "S",
+          "illum": "S"
+        },
+        {
+          "ad": "SH-32 Shield Generator Pack",
+          "auto": "S",
+          "term": "S",
+          "illum": "S"
+        },
+        {
+          "ad": "AX/LAS-5 Rover",
+          "auto": "B",
+          "term": "S",
+          "illum": "A"
+        },
+        {
+          "ad": "LIFT-860 Hover Pack",
+          "auto": "A",
+          "term": "S",
+          "illum": "A"
+        },
+        {
+          "ad": "AX/ARC-3 K-9",
+          "auto": "C",
+          "term": "B",
+          "illum": "B"
+        },
+        {
+          "ad": "AX/TX-13 Dog Breath",
+          "auto": "B",
+          "term": "A",
+          "illum": "B"
+        },
+        {
+          "ad": "SH-20 Ballistic Shield Backpack",
+          "auto": "B",
+          "term": "C",
+          "illum": "C"
+        },
+        {
+          "ad": "SH-51 Directional Shield",
+          "auto": "D",
+          "term": "D",
+          "illum": "D"
+        }
+      ]
+    },
+    "Eagle": {
+      "tieBreak": "none",
+      "items": [
+        {
+          "ad": "Eagle Strafing Run",
+          "auto": "S+",
+          "term": "S",
+          "illum": "S+",
+          "usesStandard": 4,
+          "usesUpgraded": 5
+        },
+        {
+          "ad": "Eagle Napalm Airstrike",
+          "auto": "B",
+          "term": "A",
+          "illum": "S",
+          "usesStandard": 2,
+          "usesUpgraded": 3
+        },
+        {
+          "ad": "Eagle Airstrike",
+          "auto": "S+",
+          "term": "S+",
+          "illum": "A",
+          "usesStandard": 2,
+          "usesUpgraded": 3
+        },
+        {
+          "ad": "Eagle Cluster Bomb",
+          "auto": "A",
+          "term": "S",
+          "illum": "A",
+          "usesStandard": 4,
+          "usesUpgraded": 5
+        },
+        {
+          "ad": "Eagle 500kg Bomb",
+          "auto": "S+",
+          "term": "S+",
+          "illum": "B",
+          "usesStandard": 1,
+          "usesUpgraded": 2
+        },
+        {
+          "ad": "Eagle Smoke Strike",
+          "auto": "B",
+          "term": "D",
+          "illum": "D",
+          "usesStandard": 2,
+          "usesUpgraded": 3
+        },
+        {
+          "ad": "Eagle 110mm Rocket Pods",
+          "auto": "A",
+          "term": "A",
+          "illum": "D",
+          "usesStandard": 3,
+          "usesUpgraded": 4
+        }
+      ]
+    },
+    "Sentry & Emplacement": {
+      "tieBreak": "ap",
+      "items": [
+        {
+          "ad": "E/AT-12 Anti-Tank Emplacement",
+          "auto": "S+",
+          "term": "S",
+          "illum": "S+",
+          "damageType": "Ballistic",
+          "ap": 6
+        },
+        {
+          "ad": "A/MG-43 Machine Gun Sentry",
+          "auto": "S",
+          "term": "S+",
+          "illum": "S+",
+          "damageType": "Ballistic",
+          "ap": 3
+        },
+        {
+          "ad": "A/ARC-3 Tesla Tower",
+          "auto": "B",
+          "term": "S+",
+          "illum": "S+",
+          "damageType": "Arc",
+          "ap": 4
+        },
+        {
+          "ad": "A/G-16 Gatling Sentry",
+          "auto": "A",
+          "term": "S",
+          "illum": "S+",
+          "damageType": "Ballistic",
+          "ap": 3
+        },
+        {
+          "ad": "A/AC-8 Autocannon Sentry",
+          "auto": "S+",
+          "term": "S+",
+          "illum": "S+",
+          "damageType": "Ballistic",
+          "ap": 5
+        },
+        {
+          "ad": "E/MG-101 HMG Emplacement",
+          "auto": "S+",
+          "term": "S+",
+          "illum": "S+",
+          "damageType": "Ballistic",
+          "ap": 4
+        },
+        {
+          "ad": "A/FLAM-40 Flame Sentry",
+          "auto": "B",
+          "term": "S",
+          "illum": "S",
+          "damageType": "Fire",
+          "ap": 4
+        },
+        {
+          "ad": "A/MLS-4X Rocket Sentry",
+          "auto": "S+",
+          "term": "S",
+          "illum": "S",
+          "damageType": "Ballistic",
+          "ap": 5
+        },
+        {
+          "ad": "MD-I4 Incendiary Mines",
+          "auto": "B",
+          "term": "S",
+          "illum": "S",
+          "damageType": "Explosion",
+          "ap": 3
+        },
+        {
+          "ad": "MD-8 Gas Mines",
+          "auto": "S",
+          "term": "S",
+          "illum": "S",
+          "damageType": "Gas",
+          "ap": 6
+        },
+        {
+          "ad": "A/LAS-98 Laser Sentry",
+          "auto": "C",
+          "term": "B",
+          "illum": "A",
+          "damageType": "Laser",
+          "ap": 4
+        },
+        {
+          "ad": "A/M-23 EMS Mortar Sentry",
+          "auto": "A",
+          "term": "A",
+          "illum": "A",
+          "damageType": "None",
+          "ap": 6
+        },
+        {
+          "ad": "MD-6 Anti-Personnel Minefield",
+          "auto": "B",
+          "term": "A",
+          "illum": "A",
+          "damageType": "Explosion",
+          "ap": 3
+        },
+        {
+          "ad": "E/GL-21 Grenadier Battlement",
+          "auto": "A",
+          "term": "A",
+          "illum": "A",
+          "damageType": "Explosion",
+          "ap": 3
+        },
+        {
+          "ad": "A/GM-17 Gas Mortar Sentry",
+          "auto": "A",
+          "term": "B",
+          "illum": "B",
+          "damageType": "Gas",
+          "ap": 6
+        },
+        {
+          "ad": "FX-12 Shield Generator Relay",
+          "auto": "B",
+          "term": "D",
+          "illum": "B",
+          "damageType": "N/A",
+          "ap": null
+        },
+        {
+          "ad": "A/M-12 Mortar Sentry",
+          "auto": "S",
+          "term": "D",
+          "illum": "D",
+          "damageType": "Explosive",
+          "ap": 3
+        },
+        {
+          "ad": "MD-17 Anti-Tank Mines",
+          "auto": "S",
+          "term": "A",
+          "illum": "D",
+          "damageType": "Explosion",
+          "ap": 5
+        }
+      ]
+    },
+    "Booster": {
+      "tieBreak": "none",
+      "items": [
+        {
+          "ad": "Hellpod Space Optimization",
+          "auto": "S+",
+          "term": "S+",
+          "illum": "S+",
+          "medals": 20
+        },
+        {
+          "ad": "Experimental Infusion",
+          "auto": "S+",
+          "term": "S+",
+          "illum": "S+",
+          "medals": 80
+        },
+        {
+          "ad": "Stamina Enhancement",
+          "auto": "S+",
+          "term": "S+",
+          "illum": "S+",
+          "medals": 75
+        },
+        {
+          "ad": "Vitality Enhancement",
+          "auto": "S",
+          "term": "S",
+          "illum": "S",
+          "medals": 20
+        },
+        {
+          "ad": "Increased Reinforcement Budget",
+          "auto": "S",
+          "term": "S",
+          "illum": "S",
+          "medals": 150
+        },
+        {
+          "ad": "Armed Resupply Pods",
+          "auto": "C",
+          "term": "A",
+          "illum": "A",
+          "medals": 55
+        },
+        {
+          "ad": "Sample Extricator",
+          "auto": "A",
+          "term": "A",
+          "illum": "A",
+          "medals": 65
+        },
+        {
+          "ad": "Sample Scanner",
+          "auto": "A",
+          "term": "A",
+          "illum": "A",
+          "medals": 65
+        },
+        {
+          "ad": "Muscle Enhancement",
+          "auto": "B",
+          "term": "S",
+          "illum": "B",
+          "medals": 75
+        },
+        {
+          "ad": "Flexible Reinforcement Budget",
+          "auto": "B",
+          "term": "B",
+          "illum": "B",
+          "medals": 75
+        },
+        {
+          "ad": "Localization Confusion",
+          "auto": "B",
+          "term": "B",
+          "illum": "B",
+          "medals": 18
+        },
+        {
+          "ad": "Dead Sprint",
+          "auto": "C",
+          "term": "B",
+          "illum": "B",
+          "medals": 35
+        },
+        {
+          "ad": "Expert Extraction Pilot",
+          "auto": "C",
+          "term": "C",
+          "illum": "C",
+          "medals": 55
+        },
+        {
+          "ad": "Firebomb Hellpods",
+          "auto": "D",
+          "term": "C",
+          "illum": "C",
+          "medals": 60
+        },
+        {
+          "ad": "UAV Recon Booster",
+          "auto": "D",
+          "term": "D",
+          "illum": "D",
+          "medals": 40
+        },
+        {
+          "ad": "Motivational Shocks",
+          "auto": "D",
+          "term": "C",
+          "illum": "D",
+          "medals": 15
+        },
+        {
+          "ad": "Stun Pods",
+          "auto": "D",
+          "term": "D",
+          "illum": "D",
+          "medals": 55
+        },
+        {
+          "ad": "Concealed Insertion",
+          "auto": "A",
+          "term": "D",
+          "illum": "D",
+          "medals": 40
+        }
+      ]
+    },
+    "Orbital": {
+      "tieBreak": "none",
+      "items": [
+        {
+          "ad": "Orbital Laser",
+          "auto": "S+",
+          "term": "S+",
+          "illum": "S+",
+          "cooldown": 300
+        },
+        {
+          "ad": "Orbital Precision Strike",
+          "auto": "S",
+          "term": "S",
+          "illum": "S",
+          "cooldown": 90
+        },
+        {
+          "ad": "Orbital Gas Strike",
+          "auto": "S+",
+          "term": "S+",
+          "illum": "S",
+          "cooldown": 75
+        },
+        {
+          "ad": "Orbital Napalm Barrage",
+          "auto": "A",
+          "term": "S",
+          "illum": "S",
+          "cooldown": 240
+        },
+        {
+          "ad": "Orbital Gatling Barrage",
+          "auto": "S+",
+          "term": "S+",
+          "illum": "A",
+          "cooldown": 70
+        },
+        {
+          "ad": "Orbital 120mm HE Barrage",
+          "auto": "S",
+          "term": "B",
+          "illum": "A",
+          "cooldown": 180
+        },
+        {
+          "ad": "Orbital Airburst Strike",
+          "auto": "A",
+          "term": "S+",
+          "illum": "A",
+          "cooldown": 100
+        },
+        {
+          "ad": "Orbital Walking Barrage",
+          "auto": "S",
+          "term": "B",
+          "illum": "A",
+          "cooldown": 240
+        },
+        {
+          "ad": "Orbital EMS Strike",
+          "auto": "D",
+          "term": "B",
+          "illum": "B",
+          "cooldown": 75
+        },
+        {
+          "ad": "Orbital 380mm HE Barrage",
+          "auto": "B",
+          "term": "B",
+          "illum": "C",
+          "cooldown": 240
+        },
+        {
+          "ad": "Orbital Smoke Strike",
+          "auto": "B",
+          "term": "D",
+          "illum": "D",
+          "cooldown": 75
+        },
+        {
+          "ad": "Orbital Railcannon Strike",
+          "auto": "A",
+          "term": "A",
+          "illum": "D",
+          "cooldown": 180
+        }
+      ]
+    },
+    "Armor Passive": {
+      "tieBreak": "none",
+      "items": [
+        {
+          "ad": "Med-Kit",
+          "auto": "S+",
+          "term": "S+",
+          "illum": "S+",
+          "stats": [
+            "+2 stim capacity.",
+            "+2.0s stim effect duration."
+          ]
+        },
+        {
+          "ad": "True Grit",
+          "auto": "S+",
+          "term": "S+",
+          "illum": "S+",
+          "stats": [
+            "+20 Weapon Handling.",
+            "+30% Reload Speed for Support Weapons."
+          ]
+        },
+        {
+          "ad": "Reduced Signature",
+          "auto": "S+",
+          "term": "B",
+          "illum": "S",
+          "stats": [
+            "-50% noise when moving.",
+            "-40% enemy detection range."
+          ]
+        },
+        {
+          "ad": "Siege-Ready",
+          "auto": "S",
+          "term": "S",
+          "illum": "S",
+          "stats": [
+            "+30% primary reload speed",
+            "+20% ammo capacity (all weapons, excluding backpacks)"
+          ]
+        },
+        {
+          "ad": "Engineering Kit",
+          "auto": "S",
+          "term": "S",
+          "illum": "S",
+          "stats": [
+            "-30% recoil when crouching/prone.",
+            "+2 throwables capacity"
+          ]
+        },
+        {
+          "ad": "Oxygenator",
+          "auto": "S",
+          "term": "S",
+          "illum": "S",
+          "stats": [
+            "+10% walking & running speed.",
+            "+160ms slide duration (roughly +50%)."
+          ]
+        },
+        {
+          "ad": "Concussive Padding, Reinforced",
+          "auto": "S+",
+          "term": "B",
+          "illum": "A",
+          "stats": [
+            "+50% explosive dmg resist.",
+            "+30 armor rating."
+          ]
+        },
+        {
+          "ad": "Desert Stormer",
+          "auto": "A",
+          "term": "S+",
+          "illum": "A",
+          "stats": [
+            "+40% resistance to fire/gas/acid/electrical dmg.",
+            "+20% throwing range"
+          ]
+        },
+        {
+          "ad": "Adreno-Defibrillator",
+          "auto": "B",
+          "term": "B",
+          "illum": "A",
+          "stats": [
+            "Revive upon death if body is still intact. Timed death shortly after revive.",
+            "+2.0s stim effect duration.",
+            "+50% electrical dmg resist."
+          ]
+        },
+        {
+          "ad": "Ballistic Padding",
+          "auto": "S",
+          "term": "A",
+          "illum": "A",
+          "stats": [
+            "+25% chest dmg resist.",
+            "+25% explosive dmg resist.",
+            "Prevents all bleeding dmg."
+          ]
+        },
+        {
+          "ad": "Acclimated",
+          "auto": "A",
+          "term": "S+",
+          "illum": "A",
+          "stats": [
+            "+50% resistance to fire/gas/acid/electrical dmg."
+          ]
+        },
+        {
+          "ad": "Unflinching",
+          "auto": "A",
+          "term": "A",
+          "illum": "A",
+          "stats": [
+            "Reduces flinching when hit.",
+            "+25 armor rating.",
+            "Map marker radar."
+          ]
+        },
+        {
+          "ad": "Peak Physique",
+          "auto": "A",
+          "term": "A",
+          "illum": "A",
+          "stats": [
+            "+40% melee damage.",
+            "+30 ergonomics (weapon handling)"
+          ]
+        },
+        {
+          "ad": "Electrical Conduit",
+          "auto": "D",
+          "term": "D",
+          "illum": "A",
+          "stats": [
+            "+95% electrical dmg resist."
+          ]
+        },
+        {
+          "ad": "Democracy Protects",
+          "auto": "A",
+          "term": "A",
+          "illum": "A",
+          "stats": [
+            "+50% chance to not die when taking lethal damage.",
+            "Prevents all bleeding dmg."
+          ]
+        },
+        {
+          "ad": "Concussive Padding, Hazmat",
+          "auto": "S+",
+          "term": "B",
+          "illum": "B",
+          "stats": [
+            "+50% explosive dmg resist.",
+            "+25% gas dmg resist.",
+            "-30% sidearm recoil"
+          ]
+        },
+        {
+          "ad": "Rock Solid",
+          "auto": "B",
+          "term": "B",
+          "illum": "B",
+          "stats": [
+            "Reduces ragdolling",
+            "+40% melee damage"
+          ]
+        },
+        {
+          "ad": "Reinforced Epaulettes",
+          "auto": "B",
+          "term": "B",
+          "illum": "B",
+          "stats": [
+            "+30% primary reload speed.",
+            "50% chance to avoid limb injury.",
+            "+20% melee damage."
+          ]
+        },
+        {
+          "ad": "Gunslinger",
+          "auto": "B",
+          "term": "B",
+          "illum": "B",
+          "stats": [
+            "+40% sidearm reload speed.",
+            "+50% draw/holster speed.",
+            "-70% sidearm recoil."
+          ]
+        },
+        {
+          "ad": "Fortified",
+          "auto": "S+",
+          "term": "C",
+          "illum": "B",
+          "stats": [
+            "+50% explosive dmg resist.",
+            "-30% recoil when crouching/prone."
+          ]
+        },
+        {
+          "ad": "Scout",
+          "auto": "A",
+          "term": "C",
+          "illum": "B",
+          "stats": [
+            "Map marker radar.",
+            "-40% enemy detection range."
+          ]
+        },
+        {
+          "ad": "Extra Padding",
+          "auto": "B",
+          "term": "B",
+          "illum": "B",
+          "stats": [
+            "+50 armor rating."
+          ]
+        },
+        {
+          "ad": "Supplementary Adrenaline",
+          "auto": "B",
+          "term": "B",
+          "illum": "B",
+          "stats": [
+            "Gain stamina upon taking dmg.",
+            "+25 armor rating."
+          ]
+        },
+        {
+          "ad": "Kinetic Displacement Mitigation",
+          "auto": "A",
+          "term": "A",
+          "illum": "B",
+          "stats": [
+            "+50% resistance to fire",
+            "50% chance to avoid limb injury.",
+            "Damage from impact and collisions -30%"
+          ]
+        },
+        {
+          "ad": "Feet First",
+          "auto": "B",
+          "term": "D",
+          "illum": "C",
+          "stats": [
+            "-50% noise when moving.",
+            "+30% POI detection range",
+            "Immunity to leg injuries"
+          ]
+        },
+        {
+          "ad": "Integrated Explosives",
+          "auto": "C",
+          "term": "C",
+          "illum": "C",
+          "stats": [
+            "Armor explodes 1.5s after death.",
+            "+2 throwables capacity."
+          ]
+        },
+        {
+          "ad": "Advanced Filtration",
+          "auto": "C",
+          "term": "C",
+          "illum": "C",
+          "stats": [
+            "+80% gas dmg resist."
+          ]
+        },
+        {
+          "ad": "Inflammable",
+          "auto": "B",
+          "term": "S+",
+          "illum": "C",
+          "stats": [
+            "+75% fire dmg resist."
+          ]
+        },
+        {
+          "ad": "Servo-Assisted",
+          "auto": "C",
+          "term": "B",
+          "illum": "C",
+          "stats": [
+            "+30% throwing range",
+            "+50% limb health."
+          ]
+        }
+      ]
+    },
+    "Vehicle": {
+      "tieBreak": "health",
+      "items": [
+        {
+          "ad": "EXO-49 Emancipator Exosuit",
+          "auto": "S",
+          "term": "S",
+          "illum": "S+",
+          "weapons": [
+            "Dual Autocannon Arms"
+          ],
+          "health": 1800,
+          "crew": "1 (Pilot)",
+          "cooldown": 600
+        },
+        {
+          "ad": "M-102 Gunner FRV",
+          "auto": "S+",
+          "term": "S+",
+          "illum": "S+",
+          "weapons": [
+            "Rear Mounted 360-Degree HMG Turret (Passenger Operated)"
+          ],
+          "health": 2400,
+          "crew": "4",
+          "cooldown": 480
+        },
+        {
+          "ad": "EXO-55 Breakthrough Exosuit",
+          "auto": "S",
+          "term": "S",
+          "illum": "S+",
+          "weapons": [
+            "Heavy-Pen Scattergun (Right Arm)",
+            "Heavy-Pen Shield Bash (Left Arm)"
+          ],
+          "health": 1800,
+          "crew": "1 (Pilot)",
+          "cooldown": 600
+        },
+        {
+          "ad": "M-104 Incinerator FRV",
+          "auto": "S+",
+          "term": "S+",
+          "illum": "S+",
+          "weapons": [
+            "Heavy-Pen Flamethrower (Passenger Operated)"
+          ],
+          "health": 2900,
+          "crew": "4",
+          "cooldown": 480
+        },
+        {
+          "ad": "M-103 Supply FRV",
+          "auto": "S+",
+          "term": "S+",
+          "illum": "S+",
+          "weapons": [
+            "AR-23P Liberator Penetrator (Auto Turret)"
+          ],
+          "health": 2400,
+          "crew": "4",
+          "cooldown": 480
+        },
+        {
+          "ad": "EXO-45 Patriot Exosuit",
+          "auto": "A",
+          "term": "A",
+          "illum": "B",
+          "weapons": [
+            "Medium-Pen Minigun (Right Arm)",
+            "AP2 Missile Launcher (Left Arm)"
+          ],
+          "health": 1600,
+          "crew": "1 (Pilot)",
+          "cooldown": 600
+        },
+        {
+          "ad": "TD-220 Bastion MK XVI",
+          "auto": "S+",
+          "term": "B",
+          "illum": "B",
+          "weapons": [
+            "Anti-Tank Main Cannon (Gunner Operated)",
+            "Front-Facing HMG Turret (Gunner Operated)",
+            "Limited Firing Angle"
+          ],
+          "health": 8000,
+          "crew": "4",
+          "cooldown": 780
+        },
+        {
+          "ad": "EXO-51 Lumberer Exosuit",
+          "auto": "S",
+          "term": "S",
+          "illum": "B",
+          "weapons": [
+            "Anti-Tank Cannon (Right Arm)",
+            "Heavy-Pen Flamethrower (Left Arm)"
+          ],
+          "health": 1800,
+          "crew": "1 (Pilot)",
+          "cooldown": 600
+        }
+      ]
+    }
+  }
+}

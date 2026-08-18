@@ -1,4 +1,4 @@
-import { parseMeta, loadMeta, cacheKeyForGame } from '../data/meta';
+import { parseMeta, loadMeta, cacheKeyForGame, effectiveTier, effectiveScore, type Entity } from '../data/meta';
 
 const TEST_URL = 'https://example.test/bf6.json';
 
@@ -112,4 +112,40 @@ test('cacheKeyForGame varsayilan oyun degisse de bf6 disindaki oyunu eski anahta
   expect(cacheKeyForGame('bf6')).toBe('meta.json');
   expect(cacheKeyForGame('hd2')).toBe('meta.json.hd2');
   expect(cacheKeyForGame('hd2')).not.toBe(cacheKeyForGame('bf6'));
+});
+
+describe('effectiveTier / effectiveScore', () => {
+  const withFactions: Entity = {
+    id: 'w1', name: 'Weapon', category: 'Primary', tier: 'S+', score: 6800,
+    stats: {},
+    rationale: {},
+    factions: {
+      automaton: { tier: 'A', score: 4900 },
+      terminid: { tier: 'S', score: 5700 },
+    },
+  };
+  const noFactions: Entity = {
+    id: 'w2', name: 'BF6 Weapon', category: 'Assault Rifle', tier: 'A', score: 300,
+    stats: {}, rationale: {},
+  };
+
+  test('faction null -> varsayilan tier/score doner', () => {
+    expect(effectiveTier(withFactions, null)).toBe('S+');
+    expect(effectiveScore(withFactions, null)).toBe(6800);
+  });
+
+  test('faction verisi olmayan entity (BF6/Dota) -> faction gecilse de varsayilana duser', () => {
+    expect(effectiveTier(noFactions, 'automaton')).toBe('A');
+    expect(effectiveScore(noFactions, 'automaton')).toBe(300);
+  });
+
+  test('faction eslesirse o faction degerini doner', () => {
+    expect(effectiveTier(withFactions, 'terminid')).toBe('S');
+    expect(effectiveScore(withFactions, 'terminid')).toBe(5700);
+  });
+
+  test('entity o faction icin veri tasimiyorsa varsayilana duser', () => {
+    expect(effectiveTier(withFactions, 'illuminate')).toBe('S+');
+    expect(effectiveScore(withFactions, 'illuminate')).toBe(6800);
+  });
 });

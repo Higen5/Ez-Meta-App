@@ -2,7 +2,7 @@ import { ScrollView, View, Text, Pressable } from 'react-native';
 import { router } from 'expo-router';
 import { theme } from '../../theme';
 import { useLanguage } from '../../i18n/LanguageContext';
-import { useMeta } from '../../data/meta';
+import { useMeta, effectiveTier } from '../../data/meta';
 import { useVault } from '../../data/vault';
 import { TopBar } from '../../components/TopBar';
 import { TierBadge } from '../../components/TierBadge';
@@ -11,7 +11,7 @@ import { DataError } from '../../components/DataError';
 
 export default function Vault() {
   const { t } = useLanguage();
-  const { meta, loading, reload, currentGame } = useMeta();
+  const { meta, loading, reload, currentGame, currentFaction } = useMeta();
   const { idsFor } = useVault();
 
   if (loading && !meta) return <Splash />;
@@ -45,7 +45,7 @@ export default function Vault() {
               borderWidth: 1, borderColor: theme.colors.neutral400, backgroundColor: theme.colors.surface,
               padding: theme.space.md, marginBottom: 2,
             }}>
-              <TierBadge tier={e.tier} />
+              <TierBadge tier={effectiveTier(e, currentFaction)} />
               <View style={{ flex: 1, minWidth: 0 }}>
                 <Text style={{ fontFamily: theme.font.heading, fontSize: 15, color: theme.colors.text }}>{e.name}</Text>
                 <Text style={{ fontFamily: theme.font.bodyMedium, fontSize: 10, color: theme.colors.neutral600 }} numberOfLines={1}>

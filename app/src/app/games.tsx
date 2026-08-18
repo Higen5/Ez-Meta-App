@@ -25,9 +25,10 @@ const GAMES: Game[] = [
   // Helldivers 2'nin logosu Wikimedia Commons'ta yok (oradaki "H2_logo.png"
   // History Channel 2'ye ait); bu dosya kullanicinin verdigi gorselden
   // esiklenip beyaz zemine cekildi.
-  // Veri kaynagi lisans nedeniyle (NonCommercial sarti) terk edildi.
-  // Yeni bir kaynak hazirlanana kadar YAKINDA gosteriliyor.
-  { id: 'hd2', code: 'HD2', name: 'Helldivers 2', genre: 'Co-op shooter', logo: require('../../assets/games/helldivers-2.png'), active: false },
+  // Eski veri kaynagi lisans nedeniyle (NonCommercial sarti) terk edilmisti;
+  // yerine kullanicinin ekran goruntulerinden cikarilan tier listesi geldi.
+  // Bu oyunda her ogenin uc faction icin ayri tier'i var (bkz. FactionBar).
+  { id: 'hd2', code: 'HD2', name: 'Helldivers 2', genre: 'Co-op shooter', logo: require('../../assets/games/helldivers-2.png'), active: true },
   { id: 'dt2', code: 'DT2', name: 'Dota 2', genre: 'MOBA', logo: require('../../assets/games/dota-2.png'), active: true },
   { id: 'lol', code: 'LOL', name: 'League of Legends', genre: 'MOBA', logo: require('../../assets/games/league-of-legends.png'), active: false },
   { id: 'apx', code: 'APX', name: 'Apex Legends', genre: 'Battle royale', logo: require('../../assets/games/apex-legends.png'), active: false },

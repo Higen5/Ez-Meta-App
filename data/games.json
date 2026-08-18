@@ -8,5 +8,10 @@
     "id": "dt2",
     "name": "Dota 2",
     "file": "dt2.json"
+  },
+  {
+    "id": "hd2",
+    "name": "Helldivers 2",
+    "file": "hd2.json"
   }
 ]

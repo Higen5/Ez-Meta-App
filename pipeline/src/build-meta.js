@@ -3,6 +3,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { dirname, join } from 'node:path';
 import { fetchBf6TierlistSource, buildBf6TierlistEntities } from './games/bf6-tierlist.js';
 import { fetchDota2Source, buildDota2Entities } from './games/dota2.js';
+import { fetchHd2TierlistSource, buildHd2TierlistEntities } from './games/hd2-tierlist.js';
 
 const DATA_DIR = fileURLToPath(new URL('../../data/', import.meta.url));
 
@@ -29,6 +30,33 @@ const GAMES = [
       + 'professional play. Per-position win rates are not available from any free '
       + 'source, so heroes are grouped by primary attribute, not by position.',
   },
+  {
+    id: 'hd2', gameName: 'Helldivers 2', file: 'hd2.json',
+    fetchRaw: fetchHd2TierlistSource, buildEntities: buildHd2TierlistEntities,
+    // Kaynak tablodaki sutun sirasi. id degerleri entity.factions anahtarlariyla
+    // birebir ayni olmali (bkz. games/hd2-tierlist.js). Uygulama faction
+    // cubugunu bu alanin VARLIGINA gore gosterir -- bf6/dt2'de bu alan yok.
+    factions: [
+      { id: 'automaton', name: 'Automaton' },
+      { id: 'terminid', name: 'Terminid' },
+      { id: 'illuminate', name: 'Illuminate' },
+    ],
+    // Skor mutlak tier'dan geliyor ve tier ici sira kategori bazinda
+    // hesaplaniyor -- her kategorinin en iyi S+ ogesi 6999 alir, yani
+    // "skora gore ilk 5" birden fazla kategoriden gelen esit skorlar
+    // yuzunden keyfi gorunur. Uygulama bu alanin VARLIGINA gore (oyun
+    // id'sine gore degil) META ekranini kategori-basina-bir-oge modunda
+    // gosterir.
+    feedMode: 'topPerCategory',
+    scoreNote:
+      'Tiers come straight from a third-party tier list, one per faction (Automaton, '
+      + 'Terminid, Illuminate) — they are not calculated. Score is derived from the '
+      + 'tier, with position inside a tier broken by DPS, armor penetration or health '
+      + 'where the source publishes it. Five categories (Backpack, Eagle, Booster, '
+      + "Armor Passive, Orbital) publish no such stat, so within a tier the source's "
+      + 'own order is kept — that order is correct for Illuminate only. Nothing here '
+      + 'is a measurement of in-game performance.',
+  },
 ];
 
 async function readExistingHash(outPath) {
@@ -43,7 +71,7 @@ async function readExistingHash(outPath) {
 // Tek bir oyunun kaynagini ceker, degistiyse (hash farkliysa) dogrular ve
 // dosyayi yazar. Degismediyse ya da dogrulama basarisizsa mevcut dosyaya
 // dokunmaz.
-async function runGameBuild({ id, gameName, scoreNote, fetchRaw, buildEntities, now, fetch: fetchImpl = fetch, outPath }) {
+async function runGameBuild({ id, gameName, scoreNote, fetchRaw, buildEntities, factions, feedMode, now, fetch: fetchImpl = fetch, outPath }) {
   const raw = await fetchRaw(fetchImpl);
 
   if (raw.hash === (await readExistingHash(outPath))) {
@@ -54,6 +82,8 @@ async function runGameBuild({ id, gameName, scoreNote, fetchRaw, buildEntities, 
   const entities = buildEntities(raw);
 
   const meta = { game: id, gameName, scoreNote, sourceHash: raw.hash, generatedAt: now(), entities };
+  if (factions) meta.factions = factions; // sadece birden fazla faction'i olan oyunlar tasir (bkz. hd2)
+  if (feedMode) meta.feedMode = feedMode; // sadece kategori-basina-bir-oge modu isteyen oyunlar tasir (bkz. hd2)
   await mkdir(dirname(outPath), { recursive: true });
   await writeFile(outPath, JSON.stringify(meta, null, 2), 'utf8');
   console.log(`${outPath} yazildi: ${entities.length} varlik`);
@@ -63,13 +93,18 @@ async function runGameBuild({ id, gameName, scoreNote, fetchRaw, buildEntities, 
 // Geriye uyumluluk icin korunan isim/imza: mevcut testler bunu dogrudan
 // cagiriyor. BF6 hattini calistirir.
 export async function buildMeta({ now = () => new Date().toISOString(), fetch: fetchImpl = fetch, outPath = join(DATA_DIR, 'bf6.json') } = {}) {
-  const bf6 = GAMES[0];
+  const bf6 = GAMES.find((g) => g.id === 'bf6');
   return runGameBuild({ id: bf6.id, gameName: bf6.gameName, scoreNote: bf6.scoreNote, fetchRaw: bf6.fetchRaw, buildEntities: bf6.buildEntities, now, fetch: fetchImpl, outPath });
 }
 
 export async function buildDota2Meta({ now = () => new Date().toISOString(), fetch: fetchImpl = fetch, outPath = join(DATA_DIR, 'dt2.json') } = {}) {
-  const dt2 = GAMES[1];
+  const dt2 = GAMES.find((g) => g.id === 'dt2');
   return runGameBuild({ id: dt2.id, gameName: dt2.gameName, scoreNote: dt2.scoreNote, fetchRaw: dt2.fetchRaw, buildEntities: dt2.buildEntities, now, fetch: fetchImpl, outPath });
+}
+
+export async function buildHd2Meta({ now = () => new Date().toISOString(), fetch: fetchImpl = fetch, outPath = join(DATA_DIR, 'hd2.json') } = {}) {
+  const hd2 = GAMES.find((g) => g.id === 'hd2');
+  return runGameBuild({ id: hd2.id, gameName: hd2.gameName, scoreNote: hd2.scoreNote, fetchRaw: hd2.fetchRaw, buildEntities: hd2.buildEntities, factions: hd2.factions, feedMode: hd2.feedMode, now, fetch: fetchImpl, outPath });
 }
 
 async function writeGamesIndex() {
@@ -92,6 +127,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
     const steps = [
       ['bf6', buildMeta],
       ['dt2', buildDota2Meta],
+      ['hd2', buildHd2Meta],
     ];
 
     const failed = [];
