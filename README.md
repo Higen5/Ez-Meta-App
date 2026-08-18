@@ -56,8 +56,9 @@ kaynak bulunamadı. Bu yüzden burada hesap yok: liste, üçüncü taraf bir tie
 listesinin **genel meta sıralamasından** geliyor.
 
 ```
-skor = 10000 x (toplam - sira + 1) / toplam    (1. sira = 10000, 62. sira = 161)
-tier = skorun GENEL yuzdelik dilimi (62 silahin tamami icinde)
+skor      = 10000 x (toplam - sira + 1) / toplam   (1. sira 10000, 62. sira 161)
+tier      = skorun 62 silahin TAMAMI icindeki yuzdeligi   (kesim %18)
+classTier = skorun KENDI SINIFI icindeki yuzdeligi        (kesim %25)
 ```
 
 Kaynaktan yalnızca **silahın adı, sınıfı ve sıra numarası** alınır. Açılma
@@ -65,12 +66,25 @@ seviyeleri, kaynağın kendi tier rozetleri ve menzil etiketleri alınmaz.
 Sıralama pipeline/data/bf6-tierlist.json dosyasında elle tutulur; yama
 geldiğinde bu dosya güncellenir, kod değişmez.
 
-Tier bilerek **genel** yüzdelikten hesaplanır, sınıf içinden değil. İkisi
-karışınca ekranda çelişki oluşuyordu: KORD 6P67 genel 4. sıradayken assault
-rifle'lar içinde 3/11 olduğu için A, DRS-IAR ise genel 5. sıradayken LMG'lerde
-1/10 olduğu için S görünüyordu. Liste skora göre sıralı olduğundan bu doğrudan
-göze batıyor. Bedeli: zayıf sınıfların en iyisi artık S almıyor — P18 en iyi
-secondary ama 62 silah içinde 57. sırada, dolayısıyla C.
+**Her silah iki tier taşır**, çünkü "tier" sorusunun cevabı neye kıyasladığına
+bağlı. Uygulama hangisini göstereceğini bakılan ekrana göre seçer: arşivde bir
+sınıf filtresi açıksa `classTier`, aksi halde genel `tier`. Filtre açıkken
+listenin üstünde **SINIF İÇİ TIER** etiketi çıkar, aynı silahın iki farklı tier
+göstermesi kafa karıştırmasın diye.
+
+Örnek: SG-553R hem genel hem sınıf içinde S. BROD 3 ise carbine'ler arasında S
+ama 62 silah içinde A — ikisi de doğru, farklı sorulara cevap veriyorlar.
+
+Tek bir tier yetmiyordu. Yalnızca sınıf içi olduğunda ekranda çelişki
+oluşuyordu: KORD 6P67 genel 4. sıradayken assault rifle'lar içinde 3/11 olduğu
+için A, DRS-IAR ise genel 5. sıradayken LMG'lerde 1/10 olduğu için S
+görünüyordu; liste skora göre sıralı olduğu için bu doğrudan göze batıyordu.
+Yalnızca genel olduğunda ise zayıf sınıfların en iyisi kayboluyordu — P18 en
+iyi secondary ama 62 silah içinde 57. sırada.
+
+Kesimler farklı (%18 ve %25), çünkü 62 öğelik listeyle 4 öğelik shotgun
+sınıfında aynı yüzdelik çok farklı davranıyor; tek sabit ikisine birden
+uymuyordu.
 
 **Bu skor bir ölçüm değildir**, başka birinin sıralama kararının sayıya
 çevrilmiş hâlidir. Aynı kaynağın kategori sayfaları ile genel sayfası bazı
