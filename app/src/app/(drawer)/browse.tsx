@@ -127,9 +127,7 @@ export default function Browse() {
                 <Text style={{ fontFamily: theme.font.bodyMedium, fontSize: 9, letterSpacing: 0.8, color: theme.colors.neutral600 }} numberOfLines={1}>
                   {meta.listValue === 'stat'
                     ? (e.statLines?.[0]?.label ?? '')
-                    : e.rationale.ttkByRange?.length
-                      ? `${t('stat.ttk')} ${Math.round(e.rationale.ttkByRange[0][1] * 1000)}ms`
-                      : e.statLines?.length ? `${e.statLines[0].label} ${e.statLines[0].value}` : ''}
+                    : e.statLines?.length ? `${e.statLines[0].label} ${e.statLines[0].value}` : ''}
                 </Text>
               </View>
             </Pressable>

@@ -14,7 +14,6 @@ import { DataError } from '../../components/DataError';
 // statLines girdisi (statLines'in ilk elemani en onemli olani olacak sekilde
 // pipeline tarafindan sirali uretiliyor).
 function secondaryStat(e: Entity, t: (k: StringKey) => string): string | null {
-  if (e.rationale.ttkByRange?.length) return `${t('stat.ttk')} ${Math.round(e.rationale.ttkByRange[0][1] * 1000)}ms`;
   if (e.statLines?.length) return `${e.statLines[0].label} ${e.statLines[0].value}`;
   return null;
 }
