@@ -5,6 +5,7 @@ import {
   validateArcTierlist,
   buildArcTierlistEntities,
   fetchArcTierlistSource,
+  catalogBaseUrl,
 } from '../src/games/arc-tierlist.js';
 
 function fixtureTierlist() {
@@ -87,6 +88,31 @@ function fakeFetch() {
     return { ok: true, status: 200, json: async () => body };
   };
 }
+
+// Sabitlemenin sessizce kaybolmasi tam olarak onlemek istedigimiz hata: URL
+// 'main'e duserse katalog altimizda degisir ve biz farkina varmayiz.
+test('catalogBaseUrl gecerli SHA icin sabitlenmis URL uretir', () => {
+  const sha = '2a4abebb2486a633070f4e260058bcd5ad4511d6';
+  assert.equal(
+    catalogBaseUrl(sha),
+    `https://raw.githubusercontent.com/RaidTheory/arcraiders-data/${sha}/items/`,
+  );
+});
+
+test('catalogBaseUrl "main" verilirse firlar', () => {
+  assert.throws(() => catalogBaseUrl('main'), /40 haneli/);
+});
+
+test('catalogBaseUrl eksik ya da bozuk SHA icin firlar', () => {
+  for (const kotu of [undefined, null, '', 'abc123', 'ZZZZbebb2486a633070f4e260058bcd5ad4511d6']) {
+    assert.throws(() => catalogBaseUrl(kotu), /40 haneli/);
+  }
+});
+
+test('gercek veri dosyasi gecerli bir _katalogCommit tasir', async () => {
+  const { tierlist } = await fetchArcTierlistSource(fakeFetch());
+  assert.match(tierlist._katalogCommit, /^[0-9a-f]{40}$/);
+});
 
 test('validateArcTierlist pve ve pvp farkli silah kumesinde firlar', () => {
   const bad = fixtureTierlist();

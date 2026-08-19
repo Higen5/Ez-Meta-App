@@ -5,9 +5,25 @@ import { fileURLToPath } from 'node:url';
 
 const SOURCE_PATH = fileURLToPath(new URL('../../data/arc-tierlist.json', import.meta.url));
 
-// RaidTheory/arcraiders-data (MIT) katalog kok URL'i. Her silah kendi dosyasinda:
-// https://raw.githubusercontent.com/RaidTheory/arcraiders-data/main/items/<slug>_iv.json
-const CATALOG_BASE_URL = 'https://raw.githubusercontent.com/RaidTheory/arcraiders-data/main/items/';
+// RaidTheory/arcraiders-data (MIT) katalogu. Her silah kendi dosyasinda:
+// .../<commit>/items/<slug>_iv.json
+//
+// SABITLENMIS commit kullanilir, 'main' DEGIL. Onceden main'den cekiliyordu ve
+// kaynak altimizda sessizce degisebiliyordu: ciktimiz bizim hicbir degisiklik
+// yapmadigimiz bir gun kayabilir, kayma da ancak fark edilirse anlasilirdi.
+// Commit pipeline/data/arc-tierlist.json icindeki _katalogCommit alaninda
+// durur -- yani katalogu guncellemek KOD degil VERI degisikligidir ve diff'te
+// tek satir olarak gorunur.
+const CATALOG_ROOT = 'https://raw.githubusercontent.com/RaidTheory/arcraiders-data';
+
+// 40 haneli SHA sart. 'main' ya da bir etiket yazilirsa sabitleme sessizce
+// kaybolurdu, o yuzden burada patlar.
+export function catalogBaseUrl(commit) {
+  if (typeof commit !== 'string' || !/^[0-9a-f]{40}$/.test(commit)) {
+    throw new Error(`arc katalog: _katalogCommit 40 haneli bir commit SHA olmali, gelen: "${commit}"`);
+  }
+  return `${CATALOG_ROOT}/${commit}/items/`;
+}
 
 // Tier taban skorlari. hd2-tierlist.js'deki scoreForTier ile AYNI mantik --
 // buraya kopyalandi, import EDILMEDI (ARC'in HD2'ye bagimliligi olmasin).
@@ -53,10 +69,10 @@ async function fetchJson(fetchImpl, url) {
 // icin bu istekler 404 doner ve dongu sessizce atlar -- AP satiri hic
 // eklenmez. AMMO/FIRING MODE/MAGAZINE icin boyle bir geri dusme YOK, sadece
 // ana girdinin effects'inden okunur (spesifikasyonda sadece AP icin istendi).
-async function fetchWeaponEntry(fetchImpl, name) {
+async function fetchWeaponEntry(fetchImpl, name, baseUrl) {
   const slug = slugifyWeaponName(name);
-  const entry = (await fetchJson(fetchImpl, `${CATALOG_BASE_URL}${slug}_iv.json`))
-    ?? (await fetchJson(fetchImpl, `${CATALOG_BASE_URL}${slug}.json`));
+  const entry = (await fetchJson(fetchImpl, `${baseUrl}${slug}_iv.json`))
+    ?? (await fetchJson(fetchImpl, `${baseUrl}${slug}.json`));
   if (!entry) {
     throw new Error(`arc katalog: "${name}" icin ne ${slug}_iv.json ne de ${slug}.json bulundu`);
   }
@@ -65,7 +81,7 @@ async function fetchWeaponEntry(fetchImpl, name) {
   let ap = effects['ARC Armor Penetration']?.value ?? null;
   if (ap == null) {
     for (const variant of ['iii', 'ii', 'i']) {
-      const alt = await fetchJson(fetchImpl, `${CATALOG_BASE_URL}${slug}_${variant}.json`);
+      const alt = await fetchJson(fetchImpl, `${baseUrl}${slug}_${variant}.json`);
       const altAp = alt?.effects?.['ARC Armor Penetration']?.value;
       if (altAp != null) {
         ap = altAp;
@@ -110,9 +126,13 @@ export async function fetchArcTierlistSource(fetchImpl) {
   const text = await readFile(SOURCE_PATH, 'utf8');
   const tierlist = JSON.parse(text);
 
+  // Sabitlenmis commit veri dosyasindan gelir. Gecersizse burada patlar --
+  // sabitlemenin sessizce 'main'e dusmesindense build'in durmasi yeglenir.
+  const baseUrl = catalogBaseUrl(tierlist._katalogCommit);
+
   const katalog = {};
   for (const name of weaponNamesInOrder(tierlist)) {
-    katalog[name] = await fetchWeaponEntry(fetchImpl, name);
+    katalog[name] = await fetchWeaponEntry(fetchImpl, name, baseUrl);
   }
 
   const hash = createHash('sha256')

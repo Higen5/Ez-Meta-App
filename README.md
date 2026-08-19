@@ -170,10 +170,18 @@ aynı silah PvE listesinde üçüncü, PvP listesinde sonuncu olabilir.
 
 **Silah istatistikleri ayrı bir kaynaktan gelir.** Zırh delme, mermi tipi, atış
 modu, şarjör ve mod slotları `RaidTheory/arcraiders-data` deposundan build
-sırasında çekilir. Bu kaynak **MIT lisanslı** ve aktif bakımda; yani Dota 2'den
-sonra istatistikleri kendi kendine güncellenen ikinci oyun. Liste ekranında
+sırasında çekilir. Bu kaynak **MIT lisanslı** ve aktif bakımda. Liste ekranında
 skor yerine zırh delme etiketi görünür (`listValue`), skor yalnızca detay
 ekranında.
+
+**Katalog sabitlenmiş bir commit'ten çekilir, `main` dalından değil.** Önceden
+`main`den çekiliyordu ve bunun sessiz bir riski vardı: kaynak altımızda
+değişince biz hiçbir şey yapmadığımız bir gün çıktımız kayabilir, kayma da
+ancak fark edilirse anlaşılırdı. Şimdi commit
+`pipeline/data/arc-tierlist.json` içindeki `_katalogCommit` alanında duruyor —
+yani kataloğu güncellemek kod değil **veri** değişikliği ve diff'te tek satır
+olarak görünüyor. Alan 40 haneli bir SHA olmak zorunda; `main` yazmak build'i
+durdurur, çünkü sabitlemenin sessizce kaybolması tam da önlemek istediğimiz şey.
 
 Kaynakta sıralanmayan tek silah `Rascal`; uydurmak yerine listeden çıkarıldı.
 
@@ -416,9 +424,10 @@ gerektirir.
 - Dota 2 için pozisyon bazlı tier listesi yok; o veri ücretsiz yayınlanmıyor.
 - HD2 skoru da bir ölçüm değil; tier'lar kaynaktan gelir, oyun içi performans
   ölçülmez.
-- ARC skoru da ölçüm değil. Ama silah **istatistikleri** (zırh delme, mermi
-  tipi, atış modu, şarjör) MIT lisanslı bir katalogdan build başına otomatik
-  gelir; yalnızca tier sıralaması elle güncellenir.
+- ARC skoru da ölçüm değil. Silah **istatistikleri** MIT lisanslı bir
+  katalogdan gelir ama o katalog da sabitlenmiş bir commit'e bağlıdır: ne
+  sıralama ne de statlar kendiliğinden güncellenir, ikisi de elle bumplanır.
+  Otomatik güncellenen tek oyun Dota 2'dir.
 - ARC kataloğunda Dolabra ve Canto için hiçbir yükseltme seviyesinde zırh delme
   yayınlanmıyor; listede `—` görünürler. Uydurulmuş değer konmadı.
 - ARC kaynağı `Rascal` silahını sıralamıyor, bu yüzden listede yok.
