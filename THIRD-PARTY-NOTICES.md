@@ -44,19 +44,15 @@ SOFTWARE.
 
 ---
 
-## ucuncu taraf tier listesi
+## Üçüncü taraf tier listeleri (Battlefield 6, Helldivers 2, Arc Raiders)
 
-ARC Raiders PvE ve PvP tier sıralamaları buradan alınmıştır:
-ucuncu taraf tier listesi
+Bu üç oyunun sıralaması ölçüm değildir: üçüncü taraf tier listelerindeki
+konumdan türetilir. Sıralamalar **kullanıcının gönderdiği ekran
+görüntülerinden** alınmıştır; hiçbir siteden programatik olarak çekilmemiştir.
+Yalnızca sıra bilgisi alınır — metin, görsel ve istatistik alınmaz.
 
-Yalnızca **sıralama** alınmıştır — hangi silahın hangi tier'da olduğu ve tier
-içindeki sırası. Metin, görsel, istatistik ya da başka hiçbir içerik
-alınmamıştır. Siteyle bağlantımız yoktur, site tarafından onaylanmış değiliz.
-
-Aynı yaklaşım Battlefield 6 için de geçerlidir: skor, üçüncü taraf bir tier
-listesindeki konumdan türetilir, ölçülmüş bir değer değildir. Bu sınır hem
-`scoreNote` alanında hem de her varlığın `rationale.note` alanında veriyle
-birlikte taşınır.
+Bu sınır belgede kalmaz, veriyle birlikte taşınır: her oyunun `scoreNote`
+alanında ve her varlığın `rationale.note` alanında yazılıdır.
 
 ---
 

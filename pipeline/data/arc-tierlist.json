@@ -1,8 +1,8 @@
 {
-  "_kaynak": "Ucuncu taraf tier listesi: ucuncu taraf tier listesi (19 Agustos 2026'da okundu). Yalnizca SIRALAMA alinmistir -- metin, gorsel, istatistik ya da baska bir icerik alinmamistir.",
-  "_not": "ARC Raiders'in tek bir metasi yoktur: bir silahin ARC robotlarina (PvE) ve oyunculara (PvP) karsi degeri ayri hesaplanir ve bu ikisi birbirinin neredeyse tersidir. Kaynak iki ayri liste yayinlar, ikisini de oldugu gibi tasiyoruz. Olculen dogrulama: PvE tier'i ile zirh delme arasinda r = +0.901, PvP ile r = -0.512, PvE ile PvP arasinda r = -0.335.",
-  "_varyant": "Tier'lar silahin EN UST yukseltme seviyesi icindir (kaynak IV olarak gosterir). Legendary silahlarin (Dolabra, Equalizer, Jupiter, Aphelion) tek seviyesi vardir.",
-  "_kategori": "Kategori, zirh delme ve diger tum istatistikler burada TUTULMAZ; build sirasinda RaidTheory/arcraiders-data (MIT) kataloguundan gelir. Bu dosya yalnizca hangi silahin hangi modda hangi tier'da oldugunu ve tier ici sirasini tasir.",
+  "_kaynak": "Ucuncu taraf bir tier listesi. Siralama KULLANICININ GONDERDIGI EKRAN GORUNTULERINDEN alinmistir; hicbir siteden programatik olarak cekilmemistir. Yalnizca sira bilgisi alinir -- metin, gorsel ve istatistik alinmaz. Ayni yaklasim Battlefield 6 ve Helldivers 2 icin de gecerlidir.",
+  "_not": "ARC Raiders'in tek bir metasi yoktur: bir silahin ARC robotlarina (PvE) ve oyunculara (PvP) karsi degeri ayri hesaplanir ve bu ikisi birbirinin neredeyse tersidir. Kaynak iki ayri liste yayinlar, ikisini de oldugu gibi tasiyoruz.",
+  "_varyant": "Tier'lar silahin EN UST yukseltme seviyesi icindir (kaynak IV olarak gosterir). Legendary silahlarin (Dolabra, Equalizer, Jupiter, Aphelion) tek seviyesi vardir, o yuzden numarasiz yazilir.",
+  "_kategori": "Kategori, zirh delme ve diger tum istatistikler burada TUTULMAZ; build sirasinda RaidTheory/arcraiders-data (MIT) katalogundan gelir. Bu dosya yalnizca hangi silahin hangi modda hangi tier'da oldugunu ve tier ici sirasini tasir.",
   "_katalogCommit": "2a4abebb2486a633070f4e260058bcd5ad4511d6",
   "_katalogNot": "Katalog SABITLENMIS bir commit'ten cekilir, main dalindan DEGIL. Sebep: main altimizda sessizce degisince ciktimiz biz farkina varmadan kayiyordu. Guncellemek icin bu SHA'yi degistir ve build'i calistir -- degisikligi gorup bilincli kabul etmis olursun. SHA 40 haneli olmali; 'main' yazmak hata firlatir.",
   "_eksik": "Rascal kaynakta siralanmamistir, bu yuzden listede yoktur.",

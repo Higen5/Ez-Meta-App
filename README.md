@@ -197,8 +197,7 @@ gözle denetlendi. Tam metinler ve atıflar için
 | 34 npm bağımlılığı | 32 MIT, 1 Apache-2.0, 1 OFL | uygun |
 | Dota 2 verisi (OpenDota) | Kod MIT, veri toplu istatistik | uygun |
 | ARC silah kataloğu (RaidTheory) | MIT | uygun, atıf yapıldı |
-| BF6 sıralaması | Üçüncü taraf tier listesi | aşağıya bakın |
-| ARC sıralaması (ucuncu taraf tier listesi) | Üçüncü taraf tier listesi | aşağıya bakın |
+| BF6 / HD2 / ARC sıralamaları | Üçüncü taraf tier listeleri | aşağıya bakın |
 
 **Kaldırılan kaynaklar.** Helldivers 2 verisi bir topluluk wiki sitesine
 dayanıyordu ve **CC BY-NC-SA 4.0** lisanslıydı; NonCommercial maddesi ticari
@@ -216,13 +215,21 @@ silahlar listeliyordu (Scorpion, Longbow) — MIT kataloğundaki 84 silah kaydı
 karşı kontrol edilince yakalandı; AI ile üretilmiş içerik. Kullanılan kaynaklar
 aynı katalogla ad ad doğrulandı, 23 silahın hepsi eşleşti.
 
-**BF6 ve ARC sıralamaları bilinçli bir istisnadır.** Sıra numaraları başka
+**BF6, HD2 ve ARC sıralamaları bilinçli bir istisnadır.** Sıra numaraları başka
 birinin editoryal kararıdır. Olgular (silah adı, sınıfı, zırh delmesi)
-serbestçe kullanılabilir ama sıralamanın kendisi öyle değildir. İki oyunda da
+serbestçe kullanılabilir ama sıralamanın kendisi öyle değildir. Üç oyunda da
 yalnızca sıralama alındı — metin, görsel ve istatistik alınmadı — ve bu sınır
 `scoreNote` ile her varlığın `rationale.note` alanında veriyle birlikte
 taşınıyor. Gelir modeline geçmeden önce bu kaynakların sahiplerinden izin
 alınmalı ya da sıralama kendi ölçümümüzle değiştirilmelidir.
+
+**Sıralamalar ekran görüntülerinden alınır, siteden çekilmez.** Üçünde de
+sıralamayı kullanıcı ekran görüntüsü olarak veriyor ve veri hattı o
+görüntülerden elle kurulmuş bir JSON dosyası okuyor. ARC bir dönem bunun
+dışındaydı: sıralama tarayıcıdan programatik olarak çıkarılmıştı. Kaynağın
+kullanım şartları bunu (ve yeniden yayınlamayı) yasakladığı için o veri
+silindi, yerine ekran görüntülerinden kurulan sürüm geldi. Kaynak siteler
+hiçbir yerde adlandırılmaz.
 
 **ARC silah kataloğu temiz.** `RaidTheory/arcraiders-data` MIT lisanslı;
 lisans metni ve istenen atıflar (depo + arctracker.io)

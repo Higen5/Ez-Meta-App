@@ -74,13 +74,14 @@ const GAMES = [
     ],
     listValue: 'stat',
     scoreNote:
-      'Tiers come straight from a third-party tier list (ucuncu taraf tier listesi), one per mode (PvE, PvP) — '
-      + 'they are not calculated. Score is derived from the tier, with position inside a tier '
-      + "following that list's own order (no measured stat breaks ties). PvE and PvP are "
-      + "independent rankings for the same weapon set; a weapon's PvE and PvP tiers can be "
-      + 'nearly opposite. Weapon stats (armor penetration, ammo type, firing mode, magazine '
-      + 'size) come from the RaidTheory/arcraiders-data catalog (MIT license), not from the '
-      + 'tier list source. Nothing here is a measurement of in-game performance.',
+      'Tiers come straight from a third-party tier list, one per mode (PvE, PvP) — they are '
+      + 'not calculated. The ranking was transcribed from screenshots the user supplied; it was '
+      + 'not pulled programmatically from any site. Score is derived from the tier, with position '
+      + "inside a tier following that list's own order (no measured stat breaks ties). PvE and "
+      + "PvP are independent rankings for the same weapon set; a weapon's PvE and PvP tiers can "
+      + 'be nearly opposite. Weapon stats (armor penetration, ammo type, firing mode, magazine '
+      + 'size) come from the RaidTheory/arcraiders-data catalog (MIT license), pinned to a fixed '
+      + 'commit. Nothing here is a measurement of in-game performance.',
   },
 ];
 
