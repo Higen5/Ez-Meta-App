@@ -13,5 +13,10 @@
     "id": "hd2",
     "name": "Helldivers 2",
     "file": "hd2.json"
+  },
+  {
+    "id": "arc",
+    "name": "Arc Raiders",
+    "file": "arc.json"
   }
 ]

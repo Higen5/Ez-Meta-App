@@ -4,6 +4,7 @@ import { dirname, join } from 'node:path';
 import { fetchBf6TierlistSource, buildBf6TierlistEntities } from './games/bf6-tierlist.js';
 import { fetchDota2Source, buildDota2Entities } from './games/dota2.js';
 import { fetchHd2TierlistSource, buildHd2TierlistEntities } from './games/hd2-tierlist.js';
+import { fetchArcTierlistSource, buildArcTierlistEntities } from './games/arc-tierlist.js';
 
 const DATA_DIR = fileURLToPath(new URL('../../data/', import.meta.url));
 
@@ -62,6 +63,25 @@ const GAMES = [
       + 'own order is kept — that order is correct for Illuminate only. Nothing here '
       + 'is a measurement of in-game performance.',
   },
+  {
+    id: 'arc', gameName: 'Arc Raiders', file: 'arc.json',
+    fetchRaw: fetchArcTierlistSource, buildEntities: buildArcTierlistEntities,
+    // ARC'ta HD2'nin aksine "kategori-basina-bir-oge" modu (feedMode) istenmiyor
+    // -- bilerek EKLENMEDI.
+    factions: [
+      { id: 'pve', name: 'PvE' },
+      { id: 'pvp', name: 'PvP' },
+    ],
+    listValue: 'stat',
+    scoreNote:
+      'Tiers come straight from a third-party tier list (ucuncu taraf tier listesi), one per mode (PvE, PvP) — '
+      + 'they are not calculated. Score is derived from the tier, with position inside a tier '
+      + "following that list's own order (no measured stat breaks ties). PvE and PvP are "
+      + "independent rankings for the same weapon set; a weapon's PvE and PvP tiers can be "
+      + 'nearly opposite. Weapon stats (armor penetration, ammo type, firing mode, magazine '
+      + 'size) come from the RaidTheory/arcraiders-data catalog (MIT license), not from the '
+      + 'tier list source. Nothing here is a measurement of in-game performance.',
+  },
 ];
 
 async function readExistingHash(outPath) {
@@ -113,6 +133,11 @@ export async function buildHd2Meta({ now = () => new Date().toISOString(), fetch
   return runGameBuild({ id: hd2.id, gameName: hd2.gameName, scoreNote: hd2.scoreNote, fetchRaw: hd2.fetchRaw, buildEntities: hd2.buildEntities, factions: hd2.factions, feedMode: hd2.feedMode, listValue: hd2.listValue, now, fetch: fetchImpl, outPath });
 }
 
+export async function buildArcMeta({ now = () => new Date().toISOString(), fetch: fetchImpl = fetch, outPath = join(DATA_DIR, 'arc.json') } = {}) {
+  const arc = GAMES.find((g) => g.id === 'arc');
+  return runGameBuild({ id: arc.id, gameName: arc.gameName, scoreNote: arc.scoreNote, fetchRaw: arc.fetchRaw, buildEntities: arc.buildEntities, factions: arc.factions, listValue: arc.listValue, now, fetch: fetchImpl, outPath });
+}
+
 async function writeGamesIndex() {
   const index = GAMES.map((g) => ({ id: g.id, name: g.gameName, file: g.file }));
   await writeFile(join(DATA_DIR, 'games.json'), JSON.stringify(index, null, 2), 'utf8');
@@ -134,6 +159,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
       ['bf6', buildMeta],
       ['dt2', buildDota2Meta],
       ['hd2', buildHd2Meta],
+      ['arc', buildArcMeta],
     ];
 
     const failed = [];

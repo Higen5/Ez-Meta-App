@@ -32,7 +32,14 @@ const GAMES: Game[] = [
   { id: 'dt2', code: 'DT2', name: 'Dota 2', genre: 'MOBA', logo: require('../../assets/games/dota-2.png'), active: true },
   { id: 'lol', code: 'LOL', name: 'League of Legends', genre: 'MOBA', logo: require('../../assets/games/league-of-legends.png'), active: false },
   { id: 'apx', code: 'APX', name: 'Apex Legends', genre: 'Battle royale', logo: require('../../assets/games/apex-legends.png'), active: false },
-  { id: 'arc', code: 'ARC', name: 'Arc Raiders', genre: 'Extraction shooter', logo: require('../../assets/games/arc-raiders.png'), active: false },
+  // ARC Raiders'in tek bir metasi yok: bir silahin ARC robotlarina (PvE) ve
+  // oyunculara (PvP) karsi degeri ayri hesaplanir ve ikisi birbirinin
+  // neredeyse tersidir (Hullcracker PvE'de S, PvP'de D). Bu yuzden HD2'deki
+  // faction cubugunun aynisi burada PvE/PvP olarak kullaniliyor.
+  // Siralama ucuncu taraf bir tier listesinden, silah istatistikleri
+  // RaidTheory/arcraiders-data (MIT) katalogundan gelir (bkz.
+  // THIRD-PARTY-NOTICES.md).
+  { id: 'arc', code: 'ARC', name: 'Arc Raiders', genre: 'Extraction shooter', logo: require('../../assets/games/arc-raiders.png'), active: true },
 ];
 
 export default function Games() {

@@ -132,17 +132,62 @@ Zırh delme (AP) sayıları bu kaynakta 0-9 arası bir ölçek olarak yayınlan�
 Oyun bu değerleri kendi arayüzünde hiç göstermez; ekran görüntüsünden
 çıkarılamayacak tek şey buydu ve bu kaynak sayesinde elimizde.
 
+### Arc Raiders — iki meta, birbirinin tersi
+
+Bu oyunun **tek bir metası yok.** Bir silahın ARC robotlarına (PvE) ve
+oyunculara (PvP) karşı değeri ayrı hesaplanır, ve bu iki sıralama birbirinin
+neredeyse tersi çıkıyor.
+
+Bunu ölçtük. Silahların zırh delme (ARC Armor Penetration) değeri ile tier'ları
+arasındaki korelasyon:
+
+| | zırh delme ile korelasyon |
+|---|---|
+| PvE tier | **r = +0.901** |
+| PvP tier | **r = −0.512** |
+| PvE ile PvP arasında | **r = −0.335** |
+
+Uç örnekler tam tersine dönüyor: **Hullcracker, Equalizer ve Jupiter** PvE'de
+en üst tier, PvP'de en alt tier. Üçü de "Very Strong" zırh delmeye sahip. Ters
+yönde **Bobcat ve Canto** PvE'nin en altında, PvP'nin en üstünde — ikisi de
+düşük zırh delmeli, yüksek atış hızlı yakın mesafe silahları.
+
+Bu yüzden Helldivers 2 için yazılan faction çubuğu burada PvE/PvP olarak
+yeniden kullanılıyor; `FactionBar` oyun kimliğine değil `meta.factions`
+alanının varlığına baktığı için tek satır yeni kod gerekmedi.
+
+```
+skor = tier tabani + tier ici sira payi
+S 5000   A 4000   B 3000   C 2000   D 1000
+```
+
+Helldivers 2'deki gibi tier doğrudan kaynaktan gelir, yüzdelikle hesaplanmaz.
+Tier içindeki sıra kaynağın kendi sırasıdır ve **her mod için ayrı tutulur** —
+aynı silah PvE listesinde üçüncü, PvP listesinde sonuncu olabilir.
+
+**Silah istatistikleri ayrı bir kaynaktan gelir.** Zırh delme, mermi tipi, atış
+modu, şarjör ve mod slotları `RaidTheory/arcraiders-data` deposundan build
+sırasında çekilir. Bu kaynak **MIT lisanslı** ve aktif bakımda; yani Dota 2'den
+sonra istatistikleri kendi kendine güncellenen ikinci oyun. Liste ekranında
+skor yerine zırh delme etiketi görünür (`listValue`), skor yalnızca detay
+ekranında.
+
+Kaynakta sıralanmayan tek silah `Rascal`; uydurmak yerine listeden çıkarıldı.
+
 ## Lisans ve ticari kullanım
 
 Uygulamanın ticari kullanıma uygun kalması bir gereklilik. Tüm bileşenler bu
-gözle denetlendi:
+gözle denetlendi. Tam metinler ve atıflar için
+[THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) dosyasına bakın.
 
 | Bileşen | Lisans | Durum |
 |---|---|---|
 | Archivo fontu | SIL OFL 1.1 | uygun |
 | 34 npm bağımlılığı | 32 MIT, 1 Apache-2.0, 1 OFL | uygun |
 | Dota 2 verisi (OpenDota) | Kod MIT, veri toplu istatistik | uygun |
+| ARC silah kataloğu (RaidTheory) | MIT | uygun, atıf yapıldı |
 | BF6 sıralaması | Üçüncü taraf tier listesi | aşağıya bakın |
+| ARC sıralaması (ucuncu taraf tier listesi) | Üçüncü taraf tier listesi | aşağıya bakın |
 
 **Kaldırılan kaynaklar.** Helldivers 2 verisi bir topluluk wiki sitesine
 dayanıyordu ve **CC BY-NC-SA 4.0** lisanslıydı; NonCommercial maddesi ticari
@@ -152,10 +197,27 @@ deposunda ise hiçbir lisans dosyası yoktu ve lisans belirtilmemişse varsayıl
 tamamen çıkarıldı — TTK modeli, zırh delme modeli ve bunlara ait tüm sabitler
 dahil.
 
-**BF6 sıralaması bilinçli bir istisnadır.** Sıra numaraları başka birinin
-editoryal kararıdır. Olgular (silah adı, sınıfı) serbestçe kullanılabilir ama
-sıralamanın kendisi öyle değildir. Gelir modeline geçmeden önce bu kaynağın
-sahibinden izin alınmalı ya da sıralama kendi ölçümümüzle değiştirilmelidir.
+**Reddedilen ARC kaynakları.** ARC Raiders için önce açık lisanslı bir sıralama
+arandı. MetaForge API'si ticari kullanımı açıkça izne bağlıyor ("herhangi bir
+şekilde paraya dönüştürülen bir üründe kullanmayı planlıyorsanız önce bize
+ulaşın"), o yüzden elendi. Bir tier listesi sitesi ise oyunda **var olmayan**
+silahlar listeliyordu (Scorpion, Longbow) — MIT kataloğundaki 84 silah kaydına
+karşı kontrol edilince yakalandı; AI ile üretilmiş içerik. Kullanılan kaynaklar
+aynı katalogla ad ad doğrulandı, 23 silahın hepsi eşleşti.
+
+**BF6 ve ARC sıralamaları bilinçli bir istisnadır.** Sıra numaraları başka
+birinin editoryal kararıdır. Olgular (silah adı, sınıfı, zırh delmesi)
+serbestçe kullanılabilir ama sıralamanın kendisi öyle değildir. İki oyunda da
+yalnızca sıralama alındı — metin, görsel ve istatistik alınmadı — ve bu sınır
+`scoreNote` ile her varlığın `rationale.note` alanında veriyle birlikte
+taşınıyor. Gelir modeline geçmeden önce bu kaynakların sahiplerinden izin
+alınmalı ya da sıralama kendi ölçümümüzle değiştirilmelidir.
+
+**ARC silah kataloğu temiz.** `RaidTheory/arcraiders-data` MIT lisanslı;
+lisans metni ve istenen atıflar (depo + arctracker.io)
+[THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) içinde. Bu depodaki **item
+görselleri kullanılmadı**: oyun içi ekran görüntülerinden türetilmişler ve
+Embark Studios'a ait, MIT lisansı onları kapsamıyor.
 
 **Oyun görselleri kullanılmaz.** Kahraman portreleri, silah render görselleri ve
 stratagem ikonları bilinçli olarak eklenmedi; hepsi yayıncıların telifli

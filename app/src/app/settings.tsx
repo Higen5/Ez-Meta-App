@@ -126,6 +126,22 @@ export default function Settings() {
         fontFamily: theme.font.body, fontSize: 11, lineHeight: 17,
         color: theme.colors.neutral600, padding: theme.space.lg,
       }}>{meta?.scoreNote ?? t('settings.computedNote')}</Text>
+
+      {/* Atif blogu. RaidTheory/arcraiders-data MIT lisansli ve MIT telif
+          bildiriminin dagitilan kopyalarda YER ALMASINI sart kosuyor; depo
+          sahibi ayrica arctracker.io atfini istiyor. Tam metinler
+          THIRD-PARTY-NOTICES.md icinde. Cevrilmiyor: ozel adlar ve URL'ler. */}
+      <Text style={{
+        fontFamily: theme.font.body, fontSize: 10, lineHeight: 16,
+        color: theme.colors.neutral500,
+        paddingHorizontal: theme.space.lg, paddingBottom: theme.space.lg,
+      }}>
+        Arc Raiders weapon data: github.com/RaidTheory/arcraiders-data (MIT,
+        Copyright (c) 2025 RaidTheory) · arctracker.io{'\n'}
+        Dota 2 win rates: OpenDota{'\n'}
+        Not affiliated with or endorsed by Embark Studios AB, Electronic Arts,
+        Sony Interactive Entertainment or Valve.
+      </Text>
     </ScrollView>
   );
 }

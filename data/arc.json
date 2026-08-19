@@ -1,0 +1,854 @@
+{
+  "game": "arc",
+  "gameName": "Arc Raiders",
+  "scoreNote": "Tiers come straight from a third-party tier list (ucuncu taraf tier listesi), one per mode (PvE, PvP) — they are not calculated. Score is derived from the tier, with position inside a tier following that list's own order (no measured stat breaks ties). PvE and PvP are independent rankings for the same weapon set; a weapon's PvE and PvP tiers can be nearly opposite. Weapon stats (armor penetration, ammo type, firing mode, magazine size) come from the RaidTheory/arcraiders-data catalog (MIT license), not from the tier list source. Nothing here is a measurement of in-game performance.",
+  "sourceHash": "60202fa051182f629d7d86d3175df060b4248bee26ce6ac91dba39adf4eafbc1",
+  "generatedAt": "2026-08-19T06:30:56.577Z",
+  "entities": [
+    {
+      "id": "hullcracker",
+      "name": "Hullcracker",
+      "category": "Special",
+      "tier": "S",
+      "score": 5999,
+      "factions": {
+        "pve": {
+          "tier": "S",
+          "score": 5999
+        },
+        "pvp": {
+          "tier": "D",
+          "score": 1000
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "Very Strong"
+        },
+        {
+          "label": "AMMO",
+          "value": "Launcher Ammo"
+        },
+        {
+          "label": "FIRING MODE",
+          "value": "Pump-Action"
+        },
+        {
+          "label": "MAGAZINE",
+          "value": "5"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list's ranking, not a measured value. PvE and PvP are separate lists — a weapon can rank near the top against ARC and near the bottom against players, or the reverse. Weapon stats (armor penetration, ammo type, firing mode, magazine size) come from the RaidTheory/arcraiders-data catalog (MIT license), not from the tier list source."
+      }
+    },
+    {
+      "id": "equalizer",
+      "name": "Equalizer",
+      "category": "LMG",
+      "tier": "S",
+      "score": 5500,
+      "factions": {
+        "pve": {
+          "tier": "S",
+          "score": 5500
+        },
+        "pvp": {
+          "tier": "D",
+          "score": 1999
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "Very Strong"
+        },
+        {
+          "label": "AMMO",
+          "value": "Energy Clip"
+        },
+        {
+          "label": "FIRING MODE",
+          "value": "Fully-Automatic"
+        },
+        {
+          "label": "MAGAZINE",
+          "value": "50"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list's ranking, not a measured value. PvE and PvP are separate lists — a weapon can rank near the top against ARC and near the bottom against players, or the reverse. Weapon stats (armor penetration, ammo type, firing mode, magazine size) come from the RaidTheory/arcraiders-data catalog (MIT license), not from the tier list source."
+      }
+    },
+    {
+      "id": "jupiter",
+      "name": "Jupiter",
+      "category": "Sniper Rifle",
+      "tier": "S",
+      "score": 5000,
+      "factions": {
+        "pve": {
+          "tier": "S",
+          "score": 5000
+        },
+        "pvp": {
+          "tier": "D",
+          "score": 1666
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "Very Strong"
+        },
+        {
+          "label": "AMMO",
+          "value": "Energy Clip"
+        },
+        {
+          "label": "FIRING MODE",
+          "value": "Bolt-Action"
+        },
+        {
+          "label": "MAGAZINE",
+          "value": "5"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list's ranking, not a measured value. PvE and PvP are separate lists — a weapon can rank near the top against ARC and near the bottom against players, or the reverse. Weapon stats (armor penetration, ammo type, firing mode, magazine size) come from the RaidTheory/arcraiders-data catalog (MIT license), not from the tier list source."
+      }
+    },
+    {
+      "id": "dolabra",
+      "name": "Dolabra",
+      "category": "Shotgun",
+      "tier": "A",
+      "score": 4999,
+      "factions": {
+        "pve": {
+          "tier": "A",
+          "score": 4999
+        },
+        "pvp": {
+          "tier": "S",
+          "score": 5200
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "—"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list's ranking, not a measured value. PvE and PvP are separate lists — a weapon can rank near the top against ARC and near the bottom against players, or the reverse. Weapon stats (armor penetration, ammo type, firing mode, magazine size) come from the RaidTheory/arcraiders-data catalog (MIT license), not from the tier list source."
+      }
+    },
+    {
+      "id": "bettina",
+      "name": "Bettina",
+      "category": "Assault Rifle",
+      "tier": "A",
+      "score": 4833,
+      "factions": {
+        "pve": {
+          "tier": "A",
+          "score": 4833
+        },
+        "pvp": {
+          "tier": "C",
+          "score": 2666
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "Strong"
+        },
+        {
+          "label": "AMMO",
+          "value": "Heavy Ammo"
+        },
+        {
+          "label": "FIRING MODE",
+          "value": "Fully-Automatic"
+        },
+        {
+          "label": "MAGAZINE",
+          "value": "20"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list's ranking, not a measured value. PvE and PvP are separate lists — a weapon can rank near the top against ARC and near the bottom against players, or the reverse. Weapon stats (armor penetration, ammo type, firing mode, magazine size) come from the RaidTheory/arcraiders-data catalog (MIT license), not from the tier list source."
+      }
+    },
+    {
+      "id": "anvil",
+      "name": "Anvil",
+      "category": "Hand Cannon",
+      "tier": "A",
+      "score": 4666,
+      "factions": {
+        "pve": {
+          "tier": "A",
+          "score": 4666
+        },
+        "pvp": {
+          "tier": "A",
+          "score": 4749
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "Strong"
+        },
+        {
+          "label": "AMMO",
+          "value": "Heavy Ammo"
+        },
+        {
+          "label": "FIRING MODE",
+          "value": "Single-Action"
+        },
+        {
+          "label": "MAGAZINE",
+          "value": "6"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list's ranking, not a measured value. PvE and PvP are separate lists — a weapon can rank near the top against ARC and near the bottom against players, or the reverse. Weapon stats (armor penetration, ammo type, firing mode, magazine size) come from the RaidTheory/arcraiders-data catalog (MIT license), not from the tier list source."
+      }
+    },
+    {
+      "id": "renegade",
+      "name": "Renegade",
+      "category": "Battle Rifle",
+      "tier": "A",
+      "score": 4500,
+      "factions": {
+        "pve": {
+          "tier": "A",
+          "score": 4500
+        },
+        "pvp": {
+          "tier": "S",
+          "score": 5000
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "Moderate"
+        },
+        {
+          "label": "AMMO",
+          "value": "Medium Ammo"
+        },
+        {
+          "label": "FIRING MODE",
+          "value": "Lever-Action"
+        },
+        {
+          "label": "MAGAZINE",
+          "value": "8"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list's ranking, not a measured value. PvE and PvP are separate lists — a weapon can rank near the top against ARC and near the bottom against players, or the reverse. Weapon stats (armor penetration, ammo type, firing mode, magazine size) come from the RaidTheory/arcraiders-data catalog (MIT license), not from the tier list source."
+      }
+    },
+    {
+      "id": "aphelion",
+      "name": "Aphelion",
+      "category": "Special",
+      "tier": "A",
+      "score": 4333,
+      "factions": {
+        "pve": {
+          "tier": "A",
+          "score": 4333
+        },
+        "pvp": {
+          "tier": "C",
+          "score": 2999
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "Very Strong"
+        },
+        {
+          "label": "AMMO",
+          "value": "Energy Clip"
+        },
+        {
+          "label": "FIRING MODE",
+          "value": "Fully-Automatic"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list's ranking, not a measured value. PvE and PvP are separate lists — a weapon can rank near the top against ARC and near the bottom against players, or the reverse. Weapon stats (armor penetration, ammo type, firing mode, magazine size) come from the RaidTheory/arcraiders-data catalog (MIT license), not from the tier list source."
+      }
+    },
+    {
+      "id": "osprey",
+      "name": "Osprey",
+      "category": "Sniper Rifle",
+      "tier": "A",
+      "score": 4167,
+      "factions": {
+        "pve": {
+          "tier": "A",
+          "score": 4167
+        },
+        "pvp": {
+          "tier": "A",
+          "score": 4250
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "Moderate"
+        },
+        {
+          "label": "AMMO",
+          "value": "Medium Ammo"
+        },
+        {
+          "label": "FIRING MODE",
+          "value": "Bolt-Action"
+        },
+        {
+          "label": "MAGAZINE",
+          "value": "8"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list's ranking, not a measured value. PvE and PvP are separate lists — a weapon can rank near the top against ARC and near the bottom against players, or the reverse. Weapon stats (armor penetration, ammo type, firing mode, magazine size) come from the RaidTheory/arcraiders-data catalog (MIT license), not from the tier list source."
+      }
+    },
+    {
+      "id": "ferro",
+      "name": "Ferro",
+      "category": "Battle Rifle",
+      "tier": "A",
+      "score": 4000,
+      "factions": {
+        "pve": {
+          "tier": "A",
+          "score": 4000
+        },
+        "pvp": {
+          "tier": "B",
+          "score": 3999
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "Strong"
+        },
+        {
+          "label": "AMMO",
+          "value": "Heavy Ammo"
+        },
+        {
+          "label": "FIRING MODE",
+          "value": "Break-Action"
+        },
+        {
+          "label": "MAGAZINE",
+          "value": "1"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list's ranking, not a measured value. PvE and PvP are separate lists — a weapon can rank near the top against ARC and near the bottom against players, or the reverse. Weapon stats (armor penetration, ammo type, firing mode, magazine size) come from the RaidTheory/arcraiders-data catalog (MIT license), not from the tier list source."
+      }
+    },
+    {
+      "id": "il-toro",
+      "name": "Il Toro",
+      "category": "Shotgun",
+      "tier": "B",
+      "score": 3999,
+      "factions": {
+        "pve": {
+          "tier": "B",
+          "score": 3999
+        },
+        "pvp": {
+          "tier": "A",
+          "score": 4500
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "Weak"
+        },
+        {
+          "label": "AMMO",
+          "value": "Shotgun Ammo"
+        },
+        {
+          "label": "FIRING MODE",
+          "value": "Pump-Action"
+        },
+        {
+          "label": "MAGAZINE",
+          "value": "8"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list's ranking, not a measured value. PvE and PvP are separate lists — a weapon can rank near the top against ARC and near the bottom against players, or the reverse. Weapon stats (armor penetration, ammo type, firing mode, magazine size) come from the RaidTheory/arcraiders-data catalog (MIT license), not from the tier list source."
+      }
+    },
+    {
+      "id": "vulcano",
+      "name": "Vulcano",
+      "category": "Shotgun",
+      "tier": "B",
+      "score": 3749,
+      "factions": {
+        "pve": {
+          "tier": "B",
+          "score": 3749
+        },
+        "pvp": {
+          "tier": "S",
+          "score": 5799
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "Weak"
+        },
+        {
+          "label": "AMMO",
+          "value": "Shotgun Ammo"
+        },
+        {
+          "label": "FIRING MODE",
+          "value": "Semi-Automatic"
+        },
+        {
+          "label": "MAGAZINE",
+          "value": "6"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list's ranking, not a measured value. PvE and PvP are separate lists — a weapon can rank near the top against ARC and near the bottom against players, or the reverse. Weapon stats (armor penetration, ammo type, firing mode, magazine size) come from the RaidTheory/arcraiders-data catalog (MIT license), not from the tier list source."
+      }
+    },
+    {
+      "id": "venator",
+      "name": "Venator",
+      "category": "Pistol",
+      "tier": "B",
+      "score": 3500,
+      "factions": {
+        "pve": {
+          "tier": "B",
+          "score": 3500
+        },
+        "pvp": {
+          "tier": "B",
+          "score": 3333
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "Moderate"
+        },
+        {
+          "label": "AMMO",
+          "value": "Medium Ammo"
+        },
+        {
+          "label": "FIRING MODE",
+          "value": "Semi-Automatic"
+        },
+        {
+          "label": "MAGAZINE",
+          "value": "10"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list's ranking, not a measured value. PvE and PvP are separate lists — a weapon can rank near the top against ARC and near the bottom against players, or the reverse. Weapon stats (armor penetration, ammo type, firing mode, magazine size) come from the RaidTheory/arcraiders-data catalog (MIT license), not from the tier list source."
+      }
+    },
+    {
+      "id": "tempest",
+      "name": "Tempest",
+      "category": "Assault Rifle",
+      "tier": "B",
+      "score": 3250,
+      "factions": {
+        "pve": {
+          "tier": "B",
+          "score": 3250
+        },
+        "pvp": {
+          "tier": "S",
+          "score": 5599
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "Moderate"
+        },
+        {
+          "label": "AMMO",
+          "value": "Medium Ammo"
+        },
+        {
+          "label": "FIRING MODE",
+          "value": "Fully-Automatic"
+        },
+        {
+          "label": "MAGAZINE",
+          "value": "25"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list's ranking, not a measured value. PvE and PvP are separate lists — a weapon can rank near the top against ARC and near the bottom against players, or the reverse. Weapon stats (armor penetration, ammo type, firing mode, magazine size) come from the RaidTheory/arcraiders-data catalog (MIT license), not from the tier list source."
+      }
+    },
+    {
+      "id": "torrente",
+      "name": "Torrente",
+      "category": "LMG",
+      "tier": "B",
+      "score": 3000,
+      "factions": {
+        "pve": {
+          "tier": "B",
+          "score": 3000
+        },
+        "pvp": {
+          "tier": "C",
+          "score": 2333
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "Moderate"
+        },
+        {
+          "label": "AMMO",
+          "value": "Medium Ammo"
+        },
+        {
+          "label": "FIRING MODE",
+          "value": "Fully-Automatic"
+        },
+        {
+          "label": "MAGAZINE",
+          "value": "90"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list's ranking, not a measured value. PvE and PvP are separate lists — a weapon can rank near the top against ARC and near the bottom against players, or the reverse. Weapon stats (armor penetration, ammo type, firing mode, magazine size) come from the RaidTheory/arcraiders-data catalog (MIT license), not from the tier list source."
+      }
+    },
+    {
+      "id": "rattler",
+      "name": "Rattler",
+      "category": "Assault Rifle",
+      "tier": "C",
+      "score": 2999,
+      "factions": {
+        "pve": {
+          "tier": "C",
+          "score": 2999
+        },
+        "pvp": {
+          "tier": "C",
+          "score": 2000
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "Moderate"
+        },
+        {
+          "label": "AMMO",
+          "value": "Medium Ammo"
+        },
+        {
+          "label": "FIRING MODE",
+          "value": "Fully-Automatic"
+        },
+        {
+          "label": "MAGAZINE",
+          "value": "24"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list's ranking, not a measured value. PvE and PvP are separate lists — a weapon can rank near the top against ARC and near the bottom against players, or the reverse. Weapon stats (armor penetration, ammo type, firing mode, magazine size) come from the RaidTheory/arcraiders-data catalog (MIT license), not from the tier list source."
+      }
+    },
+    {
+      "id": "arpeggio",
+      "name": "Arpeggio",
+      "category": "Assault Rifle",
+      "tier": "C",
+      "score": 2500,
+      "factions": {
+        "pve": {
+          "tier": "C",
+          "score": 2500
+        },
+        "pvp": {
+          "tier": "B",
+          "score": 3666
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "Moderate"
+        },
+        {
+          "label": "AMMO",
+          "value": "Medium Ammo"
+        },
+        {
+          "label": "FIRING MODE",
+          "value": "3-Round Burst"
+        },
+        {
+          "label": "MAGAZINE",
+          "value": "24"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list's ranking, not a measured value. PvE and PvP are separate lists — a weapon can rank near the top against ARC and near the bottom against players, or the reverse. Weapon stats (armor penetration, ammo type, firing mode, magazine size) come from the RaidTheory/arcraiders-data catalog (MIT license), not from the tier list source."
+      }
+    },
+    {
+      "id": "kettle",
+      "name": "Kettle",
+      "category": "Assault Rifle",
+      "tier": "C",
+      "score": 2000,
+      "factions": {
+        "pve": {
+          "tier": "C",
+          "score": 2000
+        },
+        "pvp": {
+          "tier": "B",
+          "score": 3000
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "Very Weak"
+        },
+        {
+          "label": "AMMO",
+          "value": "Light Ammo"
+        },
+        {
+          "label": "FIRING MODE",
+          "value": "Semi-Automatic"
+        },
+        {
+          "label": "MAGAZINE",
+          "value": "20"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list's ranking, not a measured value. PvE and PvP are separate lists — a weapon can rank near the top against ARC and near the bottom against players, or the reverse. Weapon stats (armor penetration, ammo type, firing mode, magazine size) come from the RaidTheory/arcraiders-data catalog (MIT license), not from the tier list source."
+      }
+    },
+    {
+      "id": "canto",
+      "name": "Canto",
+      "category": "SMG",
+      "tier": "D",
+      "score": 1999,
+      "factions": {
+        "pve": {
+          "tier": "D",
+          "score": 1999
+        },
+        "pvp": {
+          "tier": "S",
+          "score": 5400
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "—"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list's ranking, not a measured value. PvE and PvP are separate lists — a weapon can rank near the top against ARC and near the bottom against players, or the reverse. Weapon stats (armor penetration, ammo type, firing mode, magazine size) come from the RaidTheory/arcraiders-data catalog (MIT license), not from the tier list source."
+      }
+    },
+    {
+      "id": "bobcat",
+      "name": "Bobcat",
+      "category": "SMG",
+      "tier": "D",
+      "score": 1749,
+      "factions": {
+        "pve": {
+          "tier": "D",
+          "score": 1749
+        },
+        "pvp": {
+          "tier": "S",
+          "score": 5999
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "Very Weak"
+        },
+        {
+          "label": "AMMO",
+          "value": "Light Ammo"
+        },
+        {
+          "label": "FIRING MODE",
+          "value": "Fully-Automatic"
+        },
+        {
+          "label": "MAGAZINE",
+          "value": "20"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list's ranking, not a measured value. PvE and PvP are separate lists — a weapon can rank near the top against ARC and near the bottom against players, or the reverse. Weapon stats (armor penetration, ammo type, firing mode, magazine size) come from the RaidTheory/arcraiders-data catalog (MIT license), not from the tier list source."
+      }
+    },
+    {
+      "id": "stitcher",
+      "name": "Stitcher",
+      "category": "SMG",
+      "tier": "D",
+      "score": 1500,
+      "factions": {
+        "pve": {
+          "tier": "D",
+          "score": 1500
+        },
+        "pvp": {
+          "tier": "A",
+          "score": 4999
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "Very Weak"
+        },
+        {
+          "label": "AMMO",
+          "value": "Light Ammo"
+        },
+        {
+          "label": "FIRING MODE",
+          "value": "Fully-Automatic"
+        },
+        {
+          "label": "MAGAZINE",
+          "value": "20"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list's ranking, not a measured value. PvE and PvP are separate lists — a weapon can rank near the top against ARC and near the bottom against players, or the reverse. Weapon stats (armor penetration, ammo type, firing mode, magazine size) come from the RaidTheory/arcraiders-data catalog (MIT license), not from the tier list source."
+      }
+    },
+    {
+      "id": "burletta",
+      "name": "Burletta",
+      "category": "Pistol",
+      "tier": "D",
+      "score": 1250,
+      "factions": {
+        "pve": {
+          "tier": "D",
+          "score": 1250
+        },
+        "pvp": {
+          "tier": "A",
+          "score": 4000
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "Very Weak"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list's ranking, not a measured value. PvE and PvP are separate lists — a weapon can rank near the top against ARC and near the bottom against players, or the reverse. Weapon stats (armor penetration, ammo type, firing mode, magazine size) come from the RaidTheory/arcraiders-data catalog (MIT license), not from the tier list source."
+      }
+    },
+    {
+      "id": "hairpin",
+      "name": "Hairpin",
+      "category": "Pistol",
+      "tier": "D",
+      "score": 1000,
+      "factions": {
+        "pve": {
+          "tier": "D",
+          "score": 1000
+        },
+        "pvp": {
+          "tier": "D",
+          "score": 1333
+        }
+      },
+      "statLines": [
+        {
+          "label": "AP",
+          "value": "Very Weak"
+        },
+        {
+          "label": "AMMO",
+          "value": "Light Ammo"
+        },
+        {
+          "label": "FIRING MODE",
+          "value": "Slide-Action"
+        },
+        {
+          "label": "MAGAZINE",
+          "value": "8"
+        }
+      ],
+      "rationale": {
+        "note": "Tier comes straight from a third-party tier list's ranking, not a measured value. PvE and PvP are separate lists — a weapon can rank near the top against ARC and near the bottom against players, or the reverse. Weapon stats (armor penetration, ammo type, firing mode, magazine size) come from the RaidTheory/arcraiders-data catalog (MIT license), not from the tier list source."
+      }
+    }
+  ],
+  "factions": [
+    {
+      "id": "pve",
+      "name": "PvE"
+    },
+    {
+      "id": "pvp",
+      "name": "PvP"
+    }
+  ],
+  "listValue": "stat"
+}
