@@ -8,12 +8,11 @@ const BASE_URL =
   process.env.EXPO_PUBLIC_META_URL ??
   'https://raw.githubusercontent.com/Higen5/Ez-Meta-App/main/data';
 
-// games.json'daki "file" alani her zaman "<id>.json" (bkz. data/games.json).
-// Oyun dosyasinin URL'sini kurmak icin ayrica games.json'u bekleyip zincirlemek
-// yerine bu kurala guveniyoruz; games.json sadece secim ekranindaki liste icin
-// ayri ve sessizce cekiliyor.
+// Oyun dosyasinin adi her zaman "<id>.json". Veri hatti ayrica data/games.json
+// yaziyor ama UYGULAMA ONU OKUMAZ: oyun secim ekrani kendi statik listesini
+// kullanir (bkz. app/games.tsx), cunku logo require() yollari statik olmak
+// zorunda ve "yakinda" bayragi veriye degil uygulama surumune bagli.
 export const gameJsonUrl = (gameId: string) => `${BASE_URL}/${gameId}.json`;
-export const GAMES_URL = `${BASE_URL}/games.json`;
 
 export const DEFAULT_GAME = 'bf6';
 export const GAME_STORAGE_KEY = 'meta.selectedGame';
@@ -31,7 +30,6 @@ export const cacheKeyForGame = (gameId: string) => (gameId === LEGACY_CACHE_GAME
 // baglidir, oyun basina ayri saklamaya gerek yok (bkz. MetaProvider).
 export const FACTION_STORAGE_KEY = 'meta.selectedFaction';
 
-export type GameInfo = { id: string; name: string; file: string };
 export type FactionInfo = { id: string; name: string };
 
 // Ortak alanlar zorunlu; BF6'ya ozgu (build/slots/damageCurve) ve HD2'ye ozgu
@@ -122,12 +120,6 @@ export function parseMeta(raw: string): Meta {
   } as Meta;
 }
 
-export function parseGames(raw: string): GameInfo[] {
-  const data = JSON.parse(raw);
-  if (!Array.isArray(data)) throw new Error('games.json: dizi degil');
-  return data as GameInfo[];
-}
-
 export async function loadMeta(deps: {
   fetchImpl: typeof fetch;
   url: string;
@@ -166,14 +158,13 @@ const MetaContext = createContext<{
   loading: boolean;
   offline: boolean;
   reload: () => void;
-  games: GameInfo[];
   currentGame: string;
   setGame: (id: string) => void;
   currentFaction: string | null;
   setFaction: (id: string) => void;
 }>({
   meta: null, loading: true, offline: false, reload: () => {},
-  games: [], currentGame: DEFAULT_GAME, setGame: () => {},
+  currentGame: DEFAULT_GAME, setGame: () => {},
   currentFaction: null, setFaction: () => {},
 });
 
@@ -181,7 +172,6 @@ export function MetaProvider({ children }: { children: ReactNode }) {
   const [meta, setMeta] = useState<Meta | null>(null);
   const [loading, setLoading] = useState(true);
   const [offline, setOffline] = useState(false);
-  const [games, setGames] = useState<GameInfo[]>([]);
   const [currentGame, setCurrentGame] = useState(DEFAULT_GAME);
   const [currentFaction, setCurrentFaction] = useState<string | null>(null);
 
@@ -236,16 +226,10 @@ export function MetaProvider({ children }: { children: ReactNode }) {
       if (savedFaction) setCurrentFaction(savedFaction);
       load(initial);
     })();
-    // games.json listesi ayri ve sessiz yuklenir; basarisiz olursa games bos
-    // kalir, secim ekrani kendi statik listesini kullanmaya devam eder.
-    fetch(GAMES_URL)
-      .then((res) => (res.ok ? res.text() : Promise.reject(new Error(String(res.status)))))
-      .then((text) => setGames(parseGames(text)))
-      .catch((err) => console.warn('[meta] games.json cekilemedi:', err));
   }, []);
 
   return (
-    <MetaContext.Provider value={{ meta, loading, offline, reload, games, currentGame, setGame, currentFaction, setFaction }}>
+    <MetaContext.Provider value={{ meta, loading, offline, reload, currentGame, setGame, currentFaction, setFaction }}>
       {children}
     </MetaContext.Provider>
   );
