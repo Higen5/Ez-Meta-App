@@ -7,11 +7,19 @@ Meta build uygulaması. Kapsanan oyunlar: **Dota 2** (127 kahraman),
 **Battlefield 6** (62 silah), **Helldivers 2** (234 öğe, 11 kategori) ve
 **Arc Raiders** (23 silah, PvE ve PvP ayrı).
 
-| Meta | Oyun seçimi | Arşiv | Detay | Ayarlar |
-|---|---|---|---|---|
-| ![Meta ekranı](docs/screenshots/01-meta.png) | ![Oyun seçim ekranı](docs/screenshots/02-oyun-secimi.png) | ![Arşiv ekranı](docs/screenshots/03-arsiv.png) | ![Detay ekranı](docs/screenshots/05-detay.png) | ![Ayarlar ekranı](docs/screenshots/04-ayarlar.png) |
+| Meta — Battlefield 6 | Meta — Arc Raiders | Arşiv |
+|---|---|---|
+| ![Meta ekranı](docs/screenshots/01-meta.png) | ![Arc Raiders PvE ve PvP sekmeleri](docs/screenshots/06-arc-pve-pvp.png) | ![Arşiv ekranı](docs/screenshots/03-arsiv.png) |
+| Skor genel sıralamadan gelir | Aynı silah kümesi, iki ayrı meta | Liste / tier list, arama, kategori |
 
-Ekran görüntüleri gerçek cihazdan (1080x2400) alınmıştır.
+| Detay | Oyun seçimi | Ayarlar |
+|---|---|---|
+| ![Detay ekranı](docs/screenshots/05-detay.png) | ![Oyun seçim ekranı](docs/screenshots/02-oyun-secimi.png) | ![Ayarlar ekranı](docs/screenshots/04-ayarlar.png) |
+| Önerilen build ve "neden bu tier" | Seçim cihazda saklanır | Skor notu ve kaynak atıfları |
+
+Ekran görüntüleri gerçek cihazdan (1080x2400) alınmıştır. Arc Raiders ekranındaki
+`—` işareti uydurulmuş bir değer değil: kaynak katalog o silah için hiçbir
+yükseltme seviyesinde zırh delme yayınlamıyor.
 
 ## Skor her oyunda aynı şey demek değil
 
