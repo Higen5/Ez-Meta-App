@@ -127,10 +127,13 @@ export default function Settings() {
         color: theme.colors.neutral600, padding: theme.space.lg,
       }}>{meta?.scoreNote ?? t('settings.computedNote')}</Text>
 
-      {/* Atif blogu. RaidTheory/arcraiders-data MIT lisansli ve MIT telif
-          bildiriminin dagitilan kopyalarda YER ALMASINI sart kosuyor; depo
-          sahibi ayrica arctracker.io atfini istiyor. Tam metinler
-          THIRD-PARTY-NOTICES.md icinde. Cevrilmiyor: ozel adlar ve URL'ler. */}
+      {/* Atif blogu. Iki lisans telif bildiriminin DAGITILAN KOPYADA yer
+          almasini sart kosuyor, o yuzden bu blok depodaki
+          THIRD-PARTY-NOTICES.md ile yetinmeyip APK'nin icinde de duruyor:
+          RaidTheory/arcraiders-data (MIT; depo sahibi ayrica arctracker.io
+          atfini istiyor) ve Archivo yazi tipi (OFL-1.1 -- .ttf dosyalari
+          APK'ya gomulu). Tam lisans metinleri THIRD-PARTY-NOTICES.md icinde.
+          Cevrilmiyor: ozel adlar ve URL'ler. */}
       <Text style={{
         fontFamily: theme.font.body, fontSize: 10, lineHeight: 16,
         color: theme.colors.neutral500,
@@ -139,6 +142,8 @@ export default function Settings() {
         Arc Raiders weapon data: github.com/RaidTheory/arcraiders-data (MIT,
         Copyright (c) 2025 RaidTheory) · arctracker.io{'\n'}
         Dota 2 win rates: OpenDota{'\n'}
+        Archivo typeface: Copyright 2020 The Archivo Project Authors
+        (github.com/Omnibus-Type/Archivo), SIL Open Font License 1.1{'\n'}
         Not affiliated with or endorsed by Embark Studios AB, Electronic Arts,
         Sony Interactive Entertainment or Valve.
       </Text>

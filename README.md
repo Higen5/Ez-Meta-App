@@ -193,8 +193,9 @@ gözle denetlendi. Tam metinler ve atıflar için
 
 | Bileşen | Lisans | Durum |
 |---|---|---|
-| Archivo fontu | SIL OFL 1.1 | uygun |
-| 34 npm bağımlılığı | 32 MIT, 1 Apache-2.0, 1 OFL | uygun |
+| Archivo fontu | SIL OFL 1.1 | uygun, lisans metni ve telif bildirimi eklendi |
+| 24 doğrudan npm bağımlılığı | 23 MIT, 1 MIT + OFL-1.1 | uygun |
+| 919 paketlik tam bağımlılık ağacı | GPL/AGPL/SSPL/NC yok | uygun |
 | Dota 2 verisi (OpenDota) | Kod MIT, veri toplu istatistik | uygun |
 | ARC silah kataloğu (RaidTheory) | MIT | uygun, atıf yapıldı |
 | BF6 / HD2 / ARC sıralamaları | Üçüncü taraf tier listeleri | aşağıya bakın |
