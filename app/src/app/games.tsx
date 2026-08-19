@@ -30,7 +30,6 @@ const GAMES: Game[] = [
   // Bu oyunda her ogenin uc faction icin ayri tier'i var (bkz. FactionBar).
   { id: 'hd2', code: 'HD2', name: 'Helldivers 2', genre: 'Co-op shooter', logo: require('../../assets/games/helldivers-2.png'), active: true },
   { id: 'dt2', code: 'DT2', name: 'Dota 2', genre: 'MOBA', logo: require('../../assets/games/dota-2.png'), active: true },
-  { id: 'lol', code: 'LOL', name: 'League of Legends', genre: 'MOBA', logo: require('../../assets/games/league-of-legends.png'), active: false },
   { id: 'apx', code: 'APX', name: 'Apex Legends', genre: 'Battle royale', logo: require('../../assets/games/apex-legends.png'), active: false },
   // ARC Raiders'in tek bir metasi yok: bir silahin ARC robotlarina (PvE) ve
   // oyunculara (PvP) karsi degeri ayri hesaplanir ve ikisi birbirinin
