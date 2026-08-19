@@ -5,7 +5,7 @@
     "M16A4": [
       { "slot": "BARREL", "item": "20\" HBAR" }, { "slot": "UNDERBARREL", "item": "SLIM HANDSTOP" },
       { "slot": "AMMUNITION", "item": "FMJ" }, { "slot": "MUZZLE", "item": "LIGHTENED SUPPRESSOR" },
-      { "slot": "ERGONOMICS", "item": "A3 RECIEVER" }, { "slot": "MAGAZINE", "item": "30RND MAGAZINE" },
+      { "slot": "ERGONOMICS", "item": "A3 RECEIVER" }, { "slot": "MAGAZINE", "item": "30RND MAGAZINE" },
       { "slot": "SCOPE", "item": "RO-M 1.75X" }
     ],
     "B36A4": [

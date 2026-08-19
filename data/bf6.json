@@ -2,8 +2,8 @@
   "game": "bf6",
   "gameName": "Battlefield 6",
   "scoreNote": "Score is derived from a weapon's position in a third-party tier list's overall ranking, not from measured stats. Rank 1 of 62 scores 10000 and the rest scale down by position. Nothing here is calculated from weapon statistics — it reflects that list's editorial ordering.",
-  "sourceHash": "a9199a476751936c48849c8d08930e427e36393e2d55b0583462ab5bdfd86d66",
-  "generatedAt": "2026-08-19T10:54:09.482Z",
+  "sourceHash": "faae80327dbf279120ba809edd8e9369985b8e6a4e243ad2a98738a070579ec9",
+  "generatedAt": "2026-08-19T11:29:47.539Z",
   "entities": [
     {
       "id": "m16a4",
@@ -36,7 +36,7 @@
         },
         {
           "slot": "ERGONOMICS",
-          "item": "A3 RECIEVER"
+          "item": "A3 RECEIVER"
         },
         {
           "slot": "MAGAZINE",

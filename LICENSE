@@ -1,0 +1,60 @@
+EZ//META
+
+Copyright (c) 2026 Ahmet Özgür Özdil. Tüm hakları saklıdır.
+All rights reserved.
+
+Bu depodaki kaynak kodu ve içerik açık kaynak DEĞİLDİR. Kod herkese açık
+olarak görüntülenebilir olsa da bu, kullanım, kopyalama, değiştirme, birleştirme,
+yayımlama, dağıtma, alt lisanslama veya satma hakkı vermez. Bunlardan herhangi
+biri için telif hakkı sahibinin önceden yazılı izni gerekir.
+
+The source code and content in this repository are NOT open source. Although
+the code is publicly viewable, that does not grant permission to use, copy,
+modify, merge, publish, distribute, sublicense, or sell it. Any of these
+requires the prior written permission of the copyright holder.
+
+Bu kısıt yalnızca bu depoda yazılmış olan koda ve veriye uygulanır.
+
+This restriction applies only to the code and data authored in this repository.
+
+--------------------------------------------------------------------------
+
+ÜÇÜNCÜ TARAF BİLEŞENLER / THIRD-PARTY COMPONENTS
+
+Bu proje kendi lisanslarıyla gelen üçüncü taraf bileşenler içerir ve yukarıdaki
+kısıt onları KAPSAMAZ. Her birinin lisans metni ve gerekli atıflar
+THIRD-PARTY-NOTICES.md dosyasındadır:
+
+This project includes third-party components under their own licenses, which
+the restriction above does NOT cover. Their license texts and required
+attributions are in THIRD-PARTY-NOTICES.md:
+
+  - Archivo yazı tipi — SIL Open Font License 1.1
+    Copyright 2020 The Archivo Project Authors
+
+  - RaidTheory/arcraiders-data (Arc Raiders silah kataloğu) — MIT
+    Copyright (c) 2025 RaidTheory
+
+  - npm bağımlılıkları — MIT ve OFL-1.1
+
+--------------------------------------------------------------------------
+
+OYUN İÇERİĞİ / GAME CONTENT
+
+Oyun adları, silah adları, kahraman adları ve logolar ilgili yayıncılara aittir
+ve bu lisansın kapsamı dışındadır. Yalnızca hangi oyun öğesinden bahsedildiğini
+belirtmek için kullanılmışlardır.
+
+Game names, weapon names, hero names and logos belong to their respective
+publishers and are outside the scope of this license. They are used only to
+identify which game item is being referred to.
+
+Arc Raiders © Embark Studios AB · Battlefield 6 © Electronic Arts Inc. ·
+Helldivers 2 © Sony Interactive Entertainment / Arrowhead Game Studios ·
+Dota 2 © Valve Corporation.
+
+Bu uygulama bağımsız bir topluluk aracıdır; adı geçen yayıncıların hiçbiriyle
+bağlantısı yoktur ve hiçbiri tarafından onaylanmamıştır.
+
+This application is an independent community tool. It is not affiliated with
+or endorsed by any of the publishers named above.

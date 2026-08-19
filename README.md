@@ -1,8 +1,17 @@
 # EZ//META
 
+[![Test](https://github.com/Higen5/Ez-Meta-App/actions/workflows/test.yml/badge.svg)](https://github.com/Higen5/Ez-Meta-App/actions/workflows/test.yml)
+[![Lisans](https://img.shields.io/badge/lisans-t%C3%BCm%20haklar%C4%B1%20sakl%C4%B1-lightgrey)](LICENSE)
+
 Meta build uygulaması. Kapsanan oyunlar: **Dota 2** (127 kahraman),
 **Battlefield 6** (62 silah), **Helldivers 2** (234 öğe, 11 kategori) ve
 **Arc Raiders** (23 silah, PvE ve PvP ayrı).
+
+| Meta | Oyun seçimi | Arşiv | Detay | Ayarlar |
+|---|---|---|---|---|
+| ![Meta ekranı](docs/screenshots/01-meta.png) | ![Oyun seçim ekranı](docs/screenshots/02-oyun-secimi.png) | ![Arşiv ekranı](docs/screenshots/03-arsiv.png) | ![Detay ekranı](docs/screenshots/05-detay.png) | ![Ayarlar ekranı](docs/screenshots/04-ayarlar.png) |
+
+Ekran görüntüleri gerçek cihazdan (1080x2400) alınmıştır.
 
 ## Skor her oyunda aynı şey demek değil
 
