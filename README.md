@@ -336,11 +336,24 @@ cd pipeline && npm test && npm run build
 cd app && npm install && npm test
 ```
 
-Android cihazda çalıştırmak için (Windows):
+Android cihaza release APK derleyip kurmak için (Windows):
 
 ```bash
-npx expo run:android
+cd app/android && ./gradlew assembleRelease
 ```
+
+```bash
+adb install -r app/android/app/build/outputs/apk/release/app-release.apk
+```
+
+`npx expo run:android` da aynı işi yapar ama **kurulumdan sonra süreçten
+çıkmaz**: APK derlenip cihaza yüklendiği hâlde komut asılı kalır, bu yüzden
+otomasyondan çağırmak için uygun değil. Yukarıdaki iki adım aynı sonucu verir
+ve ikisi de biter.
+
+Oyun listesi veriden gelmez, bundle'a gömülüdür — yeni bir oyun eklendiğinde
+ya da çıkarıldığında **APK'yı yeniden derlemek gerekir**, veri güncellemesi
+yetmez.
 
 **JDK 17 gerekir.** JDK 24 ve üstüyle CMake yapılandırma adımı "restricted
 method in java.lang.System has been called" hatasıyla patlar.
