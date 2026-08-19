@@ -28,9 +28,9 @@ export const cacheKeyForGame = (gameId: string) => (gameId === LEGACY_CACHE_GAME
 
 // Oyun secimiyle ayni kalipta, ama tek anahtar: faction oyuna degil kullaniciya
 // baglidir, oyun basina ayri saklamaya gerek yok (bkz. MetaProvider).
-export const FACTION_STORAGE_KEY = 'meta.selectedFaction';
+const FACTION_STORAGE_KEY = 'meta.selectedFaction';
 
-export type FactionInfo = { id: string; name: string };
+type FactionInfo = { id: string; name: string };
 
 // Ortak alanlar zorunlu; BF6'ya ozgu (build/slots/damageCurve) ve HD2'ye ozgu
 // (statLines, stats.code/rows) alanlar opsiyonel — iki semadan biri hep eksik olur.
