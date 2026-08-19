@@ -1,19 +1,21 @@
 # EZ//META
 
 Meta build uygulaması. Kapsanan oyunlar: **Dota 2** (127 kahraman),
-**Battlefield 6** (62 silah) ve **Helldivers 2** (234 öğe, 11 kategori).
+**Battlefield 6** (62 silah), **Helldivers 2** (234 öğe, 11 kategori) ve
+**Arc Raiders** (23 silah, PvE ve PvP ayrı).
 
 ## Skor her oyunda aynı şey demek değil
 
 Bu projenin başlangıç fikri "sıralamayı hesapla, editoryal görüş olarak sunma"
-idi. Bugün bu **yalnızca Dota 2 için doğru**. İki oyunun skoru temelden farklı
-şeyler ölçüyor ve bunu gizlemek yerine yazıyoruz:
+idi. Bugün bu **yalnızca Dota 2 için doğru**. Diğer üç oyunun skoru temelden
+farklı şeyler ölçüyor ve bunu gizlemek yerine yazıyoruz:
 
 | Oyun | Skorun kaynağı | Ölçülmüş mü |
 |---|---|---|
 | Dota 2 | Derecelendirilmiş maçlardaki kazanma oranı | **Evet** |
 | Battlefield 6 | Üçüncü taraf bir tier listesinin genel sıralaması | **Hayır** |
 | Helldivers 2 | Üçüncü taraf bir tier listesinin faction bazlı tier'ları | **Hayır** |
+| Arc Raiders | Üçüncü taraf bir tier listesinin PvE ve PvP tier'ları | **Hayır** |
 
 Skorlar oyunlar arasında karşılaştırılamaz. Her oyunun skor notu uygulamanın
 Ayarlar ekranında görünür, yani sınır veriyle birlikte taşınır.
@@ -112,8 +114,9 @@ skor = tier tabani + tier ici sira payi
 S+ 6000   S 5000   A 4000   B 3000   C 2000   D 1000
 ```
 
-Tier doğrudan kaynaktan gelir, **yüzdelikle hesaplanmaz** — diğer iki oyundan
-farkı bu. Tier içindeki sıra, kaynağın o kategori için yayınladığı stattan
+Tier doğrudan kaynaktan gelir, **yüzdelikle hesaplanmaz** — Dota 2 ve BF6'dan
+farkı bu; Arc Raiders sonradan aynı kalıbı devraldı. Tier içindeki sıra,
+kaynağın o kategori için yayınladığı stattan
 gelir: Primary'de DPS, Secondary / Support Weapon / Throwable / Sentry'de zırh
 delme (AP), Vehicle'da can.
 
@@ -233,7 +236,8 @@ Sunucu, veritabanı ve kullanıcı hesabı **yoktur**.
 
 ```
 GitHub Actions (gunluk cron)
-  -> her oyunun kaynagini hazirla (Dota 2 agdan, BF6 yerel dosyadan)
+  -> her oyunun kaynagini hazirla (Dota 2 agdan, BF6 ve HD2 yerel dosyadan,
+     ARC ikisinden birden: siralama yerel, silah statlari agdan)
   -> icerik hash degisti mi? degismediyse o oyunu atla
   -> skor / tier hesapla, dogrula, yaz
   -> data/<oyun>.json uret ve commitle
@@ -244,13 +248,18 @@ GitHub Actions (gunluk cron)
 
 ```
 data/                        yayinlanan cikti
-  games.json   oyun indeksi, uygulama listeyi buradan okur
+  games.json   oyun indeksi, uygulama OKUMAZ (bkz. Veri dagitimi)
   bf6.json     Battlefield 6, 62 silah
   dt2.json     Dota 2, 127 kahraman
+  hd2.json     Helldivers 2, 234 oge
+  arc.json     Arc Raiders, 23 silah
 
 pipeline/data/               elle tutulan girdi
   bf6-tierlist.json  62 silahin genel siralamasi
   bf6-builds.json    meta silahlarin onerilen buildleri
+  hd2-tierlist.json  11 kategori, oge basina uc faction tier'i
+  arc-tierlist.json  PvE ve PvP siralamalari (silah statlari BURADA DEGIL,
+                     RaidTheory/arcraiders-data katalogundan cekilir)
 ```
 
 Her oyunun mantığı pipeline/src/games/ altında ayrı bir dosyadadır; tier ataması
@@ -273,7 +282,7 @@ Dosya içerikleri hash'lenirken `\r` atılır. Depo Windows'ta CRLF, CI'da LF il
 checkout edildiği için normalize edilmezse aynı kod iki platformda farklı hash
 üretir ve cron her gün boşuna yazardı.
 
-Takas: hash tüm ağacı kapsadığı için bir oyunun modülü değişince üç oyun da
+Takas: hash tüm ağacı kapsadığı için bir oyunun modülü değişince dört oyun da
 yeniden üretilir. Alternatifi "hangi dosyayı hash'e katmayı hatırladım"
 sorusuydu ve o soru er geç yanlış cevaplanır.
 
@@ -284,9 +293,13 @@ alanın bulunduğuna bakar. Meta seviyesindeki üç opsiyonel alan bunu sağlar:
 
 | Alan | Anlamı | Kimde var |
 |---|---|---|
-| `factions` | Faction çubuğunu göster, her öğenin faction başına tier'ı var | hd2 |
+| `factions` | Faction çubuğunu göster, her öğenin faction başına tier'ı var | hd2, arc |
 | `feedMode` | META ekranında **hangi** öğeler listelensin (`topPerCategory`) | hd2 |
-| `listValue` | Liste satırlarında skor yerine **ne** gösterilsin (`stat`) | hd2 |
+| `listValue` | Liste satırlarında skor yerine **ne** gösterilsin (`stat`) | hd2, arc |
+
+Bu yaklaşımın karşılığını Arc Raiders'ta aldık: oyunun PvE/PvP ayrımı için
+faction çubuğu **tek satır yeni UI kodu olmadan** çalıştı, çünkü `FactionBar`
+oyun kimliğine değil `meta.factions` alanının varlığına bakıyor.
 
 `feedMode` ile `listValue` bilerek ayrı: biri hangi öğelerin listeleneceğini,
 diğeri ne gösterileceğini anlatır. Aynı alana iki anlam yüklemek üçüncü bir
@@ -340,7 +353,7 @@ EXPO_PUBLIC_META_URL=http://localhost:8090 npx expo run:android
 | # | Ekran | İçerik |
 |---|---|---|
 | 00 | Splash | İlk açılış, veri henüz yokken |
-| 01 | Oyun seçimi | Ayarlar ekranından açılır; üç oyun da aktif |
+| 01 | Oyun seçimi | Ayarlar ekranından açılır; dört oyun da aktif |
 | 02 | Meta | Skora göre ilk 5; HD2'de kategori başına bir öğe |
 | 03 | Arşiv | LİSTE ve TIER LIST modu, arama, kategori filtresi |
 | 04 | Detay | Stat satırları, önerilen build, neden bu tier |
@@ -374,13 +387,26 @@ kalmasını zorunlu tutar.
 Depo public olduğu için uygulama veriyi doğrudan buradan çeker:
 
 ```
-https://raw.githubusercontent.com/Higen5/Ez-Meta-App/main/data/games.json
 https://raw.githubusercontent.com/Higen5/Ez-Meta-App/main/data/bf6.json
 https://raw.githubusercontent.com/Higen5/Ez-Meta-App/main/data/dt2.json
+https://raw.githubusercontent.com/Higen5/Ez-Meta-App/main/data/hd2.json
+https://raw.githubusercontent.com/Higen5/Ez-Meta-App/main/data/arc.json
 ```
 
+Dosya adı her zaman `<oyun id>.json`. Veri hattı ayrıca `data/games.json`
+yazar ama **uygulama onu okumaz**: oyun seçim ekranı kendi statik listesini
+kullanır, çünkü logo `require()` yolları statik olmak zorunda ve "yakında"
+bayrağı veriye değil uygulama sürümüne bağlıdır. Bir dönem uygulama bu dosyayı
+her açılışta indiriyordu ve sonucu hiçbir ekran okumuyordu; o çekme kaldırıldı.
+
 Seçili oyun cihazda saklanır ve her oyunun verisi ayrı önbellek anahtarıyla
-tutulur, böylece çevrimdışı çalışma iki oyun için de sürer.
+tutulur, böylece çevrimdışı çalışma dört oyun için de sürer.
+
+raw.githubusercontent yeni veriyi yaklaşık **5 dakika** önbellekte tutar. Veri
+push ettikten hemen sonra cihazda doğrulama yapma; eski listeyi görüp yanlış
+teşhis koyarsın. Ayrıca bir oyunu aktif etmek veri değişikliği **değildir** —
+`active` bayrağı `app/src/app/games.tsx` içinde ve APK'ya derlenir, yeni kurulum
+gerektirir.
 
 ## Bilinen eksikler
 
@@ -390,6 +416,12 @@ tutulur, böylece çevrimdışı çalışma iki oyun için de sürer.
 - Dota 2 için pozisyon bazlı tier listesi yok; o veri ücretsiz yayınlanmıyor.
 - HD2 skoru da bir ölçüm değil; tier'lar kaynaktan gelir, oyun içi performans
   ölçülmez.
+- ARC skoru da ölçüm değil. Ama silah **istatistikleri** (zırh delme, mermi
+  tipi, atış modu, şarjör) MIT lisanslı bir katalogdan build başına otomatik
+  gelir; yalnızca tier sıralaması elle güncellenir.
+- ARC kataloğunda Dolabra ve Canto için hiçbir yükseltme seviyesinde zırh delme
+  yayınlanmıyor; listede `—` görünürler. Uydurulmuş değer konmadı.
+- ARC kaynağı `Rascal` silahını sıralamıyor, bu yüzden listede yok.
 - Ekranlar gerçek cihazda doğrulandı; otomatik UI testi yoktur.
 - Arka plan görevi ve bildirim teslimi gerçek cihazda tetiklenmedi.
 - Eklenti değiştirip skoru canlı hesaplayan editör **yoktur**. Gerektirdiği
