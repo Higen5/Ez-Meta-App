@@ -263,7 +263,6 @@ GitHub Actions (gunluk cron)
 
 ```
 data/                        yayinlanan cikti
-  games.json   oyun indeksi, uygulama OKUMAZ (bkz. Veri dagitimi)
   bf6.json     Battlefield 6, 62 silah
   dt2.json     Dota 2, 127 kahraman
   hd2.json     Helldivers 2, 234 oge
@@ -408,11 +407,11 @@ https://raw.githubusercontent.com/Higen5/Ez-Meta-App/main/data/hd2.json
 https://raw.githubusercontent.com/Higen5/Ez-Meta-App/main/data/arc.json
 ```
 
-Dosya adı her zaman `<oyun id>.json`. Veri hattı ayrıca `data/games.json`
-yazar ama **uygulama onu okumaz**: oyun seçim ekranı kendi statik listesini
-kullanır, çünkü logo `require()` yolları statik olmak zorunda ve "yakında"
-bayrağı veriye değil uygulama sürümüne bağlıdır. Bir dönem uygulama bu dosyayı
-her açılışta indiriyordu ve sonucu hiçbir ekran okumuyordu; o çekme kaldırıldı.
+Dosya adı her zaman `<oyun id>.json`. Oyun listesi veriden **gelmez**: oyun
+seçim ekranı kendi statik listesini kullanır, çünkü logo `require()` yolları
+statik olmak zorunda. Bir dönem veri hattı bir de `data/games.json` indeksi
+yazıyordu ve uygulama onu her açılışta indiriyordu; sonucu hiçbir ekran
+okumadığı için önce o çekme, sonra dosyanın kendisi kaldırıldı.
 
 Seçili oyun cihazda saklanır ve her oyunun verisi ayrı önbellek anahtarıyla
 tutulur, böylece çevrimdışı çalışma dört oyun için de sürer.

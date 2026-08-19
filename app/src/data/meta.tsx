@@ -8,10 +8,9 @@ const BASE_URL =
   process.env.EXPO_PUBLIC_META_URL ??
   'https://raw.githubusercontent.com/Higen5/Ez-Meta-App/main/data';
 
-// Oyun dosyasinin adi her zaman "<id>.json". Veri hatti ayrica data/games.json
-// yaziyor ama UYGULAMA ONU OKUMAZ: oyun secim ekrani kendi statik listesini
-// kullanir (bkz. app/games.tsx), cunku logo require() yollari statik olmak
-// zorunda ve "yakinda" bayragi veriye degil uygulama surumune bagli.
+// Oyun dosyasinin adi her zaman "<id>.json". Oyun listesi veriden GELMEZ; oyun
+// secim ekrani kendi statik listesini kullanir (bkz. app/games.tsx), cunku logo
+// require() yollari statik olmak zorunda.
 export const gameJsonUrl = (gameId: string) => `${BASE_URL}/${gameId}.json`;
 
 export const DEFAULT_GAME = 'bf6';

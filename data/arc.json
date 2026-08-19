@@ -2,8 +2,8 @@
   "game": "arc",
   "gameName": "Arc Raiders",
   "scoreNote": "Tiers come straight from a third-party tier list, one per mode (PvE, PvP) — they are not calculated. The ranking was transcribed from screenshots the user supplied; it was not pulled programmatically from any site. Score is derived from the tier, with position inside a tier following that list's own order (no measured stat breaks ties). PvE and PvP are independent rankings for the same weapon set; a weapon's PvE and PvP tiers can be nearly opposite. Weapon stats (armor penetration, ammo type, firing mode, magazine size) come from the RaidTheory/arcraiders-data catalog (MIT license), pinned to a fixed commit. Nothing here is a measurement of in-game performance.",
-  "sourceHash": "79e59dd4e74a78c58166a4abfd54f71504057ae903c73374202000cc6f64a719",
-  "generatedAt": "2026-08-19T10:22:47.695Z",
+  "sourceHash": "8b93a673b5594b35b2bc890dc91becfeae5b93b0c27b3260a640750698c3d134",
+  "generatedAt": "2026-08-19T10:54:17.492Z",
   "entities": [
     {
       "id": "hullcracker",

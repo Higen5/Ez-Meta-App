@@ -12,7 +12,7 @@ const DATA_DIR = fileURLToPath(new URL('../../data/', import.meta.url));
 // sinir veriyle birlikte tasinsin, sadece README'de kalmasin.
 const GAMES = [
   {
-    id: 'bf6', gameName: 'Battlefield 6', file: 'bf6.json',
+    id: 'bf6', gameName: 'Battlefield 6',
     fetchRaw: fetchBf6TierlistSource, buildEntities: buildBf6TierlistEntities,
     scoreNote:
       "Score is derived from a weapon's position in a third-party tier list's overall ranking, "
@@ -21,7 +21,7 @@ const GAMES = [
       + 'ordering.',
   },
   {
-    id: 'dt2', gameName: 'Dota 2', file: 'dt2.json',
+    id: 'dt2', gameName: 'Dota 2',
     fetchRaw: fetchDota2Source, buildEntities: buildDota2Entities,
     scoreNote:
       "Score is the measured win rate in ranked public matches (rank-bracketed "
@@ -32,7 +32,7 @@ const GAMES = [
       + 'source, so heroes are grouped by primary attribute, not by position.',
   },
   {
-    id: 'hd2', gameName: 'Helldivers 2', file: 'hd2.json',
+    id: 'hd2', gameName: 'Helldivers 2',
     fetchRaw: fetchHd2TierlistSource, buildEntities: buildHd2TierlistEntities,
     // Kaynak tablodaki sutun sirasi. id degerleri entity.factions anahtarlariyla
     // birebir ayni olmali (bkz. games/hd2-tierlist.js). Uygulama faction
@@ -64,7 +64,7 @@ const GAMES = [
       + 'is a measurement of in-game performance.',
   },
   {
-    id: 'arc', gameName: 'Arc Raiders', file: 'arc.json',
+    id: 'arc', gameName: 'Arc Raiders',
     fetchRaw: fetchArcTierlistSource, buildEntities: buildArcTierlistEntities,
     // ARC'ta HD2'nin aksine "kategori-basina-bir-oge" modu (feedMode) istenmiyor
     // -- bilerek EKLENMEDI.
@@ -139,11 +139,6 @@ export async function buildArcMeta({ now = () => new Date().toISOString(), fetch
   return runGameBuild({ id: arc.id, gameName: arc.gameName, scoreNote: arc.scoreNote, fetchRaw: arc.fetchRaw, buildEntities: arc.buildEntities, factions: arc.factions, listValue: arc.listValue, now, fetch: fetchImpl, outPath });
 }
 
-async function writeGamesIndex() {
-  const index = GAMES.map((g) => ({ id: g.id, name: g.gameName, file: g.file }));
-  await writeFile(join(DATA_DIR, 'games.json'), JSON.stringify(index, null, 2), 'utf8');
-}
-
 // ponytail: process.argv[1]'i file:// ile elle birlestirmek Windows'ta hicbir
 // zaman eslesmez (ters egik cizgi + URL-encode yok). pathToFileURL platformdan
 // bagimsiz calisir.
@@ -172,10 +167,6 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
         console.error(`${id}: basarisiz — ${err.message}`);
       }
     }
-
-    // Indeks her durumda yazilir: icerigi GAMES sabitinden gelir, o gunku
-    // cekme sonucundan degil.
-    await writeGamesIndex();
 
     if (failed.length) process.exit(1);
   })();

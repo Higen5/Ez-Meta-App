@@ -19,11 +19,10 @@ jobs:
       - run: node src/build-meta.js
         working-directory: pipeline
 
-      # data/ altinda birden fazla dosya var: her oyun icin bir tane (bf6.json,
-      # hd2.json, dt2.json), oyun indeksi (games.json) ve eski surumler icin
-      # korunan meta.json. Onceden yalnizca meta.json kontrol edilip
+      # data/ altinda her oyun icin bir dosya var (bf6.json, dt2.json,
+      # hd2.json, arc.json). Onceden yalnizca tek bir dosya kontrol edilip
       # commit'leniyordu, bu yuzden Helldivers 2 verisi kaynak degisse bile hic
-      # guncellenmiyordu.
+      # guncellenmiyordu; simdi tum data/ dizini kontrol ediliyor.
       #
       # dt2.json ~7 gunluk kayan bir pencereden geldigi icin pratikte her gun
       # degisir; bf6/hd2 yalnizca yama geldiginde degisir.
